@@ -1,0 +1,39 @@
+name: INLG 2022
+tagline: 15th International Natural Language Generation Conference
+date: 18-22 July 2022
+citation_date: July 2022
+proceedings_title: Proceedings of the 15th International Natural Language Generation Conference
+analytics: UA-
+logo:
+  image: https://inlg2021.github.io/img/logo.png
+  width: 180px
+  height: auto
+# uncomment the following line to show the site title next to the logo image
+# site_title: MiniConf
+page_title:
+  prefix: 'INLG 2022'
+  separator: ': '
+background_image: static/images/main.jpg
+organization: INLG 2022 Organizers
+
+# Remove or change to your chat server.
+#chat_server: miniconf.sloppy.zone
+#default_presentation_id: 38922815
+#default_poster_pdf: /static/images/GLTR_poster.pdf
+
+
+# Configuration for auth
+#Test user
+#user: miniconf@miniconf.com
+#pass: mIniconf1_
+
+use_auth0:
+auth0_client_id : JIdr6wi0z27LyLgwkJF0fpk700aj7MNH
+auth0_domain : miniconf.auth0.com
+
+calendar:
+  colors: #  Colors for the different event hashtags:
+    ---: '#bed972'
+    qa: '#4FCAEB'
+    talk: '#ccc'
+  sunday_saturday: false  #  Include Sunday and Saturday
