@@ -25,7 +25,7 @@ img {
 
 .text_introduction{
   text-align: center;
-	color: #333333; font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #333333; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	
 	font-size: 16px; line-height: 28px; margin: 0 0 28px; 
 
@@ -35,9 +35,15 @@ img {
   text-align:justify;
 	color: #333333; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	
-	font-size: 12px; line-height: 28px; margin: 0 0 28px; 
+	font-size: 14px; line-height: 28px; margin: 0 0 28px; 
 
 }
 
+.text_footnote{
+  text-align:justify;
+	color: #333333; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	
+	font-size: 10px; line-height: 28px; margin: 0 0 28px; 
 
+}
 
