@@ -109,36 +109,20 @@ workshopgroup
 </div>
 {%- endmacro %}
 
-{% macro organizergroup(calls) -%}
-<div class="row">
+{% macro callgroup(calls) -%}
+<div>
+  <ul>
   {% for call in calls %}
-<div class="row">
-  <div class="col-12" id="accordionExample">
-    <div class="card m-2">
-      <div class="card-header">
-        <a
-          class=""
-          href="#"
-          data-toggle="collapse"
-          data-target="#collapse{{rowloop}}-{{loop.index}}"
-          aria-expanded="true"
-          aria-controls="collapse{{rowloop}}-{{loop.index}}"
-        >
-          {{call.title}}
-        </a>
-	{{call.deadline}}
-      </div>
-      <div
-        id="collapse{{rowloop}}-{{loop.index}}"
-        class="collapse"
-        aria-labelledby="headingOne"
-        data-parent="#accordionExample"
-      >
-        <div class="card-body">
-          {{call.text}}
-        </div>
-      </div>
-    </div>
+    <li><a href="#cfp{{call.id}}">{{call.title}}</a>, deadline: {{call.deadline}}</li>
+  {% endfor %}
+  </ul>
+</div>
+<div>
+  {% for call in calls %}
+  <div>
+    <a id="cfp{{call.id}}">{{subsection(call.title)}}</a>
+    {{call.deadline}}
+    {{call.bodytext | markdown}}
   </div>
   {% endfor %}
 </div>
