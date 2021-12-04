@@ -16,7 +16,7 @@ by_uid = {}
 
 def main(site_data_path):
     global site_data, extra_files
-    extra_files = ["README.md"]
+    extra_files = ["Home.md"]
     # Load all for your sitedata one time.
     for f in glob.glob(site_data_path + "/*"):
         extra_files.append(f)
@@ -70,9 +70,21 @@ def favicon():
 @app.route("/index.html")
 def home():
     data = _data()
-    data["readme"] = open("README.md").read()
-    data["committee"] = site_data["committee"]["committee"]
+    data["home"] = open("Home.md").read()
     return render_template("index.html", **data)
+
+@app.route("/organizers.html")
+def organizers():
+    data = _data()
+    data["committee"] = site_data["committee"]["committee"]
+    return render_template("organizers.html", **data)
+
+
+@app.route("/calls.html")
+def calls():
+    data = _data()
+    data["calls"] = site_data["calls"]
+    return render_template("calls.html", **data)
 
 
 @app.route("/help.html")

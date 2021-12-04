@@ -6,10 +6,10 @@ proceedings_title: Proceedings of the 15th International Natural Language Genera
 analytics: UA-
 logo:
   image: https://inlg2021.github.io/img/logo.png
-  width: 180px
+  width: 90px
   height: auto
 # uncomment the following line to show the site title next to the logo image
-# site_title: MiniConf
+site_title: 15th International Natural Language Generation Conference
 page_title:
   prefix: 'INLG 2022'
   separator: ': '

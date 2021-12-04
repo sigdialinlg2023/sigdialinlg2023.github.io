@@ -29,10 +29,6 @@
 
 {% block content %}
 
-{{ readme | markdown }}
-
-<!-- Organizers -->
-{{ components.section("Organizers") }}
-{{ components.organizergroup(committee) }}
+{{ home | markdown }}
 
 {% endblock %}
