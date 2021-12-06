@@ -2,25 +2,25 @@ committee:
   - role: Program Chair
     name: Thiago Castro Ferreira
     aff: Federal University of Minas Gerais
-    im: https://twitter.com/thiagocasfer/photo
+    im: /static/images/thiago.jpg
     tw: thiagocasfer
   - role: Program Chair
     name: Samira Shaikh
     aff: University of North Carolina, Charlotte
     tw: samirashaikhUNC
-    im: https://webpages.uncc.edu/sshaikh2/img/ShaikhSamira_hi.jpg
+    im: /static/images/samira.jpg
   - role: Local Arrangements Chair
     name: Amanda Stent
     aff: Colby College
     tw: astent
-    im: https://news.colby.edu/wp-content/uploads/2021/09/Amanda-Stent-FB-1090x572.jpg
+    im: /static/images/amanda.jpg
   - role: SIGGEN Exec
     name: Emiel van Miltenburg
     aff: Tilburg University
-    im: https://mobile.twitter.com/evanmiltenburg/photo
+    im: /static/images/emiel.jpg
     tw: evanmiltenburg
   - role: SIGGEN Exec
     name: Ehud Reiter
     aff: Aberdeen University / Arria NLG 
     tw: EhudReiter
-    im: https://mobile.twitter.com/EhudReiter/photo
+    im: /static/images/ehud.jpg

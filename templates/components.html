@@ -3,6 +3,7 @@ tabs -- Navigation tabs
 section, subsection -- bootstrap sections
 speakergroup
 organizergroup
+callgroup
 faqgroup
 highlightgroup
 workshopgroup
@@ -110,22 +111,37 @@ workshopgroup
 {%- endmacro %}
 
 {% macro callgroup(calls) -%}
-<div>
-  <ul>
-  {% for call in calls %}
-    <li><a href="#cfp{{call.id}}">{{call.title}}</a>, deadline: {{call.deadline}}</li>
-  {% endfor %}
-  </ul>
-</div>
-<div>
-  {% for call in calls %}
-  <div>
-    <a id="cfp{{call.id}}">{{subsection(call.title)}}</a>
-    {{call.deadline}}
-    {{call.bodytext | markdown}}
+{% for call in calls %}
+{% set rowloop = loop.index %}
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+        <a
+          class=""
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapse{{rowloop}}-{{loop.index}}"
+          aria-expanded="true"
+          aria-controls="collapse{{rowloop}}-{{loop.index}}"
+        >
+          {{call.title}}
+        </a>, deadline {{call.deadline}}
+      </div>
+      <div
+        id="collapse{{rowloop}}-{{loop.index}}"
+        class="collapse"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          {{ call.bodytext | markdown }}
+        </div>
+      </div>
+    </div>
   </div>
-  {% endfor %}
 </div>
+{% endfor %}
 {%- endmacro %}
 
 {% macro faqgroup(FAQ) -%}
