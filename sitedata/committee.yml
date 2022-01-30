@@ -27,25 +27,41 @@ committee:
   - role: Tutorial Chair
     name: Joshua Maynez
     aff: Google
-    im: /static/images/thiago.jpg
-    tw: thiagocasfer
   - role: Publication Chair
     name: Miruna Clinciu
-    aff: Heriot Watt
-    im: /static/images/thiago.jpg
-    tw: thiagocasfer
+    aff: Heriot-Watt University
   - role: Genchal Chair
     name: Anastasia Shimorina
-    aff: Federal University of Minas Gerais
-    im: /static/images/thiago.jpg
-    tw: thiagocasfer
+    aff: Orange
   - role: Sponsor Chair
     name: Dave Howcroft
-    aff: Federal University of Minas Gerais
-    im: /static/images/thiago.jpg
-    tw: thiagocasfer
+    aff: Edinburgh Napier University
   - role: Social Media Chair
     name: Lily Ouwen
-    aff: Federal University of Minas Gerais
-    im: /static/images/thiago.jpg
-    tw: thiagocasfer
+    aff: 
+  - role: Area Chair
+    name: Albert Gatt
+    aff: University of Malta
+  - role: Area Chair
+    name: Chris van der Lee
+    aff: Tilburg University
+  - role: Area Chair
+    name: Malihe Alikhani
+    aff: University of Pittsburgh
+  - role: Area Chair
+    name: Claire Gardent
+    aff: LORIA, CNRS and Universite de Lorraine
+  - Role: Area Chair
+    name: Dimitra Gkatzia
+    aff:  Edinburgh Napier University
+  - role: Area Chair
+    name: Yufang Hou
+    aff: IBM
+  - role: Area Chair
+    name: Michael White
+    aff: The Ohio State University
+  - role: Area Chair
+    name: Fei Liu
+    aff: University of Central Florida
+
+
