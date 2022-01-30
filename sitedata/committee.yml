@@ -24,3 +24,28 @@ committee:
     aff: Aberdeen University / Arria NLG 
     tw: EhudReiter
     im: /static/images/ehud.jpg
+  - role: Tutorial Chair
+    name: Joshua Maynez
+    aff: Google
+    im: /static/images/thiago.jpg
+    tw: thiagocasfer
+  - role: Publication Chair
+    name: Miruna Clinciu
+    aff: Heriot Watt
+    im: /static/images/thiago.jpg
+    tw: thiagocasfer
+  - role: Genchal Chair
+    name: Anastasia Shimorina
+    aff: Federal University of Minas Gerais
+    im: /static/images/thiago.jpg
+    tw: thiagocasfer
+  - role: Sponsor Chair
+    name: Dave Howcroft
+    aff: Federal University of Minas Gerais
+    im: /static/images/thiago.jpg
+    tw: thiagocasfer
+  - role: Social Media Chair
+    name: Lily Ouwen
+    aff: Federal University of Minas Gerais
+    im: /static/images/thiago.jpg
+    tw: thiagocasfer
