@@ -54,3 +54,26 @@ Submissions of long and short papers should be made through [ACL Rolling Review]
 Submissions of demo papers should be made directly through the INLG 2022 OpenReview site no later than May 7, 2022 (link to come).
 
 All accepted papers will be published in the INLG 2022 proceedings and included in the ACL anthology. A paper accepted for presentation at INLG 2022 must not have been presented at any other meeting with publicly available proceedings. Dual submission to other conferences is permitted, provided that authors clearly indicate this in the submission form. If the paper is accepted at both venues, the authors will need to choose which venue to present at, since they can not present the same paper twice.
+
+
+### Frequently Asked Questions
+
+
+Q: What papers may be committed to INLG 2022?<br/>
+A: You may commit any paper submitted to ARR since ARR started.
+
+Q: What version of my paper should I commit to INLG 2022?<br/>
+A: You must commit the most recent version of the paper that has recevied reviews.
+
+Q: Does INLG 2022 have a multiple submission policy?<br/>
+A: INLG 2022 will not consider papers that are currently in submission elsewhere. While a paper is committed to INLG 2022, you may not submit the paper elsewhere.
+
+Q: Does INLG 2022 have an anonymity policy?<br/>
+A: INLG 2022 follows the [ACL policy](https://www.aclweb.org/adminwiki/index.php?title=ACL_Policies_for_Submission,_Review_and_Citation).
+
+Q: Can I respond to the reviews when I commit to INLG 2022?<br/>
+A: INLG 2022 follows the practice adopted by ACL 2022. In the commitment form there will be space for you to provide an optional comment to the INLG 2022 area chairs. As with ACL 2022, "These comments are mainly to raise potential concerns about objective misunderstandings by the reviewers and/or by the Action Editor about the technical aspect of the paper". These comments will only be visible to the INLG 2022 area chairs and program chairs. They will *not* be shared with the ARR reviewers or action editor. 
+
+Q: Can I revise my paper that I am committing to INLG 2022?<br/>
+A: The acceptance decisions will be made on the basis of the most recent version of your paper that was submitted to ARR and received reviews. If your paper is accepted to INLG 2022, you will have the opportunity to revise it before sending the camera-ready version.
+

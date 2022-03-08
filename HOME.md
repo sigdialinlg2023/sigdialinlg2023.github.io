@@ -13,11 +13,8 @@ For submissions, INLG will use ACL Rolling Review. You will need to receive revi
 1. Submit to [ACL Rolling Review](https://aclrollingreview.org) no later than 15 March 2022
 2. Receive reviews
 3. Commit to INLG 2022 no later than 3 May 2022 (a commitment site will be up by 2 April 2022)
-     * You may commit any paper submitted to ARR since ARR started.
-     * You must commit the most recent version of the paper that has recevied reviews.
-     * While a paper is committed to INLG 2022, you may not publish a non-anonymous preprint or submit the paper elsewhere.
-     * In the commitment form there will be space for you to provide an optional comment to the INLG 2022 area chairs. As with ACL 2022, "These comments are mainly to raise potential concerns about objective misunderstandings by the reviewers and/or by the Action Editor about the technical aspect of the paper". These comments will only be visible to the INLG 2022 area chairs and program chairs. They will *not* be shared with the ARR reviewers or action editor. 
-     * If your paper is accepted to INLG 2022, you will have the opportunity to revise it before sending the camera-ready version.
+
+For more detail, please see the [CFP](https://inlgmeeting.github.io/calls.html).
 
 ### Acknowledgements
 
