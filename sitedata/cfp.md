@@ -7,7 +7,7 @@ The event is organised under the auspices of the Special Interest Group on Natur
 All deadlines are Anywhere on Earth (UTC-12)
 
 * submission deadline: March 15, 2022
-* commit to INLG deadline: May 3, 2022
+* commit to INLG deadline: May 7, 2022
 
 ###Topics
 
@@ -51,6 +51,6 @@ Three kinds of papers can be submitted:
 
 Submissions of long and short papers should be made through [ACL Rolling Review](https://aclrollingreview.org). Please refer to the ARR [call for papers](https://aclrollingreview.org/cfp) for style files and guidelines. The last ARR submission date for eligibility for INLG 2022 will be the March 15, 2022 deadline. The last date for \"committing\" papers + reviews to INLG will be May 7, 2022 11:59:59 AOE. Authors will \"commit\" papers to INLG 2022 through the INLG 2022 OpenReview site (link to come).
 
-Submissions of demo papers should be made directly through the INLG 2022 OpenReview site (link to come).
+Submissions of demo papers should be made directly through the INLG 2022 OpenReview site no later than May 7, 2022 (link to come).
 
 All accepted papers will be published in the INLG 2022 proceedings and included in the ACL anthology. A paper accepted for presentation at INLG 2022 must not have been presented at any other meeting with publicly available proceedings. Dual submission to other conferences is permitted, provided that authors clearly indicate this in the submission form. If the paper is accepted at both venues, the authors will need to choose which venue to present at, since they can not present the same paper twice.
