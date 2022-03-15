@@ -8,6 +8,8 @@ All deadlines are Anywhere on Earth (UTC-12)
 
 * submission deadline: March 15, 2022
 * commit to INLG deadline: May 7, 2022
+* notification: May 17, 2022
+* camera ready: June 18, 2022
 
 ###Topics
 
@@ -64,9 +66,6 @@ A: You may commit any paper submitted to ARR since ARR started.
 
 Q: What version of my paper should I commit to INLG 2022?<br/>
 A: You must commit the most recent version of the paper that has recevied reviews.
-
-Q: Does INLG 2022 have a multiple submission policy?<br/>
-A: INLG 2022 will not consider papers that are currently in submission elsewhere. While a paper is committed to INLG 2022, you may not submit the paper elsewhere.
 
 Q: Does INLG 2022 have an anonymity policy?<br/>
 A: INLG 2022 follows the [ACL policy](https://www.aclweb.org/adminwiki/index.php?title=ACL_Policies_for_Submission,_Review_and_Citation).
