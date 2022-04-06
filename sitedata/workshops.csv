@@ -1,1 +1,6 @@
 UID,title,authors,abstract
+1,NLG4Health,"Emiel Krahmer (Tilburg University) / Kathy McCoy (University of Delaware) / Ehud Reiter (University of Aberdeen)","There is a long tradition of applying NLG to healthcare problems in the research community, dating back to the 1990s. Many use cases have been investigated, including reporting, clinical decision support, patient information, and behaviour change. The common theme across these diverse use cases is using NLG to accurately and clearly present key information to doctors, patients, and other stakeholders, in order to enhance healthcare quality and outcomes.
+
+We will also encourage submissions about the NLG aspects of health dialog including health coaching, health chatbots and intelligent agents.
+
+The goal of this workshop is to bring together researchers interested in applying NLG to healthcare. We hope that this will encourage discussion about common issues, challenges, and discussion in NLG for healthcare."
