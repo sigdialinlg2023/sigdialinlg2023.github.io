@@ -217,16 +217,6 @@ def poster(poster):
     data["paper"] = format_paper(v)
     return render_template("poster.html", **data)
 
-
-@app.route("/speaker_<speaker>.html")
-def speaker(speaker):
-    uid = speaker
-    v = by_uid["speakers"][uid]
-    data = _data()
-    data["speaker"] = v
-    return render_template("speaker.html", **data)
-
-
 @app.route("/workshop_<workshop>.html")
 def workshop(workshop):
     uid = workshop
@@ -271,8 +261,6 @@ def serve(path):
 def generator():
     for paper in site_data["papers"]:
         yield "poster", {"poster": str(paper["UID"])}
-    for speaker in site_data["speakers"]:
-        yield "speaker", {"speaker": str(speaker["UID"])}
     for workshop in site_data["workshops"]:
         yield "workshop", {"workshop": str(workshop["UID"])}
 
