@@ -32,16 +32,6 @@ We also aim to be a family friendly conference!
 
 INLG 2022 will be a *hybrid* conference. 
 
-## Short and Long Paper Submissions
-
-For submissions, INLG will use ACL Rolling Review. You will need to receive reviews by 3 May 2022, in order to commit to INLG 2022.
-
-1. Submit to [ACL Rolling Review](https://aclrollingreview.org) no later than 15 March 2022
-2. Receive reviews
-3. Commit to INLG 2022 no later than 3 May 2022 (a commitment site will be up by 2 April 2022)
-
-For more detail, please see the [CFP](https://inlgmeeting.github.io/calls.html).
-
 ## Sponsors
 
 We gratefully acknowledge our sponsors:
