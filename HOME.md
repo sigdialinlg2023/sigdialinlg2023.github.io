@@ -59,8 +59,6 @@ The schedule will be announced in early June. In the meantime, here's a general 
 * Tuesday 7/19-Thursday 7/21 main conference
 * Friday 7/22 workshop
 
-## Registration
-
 ### Acknowledgements
 
 MiniConf was built by [Hendrik Strobelt](http://twitter.com/hen_str) and [Sasha Rush](http://twitter.com/srush_nlp).
