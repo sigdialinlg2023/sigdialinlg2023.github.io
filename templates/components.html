@@ -2,12 +2,13 @@
 tabs -- Navigation tabs
 section, subsection -- bootstrap sections
 speakergroup
+sponsorgroup
 organizergroup
 callgroup
 faqgroup
 highlightgroup
 workshopgroup
-
+tutorialgroup
 #}
 
 {% macro tabs(tab_group) -%}
@@ -69,7 +70,7 @@ workshopgroup
               </span>
             </div>
             <div class="m-3">
-              {{speaker.abstract|safe}}
+              {{speaker.abstract|markdown}}
             </div>
           </div>
         </div>
@@ -78,6 +79,23 @@ workshopgroup
   </div>
 </div>
 {% endfor %}
+{%- endmacro %}
+
+{% macro sponsorgroup(sponsors) -%}
+<div class="row">
+  {% for org in sponsors %}
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center">{{org.name}}</h5>
+        <center>
+          <img src="{{org.image}}" class="rounded" style="height: 60px;" />
+        </center>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 {%- endmacro %}
 
 {% macro organizergroup(committee) -%}
@@ -247,26 +265,35 @@ workshopgroup
 {% macro workshopgroup(workshops) -%}
 <div class="cards row">
   {% for workshop in workshops %}
-  <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">
-    <div class="card" style="display: block; overflow: hidden; width: 100%;">
-      <div
-        class="card-header text-center"
-        style="min-height: 200px; width: 100%;"
-      >
-        <a class="text-muted" href="workshop_{{workshop.id}}.html">
-          <h3 class="card-title main-title">
-            {{workshop.title}}
-          </h3>
-        </a>
-        <div class="card-subtitle text-muted">
-          {{ workshop.organizers | join(", ") }}
-        </div>
-        <div class="m-3 text-left card-subtitle font-italic">
-          {{workshop.abstract|safe}}
-        </div>
+      <div class="container-fluid">
+	<div class="row">
+	  <h2 class="card-title main-title text-center" style="">
+	    {{workshop.title}}
+	  </h2>
+	  <h3 class="card-subtitle mb-2 text-muted text-center">
+	    {{ workshop.organizers | join(", ") }}
+	  </h3>
+	  {{ workshop.abstract | markdown }}
+	</div>
       </div>
-    </div>
-  </div>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro tutorialgroup(tutorials) -%}
+<div class="cards row">
+  {% for tutorial in tutorials %}
+      <div class="container-fluid">
+	<div class="row">
+	  <h2 class="card-title main-title text-center" style="">
+	    {{tutorial.title}}
+	  </h2>
+	  <h3 class="card-subtitle mb-2 text-muted text-center">
+	    {{ tutorial.organizers | join(", ") }}
+	  </h3>
+	  {{ tutorial.abstract | markdown }}
+	</div>
+      </div>
   {% endfor %}
 </div>
 {%- endmacro %}

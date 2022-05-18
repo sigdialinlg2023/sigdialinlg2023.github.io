@@ -28,7 +28,7 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    for typ in ["papers", "speakers", "workshops"]:
+    for typ in ["papers", "speakers", "workshops", "tutorials"]:
         by_uid[typ] = {}
         for p in site_data[typ]:
             by_uid[typ][p["UID"]] = p
@@ -72,6 +72,12 @@ def home():
     data = _data()
     data["home"] = open("Home.md").read()
     return render_template("index.html", **data)
+
+@app.route("/registration.html")
+def registration():
+    data = _data()
+    data["registration"] = open("registration.md").read()
+    return render_template("registration.html", **data)
 
 @app.route("/organizers.html")
 def organizers():
@@ -135,6 +141,24 @@ def workshops():
         format_workshop(workshop) for workshop in site_data["workshops"]
     ]
     return render_template("workshops.html", **data)
+
+
+@app.route("/tutorials.html")
+def tutorials():
+    data = _data()
+    data["tutorials"] = [
+        format_workshop(tutorial) for tutorial in site_data["tutorials"]
+    ]
+    return render_template("tutorials.html", **data)
+
+
+@app.route("/sponsors.html")
+def sponsors():
+    data = _data()
+    data["goldsponsors"] = site_data["goldsponsors"]
+    data["silversponsors"] = site_data["silversponsors"]
+    data["bronzesponsors"] = site_data["bronzesponsors"]
+    return render_template("sponsors.html", **data)
 
 
 def extract_list_field(v, key):

@@ -1,4 +1,4 @@
-{% set active_page = "Calls" %}
+{% set active_page = "Sponsors" %}
 {% extends "base.html" %}
 
 {% block top %}
@@ -29,8 +29,15 @@
 
 {% block content %}
 
-<!-- Calls -->
-{{ components.section("Calls") }}
-{{ components.callgroup(calls) }}
+<!-- Sponsors -->
+{{ components.section("Gold Sponsors") }}
+{{ components.sponsorgroup(goldsponsors) }}
+
+{{ components.section("Silver Sponsors") }}
+{{ components.sponsorgroup(silversponsors) }}
+
+{{ components.section("Bronze Sponsors") }}
+{{ components.sponsorgroup(bronzesponsors) }}
 
 {% endblock %}
+
