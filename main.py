@@ -28,7 +28,7 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    for typ in ["papers", "speakers", "workshops", "tutorials"]:
+    for typ in ["papers", "workshops", "tutorials"]:
         by_uid[typ] = {}
         for p in site_data[typ]:
             by_uid[typ][p["UID"]] = p
@@ -89,7 +89,7 @@ def organizers():
 @app.route("/speakers.html")
 def speakers():
     data = _data()
-    data["speakers"] = site_data["speakers"]
+    data["speakers"] = site_data["speakers"]["speakers"]
     return render_template("speakers.html", **data)
 
 
