@@ -48,34 +48,47 @@ tutorialgroup
 
 {% macro speakergroup(speakers) -%}
 {% for speaker in speakers %}
-<div class="row p-4">
-  <div class="col-md-12">
-    <div class="card">
+{% set rowloop = loop.index %}
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
       <div class="card-header">
-        <div class="row">
-          <div class="col-md-2 col-sm-5">
-            <img src="{{speaker.image}}" width="100%" class="img-thumbnail" />
-          </div>
-          <div class="col-md-10 col-sm-6">
-            <div class="m-3 text-muted">
+        <a
+          class=""
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapse{{rowloop}}-{{loop.index}}"
+          aria-expanded="true"
+          aria-controls="collapse{{rowloop}}-{{loop.index}}"
+        >
+          {{speaker.name}}</a>, {{speaker.institution}}
+      </div>
+      <div
+        id="collapse{{rowloop}}-{{loop.index}}"
+        class="collapse"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <div class="row">
+	    <div class="col-md-2 col-sm-5">
+              <img src="{{speaker.image}}" width="100%" class="img-thumbnail" />
+            </div>
+            <div class="col-md-10 col-sm-6">
               <h3>
                   {{speaker.title}}
               </h3>
-            </div>
-            <div class="m-3 text-muted">
-              <span class="card-title h3">
-                {{speaker.name}}  /  {{speaker.institution}}
-              </span>
-            </div>
-	    {% if speaker.abstract %} 
-            <div class="m-3">
-		  <span class="font-weight-bold">Abstract:</span>
-		  {{speaker.abstract|markdown}} <br />
-
-		  <span class="font-weight-bold">Bio:</span>
-		  {{speaker.bio|safe}}
-           </div>
-	  {% endif %}
+	      {% if speaker.abstract %}
+	        <span class="font-weight-bold">Abstract:</span>
+	        {{speaker.abstract|markdown}} 
+	      {% endif %}
+	      <br />
+	      {% if speaker.bio %}
+	        <span class="font-weight-bold">Bio:</span>
+		{{speaker.bio|safe}}
+	      {% endif %}
+	    </div>
+          </div>
         </div>
       </div>
     </div>
