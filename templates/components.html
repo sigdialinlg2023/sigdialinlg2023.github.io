@@ -279,37 +279,74 @@ tutorialgroup
 {%- endmacro %}
 
 {% macro workshopgroup(workshops) -%}
-<div class="cards row">
-  {% for workshop in workshops %}
-      <div class="container-fluid">
-	<div class="row">
-	  <h2 class="card-title main-title text-center" style="">
-	    {{workshop.title}}
-	  </h2>
+{% for workshop in workshops %}
+{% set rowloop = loop.index %}
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+        <a
+          class=""
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapse{{rowloop}}-{{loop.index}}"
+          aria-expanded="true"
+          aria-controls="collapse{{rowloop}}-{{loop.index}}"
+        >
+          {{workshop.title}}</a>
+      </div>
+      <div
+        id="collapse{{rowloop}}-{{loop.index}}"
+        class="collapse"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
 	  <h3 class="card-subtitle mb-2 text-muted text-center">
 	    {{ workshop.organizers | join(", ") }}
 	  </h3>
 	  {{ workshop.abstract | markdown }}
-	</div>
+        </div>
       </div>
-  {% endfor %}
+    </div>
+  </div>
 </div>
+{% endfor %}
 {%- endmacro %}
 
 {% macro tutorialgroup(tutorials) -%}
-<div class="cards row">
-  {% for tutorial in tutorials %}
-      <div class="container-fluid">
-	<div class="row">
-	  <h2 class="card-title main-title text-center" style="">
-	    {{tutorial.title}}
-	  </h2>
+{% for tutorial in tutorials %}
+{% set rowloop = loop.index %}
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+        <a
+          class=""
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapse{{rowloop}}-{{loop.index}}"
+          aria-expanded="true"
+          aria-controls="collapse{{rowloop}}-{{loop.index}}"
+        >
+          {{tutorial.title}}</a>
+      </div>
+      <div
+        id="collapse{{rowloop}}-{{loop.index}}"
+        class="collapse"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
 	  <h3 class="card-subtitle mb-2 text-muted text-center">
 	    {{ tutorial.organizers | join(", ") }}
 	  </h3>
 	  {{ tutorial.abstract | markdown }}
-	</div>
+        </div>
       </div>
-  {% endfor %}
+    </div>
+  </div>
 </div>
+{% endfor %}
 {%- endmacro %}
+
