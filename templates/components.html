@@ -67,14 +67,15 @@ tutorialgroup
                 {{speaker.name}}  /  {{speaker.institution}}
               </span>
             </div>
-            <div class="m-3">{% if speaker.abstract %} 
+	    {% if speaker.abstract %} 
+            <div class="m-3">
 		  <span class="font-weight-bold">Abstract:</span>
-		  {{speaker.abstract|safe}} <br /><br />
+		  {{speaker.abstract|markdown}} <br />
 
 		  <span class="font-weight-bold">Bio:</span>
 		  {{speaker.bio|safe}}
-		  {% endif %}
            </div>
+	  {% endif %}
         </div>
       </div>
     </div>
