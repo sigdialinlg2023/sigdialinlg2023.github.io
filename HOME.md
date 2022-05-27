@@ -45,9 +45,9 @@ We gratefully acknowledge our sponsors:
 
 The schedule will be announced in early June. In the meantime, here's a general overview:
 
-* Monday 7/18 tutorial
+* Monday 7/18 tutorial and workshop
 * Tuesday 7/19-Thursday 7/21 main conference
-* Friday 7/22 workshop
+* Friday 7/22 hackathon
 
 ### Acknowledgements
 
