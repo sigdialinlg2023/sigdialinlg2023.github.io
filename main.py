@@ -190,8 +190,7 @@ def format_paper(v):
         "abstract": v["abstract"],
         "session": v["session"],
         # links to external content per poster
-        "pdf_url": v.get("PDF", ""),  # render poster from this PDF
-        "code_link": "https://github.com/Mini-Conf/Mini-Conf",  # link to code
+        "pdf_url": list_fields["PDF"], # poster / slides
         "link": "https://arxiv.org/abs/2007.12238",  # link to paper
     }
 
