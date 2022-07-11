@@ -33,11 +33,9 @@ def main(site_data_path):
         by_uid[typ] = {}
         if(type(site_data[typ]) is dict):
            for p in site_data[typ].values():
-               print(p)
                by_uid[typ][p["UID"]] = p
         else:
             for p in site_data[typ]:
-               print(p)
                by_uid[typ][p["UID"]] = p
 
     print("Data Successfully Loaded")
@@ -119,7 +117,8 @@ def about():
 @app.route("/papers.html")
 def papers():
     data = _data()
-    data["papers"] = site_data["papers"]
+    data["papers"] = [x for x in site_data["papers"].values()]
+    data["papers"].sort(key=lambda x: x["title"])
     return render_template("papers.html", **data)
 
 
@@ -177,7 +176,8 @@ def extract_list_field(v, key):
 
 
 def format_paper(v):
-    list_keys = ["authors", "PDF"]
+    print("in format paper")
+    list_keys = ["authors"]
     list_fields = {}
     for key in list_keys:
         list_fields[key] = extract_list_field(v, key)
@@ -190,8 +190,11 @@ def format_paper(v):
         "abstract": v["abstract"],
         "session": v["session"],
         # links to external content per poster
-        "pdf_url": list_fields["PDF"], # poster / slides
-        "link": "https://arxiv.org/abs/2007.12238",  # link to paper
+        "slides": v["slides"] if "slides" in v else "",
+        "poster": v["poster"] if "poster" in v else "", 
+        "summary_video": v["summary_video"],
+        "full_video": v["full_video"],
+        "link": v["paper"] # link to paper
     }
 
 
@@ -241,8 +244,9 @@ def chat():
 @app.route("/papers.json")
 def paper_json():
     json = []
-    for v in site_data["papers"]:
+    for v in site_data["papers"].values():
         json.append(format_paper(v))
+    json.sort(key=lambda x: x["title"])
     return jsonify(json)
 
 

@@ -4,6 +4,7 @@ section, subsection -- bootstrap sections
 speakergroup
 sponsorgroup
 organizergroup
+papergroup
 callgroup
 faqgroup
 highlightgroup
@@ -137,6 +138,32 @@ tutorialgroup
         <center>
           <img src="{{org.im}}" class="rounded" style="height: 150px;" />
         </center>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro papergroup(papers) -%}
+<div class="row">
+  {% for paper in papers %}
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_{{paper.UID}}.html">{{paper.title}}</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            {{ paper.authors | join(", ") }}
+          </h6>
+        </div>
+        <div>
+	  {% if paper.summary_video %}
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="{{paper.summary_video}}">Summary Video</a>
+          </h6>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
