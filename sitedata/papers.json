@@ -9,12 +9,12 @@
     "session": "",
     "abstract": "This demo paper introduces BLAB reporter, a robot-journalist system covering the Brazilian Blue Amazon. The application is based on a pipeline architecture for Natural Language Generation, which offers daily reports, news summaries and curious facts in Brazilian Portuguese. By collecting, storing and analysing structured data from publicly available sources, the robot-journalist uses domain knowledge to generate, validate and publish texts in Twitter. Code and corpus are publicly available.",
     "uid": "paper1",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper2": {
@@ -27,15 +27,15 @@
       "Stefano Scaglioni"
       ],
     "title": "Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering",
-    "session": ""
+    "session": "",
     "abstract": "Quality management and assurance is key for space agencies to guarantee the success of space missions, which are high-risk and extremely costly. In this paper, we present a system to generate quizzes, a common resource to evaluate the effectiveness of training sessions, from documents about quality assurance procedures in the Space domain. Our system leverages state of the art auto-regressive models like T5 and BART to generate questions, and a RoBERTa model to extract answers for such questions, thus verifying their suitability.",
     "uid": "paper2",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper3": {
@@ -45,15 +45,15 @@
       "Bao-Dai Nguyen-Hoang"
       ],
     "title": "Automated Ad Creative Generation",
-    "session": ""
+    "session": "",
     "abstract": "Ad creatives are ads served to users on a webpage, app, or other digital environments. The demand for compelling ad creatives surges drastically with the ever-increasing popularity of digital marketing. The two most essential elements of (display) ad creatives are the advertising message, such as headlines and description texts, and the visual component, such as images and videos. Traditionally, ad creatives are composed by professional copywriters and creative designers. The process requires significant human effort, limiting the scalability and efficiency of digital ad campaigns. This work introduces AUTOCREATIVE, a novel system to automatically generate ad creatives relying on natural language generation and computer vision techniques. The system generates multiple ad copies (ad headlines/description texts) using a sequence-to-sequence model and selects images most suitable to the generated ad copies based on heuristic-based visual appeal metrics and a text-image retrieval pipeline.",
     "uid": "paper3",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper4": {
@@ -71,15 +71,15 @@
       "David Košťák"
       ],
     "title": "THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts",
-    "session": ""
+    "session": "",
     "abstract": "We present a free online demo of THEaiTRobot, an open-source bilingual tool for interactively generating theatre play scripts, in two versions. THEaiTRobot 1.0 uses the GPT-2 language model with minimal adjustments. THEaiTRobot 2.0 uses two models created by fine-tuning GPT-2 on purposefully collected and processed datasets and several other components, generating play scripts in a hierarchical fashion (title $\rightarrow$ synopsis $\rightarrow$ script). The underlying tool is used in the THEaiTRE project to generate scripts for plays, which are then performed on stage by a professional theatre.",
     "uid": "paper4",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper5": {
@@ -89,15 +89,15 @@
       "Thomas Williams"
       ],
     "title": "Evaluating Referring Form Selection Models in Partially-Known Environments",
-    "session": ""
-    "abstract": ""
+    "session": "",
+    "abstract": "",
     "uid": "paper5",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper6": {
@@ -106,18 +106,18 @@
       "Pavel Burnyshev",
       "Valentin Malykh",
       "Andrey Bout",
-      "Irina Piontkovskaya",
+      "Irina Piontkovskaya"
       ],
     "title": "Template-based Approach to Zero-shot Intent Recognition",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper6",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper7": {
@@ -125,16 +125,16 @@
       "Wanzheng Zhu",
       "Suma Bhat"
       ],
-    "title": "'Slow Service' $\cancel{\rightarrow}$ 'Great Food': Enhancing Content Preservation in Unsupervised Text Style Transfer",
-    "session": ""
-    "abstract": "
+    "title": "'Slow Service' $\\cancel{\\rightarrow}$ 'Great Food': Enhancing Content Preservation in Unsupervised Text Style Transfer",
+    "session": "",
+    "abstract": "",
     "uid": "paper7",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper8": {
@@ -145,15 +145,15 @@
       "Imad Afyouni"
       ],
     "title": "Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper8",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper9": {
@@ -163,15 +163,15 @@
       "Dittaya Wanvarie"
       ],
     "title": "Plot Writing From Pre-Trained Language Models",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper9",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper10": {
@@ -179,15 +179,15 @@
       "Joosung Lee"
       ],
     "title": "Paraphrasing via Ranking Many Candidates",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper10",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper11": {
@@ -198,15 +198,15 @@
       "Pierre-Luc Déziel"
       ],
     "title": "Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper11",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper12": {
@@ -217,15 +217,15 @@
       "Thierry Poibeau"
       ],
     "title": "Automatic Generation of Factual News Headlines in Finnish",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper12",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper13": {
@@ -237,15 +237,15 @@
       "Sina Sina Zarrieß"
       ],
     "title": "Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper13",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper14": {
@@ -256,15 +256,15 @@
       "Juan Taboada"
       ],
     "title": "Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper14",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper15": {
@@ -274,15 +274,15 @@
       "Kyunghyun Cho"
       ],
     "title": "Amortized Noisy Channel Neural Machine Translation",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper15",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper16": {
@@ -293,15 +293,15 @@
       "Surangika Ranathunga"
       ],
     "title": "Math Word Problem Generation with Multilingual Language Models",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper16",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper17": {
@@ -310,15 +310,15 @@
       "Ehud Reiter"
       ],
     "title": "Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper17",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper18": {
@@ -329,15 +329,15 @@
       "ChengXiang Zhai"
       ],
     "title": "Generation of Student Questions for Inquiry-based Learning",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper18",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper19": {
@@ -347,15 +347,15 @@
       "Yao-Chung Fan"
       ],
     "title": "Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper19",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper20": {
@@ -366,15 +366,15 @@
       "Philipp Sadler"
       ],
     "title": "Generating Landmark-based Manipulation Instructions from Image Pairs",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper20",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper21": {
@@ -390,15 +390,15 @@
       "Matthew Stone"
       ],
     "title": "Zero-shot Cross-Linguistic Learning of Event Semantics",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper21",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper22": {
@@ -408,15 +408,15 @@
       "Frank Guerin"
       ],
     "title": "Nominal Metaphor Generation with Multitask Learning",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper22",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper23": {
@@ -426,15 +426,15 @@
       "Simon Dobnik"
       ],
     "title": "Look and Answer the Question: On the Role of Vision in Embodied Question Answering",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper23",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper24": {
@@ -445,15 +445,15 @@
       "Philipp Cimiano"
       ],
     "title": "Strategies for framing argumentative conclusion generation",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper24",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper25": {
@@ -464,15 +464,15 @@
       "Yong Yu"
       ],
     "title": "LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper25",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper26": {
@@ -482,15 +482,15 @@
       "Marcel Pfaffhauser"
       ],
     "title": "Quantum Natural Language Generation on Near-Term Devices",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper26",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper27": {
@@ -500,15 +500,15 @@
       "ChengXiang Zhai"
       ],
     "title": "Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper27",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper28": {
@@ -518,15 +518,15 @@
       "Samira Shaikh"
       ],
     "title": "Towards Evaluation of Multi-party Dialogue Systems",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper28",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   },
   "paper29": {
@@ -537,14 +537,15 @@
       "Alberto Testoni"
       ],
     "title": "Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?",
-    "session": ""
-    "abstract": "
+    "session": "",
+    "abstract": "",
     "uid": "paper29",
-    "start time": "",
-    "external paper link": "",
-    "summary video": "",
-    "summary video captions": "",
-    "full video": ""
-    "full video captions": "",
+    "start_time": "",
+    "external_paper_link": "",
+    "summary_video": "",
+    "summary_video_captions": "",
+    "full_video": "",
+    "full_video_captions": "",
     "PDF": ""
   }
+}
