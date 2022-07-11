@@ -31,8 +31,14 @@ def main(site_data_path):
 
     for typ in ["papers", "workshops", "tutorials"]:
         by_uid[typ] = {}
-        for p in site_data[typ]:
-            by_uid[typ][p["UID"]] = p
+        if(type(site_data[typ]) is dict):
+           for p in site_data[typ].values():
+               print(p)
+               by_uid[typ][p["UID"]] = p
+        else:
+            for p in site_data[typ]:
+               print(p)
+               by_uid[typ][p["UID"]] = p
 
     print("Data Successfully Loaded")
     return extra_files
