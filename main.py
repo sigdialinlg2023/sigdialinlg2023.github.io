@@ -19,6 +19,7 @@ def main(site_data_path):
     extra_files = ["Home.md"]
     # Load all for your sitedata one time.
     for f in glob.glob(site_data_path + "/*"):
+        print(f)
         extra_files.append(f)
         name, typ = f.split("/")[-1].split(".")
         if typ == "json":
