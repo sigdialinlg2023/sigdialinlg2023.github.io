@@ -177,7 +177,7 @@ def extract_list_field(v, key):
 
 
 def format_paper(v):
-    list_keys = ["authors", "keywords", "sessions"]
+    list_keys = ["authors", "PDF"]
     list_fields = {}
     for key in list_keys:
         list_fields[key] = extract_list_field(v, key)
@@ -187,13 +187,10 @@ def format_paper(v):
         "title": v["title"],
         "forum": v["UID"],
         "authors": list_fields["authors"],
-        "keywords": list_fields["keywords"],
         "abstract": v["abstract"],
-        "TLDR": v["abstract"],
-        "recs": [],
-        "sessions": list_fields["sessions"],
+        "session": v["session"],
         # links to external content per poster
-        "pdf_url": v.get("pdf_url", ""),  # render poster from this PDF
+        "pdf_url": v.get("PDF", ""),  # render poster from this PDF
         "code_link": "https://github.com/Mini-Conf/Mini-Conf",  # link to code
         "link": "https://arxiv.org/abs/2007.12238",  # link to paper
     }
