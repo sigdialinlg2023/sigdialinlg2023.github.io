@@ -48,6 +48,7 @@ def main(site_data_path):
             vals = site_data[typ]
             
         for p in vals:
+            print(p)
             dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
             by_uid[typ][p["UID"]] = p
             by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)

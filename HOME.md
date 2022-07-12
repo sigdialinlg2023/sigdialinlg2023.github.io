@@ -18,7 +18,6 @@ We will also have social events for remote *and* in-person attendees. You can:
 * See the night sky, guided by an astronomer
 * Visit the Colby art museum
 * Participate in a "treasure hunt"
-* Participate in random discussion matchup
 * Participate in discord chats with presenters and other attendees
 
 ... and more!
