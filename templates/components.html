@@ -20,13 +20,13 @@ sessiongroup
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  {% if session.zoom != None %}
+	  <!-- {% if session.zoom != None %}
             <a href="{{session.zoom}}">
-	  {% endif %}
+	  {% endif %} -->
 	  {{session.name}}
-          {% if session.zoom != None %}
+          <!-- {% if session.zoom != None %}
             </a>
-          {% endif %}
+          {% endif %} -->
           ({{session.start_time.strftime("%H:%M EST")}})
       </div>
       <div
@@ -42,7 +42,7 @@ sessiongroup
 		  <li>{{paper.title}}<br/>{{paper.name}}<br/>{{paper.abstract}}</li>
 	    {% endif %}
             {% if paper.authors != blank %}
-		  <li><a href="poster_{{paper.UID}}.html">{{paper.title}}</a><br/>{{ paper.authors | join(", ") }}</li>
+		  <li><!-- <a href="poster_{{paper.UID}}.html">{{paper.title}}</a> --> {{paper.title}}<br/>{{ paper.authors | join(", ") }}</li>
 	    {% endif %}
             {% if paper.organizers != blank %}
 		  <li>{{paper.title}}<br/>{{ paper.organizers | join(", ") }}<br/>{{paper.abstract}}</li>

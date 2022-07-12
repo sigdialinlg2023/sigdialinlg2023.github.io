@@ -99,7 +99,7 @@
 
 <script src="static/js/modules/lazyLoad.js"></script>
 <script src="static/js/modules/urlParams.js"></script>
-<script type="text/javascript" src="static/js/views/calendar.js"></script>
+<!-- <script type="text/javascript" src="static/js/views/calendar.js"></script> -->
 
 </head>
 
@@ -137,43 +137,48 @@
                 id="navbarNav"
         >
             <ul class="navbar-nav ml-auto">
-                
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="calls.html">Calls</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="organizers.html">Organizers</a>
                 </li>
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="speakers.html">Keynotes</a>
-                </li>
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="workshops.html">Workshops</a>
-                </li>
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="tutorials.html">Tutorials</a>
-                </li>
-                
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Program
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
+                    <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="workshops.html">Workshops</a>
+                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
+                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="genchal.html">GenChal</a>
+                  </div>
+               </li>
+
+               <li class="nav-item ">
+                  <a class="nav-link" href="calendar.html">Schedule</a>
+              </li>
+
                 <li class="nav-item ">
                     <a class="nav-link" href="sponsors.html">Sponsors</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="registration.html">Registration</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="help.html">Help</a>
                 </li>
-                
             </ul>
         </div>
     </div>
@@ -189,18 +194,6 @@
     <div class="tabs">
         
 <ul class="nav nav-pills justify-content-center">
-  
-  <li class="nav-item">
-    <a
-      class="nav-link active text-muted "
-      data-toggle="tab"
-      href="#tab-calendar"
-      role="tab"
-      aria-controls="nav-home"
-      aria-selected="true"
-      >Calendar
-    </a>
-  </li>
   
   <li class="nav-item">
     <a
@@ -269,27 +262,6 @@
     <div class="content">
         
 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-  <!-- Calender tab -->
-  <div
-    class="tab-pane active"
-    id="tab-calendar"
-    role="tabpanel"
-    aria-labelledby="nav-profile-tab"
-  >
-    <div class="form-group col">
-      <label for="tzOptions">Timezone:</label>
-      <select id="tzOptions" class="selectpicker" data-live-search="true">
-      </select>
-    </div>
-
-    <!-- full cal for browser-->
-    <div id="calendar" class="d-none d-sm-block"></div>
-
-    <!-- small cal for smart phones-->
-    <div id="calendar_small" class="d-sm-none"></div>
-  </div>
-
-  <!-- Day Tab -->
   
   <div
     class="tab-pane fade"
@@ -305,13 +277,13 @@
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93612543237">
+	   -->
 	  Tutorial
-          
+          <!-- 
             </a>
-          
+           -->
           (09:00 EST)
       </div>
       <div
@@ -342,9 +314,9 @@
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Morning Coffee
-          
+          <!--  -->
           (10:45 EST)
       </div>
       <div
@@ -367,9 +339,9 @@
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Lunch
-          
+          <!--  -->
           (13:00 EST)
       </div>
       <div
@@ -392,13 +364,13 @@
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93438451939">
+	   -->
 	  Workshop
-          
+          <!-- 
             </a>
-          
+           -->
           (14:00 EST)
       </div>
       <div
@@ -435,9 +407,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Afternoon Coffee
-          
+          <!--  -->
           (15:45 EST)
       </div>
       <div
@@ -460,9 +432,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Opening Reception
-          
+          <!--  -->
           (18:00 EST)
       </div>
       <div
@@ -498,13 +470,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/94091228991">
+	   -->
 	  Zoom Walk along the Kennebec
-          
+          <!-- 
             </a>
-          
+           -->
           (07:00 EST)
       </div>
       <div
@@ -527,13 +499,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/96460285460">
+	   -->
 	  Keynote 1
-          
+          <!-- 
             </a>
-          
+           -->
           (09:00 EST)
       </div>
       <div
@@ -564,9 +536,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Morning Coffee
-          
+          <!--  -->
           (10:00 EST)
       </div>
       <div
@@ -589,13 +561,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93438451939">
+	   -->
 	  Panel on Ethics in NLG
-          
+          <!-- 
             </a>
-          
+           -->
           (10:30 EST)
       </div>
       <div
@@ -618,13 +590,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="b">
-	  
+	  <!-- 
+            <a href="bhttps://colby.zoom.us/j/92392060048">
+	   -->
 	  SIGGEN Session
-          
+          <!-- 
             </a>
-          
+           -->
           (12:00 EST)
       </div>
       <div
@@ -647,9 +619,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Lunch
-          
+          <!--  -->
           (13:00 EST)
       </div>
       <div
@@ -672,13 +644,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/97880205507">
+	   -->
 	  Oral Session 1
-          
+          <!-- 
             </a>
-          
+           -->
           (14:00 EST)
       </div>
       <div
@@ -692,7 +664,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper17.html">Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain</a><br/>Simone Balloccu, Ehud Reiter</li>
+		  <li><!-- <a href="poster_paper17.html">Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain</a> --> Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain<br/>Simone Balloccu, Ehud Reiter</li>
 	    
             
           
@@ -700,7 +672,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper6.html">Template-based Approach to Zero-shot Intent Recognition</a><br/>Dmitry Lamanov, Pavel Burnyshev, Valentin Malykh, Andrey Bout, Irina Piontkovskaya</li>
+		  <li><!-- <a href="poster_paper6.html">Template-based Approach to Zero-shot Intent Recognition</a> --> Template-based Approach to Zero-shot Intent Recognition<br/>Dmitry Lamanov, Pavel Burnyshev, Valentin Malykh, Andrey Bout, Irina Piontkovskaya</li>
 	    
             
           
@@ -708,7 +680,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper28.html">Towards Evaluation of Multi-party Dialogue Systems</a><br/>Khyati Mahajan, Sashank Santhanam, Samira Shaikh</li>
+		  <li><!-- <a href="poster_paper28.html">Towards Evaluation of Multi-party Dialogue Systems</a> --> Towards Evaluation of Multi-party Dialogue Systems<br/>Khyati Mahajan, Sashank Santhanam, Samira Shaikh</li>
 	    
             
           
@@ -725,9 +697,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Afternoon Coffee
-          
+          <!--  -->
           (15:30 EST)
       </div>
       <div
@@ -750,13 +722,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95764292532">
+	   -->
 	  Poster Session 1 Survey
-          
+          <!-- 
             </a>
-          
+           -->
           (16:00 EST)
       </div>
       <div
@@ -779,13 +751,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95764292532">
+	   -->
 	  Demo
-          
+          <!-- 
             </a>
-          
+           -->
           (16:00 EST)
       </div>
       <div
@@ -799,7 +771,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper1.html">BLAB Reporter: Automated journalism covering the Blue Amazon</a><br/>Yan Vianna Sym, João Gabriel Moura Campos, Fabio Cozman</li>
+		  <li><!-- <a href="poster_paper1.html">BLAB Reporter: Automated journalism covering the Blue Amazon</a> --> BLAB Reporter: Automated journalism covering the Blue Amazon<br/>Yan Vianna Sym, João Gabriel Moura Campos, Fabio Cozman</li>
 	    
             
           
@@ -807,7 +779,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper2.html">Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering</a><br/>Andres Garcia-Silva, Cristian Berrio, Jose Manuel Gomez-Perez, Jose Antonio Martinez-Heras, Patrick Fleith, Stefano Scaglioni</li>
+		  <li><!-- <a href="poster_paper2.html">Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering</a> --> Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering<br/>Andres Garcia-Silva, Cristian Berrio, Jose Manuel Gomez-Perez, Jose Antonio Martinez-Heras, Patrick Fleith, Stefano Scaglioni</li>
 	    
             
           
@@ -815,7 +787,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper3.html">Automated Ad Creative Generation</a><br/>Vishakha Kadam, Yiping Jin, Bao-Dai Nguyen-Hoang</li>
+		  <li><!-- <a href="poster_paper3.html">Automated Ad Creative Generation</a> --> Automated Ad Creative Generation<br/>Vishakha Kadam, Yiping Jin, Bao-Dai Nguyen-Hoang</li>
 	    
             
           
@@ -823,7 +795,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper4.html">THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts</a><br/>Rudolf Rosa, Patrícia Schmidtová, Alisa Zakhtarenko, Ondrej Dusek, Tomáš Musil, David Mareček, Saad Obaid Ul Islam, Marie Nováková, Klára Vosecká, Daniel Hrbek, David Košťák</li>
+		  <li><!-- <a href="poster_paper4.html">THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts</a> --> THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts<br/>Rudolf Rosa, Patrícia Schmidtová, Alisa Zakhtarenko, Ondrej Dusek, Tomáš Musil, David Mareček, Saad Obaid Ul Islam, Marie Nováková, Klára Vosecká, Daniel Hrbek, David Košťák</li>
 	    
             
           
@@ -840,13 +812,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!-- 
             <a href="">
-	  
+	   -->
 	  Poster Session 1
-          
+          <!-- 
             </a>
-          
+           -->
           (16:20 EST)
       </div>
       <div
@@ -860,7 +832,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper8.html">Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers</a><br/>Jonathan Emami, Pierre Nugues, Ashraf Elnagar, Imad Afyouni</li>
+		  <li><!-- <a href="poster_paper8.html">Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers</a> --> Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers<br/>Jonathan Emami, Pierre Nugues, Ashraf Elnagar, Imad Afyouni</li>
 	    
             
           
@@ -868,7 +840,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper18.html">Generation of Student Questions for Inquiry-based Learning</a><br/>Kevin Ros, Maxwell Jong, Chak Ho Chan, ChengXiang Zhai</li>
+		  <li><!-- <a href="poster_paper18.html">Generation of Student Questions for Inquiry-based Learning</a> --> Generation of Student Questions for Inquiry-based Learning<br/>Kevin Ros, Maxwell Jong, Chak Ho Chan, ChengXiang Zhai</li>
 	    
             
           
@@ -876,7 +848,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper19.html">Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation</a><br/>Ying-Hong Chan, Ho-Lam Chung, Yao-Chung Fan</li>
+		  <li><!-- <a href="poster_paper19.html">Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation</a> --> Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation<br/>Ying-Hong Chan, Ho-Lam Chung, Yao-Chung Fan</li>
 	    
             
           
@@ -884,7 +856,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper23.html">Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task</a><br/>Nikolai Ilinykh, Yasmeen Emampoor, Simon Dobnik</li>
+		  <li><!-- <a href="poster_paper23.html">Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task</a> --> Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task<br/>Nikolai Ilinykh, Yasmeen Emampoor, Simon Dobnik</li>
 	    
             
           
@@ -892,7 +864,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper29.html">Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?</a><br/>Amit Kumar Chaudhary, Alex J. Lucassen, Ioanna Tsani, Alberto Testoni</li>
+		  <li><!-- <a href="poster_paper29.html">Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?</a> --> Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?<br/>Amit Kumar Chaudhary, Alex J. Lucassen, Ioanna Tsani, Alberto Testoni</li>
 	    
             
           
@@ -922,13 +894,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98954191774">
+	   -->
 	  Zoom Chat and BYO Coffee/Tea
-          
+          <!-- 
             </a>
-          
+           -->
           (07:00 EST)
       </div>
       <div
@@ -951,13 +923,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95082627087">
+	   -->
 	  Keynote 2
-          
+          <!-- 
             </a>
-          
+           -->
           (09:00 EST)
       </div>
       <div
@@ -988,9 +960,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Morning Coffee
-          
+          <!--  -->
           (10:00 EST)
       </div>
       <div
@@ -1013,13 +985,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/94311056456">
+	   -->
 	  Oral Session 2
-          
+          <!-- 
             </a>
-          
+           -->
           (10:30 EST)
       </div>
       <div
@@ -1033,7 +1005,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper11.html">Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description</a><br/>Nicolas Garneau, Eve Gaumond, Luc Lamontagne, Pierre-Luc Déziel</li>
+		  <li><!-- <a href="poster_paper11.html">Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description</a> --> Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description<br/>Nicolas Garneau, Eve Gaumond, Luc Lamontagne, Pierre-Luc Déziel</li>
 	    
             
           
@@ -1041,7 +1013,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper14.html">Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.</a><br/>Javier González Corbelle, Alberto Bugarín-Diz, Jose Maria Alonso-Moral, Juan Taboada</li>
+		  <li><!-- <a href="poster_paper14.html">Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.</a> --> Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.<br/>Javier González Corbelle, Alberto Bugarín-Diz, Jose Maria Alonso-Moral, Juan Taboada</li>
 	    
             
           
@@ -1049,7 +1021,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper9.html">Plot Writing From Pre-Trained Language Models</a><br/>Yiping Jin, Vishakha Kadam, Dittaya Wanvarie</li>
+		  <li><!-- <a href="poster_paper9.html">Plot Writing From Pre-Trained Language Models</a> --> Plot Writing From Pre-Trained Language Models<br/>Yiping Jin, Vishakha Kadam, Dittaya Wanvarie</li>
 	    
             
           
@@ -1057,7 +1029,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper26.html">Quantum Natural Language Generation on Near-Term Devices</a><br/>Amin Karamlou, James R Wootton, Marcel Pfaffhauser</li>
+		  <li><!-- <a href="poster_paper26.html">Quantum Natural Language Generation on Near-Term Devices</a> --> Quantum Natural Language Generation on Near-Term Devices<br/>Amin Karamlou, James R Wootton, Marcel Pfaffhauser</li>
 	    
             
           
@@ -1074,9 +1046,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Lunch
-          
+          <!--  -->
           (12:00 EST)
       </div>
       <div
@@ -1099,13 +1071,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93362959372">
+	   -->
 	  Keynote 3
-          
+          <!-- 
             </a>
-          
+           -->
           (13:00 EST)
       </div>
       <div
@@ -1136,9 +1108,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Afternoon Coffee
-          
+          <!--  -->
           (14:00 EST)
       </div>
       <div
@@ -1161,13 +1133,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/91800599818">
+	   -->
 	  Poster Session 2 Survey
-          
+          <!-- 
             </a>
-          
+           -->
           (14:30 EST)
       </div>
       <div
@@ -1190,13 +1162,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!-- 
             <a href="">
-	  
+	   -->
 	  Poster Session 2
-          
+          <!-- 
             </a>
-          
+           -->
           (14:50 EST)
       </div>
       <div
@@ -1210,7 +1182,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper10.html">Paraphrasing via Ranking Many Candidates</a><br/>Joosung Lee</li>
+		  <li><!-- <a href="poster_paper10.html">Paraphrasing via Ranking Many Candidates</a> --> Paraphrasing via Ranking Many Candidates<br/>Joosung Lee</li>
 	    
             
           
@@ -1218,7 +1190,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper12.html">Automatic Generation of Factual News Headlines in Finnish</a><br/>Maximilain Koppatz, Khalid Alnajjar, Mika Hämäläinen, Thierry Poibeau</li>
+		  <li><!-- <a href="poster_paper12.html">Automatic Generation of Factual News Headlines in Finnish</a> --> Automatic Generation of Factual News Headlines in Finnish<br/>Maximilain Koppatz, Khalid Alnajjar, Mika Hämäläinen, Thierry Poibeau</li>
 	    
             
           
@@ -1226,7 +1198,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper15.html">Amortized Noisy Channel Neural Machine Translation</a><br/>Richard Yuanzhe Pang, He He, Kyunghyun Cho</li>
+		  <li><!-- <a href="poster_paper15.html">Amortized Noisy Channel Neural Machine Translation</a> --> Amortized Noisy Channel Neural Machine Translation<br/>Richard Yuanzhe Pang, He He, Kyunghyun Cho</li>
 	    
             
           
@@ -1234,7 +1206,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper16.html">Math Word Problem Generation with Multilingual Language Models</a><br/>Kashyapa Niyarepola, Dineth Athapaththu, Savindu Kalsara Ekanayake, Surangika Ranathunga</li>
+		  <li><!-- <a href="poster_paper16.html">Math Word Problem Generation with Multilingual Language Models</a> --> Math Word Problem Generation with Multilingual Language Models<br/>Kashyapa Niyarepola, Dineth Athapaththu, Savindu Kalsara Ekanayake, Surangika Ranathunga</li>
 	    
             
           
@@ -1242,7 +1214,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper24.html">Strategies for framing argumentative conclusion generation</a><br/>Philipp Heinisch, Anette Frank, Juri Opitz, Philipp Cimiano</li>
+		  <li><!-- <a href="poster_paper24.html">Strategies for framing argumentative conclusion generation</a> --> Strategies for framing argumentative conclusion generation<br/>Philipp Heinisch, Anette Frank, Juri Opitz, Philipp Cimiano</li>
 	    
             
           
@@ -1259,13 +1231,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93066423135">
+	   -->
 	  Test of Time Award
-          
+          <!-- 
             </a>
-          
+           -->
           (17:00 EST)
       </div>
       <div
@@ -1288,9 +1260,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Conference Dinner
-          
+          <!--  -->
           (18:00 EST)
       </div>
       <div
@@ -1326,13 +1298,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98696007060">
+	   -->
 	  Keynote 4
-          
+          <!-- 
             </a>
-          
+           -->
           (09:00 EST)
       </div>
       <div
@@ -1363,9 +1335,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Morning Coffee
-          
+          <!--  -->
           (10:00 EST)
       </div>
       <div
@@ -1388,13 +1360,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98600533576">
+	   -->
 	  GenChal
-          
+          <!-- 
             </a>
-          
+           -->
           (10:30 EST)
       </div>
       <div
@@ -1408,7 +1380,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper43.html">DialogSum Challenge: Results of the Dialogue Summarization Shared Task</a><br/>Naihao Deng, Yulong Chen, Yang Liu, Yue Zhang</li>
+		  <li><!-- <a href="poster_paper43.html">DialogSum Challenge: Results of the Dialogue Summarization Shared Task</a> --> DialogSum Challenge: Results of the Dialogue Summarization Shared Task<br/>Naihao Deng, Yulong Chen, Yang Liu, Yue Zhang</li>
 	    
             
           
@@ -1416,7 +1388,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper37.html">The 2022 ReproGen Shared Task on Reproducibility of Evaluations in NLG: Overview and Results</a><br/>Anya Belz, Anastasia Shimorina, Maja Popovic, Ehud Reiter</li>
+		  <li><!-- <a href="poster_paper37.html">The 2022 ReproGen Shared Task on Reproducibility of Evaluations in NLG: Overview and Results</a> --> The 2022 ReproGen Shared Task on Reproducibility of Evaluations in NLG: Overview and Results<br/>Anya Belz, Anastasia Shimorina, Maja Popovic, Ehud Reiter</li>
 	    
             
           
@@ -1424,7 +1396,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper30.html">The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings</a><br/>Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Bojar</li>
+		  <li><!-- <a href="poster_paper30.html">The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings</a> --> The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings<br/>Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Bojar</li>
 	    
             
           
@@ -1432,7 +1404,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper31.html">The Cross-lingual Conversation Summarization Challenge</a><br/>Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Yue Zhang</li>
+		  <li><!-- <a href="poster_paper31.html">The Cross-lingual Conversation Summarization Challenge</a> --> The Cross-lingual Conversation Summarization Challenge<br/>Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Yue Zhang</li>
 	    
             
           
@@ -1440,7 +1412,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper32.html">HinglishEval Generation Challenge on Quality Estimation of Synthetic Code-mixed Text: Overview and Results</a><br/>Vivek Srivastava, Mayank Singh</li>
+		  <li><!-- <a href="poster_paper32.html">HinglishEval Generation Challenge on Quality Estimation of Synthetic Code-mixed Text: Overview and Results</a> --> HinglishEval Generation Challenge on Quality Estimation of Synthetic Code-mixed Text: Overview and Results<br/>Vivek Srivastava, Mayank Singh</li>
 	    
             
           
@@ -1448,7 +1420,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper33.html">PreCogIIITH at HinglishEval: Leveraging Code-Mixing Metrics &amp; Language Model Embeddings To Estimate Code-Mix Quality</a><br/>Prashant Kodali, Tanmay Sachan, Akshay Goindani, Anmol Goel, Naman Ahuja, Manish Shrivastava, Ponnurangam Kumaraguru</li>
+		  <li><!-- <a href="poster_paper33.html">PreCogIIITH at HinglishEval: Leveraging Code-Mixing Metrics &amp; Language Model Embeddings To Estimate Code-Mix Quality</a> --> PreCogIIITH at HinglishEval: Leveraging Code-Mixing Metrics &amp; Language Model Embeddings To Estimate Code-Mix Quality<br/>Prashant Kodali, Tanmay Sachan, Akshay Goindani, Anmol Goel, Naman Ahuja, Manish Shrivastava, Ponnurangam Kumaraguru</li>
 	    
             
           
@@ -1456,7 +1428,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper34.html">Niksss at HinglishEval: Language-agnostic BERT-based Contextual Embeddings with Catboost for Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text</a><br/>Nikhil Singh</li>
+		  <li><!-- <a href="poster_paper34.html">Niksss at HinglishEval: Language-agnostic BERT-based Contextual Embeddings with Catboost for Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text</a> --> Niksss at HinglishEval: Language-agnostic BERT-based Contextual Embeddings with Catboost for Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text<br/>Nikhil Singh</li>
 	    
             
           
@@ -1464,7 +1436,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper35.html">BITS Pilani at HinglishEval: Quality Evaluation for Code-Mixed Hinglish Text Using Transformers</a><br/>Shaz Furniturewala, Vijay Kumari, Amulya Ratna Dash, Hriday Kedia, Naman Ahuja, Yashvardhan Sharma</li>
+		  <li><!-- <a href="poster_paper35.html">BITS Pilani at HinglishEval: Quality Evaluation for Code-Mixed Hinglish Text Using Transformers</a> --> BITS Pilani at HinglishEval: Quality Evaluation for Code-Mixed Hinglish Text Using Transformers<br/>Shaz Furniturewala, Vijay Kumari, Amulya Ratna Dash, Hriday Kedia, Naman Ahuja, Yashvardhan Sharma</li>
 	    
             
           
@@ -1472,7 +1444,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper36.html">JU_NLP at HinglishEval: Quality Evaluation of the Low-Resource Code-Mixed Hinglish Text</a><br/>Prantik Guha, Rudra Dhar, Dipankar Das</li>
+		  <li><!-- <a href="poster_paper36.html">JU_NLP at HinglishEval: Quality Evaluation of the Low-Resource Code-Mixed Hinglish Text</a> --> JU_NLP at HinglishEval: Quality Evaluation of the Low-Resource Code-Mixed Hinglish Text<br/>Prantik Guha, Rudra Dhar, Dipankar Das</li>
 	    
             
           
@@ -1480,7 +1452,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper38.html">Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System</a><br/>Rudali HUIDrom, Ondrej Dusek, Zdeněk Kasner, Thiago Castro Ferreira, Anya Belz</li>
+		  <li><!-- <a href="poster_paper38.html">Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System</a> --> Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System<br/>Rudali HUIDrom, Ondrej Dusek, Zdeněk Kasner, Thiago Castro Ferreira, Anya Belz</li>
 	    
             
           
@@ -1488,7 +1460,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper39.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a><br/>Mohammad Arvan, Luis Pina, Natalie Parde</li>
+		  <li><!-- <a href="poster_paper39.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a> --> Reproducibility of Exploring Neural Text Simplification Models: A Review<br/>Mohammad Arvan, Luis Pina, Natalie Parde</li>
 	    
             
           
@@ -1496,7 +1468,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper40.html">The Accuracy Evaluation Shared Task as a Retrospective Reproduction Study</a><br/>Craig Thomson, Ehud Reiter</li>
+		  <li><!-- <a href="poster_paper40.html">The Accuracy Evaluation Shared Task as a Retrospective Reproduction Study</a> --> The Accuracy Evaluation Shared Task as a Retrospective Reproduction Study<br/>Craig Thomson, Ehud Reiter</li>
 	    
             
           
@@ -1504,7 +1476,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper41.html">Reproducing a Manual Evaluation of Simplicity in Text Simplification System Outputs</a><br/>Maja Popovic, Sheila Castilho, Rudali HUIDrom, Anya Belz</li>
+		  <li><!-- <a href="poster_paper41.html">Reproducing a Manual Evaluation of Simplicity in Text Simplification System Outputs</a> --> Reproducing a Manual Evaluation of Simplicity in Text Simplification System Outputs<br/>Maja Popovic, Sheila Castilho, Rudali HUIDrom, Anya Belz</li>
 	    
             
           
@@ -1512,7 +1484,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper42.html">A reproduction study of methods for evaluating dialogue system output: Replicating Santhanam and Shaikh (2019)</a><br/>Anouck Braggaar, Frédéric Tomas, Peter Blomsma, Saar Hommes, Nadine Braun, Emiel van Miltenburg, Chris Van der Lee, Martijn Goudbeek, Emiel Krahmer</li>
+		  <li><!-- <a href="poster_paper42.html">A reproduction study of methods for evaluating dialogue system output: Replicating Santhanam and Shaikh (2019)</a> --> A reproduction study of methods for evaluating dialogue system output: Replicating Santhanam and Shaikh (2019)<br/>Anouck Braggaar, Frédéric Tomas, Peter Blomsma, Saar Hommes, Nadine Braun, Emiel van Miltenburg, Chris Van der Lee, Martijn Goudbeek, Emiel Krahmer</li>
 	    
             
           
@@ -1520,7 +1492,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper44.html">TCS_WITM_2022 @ DialogSum: Topic oriented Summarization using Transformer based Encoder Decoder Model</a><br/>Vipul Chauhan, Prasenjeet Roy, Lipika Dey, Tushar Goel</li>
+		  <li><!-- <a href="poster_paper44.html">TCS_WITM_2022 @ DialogSum: Topic oriented Summarization using Transformer based Encoder Decoder Model</a> --> TCS_WITM_2022 @ DialogSum: Topic oriented Summarization using Transformer based Encoder Decoder Model<br/>Vipul Chauhan, Prasenjeet Roy, Lipika Dey, Tushar Goel</li>
 	    
             
           
@@ -1528,7 +1500,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper45.html">A Multi-Task Learning Approach for Summarization of Dialogues</a><br/>Saprativa Bhattacharjee, Kartik Shinde, Tirthankar Ghosal, Asif Ekbal</li>
+		  <li><!-- <a href="poster_paper45.html">A Multi-Task Learning Approach for Summarization of Dialogues</a> --> A Multi-Task Learning Approach for Summarization of Dialogues<br/>Saprativa Bhattacharjee, Kartik Shinde, Tirthankar Ghosal, Asif Ekbal</li>
 	    
             
           
@@ -1536,7 +1508,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper46.html">Dialogue Summarization using BART</a><br/>Conrad Lundberg, Leyre Sánchez Viñuela, Siena Biales</li>
+		  <li><!-- <a href="poster_paper46.html">Dialogue Summarization using BART</a> --> Dialogue Summarization using BART<br/>Conrad Lundberg, Leyre Sánchez Viñuela, Siena Biales</li>
 	    
             
           
@@ -1544,7 +1516,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper47.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a><br/>Mohammad Arvan, Luis Pina, Natalie Parde</li>
+		  <li><!-- <a href="poster_paper47.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a> --> Reproducibility of Exploring Neural Text Simplification Models: A Review<br/>Mohammad Arvan, Luis Pina, Natalie Parde</li>
 	    
             
           
@@ -1561,9 +1533,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Lunch
-          
+          <!--  -->
           (12:00 EST)
       </div>
       <div
@@ -1586,13 +1558,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98590322530">
+	   -->
 	  Oral Session 3
-          
+          <!-- 
             </a>
-          
+           -->
           (14:00 EST)
       </div>
       <div
@@ -1606,7 +1578,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper21.html">Zero-shot Cross-Linguistic Learning of Event Semantics</a><br/>Malihe Alikhani, Thomas H Kober, Bashar Alhafni, Yue Chen, Mert Inan, Elizabeth Kaye Nielsen, Shahab Raji, Mark Steedman, Matthew Stone</li>
+		  <li><!-- <a href="poster_paper21.html">Zero-shot Cross-Linguistic Learning of Event Semantics</a> --> Zero-shot Cross-Linguistic Learning of Event Semantics<br/>Malihe Alikhani, Thomas H Kober, Bashar Alhafni, Yue Chen, Mert Inan, Elizabeth Kaye Nielsen, Shahab Raji, Mark Steedman, Matthew Stone</li>
 	    
             
           
@@ -1614,7 +1586,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper25.html">LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning</a><br/>Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu</li>
+		  <li><!-- <a href="poster_paper25.html">LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning</a> --> LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning<br/>Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu</li>
 	    
             
           
@@ -1622,7 +1594,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper27.html">Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT</a><br/>Bhavya Bhavya, Jinjun Xiong, ChengXiang Zhai</li>
+		  <li><!-- <a href="poster_paper27.html">Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT</a> --> Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT<br/>Bhavya Bhavya, Jinjun Xiong, ChengXiang Zhai</li>
 	    
             
           
@@ -1630,7 +1602,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper7.html">&#39;Slow Service&#39; $\cancel{\rightarrow}$ &#39;Great Food&#39;: Enhancing Content Preservation in Unsupervised Text Style Transfer</a><br/>Wanzheng Zhu, Suma Bhat</li>
+		  <li><!-- <a href="poster_paper7.html">&#39;Slow Service&#39; $\cancel{\rightarrow}$ &#39;Great Food&#39;: Enhancing Content Preservation in Unsupervised Text Style Transfer</a> --> &#39;Slow Service&#39; $\cancel{\rightarrow}$ &#39;Great Food&#39;: Enhancing Content Preservation in Unsupervised Text Style Transfer<br/>Wanzheng Zhu, Suma Bhat</li>
 	    
             
           
@@ -1647,9 +1619,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Afternoon Coffee
-          
+          <!--  -->
           (15:00 EST)
       </div>
       <div
@@ -1672,13 +1644,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/99072204530">
+	   -->
 	  Oral Session 4
-          
+          <!-- 
             </a>
-          
+           -->
           (16:00 EST)
       </div>
       <div
@@ -1692,7 +1664,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper5.html">Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance</a><br/>Zhao Han, Polina Rygina, Thomas Williams</li>
+		  <li><!-- <a href="poster_paper5.html">Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance</a> --> Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance<br/>Zhao Han, Polina Rygina, Thomas Williams</li>
 	    
             
           
@@ -1700,7 +1672,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper22.html">Nominal Metaphor Generation with Multitask Learning</a><br/>Yucheng Li, Chenghua Lin, Frank Guerin</li>
+		  <li><!-- <a href="poster_paper22.html">Nominal Metaphor Generation with Multitask Learning</a> --> Nominal Metaphor Generation with Multitask Learning<br/>Yucheng Li, Chenghua Lin, Frank Guerin</li>
 	    
             
           
@@ -1708,7 +1680,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper13.html">Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach</a><br/>Nazia Attari, David Schlangen, Martin Heckmann, Heiko Wersing, Sina Sina Zarrieß</li>
+		  <li><!-- <a href="poster_paper13.html">Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach</a> --> Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach<br/>Nazia Attari, David Schlangen, Martin Heckmann, Heiko Wersing, Sina Sina Zarrieß</li>
 	    
             
           
@@ -1716,7 +1688,7 @@ The goal of this workshop is to bring together researchers interested in applyin
           
             
             
-		  <li><a href="poster_paper20.html">Generating Landmark-based Manipulation Instructions from Image Pairs</a><br/>Sina Zarrieß, Henrik Voigt, David Schlangen, Philipp Sadler</li>
+		  <li><!-- <a href="poster_paper20.html">Generating Landmark-based Manipulation Instructions from Image Pairs</a> --> Generating Landmark-based Manipulation Instructions from Image Pairs<br/>Sina Zarrieß, Henrik Voigt, David Schlangen, Philipp Sadler</li>
 	    
             
           
@@ -1733,9 +1705,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Star Gazing
-          
+          <!--  -->
           (19:30 EST)
       </div>
       <div
@@ -1771,9 +1743,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Trip to Allen Island
-          
+          <!--  -->
           (06:00 EST)
       </div>
       <div
@@ -1796,13 +1768,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/99706854532">
+	   -->
 	  Hackathon
-          
+          <!-- 
             </a>
-          
+           -->
           (09:00 EST)
       </div>
       <div
@@ -1825,13 +1797,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/99706854532">
+	   -->
 	  Hackathon on Generating Reports about the Gulf of Maine
-          
+          <!-- 
             </a>
-          
+           -->
           (09:00 EST)
       </div>
       <div
@@ -1854,13 +1826,13 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
-            <a href="">
-	  
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95014927995">
+	   -->
 	  Virtual Museum Tour
-          
+          <!-- 
             </a>
-          
+           -->
           (09:30 EST)
       </div>
       <div
@@ -1883,9 +1855,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Morning Coffee
-          
+          <!--  -->
           (10:00 EST)
       </div>
       <div
@@ -1908,9 +1880,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Lunch
-          
+          <!--  -->
           (12:00 EST)
       </div>
       <div
@@ -1933,9 +1905,9 @@ The goal of this workshop is to bring together researchers interested in applyin
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  
+	  <!--  -->
 	  Closing Drinks
-          
+          <!--  -->
           (15:00 EST)
       </div>
       <div
