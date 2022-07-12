@@ -30,7 +30,13 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    for typ in ["papers", "workshops", "tutorials", "speakers", "social"]:
+    for p in site_data["sessions"]:
+        dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
+        if dt.strftime('%A') not in by_date:
+            by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
+        by_date[dt.strftime('%A')]['sessions'][p["session"]] = {'name': p["session"], 'zoom': p["zoom"], 'start_time': dt, 'contents': []}
+    
+    for typ in ["papers", "workshops", "tutorials", "speakers"]:
         by_uid[typ] = {}
         if typ == "papers":
            vals = site_data[typ].values()
@@ -42,19 +48,12 @@ def main(site_data_path):
             vals = site_data[typ]
             
         for p in vals:
-            by_uid[typ][p["UID"]] = p
             dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-            if dt.strftime('%A') not in by_date:
-                by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
-            if p["session"] not in by_date[dt.strftime('%A')]['sessions']:
-                by_date[dt.strftime('%A')]['sessions'][p["session"]] = {'name': p["session"], 'time': dt, 'contents': []}
-            if dt < by_date[dt.strftime('%A')]['sessions'][p["session"]]['time']:
-                by_date[dt.strftime('%A')]['sessions'][p["session"]]['time'] = dt
+            by_uid[typ][p["UID"]] = p
             by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
-            print(p["session"], len(by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents']))
             
         for day in by_date.values():
-            day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["time"]))
+            day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start_time"]))
             for session in day['sessions'].values():
                 session['contents'] = sorted(session['contents'], key=lambda item: item["start_time"])
 
@@ -146,7 +145,6 @@ def papers():
 def schedule():
     data = _data()
     data["days"] = by_date
-    print(data)
     return render_template("schedule.html", **data)
 
 

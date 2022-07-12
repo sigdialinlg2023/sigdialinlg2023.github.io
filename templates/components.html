@@ -20,7 +20,14 @@ sessiongroup
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-          {{session.name}} ({{session.time.strftime("%H:%M EST")}})
+	  {% if session.zoom != None %}
+            <a href="{{session.zoom}}">
+	  {% endif %}
+	  {{session.name}}
+          {% if session.zoom != None %}
+            </a>
+          {% endif %}
+          ({{session.start_time.strftime("%H:%M EST")}})
       </div>
       <div
         id="collapse{{rowloop}}-{{loop.index}}"
@@ -95,7 +102,7 @@ sessiongroup
       <div class="card-header">
         <a
           class=""
-          href="#"
+          href="#{{speaker.UID}}"
           data-toggle="collapse"
           data-target="#collapse{{rowloop}}-{{loop.index}}"
           aria-expanded="true"
