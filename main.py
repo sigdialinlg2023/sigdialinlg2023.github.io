@@ -35,7 +35,7 @@ def main(site_data_path):
         if dt.strftime('%A') not in by_date:
             by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
         by_date[dt.strftime('%A')]['sessions'][p["session"]] = {'name': p["session"], 'zoom': p["zoom"], 'start_time': dt, 'contents': []}
-    
+        
     for typ in ["papers", "workshops", "tutorials", "speakers"]:
         by_uid[typ] = {}
         if typ == "papers":

@@ -6,7 +6,7 @@
       "Fabio Cozman"
       ],
     "title": "BLAB Reporter: Automated journalism covering the Blue Amazon",
-    "session": "Demo",
+    "session": "Demo/Poster Session 1",
     "abstract": "This demo paper introduces BLAB reporter, a robot-journalist system covering the Brazilian Blue Amazon. The application is based on a pipeline architecture for Natural Language Generation, which offers daily reports, news summaries and curious facts in Brazilian Portuguese. By collecting, storing and analysing structured data from publicly available sources, the robot-journalist uses domain knowledge to generate, validate and publish texts in Twitter. Code and corpus are publicly available.",
     "UID": "paper1",
     "start_time": "2022-07-19T16:00:00Z",
@@ -27,7 +27,7 @@
       "Stefano Scaglioni"
       ],
     "title": "Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering",
-    "session": "Demo",
+    "session": "Demo/Poster Session 1",
     "abstract": "Quality management and assurance is key for space agencies to guarantee the success of space missions, which are high-risk and extremely costly. In this paper, we present a system to generate quizzes, a common resource to evaluate the effectiveness of training sessions, from documents about quality assurance procedures in the Space domain. Our system leverages state of the art auto-regressive models like T5 and BART to generate questions, and a RoBERTa model to extract answers for such questions, thus verifying their suitability.",
     "UID": "paper2",
     "start_time": "2022-07-19T16:00:00Z",
@@ -45,7 +45,7 @@
       "Bao-Dai Nguyen-Hoang"
       ],
     "title": "Automated Ad Creative Generation",
-    "session": "Demo",
+    "session": "Demo/Poster Session 2",
     "abstract": "Ad creatives are ads served to users on a webpage, app, or other digital environments. The demand for compelling ad creatives surges drastically with the ever-increasing popularity of digital marketing. The two most essential elements of (display) ad creatives are the advertising message, such as headlines and description texts, and the visual component, such as images and videos. Traditionally, ad creatives are composed by professional copywriters and creative designers. The process requires significant human effort, limiting the scalability and efficiency of digital ad campaigns. This work introduces AUTOCREATIVE, a novel system to automatically generate ad creatives relying on natural language generation and computer vision techniques. The system generates multiple ad copies (ad headlines/description texts) using a sequence-to-sequence model and selects images most suitable to the generated ad copies based on heuristic-based visual appeal metrics and a text-image retrieval pipeline.",
     "UID": "paper3",
     "start_time": "2022-07-19T16:00:00Z",
@@ -71,7 +71,7 @@
       "David Košťák"
       ],
     "title": "THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts",
-    "session": "Demo",
+    "session": "Demo/Poster Session 2",
     "abstract": "We present a free online demo of THEaiTRobot, an open-source bilingual tool for interactively generating theatre play scripts, in two versions. THEaiTRobot 1.0 uses the GPT-2 language model with minimal adjustments. THEaiTRobot 2.0 uses two models created by fine-tuning GPT-2 on purposefully collected and processed datasets and several other components, generating play scripts in a hierarchical fashion (title $\rightarrow$ synopsis $\rightarrow$ script). The underlying tool is used in the THEaiTRE project to generate scripts for plays, which are then performed on stage by a professional theatre.",
     "UID": "paper4",
     "start_time": "2022-07-19T16:00:00Z",
@@ -145,7 +145,7 @@
       "Imad Afyouni"
       ],
     "title": "Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers",
-    "session": "Poster Session 1",
+    "session": "Demo/Poster Session 1",
     "abstract": "Image captioning is the process of automatically generating a textual description of an image. It has a wide range of applications, such as effective image search, auto archiving and even helping visually impaired people to see. English image captioning has seen a lot of development lately, while Arabic image captioning is lagging behind. In this work, we developed and evaluated several Arabic image captioning models with well-established metrics on a public image captioning benchmark. We initialized all models with transformers pre-trained on different Arabic corpora. After initialization, we fine-tuned them with image-caption pairs using a learning method called OSCAR. OSCAR uses object tags detected in images as anchor points to significantly ease the learning of image-text semantic alignments. In relation to the image captioning benchmark, our best performing model scored 0.39, 0.25, 0.15 and 0.092 with BLEU-1,2,3,4 respectively1 , an improvement over previously published scores of 0.33, 0.19, 0.11 and 0.057. Beside additional evaluation metrics, we complemented our scores with human evaluation on a sample of our output. Our experiments showed that training image captioning models with Arabic captions and English object tags is a working approach, but that a pure Arabic dataset, with Arabic object tags, would be preferable.",
     "UID": "paper8",
     "start_time": "2022-07-19T16:20:00Z",
@@ -179,7 +179,7 @@
       "Joosung Lee"
       ],
     "title": "Paraphrasing via Ranking Many Candidates",
-    "session": "Poster Session 2",
+    "session": "Demo/Poster Session 2",
     "abstract": "We present a simple and effective way to generate a variety of paraphrases and find a good quality paraphrase among them. As in previous studies, it is difficult to ensure that one generation method always generates the best paraphrase in various domains. Therefore, we focus on finding the best candidate from multiple candidates, rather than assuming that there is only one combination of generative models and decoding options. Our approach shows that it is easy to apply in various domains and has sufficiently good performance compared to previous methods. In addition, our approach can be used for data augmentation that extends the downstream corpus, showing that it can help improve performance in English and Korean datasets.",
     "UID": "paper10",
     "start_time": "2022-07-20T14:50:00Z",
@@ -217,7 +217,7 @@
       "Thierry Poibeau"
       ],
     "title": "Automatic Generation of Factual News Headlines in Finnish",
-    "session": "Poster Session 2",
+    "session": "Demo/Poster Session 2",
     "abstract": "We present a novel approach to generating news headlines in Finnish for a given news story. We model this as a summarization task where a model is given a news article, and its task is to produce a concise headline describing the main topic of the article. Because there are no openly available GPT-2 models for Finnish, we will first build such a model using several corpora. The model is then fine-tuned for the headline generation task using a massive news corpus. The system is evaluated by 3 expert journalists working in a Finnish media house. The results showcase the usability of the presented approach as a headline suggestion tool to facilitate the news production process.",
     "UID": "paper12",
     "start_time": "2022-07-20T14:50:00Z",
@@ -274,7 +274,7 @@
       "Kyunghyun Cho"
       ],
     "title": "Amortized Noisy Channel Neural Machine Translation",
-    "session": "Poster Session 2",
+    "session": "Demo/Poster Session 2",
     "abstract": "Noisy channel models have been especially effective in neural machine translation (NMT). However, recent approaches like “beam search and rerank” (BSR) incur significant computation overhead during inference, making realworld application infeasible. We aim to study if it is possible to build an amortized noisy channel NMT model such that when we do greedy decoding during inference, the translation accuracy matches that of BSR in terms of reward (based on the source-to-target log probability and the target-to-source log probability) and quality (based on BLEU and BLEURT). We attempt three approaches to train the new model: knowledge distillation, 1- step-deviation imitation learning, and Q learning. The first approach obtains the noisy channel signal from a pseudo-corpus, and the latter two approaches aim to optimize toward a noisy-channel MT reward directly. For all three approaches, the generated translations fail to achieve rewards comparable to BSR, but the translation quality approximated by BLEU and BLEURT is similar to the quality of BSRproduced translations. Additionally, all three approaches speed up inference by 1–2 orders of magnitude.",
     "UID": "paper15",
     "start_time": "2022-07-20T14:50:00Z",
@@ -293,7 +293,7 @@
       "Surangika Ranathunga"
       ],
     "title": "Math Word Problem Generation with Multilingual Language Models",
-    "session": "Poster Session 2",
+    "session": "Demo/Poster Session 2",
     "abstract": "Auto regressive text generation for lowresource languages, particularly the option of using pre-trained language models, is a relatively under-explored problem. In this paper, we model Math Word Problem (MWP) generation as an auto-regressive text generation problem. We evaluate the pre-trained sequence-tosequence language models (mBART and mT5) in the context of two low-resource languages, Sinhala and Tamil, as well as English. For the evaluation, we create a multi-way parallel MWP dataset for the considered languages. Our empirical evaluation analyses how the performance of the pre-trained models is affected by the (1) amount of language data used during pre-training, (2) amount of data used in finetuning, (3) input seed length and (4) context differences in MWPs. Our results reveal that the considered pre-trained models are capable of generating meaningful MWPs even for the languages under-represented in these models, even though the amount of fine-tuning data and seed length are small. Our human evaluation shows that a Mathematics tutor can edit a generation question fairly easily, thus highlighting the practical utility ofautomatically generating MWPs.",
     "UID": "paper16",
     "start_time": "2022-07-20T14:50:00Z",
@@ -329,7 +329,7 @@
       "ChengXiang Zhai"
       ],
     "title": "Generation of Student Questions for Inquiry-based Learning",
-    "session": "Poster Session 1",
+    "session": "Demo/Poster Session 1",
     "abstract": "Asking questions during a lecture is a central part of the traditional classroom setting which benefits both students and instructors in many ways. However, no previous work has studied the task of automatically generating student questions based on explicit lecture context. We study the feasibility of automatically generating student questions given the lecture transcript windows where the questions were asked. First, we create a data set of student questions and their corresponding lecture transcript windows. Using this data set, we investigate variants of T5, a sequence-to-sequence generative language model, for a preliminary exploration of this task. Specifically, we compare the effects of training with continuous prefix tuning and pre-training with search engine queries. Question generation evaluation results on two MOOCs show that that pre-training on search engine queries tends to make the generation model more precise whereas continuous prefix tuning offers mixed results.",
     "UID": "paper18",
     "start_time": "2022-07-19T16:20:00Z",
@@ -347,7 +347,7 @@
       "Yao-Chung Fan"
       ],
     "title": "Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation",
-    "session": "Poster Session 1",
+    "session": "Demo/Poster Session 1",
     "abstract": "Question Generation (QG) receives increasing research attention in the NLP community. One QG motivation is to facilitate the preparation of educational reading practice and assessments. While significant advancement of QG techniques was reported, we find current QG techniques are short in terms of controllability and question difficulty for educational applications. This paper reports our studies toward the two issues. First, we report a state-of-the-art examlike QG model by advancing the current best model from 11.96 to 20.19 (in terms of BLEU 4 score). Second, we propose a QG model that allows users to provide keywords for gUIDing QG direction. Human evaluation and case studies are conducted to demonstrate the feasibility of controlling question generation direction.",
     "UID": "paper19",
     "start_time": "2022-07-19T16:20:00Z",
@@ -426,7 +426,7 @@
       "Simon Dobnik"
       ],
     "title": "Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task",
-    "session": "Poster Session 1",
+    "session": "Demo/Poster Session 1",
     "abstract": "We focus on the Embodied Question Answering (EQA) task, the dataset and the models (Das et al., 2018). In particular, we examine the effects of vision perturbation at different levels by providing the model with either incongruent, black or random noise images. We observe that the model is still able to learn from general visual patterns, suggesting that they capture some common sense reasoning about the visual world. We argue that a better set of data and models are required to achieve better performance in predicting (generating) correct answers. The code is available here: https://github.com/ GU-CLASP/embodied-qa.",
     "UID": "paper23",
     "start_time": "2022-07-19T16:20:00Z",
@@ -445,7 +445,7 @@
       "Philipp Cimiano"
       ],
     "title": "Strategies for framing argumentative conclusion generation",
-    "session": "Poster Session 2",
+    "session": "Demo/Poster Session 2",
     "abstract": "Generating an argumentative conclusion from a set of textual premises is a challenging task, due to a large range of possible conclusions. In order to provide a conclusion generation model with gUIDance towards generating conclusions from a certain perspective, we explore the impact of conditioning the model on information about the desired framing. We experiment with conditioning generation via generic frame classes as well as with so-called issue-specific frames. Beyond conditioning the model on a desired frame, we investigate the impact of strategies to further improve the generated conclusion by i) an informative label smoothing method that dynamically smooths one-hot-encoded reference conclusion vectors as a regularization mechanism, and ii) a conclusion reranking strategy based on referenceless scores at inference time. We evaluate the benefits of our methods using metrics for automatic evaluation complemented with an extensive manual study. Our results show that frame-gUIDed conclusion generation is beneficial: it increases the ratio of valid and novel conclusions by 23%-points compared to a baseline without frame information. Our work indicates that i) by injecting frame information, conclusion generation can be directed towards desired aspects and ii) at the same time it can be manually confirmed to yield more valid and novel conclusions.",
     "UID": "paper24",
     "start_time": "2022-07-20T14:50:00Z",
@@ -537,7 +537,7 @@
       "Alberto Testoni"
       ],
     "title": "Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?",
-    "session": "Poster Session 1",
+    "session": "Demo/Poster Session 1",
     "abstract": "Decoding strategies play a crucial role in natural language generation systems. They are usually designed and evaluated in open-ended text-only tasks, and it is not clear how different strategies handle the numerous challenges that goal-oriented multimodal systems face (such as grounding and informativeness). To answer this question, we compare a wide variety of different decoding strategies and hyper-parameter configurations in a Visual Dialogue referential game. Although none of them successfully balance lexical richness, accuracy in the task, and visual grounding, our in-depth analysis allows us to highlight the strengths and weaknesses of each decoding strategy. We believe our findings and suggestions may serve as a starting point for designing more effective decoding algorithms that handle the challenges of Visual Dialogue tasks.",
     "UID": "paper29",
     "start_time": "2022-07-19T16:20:00Z",

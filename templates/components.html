@@ -43,7 +43,7 @@ sessiongroup
 		  <li>{{paper.title}}<br/>{{paper.name}}<br/>{{paper.abstract}}</li>
 	    {% endif %}
             {% if paper.authors != blank %}
-		  <!-- <li><a href="poster_{{paper.UID}}.html">{{paper.title}}</a> -->{{paper.title}}<br/>{{ paper.authors | join(", ") }}</li>
+		  <li><!-- <a href="poster_{{paper.UID}}.html">{{paper.title}}</a> -->{{paper.title}}<br/>{{ paper.authors | join(", ") }}</li>
 	    {% endif %}
             {% if paper.organizers != blank %}
 		  <li>{{paper.title}}<br/>{{ paper.organizers | join(", ") }}<br/>{{paper.abstract}}</li>
