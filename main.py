@@ -1,6 +1,7 @@
 # pylint: disable=global-statement,redefined-outer-name
 import argparse
 import csv
+from datetime import datetime
 import glob
 import json
 import os
@@ -12,7 +13,7 @@ from flaskext.markdown import Markdown
 
 site_data = {}
 by_uid = {}
-
+by_date = {}
 
 def main(site_data_path):
     global site_data, extra_files
@@ -29,14 +30,33 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    for typ in ["papers", "workshops", "tutorials"]:
+    for typ in ["papers", "workshops", "tutorials", "speakers", "social"]:
         by_uid[typ] = {}
-        if(type(site_data[typ]) is dict):
-           for p in site_data[typ].values():
-               by_uid[typ][p["UID"]] = p
+        if typ == "papers":
+           vals = site_data[typ].values()
+        elif typ == "speakers":
+            vals = site_data[typ]['speakers']
+        elif typ in ["workshops", "tutorials"]:
+            vals = [format_workshop(workshop) for workshop in site_data[typ]]
         else:
-            for p in site_data[typ]:
-               by_uid[typ][p["UID"]] = p
+            vals = site_data[typ]
+            
+        for p in vals:
+            by_uid[typ][p["UID"]] = p
+            dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
+            if dt.strftime('%A') not in by_date:
+                by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
+            if p["session"] not in by_date[dt.strftime('%A')]['sessions']:
+                by_date[dt.strftime('%A')]['sessions'][p["session"]] = {'name': p["session"], 'time': dt, 'contents': []}
+            if dt < by_date[dt.strftime('%A')]['sessions'][p["session"]]['time']:
+                by_date[dt.strftime('%A')]['sessions'][p["session"]]['time'] = dt
+            by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
+            print(p["session"], len(by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents']))
+            
+        for day in by_date.values():
+            day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["time"]))
+            for session in day['sessions'].values():
+                session['contents'] = sorted(session['contents'], key=lambda item: item["start_time"])
 
     print("Data Successfully Loaded")
     return extra_files
@@ -122,21 +142,11 @@ def papers():
     return render_template("papers.html", **data)
 
 
-@app.route("/paper_vis.html")
-def paper_vis():
-    data = _data()
-    return render_template("papers_vis.html", **data)
-
-
 @app.route("/calendar.html")
 def schedule():
     data = _data()
-    data["day"] = {
-        "speakers": site_data["speakers"],
-        "highlighted": [
-            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
-        ],
-    }
+    data["days"] = by_date
+    print(data)
     return render_template("schedule.html", **data)
 
 
@@ -176,7 +186,6 @@ def extract_list_field(v, key):
 
 
 def format_paper(v):
-    print("in format paper")
     list_keys = ["authors"]
     list_fields = {}
     for key in list_keys:
@@ -205,7 +214,9 @@ def format_workshop(v):
         list_fields[key] = extract_list_field(v, key)
 
     return {
-        "id": v["UID"],
+        "UID": v["UID"],
+        "start_time": v["start_time"],
+        "session": v["session"],
         "title": v["title"],
         "organizers": list_fields["authors"],
         "abstract": v["abstract"],
@@ -230,12 +241,6 @@ def workshop(workshop):
     data = _data()
     data["workshop"] = format_workshop(v)
     return render_template("workshop.html", **data)
-
-
-@app.route("/chat.html")
-def chat():
-    data = _data()
-    return render_template("chat.html", **data)
 
 
 # FRONT END SERVING
