@@ -111,7 +111,7 @@
         >
             <ul class="navbar-nav ml-auto">
                 
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 
@@ -135,7 +135,7 @@
                     <a class="nav-link" href="tutorials.html">Tutorials</a>
                 </li>
                 
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="sponsors.html">Sponsors</a>
                 </li>
                 
@@ -190,81 +190,62 @@
     <div class="content">
         
 
-<!-- Sponsors -->
-<div class="border-top my-3"></div>
-<div class="row p-4" id="faq">
-  <div class="col-12 bd-content">
-    <h2 class="text-center">Gold Sponsors</h2>
-  </div>
-</div>
-<div class="row">
-  
-  <div class="col-md-4 col-xs-6">
-    <div class="pp-card">
-      <div class="pp-card-header" class="text-muted">
-        <h5 class="card-title" align="center"> Arria</h5>
-        <center>
-          <img src=" https://www.arria.com/wp-content/uploads/2017/12/Logo-Arria-30x125-Padded.png" class="rounded" style="height: 60px;" />
-        </center>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm border">
+      <h2>Welcome!</h2>
+<p>We look forward to hosting you in the beautiful state of Maine July 18-22, 2022.</p>
+<p>It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! We will have:</p>
+<ul>
+<li>Four great keynote speakers</li>
+<li>A panel about ethics in natural language generation</li>
+<li>A workshop on NLG for health</li>
+<li>A tutorial on artificial text detection</li>
+<li>GenChal</li>
+<li>A hackathon on NLG for climate in Maine</li>
+</ul>
+<p>We will also have social events for remote <em>and</em> in-person attendees. You can:</p>
+<ul>
+<li>Join us for an opening reception and a banquet</li>
+<li>Visit Allen Island off the coast of Maine</li>
+<li>See the night sky, guided by an astronomer</li>
+<li>Visit the Colby art museum</li>
+<li>Participate in a "treasure hunt"</li>
+<li>Participate in random discussion matchup</li>
+<li>Participate in discord chats with presenters and other attendees</li>
+</ul>
+<p>... and more!</p>
+<p>We also aim to be a family friendly conference!</p>
+<ul>
+<li>Colby housing is open to you and your family (see the registration site)</li>
+<li>The banquet and select social events are open to you and your family</li>
+</ul>
+<h2>Locations</h2>
+<p>INLG 2022 will be a <em>hybrid</em> conference. </p>
+<h2>Sponsors</h2>
+<p>We gratefully acknowledge our sponsors:</p>
+<ul>
+<li>Arria</li>
+<li>Google</li>
+<li>Huggingface</li>
+<li>AX Semantics</li>
+</ul>
+<h2>Schedule</h2>
+<p>The schedule will be announced in early June. In the meantime, here's a general overview:</p>
+<ul>
+<li>Monday 7/18 tutorial and workshop</li>
+<li>Tuesday 7/19-Thursday 7/21 main conference</li>
+<li>Friday 7/22 hackathon</li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>MiniConf was built by <a href="http://twitter.com/hen_str">Hendrik Strobelt</a> and <a href="http://twitter.com/srush_nlp">Sasha Rush</a>.</p>
+<p>Thanks to Darren Nelson for the original design sketches. Shakir Mohamed, Martha White, Kyunghyun Cho, Lee Campbell, and Adam White for planning and feedback. Hao Fang, Junaid Rahim, Jake Tae, Yasser Souri, Soumya Chatterjee, and Ankshita Gupta for contributions. </p>
+    </div>
+    <div class="col col-lg-2">
+      <a class="twitter-timeline" data-height="500" href="https://twitter.com/inlgmeeting?ref_src=twsrc%5Etfw">Tweets by inlgmeeting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
-  
-  <div class="col-md-4 col-xs-6">
-    <div class="pp-card">
-      <div class="pp-card-header" class="text-muted">
-        <h5 class="card-title" align="center"> Google</h5>
-        <center>
-          <img src=" https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="rounded" style="height: 60px;" />
-        </center>
-      </div>
-    </div>
-  </div>
-  
 </div>
-
-<div class="border-top my-3"></div>
-<div class="row p-4" id="faq">
-  <div class="col-12 bd-content">
-    <h2 class="text-center">Silver Sponsors</h2>
-  </div>
-</div>
-<div class="row">
-  
-  <div class="col-md-4 col-xs-6">
-    <div class="pp-card">
-      <div class="pp-card-header" class="text-muted">
-        <h5 class="card-title" align="center"> Huggingface</h5>
-        <center>
-          <img src=" https://huggingface.co/front/assets/huggingface_logo-noborder.svg" class="rounded" style="height: 60px;" />
-        </center>
-      </div>
-    </div>
-  </div>
-  
-</div>
-
-<div class="border-top my-3"></div>
-<div class="row p-4" id="faq">
-  <div class="col-12 bd-content">
-    <h2 class="text-center">Bronze Sponsors</h2>
-  </div>
-</div>
-<div class="row">
-  
-  <div class="col-md-4 col-xs-6">
-    <div class="pp-card">
-      <div class="pp-card-header" class="text-muted">
-        <h5 class="card-title" align="center"> AX Semantics</h5>
-        <center>
-          <img src=" https://en.ax-semantics.com/wp-content/uploads/logo-main-orange-web.svg" class="rounded" style="height: 60px;" />
-        </center>
-      </div>
-    </div>
-  </div>
-  
-</div>
-
 
     </div>
 </div>
