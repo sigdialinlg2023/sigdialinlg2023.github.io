@@ -4,8 +4,7 @@ It is such an interesting and challenging time to do NLG. Never have there been 
 
 The conference is a *hybrid* conference, jointly held for in person attendees at Colby College in Waterville, ME and for all attendees via zoom and discord. 
 
-* If you have registered, join the live conference site [here](https://virtual-inlg2022.net).
-* The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST [here](https://colby.zoom.us/j/93438451939).
+<h3><i>The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST [here](https://colby.zoom.us/j/93438451939).</i></h3>
 
 The local organizers will be happy to answer your questions on discord or in person: Amanda Stent, Amy Poulin and Charlotte Buswick.
 
