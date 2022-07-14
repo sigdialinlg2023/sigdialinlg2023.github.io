@@ -36,30 +36,39 @@
             {% endfor %}
         </h3>
         <div class="text-center p-3">
-            <a class="card-link" target="_blank" href="{{paper.link}}">
+            {{paper.session}} - {{paper.time}}<br/>
+	    <a class="card-link" target="_blank" href="{{paper.paper}}">
                 Paper
             </a>
-            {% if paper.code_link != blank %}
-            <a href="{{paper.code_link}}" target="_blank" class="card-link">
+            <a href="{{paper.discord}}" target="_blank" class="card-link">
+                Discord
+            </a><br/>
+            {% if paper.slides != blank %}
+            <a href="{{paper.slides}}" target="_blank" class="card-link">
+                Slides
+            </a>
+	    {% endif %}
+            {% if paper.poster != blank %}
+            <a href="{{paper.poster}}" target="_blank" class="card-link">
+                Poster
+            </a>
+	    {% endif %}
+            {% if paper.code != blank %}
+            <a href="{{paper.code}}" target="_blank" class="card-link">
                 Code
             </a>
 	    {% endif %}
-            {% if paper.summary_video != blank %}
-            <a href="{{paper.summary_video}}" target="_blank" class="card-link">
-                Summary Video
+            {% if paper.data != blank %}
+            <a href="{{paper.data}}" target="_blank" class="card-link">
+                Data
             </a>
+	    {% endif %}<br/>
+            {% if paper.summary_video != blank %}
+	  <iframe src="{{paper.summary_video}}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 	    {% endif %}
             {% if paper.full_video != blank %}
-            <a href="{{paper.full_video}}" target="_blank" class="card-link">
-	    Full Video
-            </a><br/>
+	  <iframe src="{{paper.full_video}}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 	    {% endif %}
-            {% for pdf in paper.pdf_url %}
-            <a href="{{pdf}}"
-               class="text-muted"
-            >PDF</a
-            >{{ "," if not loop.last }}
-            {% endfor %}
         </div>
     </div>
 </div>

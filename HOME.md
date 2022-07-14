@@ -1,55 +1,42 @@
 ## Welcome!
 
-We look forward to hosting you in the beautiful state of Maine July 18-22, 2022.
+It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! 
 
-It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! We will have:
-
-* Four great keynote speakers
-* A panel about ethics in natural language generation
-* A workshop on NLG for health
-* A tutorial on artificial text detection
-* GenChal
-* A hackathon on NLG for climate in Maine
-
-We will also have social events for remote *and* in-person attendees. You can:
-
-* Join us for an opening reception and a banquet
-* Visit Allen Island off the coast of Maine
-* See the night sky, guided by an astronomer
-* Visit the Colby art museum
-* Participate in a "treasure hunt"
-* Participate in discord chats with presenters and other attendees
-
-... and more!
-
-We also aim to be a family friendly conference!
-
-* Colby housing is open to you and your family (see the registration site)
-* The banquet and select social events are open to you and your family
-
-## Locations
-
-INLG 2022 will be a *hybrid* conference. 
+The conference is a *hybrid* conference, jointly held for in person attendees at Colby College in Waterville, ME and for all attendees via zoom and discord. 
+* If you have registered, join the live conference site [here](https://virtual-inlg2022.net).
+* The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST [here](https://colby.zoom.us/j/93438451939).
 
 ## Sponsors
 
-We gratefully acknowledge our sponsors:
+We gratefully acknowledge our [sponsors](sponsors.html):
 
 * Arria
 * Google
 * Huggingface
 * AX Semantics
+* aiXplain
 
-## Schedule
+## ACL Code of Conduct
+The open exchange of ideas, the freedom of thought and expression, and respectful scientific debate are central to the aims and goals of the ACL. These require a community and an environment that recognizes the inherent worth of every person and group, that fosters dignity, understanding, and mutual respect, and embraces diversity. For these reasons, ACL is dedicated to providing a harassment-free experience for all the members, as well as participants at our events and in our programs.
 
-The schedule will be announced in early June. In the meantime, here's a general overview:
+Harassment and hostile behavior are unwelcome at any ACL conference, associated event, or in ACL-affiliated online discussions. This includes: speech or behavior that intimidates, creates discomfort, or interferes with a r an event. We aim for ACL-related activities to be an environment where harassment in any form does not happen, including but not limited to: harassment based on race, gender, religion, age, color, appearance, national origin, ancestry, disability, sexual orientation, or gender identity. Harassment includes degrading verbal comments, deliberate intimidation, stalking, harassing photography or recording, inappropriate physical contact, and unwelcome sexual attention. The policy is not intended to inhibit challenging scientific debate, but rather to promote it by ensuring that all are welcome to participate in the shared spirit of scientific inquiry. Vexatious complaints and willful misuse of this procedure will render the complainant subject to the same sanctions as a violation of the anti-harassment policy.
 
-* Monday 7/18 tutorial and workshop
-* Tuesday 7/19-Thursday 7/21 main conference
-* Friday 7/22 hackathon
+It is the responsibility of the community as a whole to promote an inclusive and positive environment for our scholarly activities. In addition, anyone who experiences harassment or hostile behavior may contact any member of the ACL [Professional Conduct Committee](https://www.aclweb.org/adminwiki/index.php?title=Professional_Conduct_Committee) or/and the [Conference Organizers](organizers.html). Members of thess committees will be instructed to keep any such contact in strict confidence, and those who approach the committee will be consulted before any actions are taken.
+
+## ACL COVID Policy
+
+It is the policy of ACL conferences that attendees wear high-quality, well-fitting masks while attending indoor functions at ACL events, removing their masks only the minimal amount necessary to eat and drink. This policy is in force even if local regulations are less strict, but may be superseded by stricter local regulations. Furthermore, the ACL strongly encourages attendees to be cautious with masking in indoor space outside the conference venue (e.g. on public transit or while eating away from the venue) to avoid bringing COVID to the venue. 
+
+## We Stand on Indigenous Land
+
+At Colby we recognize that the land we inhabit was formed by the indigenous peoples of the Wabanaki Confederacy: the Abenaki, Penobscot, Passamaquoddy, Maliseet and Mi'kmaq peoples. We exist on their unceded homelands.
+
+To learn more about the history, culture and language of these peoples, please visit:
+
+* [https://wabanakialliance.com/wabanaki-history/](https://wabanakialliance.com/wabanaki-history/)
+* [http://www.native-languages.org/maine.htm](http://www.native-languages.org/maine.htm)
 
 ### Acknowledgements
 
-MiniConf was built by [Hendrik Strobelt](http://twitter.com/hen_str) and [Sasha Rush](http://twitter.com/srush_nlp).
+This site is based on [MiniConf](https://github.com/Mini-Conf/Mini-Conf) which was built by [Hendrik Strobelt](http://twitter.com/hen_str) and [Sasha Rush](http://twitter.com/srush_nlp).
 
-Thanks to Darren Nelson for the original design sketches. Shakir Mohamed, Martha White, Kyunghyun Cho, Lee Campbell, and Adam White for planning and feedback. Hao Fang, Junaid Rahim, Jake Tae, Yasser Souri, Soumya Chatterjee, and Ankshita Gupta for contributions. 

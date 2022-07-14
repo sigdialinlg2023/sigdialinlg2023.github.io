@@ -11,14 +11,11 @@
     "UID": "paper1",
     "start_time": "2022-07-19T16:00:00Z",
     "paper": "https://openreview.net/attachment?id=gw2rJYVnHeX&name=paper",
-    "summary_video": "",
+    
     "full_video": "https://vimeo.com/728946890",
-    "discord": "https://discord.gg/zAcnXQkW",
-    "voice chat": "https://discord.gg/v5T7dfx2",
+    "discord": "https://discord.gg/v5T7dfx2",
     "slides": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=slides",
-    "poster": "paper1.zip",
-    "code": "",
-    "software": ""
+    "poster": "paper1.zip"
   },
   "paper2": {
     "authors": [
@@ -37,12 +34,9 @@
     "paper": "https://openreview.net/pdf?id=lsaIVpSiGKE",
     "summary_video": "https://vimeo.com/728948631",
     "full_video": "https://vimeo.com/728948641",
-    "discord": "https://discord.gg/vBe3tKn3",
-    "voice chat": "https://discord.gg/CUggNe26",
+    "discord": "https://discord.gg/CUggNe26",
     "slides": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=slides",
-    "poster": "",
-    "code": "paper2.zip",
-    "software": ""
+    "code": "paper2.zip"
   },
   "paper3": {
     "authors": [
@@ -58,12 +52,9 @@
     "paper": "https://openreview.net/pdf?id=Xv5Y2Jl0mbA",
     "summary_video": "https://vimeo.com/728948619",
     "full_video": "https://vimeo.com/728948586",
-    "discord": "https://discord.gg/S8mcXcnj",
-    "voice chat": "https://discord.gg/G6bnHHdT",
+    "discord": "https://discord.gg/G6bnHHdT",
     "slides": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=slides",
-    "poster": "",
-    "code": "paper3.zip",
-    "software": ""
+    "code": "paper3.zip"
   },
   "paper4": {
     "authors": [
@@ -85,14 +76,10 @@
     "UID": "paper4",
     "start_time": "2022-07-20T15:00:00Z",
     "paper": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728948556",
-    "discord": "https://discord.gg/5Vdm2NDS",
-    "voice chat": "https://discord.gg/twQ9DduB",
+    "discord": "https://discord.gg/twQ9DduB",
     "slides": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=slides",
-    "poster": "",
-    "code": "paper4.zip",
-    "software": ""
+    "code": "paper4.zip"
   },
   "paper5": {
     "authors": [
@@ -106,13 +93,11 @@
     "UID": "paper5",
     "start_time": "2022-07-21T16:00:00Z",
     "paper": "https://openreview.net/forum?id=r_du-JsTqJ5",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728950707",
     "discord": "https://discord.gg/xVeUbyeq",
     "slides": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=slides",
     "poster": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=poster",
-    "code": "paper5.zip",
-    "software": ""
+    "code": "paper5.zip"
   },
   "paper6": {
     "authors": [
@@ -128,14 +113,9 @@
     "UID": "paper6",
     "start_time": "2022-07-19T14:20:00Z",
     "paper": "https://openreview.net/forum?id=k1EBwhNaNFU",
-    "summary_video": "",
-    "full_video": "https://vimeo.com/728950889",    
-    "discord": "https://discord.gg/D2GAnMBx",
-    "voice chat": "",
+    "full_video": "https://vimeo.com/728950889",    "discord": "https://discord.gg/D2GAnMBx",
     "slides": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=slides",
-    "poster": "",
-    "code": "paper6.zip",
-    "software": ""
+    "code": "paper6.zip"
   },
   "paper7": {
     "authors": [
@@ -148,14 +128,10 @@
     "UID": "paper7",
     "start_time": "2022-07-21T15:00:00Z",
     "paper": "/forum?id=Hx-gj_gbgGq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Daclweb.org%2FACL%2FARR%2F2022%2FMarch%2FAuthors%23your-submissions)",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728950843",
     "discord": "https://discord.gg/XKSmpupv",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=9XWJRLhbK6&name=slides",
-    "poster": "",
-    "code": "paper7.zip",
-    "software": ""
+    "code": "paper7.zip"
   },
   "paper8": {
     "authors": [
@@ -170,16 +146,10 @@
     "UID": "paper8",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/pdf?id=reb82_ebeM9",
-    "summary_video": "",
-    "summary_video_captions": "",
     "full_video": "https://vimeo.com/728950821",
-    "full_video_captions": "",
-    "discord": "https://discord.gg/GmwNQDYd",
-    "voice chat": "https://discord.gg/v4YeUSWs",
-    "slides": "",
+    "discord": "https://discord.gg/v4YeUSWs",
     "poster": "https://openreview.net/attachment?id=MNEQkVei2UX&name=poster",
-    "code": "paper8.zip",
-    "software": ""
+    "code": "paper8.zip"
   },
   "paper9": {
     "authors": [
@@ -196,11 +166,8 @@
     "summary_video": "https://vimeo.com/728950808",
     "full_video": "https://vimeo.com/728950786",
     "discord": "https://discord.gg/zj79s9UX",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=slides",
-    "poster": "",
-    "code": "paper9.zip",
-    "software": ""
+    "code": "paper9.zip"
   },
   "paper10": {
     "authors": [
@@ -214,12 +181,9 @@
     "paper": "https://openreview.net/attachment?id=AazNy3HOJFou&name=paper",
     "summary_video": "https://vimeo.com/728950773",
     "full_video": "https://vimeo.com/728950752",
-    "discord": "https://discord.gg/bNyc3xsG",
-    "voice chat": "https://discord.gg/ygjC4qnG",
-    "slides": "",
+    "discord": "https://discord.gg/ygjC4qnG",
     "poster": "https://openreview.net/attachment?id=AazNy3HOJFou&name=poster",
-    "code": "paper10.zip",
-    "software": ""
+    "code": "paper10.zip"
   },
   "paper11": {
     "authors": [
@@ -234,14 +198,10 @@
     "UID": "paper11",
     "start_time": "2022-07-20T10:30:00Z",
     "paper": "https://openreview.net/attachment?id=UHY8uBA6l_&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728950734",
     "discord": "https://discord.gg/JR94up6E",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=UHY8uBA6l_&name=slides",
-    "poster": "",
-    "code": "paper11.zip",
-    "software": ""
+    "code": "paper11.zip"
   },
   "paper12": {
     "authors": [
@@ -256,14 +216,10 @@
     "UID": "paper12",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728952993",
-    "discord": "https://discord.gg/xgEs28hS",
-    "voice chat": "https://discord.gg/VNNSFZB4",
+    "discord": "https://discord.gg/VNNSFZB4",
     "slides": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=slides",
-    "poster": "",
-    "code": "paper12.zip",
-    "software": ""
+    "code": "paper12.zip"
   },
   "paper13": {
     "authors": [
@@ -279,14 +235,10 @@
     "UID": "paper13",
     "start_time": "2022-07-21T16:40:00Z",
     "paper": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953287",
     "discord": "https://discord.gg/GTMwPxE9",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=slides",
-    "poster": "",
-    "code": "paper13.zip",
-    "software": ""
+    "code": "paper13.zip"
   },
   "paper14": {
     "authors": [
@@ -304,11 +256,8 @@
     "summary_video": "https://vimeo.com/728953260",
     "full_video": "https://vimeo.com/728953255",
     "discord": "https://discord.gg/YHMUweXH",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=slides",
-    "poster": "",
-    "code": "paper14.zip",
-    "software": ""
+    "code": "paper14.zip"
   },
   "paper15": {
     "authors": [
@@ -322,14 +271,11 @@
     "UID": "paper15",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953169",
-    "discord": "https://discord.gg/NURZHCTz",
-    "voice chat": "https://discord.gg/Hew2sjFJ",
+    "discord": "https://discord.gg/Hew2sjFJ",
     "slides": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=slides",
     "poster": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=poster",
-    "code": "paper15.zip",
-    "software": ""
+    "code": "paper15.zip"
   },
   "paper16": {
     "authors": [
@@ -344,14 +290,11 @@
     "UID": "paper16",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953139",
-    "discord": "https://discord.gg/dgPyUWnR",
-    "voice chat": "https://discord.gg/6cWkqDzH",
+    "discord": "https://discord.gg/6cWkqDzH",
     "slides": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=slides",
     "poster": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=poster",
-    "code": "paper16.zip",
-    "software": ""
+    "code": "paper16.zip"
   },
   "paper17": {
     "authors": [
@@ -364,14 +307,10 @@
     "UID": "paper17",
     "start_time": "2022-07-19T14:00:00Z",
     "paper": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953112",
     "discord": "https://discord.gg/Bm55CUXd",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=slides",
-    "poster": "",
-    "code": "paper17.zip",
-    "software": ""
+    "code": "paper17.zip"
   },
   "paper18": {
     "authors": [
@@ -386,14 +325,11 @@
     "UID": "paper18",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953091",
-    "discord": "https://discord.gg/JhtYFKvE",
-    "voice chat": "https://discord.gg/JeuaDYuX",
+    "discord": "https://discord.gg/JeuaDYuX",
     "slides": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=slides",
     "poster": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=poster",
-    "code": "paper18.zip",
-    "software": ""
+    "code": "paper18.zip"
   },
   "paper19": {
     "authors": [
@@ -407,14 +343,10 @@
     "UID": "paper19",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/attachment?id=znPsX-_W8Po&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953033",
-    "discord": "https://discord.gg/XaYHz29X",
-    "voice chat": "https://discord.gg/Cy4PUJZu",
+    "discord": "https://discord.gg/Cy4PUJZu",
     "slides": "https://openreview.net/attachment?id=znPsX-_W8Po&name=slides",
-    "poster": "",
-    "code": "paper19.zip",
-    "software": ""
+    "code": "paper19.zip"
   },
   "paper20": {
     "authors": [
@@ -429,14 +361,10 @@
     "UID": "paper20",
     "start_time": "2022-07-21T17:00:00Z",
     "paper": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728953023",
     "discord": "https://discord.gg/GTMwPxE9",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=slides",
-    "poster": "",
-    "code": "paper20.zip",
-    "software": ""
+    "code": "paper20.zip"
   },
   "paper21": {
     "authors": [
@@ -456,14 +384,8 @@
     "UID": "paper21",
     "start_time": "2022-07-21T14:00:00Z",
     "paper": "https://openreview.net/attachment?id=Z3IMYmn7OOM&name=paper",
-    "summary_video": "",
-    "full_video": "",
     "discord": "https://discord.gg/h5pZN3xt",
-    "voice chat": "",
-    "slides": "",
-    "poster": "",
-    "code": "paper21.zip",
-    "software": ""
+    "code": "paper21.zip"
   },
   "paper22": {
     "authors": [
@@ -480,11 +402,8 @@
     "summary_video": "https://vimeo.com/728954426",
     "full_video": "https://vimeo.com/729628309",
     "discord": "https://discord.gg/ydZW87bn",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=slides",
-    "poster": "",
-    "code": "paper22.zip",
-    "software": ""
+    "code": "paper22.zip"
   },
   "paper23": {
     "authors": [
@@ -498,14 +417,11 @@
     "UID": "paper23",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728954773",
-    "discord": "https://discord.gg/X8N4DPpR",
-    "voice chat": "https://discord.gg/4PG3EwGP",
+    "discord": "https://discord.gg/4PG3EwGP",
     "slides": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=slides",
     "poster": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=poster",
-    "code": "paper23.zip",
-    "software": ""
+    "code": "paper23.zip"
   },
   "paper24": {
     "authors": [
@@ -522,12 +438,10 @@
     "paper": "https://openreview.net/attachment?id=DE0XE2urXG0&name=paper",
     "summary_video": "https://vimeo.com/728954752",
     "full_video": "https://vimeo.com/728954733",
-    "discord": "https://discord.gg/sMJsAJSF",
-    "voice chat": "https://discord.gg/QQ7usW5k",
+    "discord": "https://discord.gg/QQ7usW5k",
     "slides": "https://openreview.net/attachment?id=DE0XE2urXG0&name=slides",
     "poster": "https://openreview.net/attachment?id=DE0XE2urXG0&name=poster",
-    "code": "paper24.zip",
-    "software": ""
+    "code": "paper24.zip"
   },
   "paper25": {
     "authors": [
@@ -542,14 +456,10 @@
     "UID": "paper25",
     "start_time": "2022-07-21T14:20:00Z",
     "paper": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728954685",
     "discord": "https://discord.gg/KP4YyKgT",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=slides",
-    "poster": "",
-    "code": "paper25.zip",
-    "software": ""
+    "code": "paper25.zip"
   },
   "paper26": {
     "authors": [
@@ -566,11 +476,8 @@
     "summary_video": "https://vimeo.com/728954665",
     "full_video": "https://vimeo.com/728954632",
     "discord": "https://discord.gg/UNGZc7Zj",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=oud0NFEGxbo&name=slides",
-    "poster": "",
-    "code": "paper26.zip",
-    "software": ""
+    "code": "paper26.zip"
   },
   "paper27": {
     "authors": [
@@ -584,14 +491,10 @@
     "UID": "paper27",
     "start_time": "2022-07-21T14:40:00Z",
     "paper": "https://openreview.net/forum?id=uBiMMgT3E77",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728954607",
     "discord": "https://discord.gg/VCkUZtsM",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=S0E9Uaa86np&name=slides",
-    "poster": "",
-    "code": "paper27.zip",
-    "software": ""
+    "code": "paper27.zip"
   },
   "paper28": {
     "authors": [
@@ -605,14 +508,10 @@
     "UID": "paper28",
     "start_time": "2022-07-19T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728954548",
     "discord": "https://discord.gg/xMu5DwEX",
-    "voice chat": "",
     "slides": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=slides",
-    "poster": "",
-    "code": "paper28.zip",
-    "software": ""
+    "code": "paper28.zip"
   },
   "paper29": {
     "authors": [
@@ -629,12 +528,9 @@
     "paper": "https://openreview.net/attachment?id=R3O5khOL6du&name=paper",
     "summary_video": "https://vimeo.com/728954525",
     "full_video": "https://vimeo.com/728954469",
-    "discord": "https://discord.gg/JskQKyca",
-    "voice chat": "https://discord.gg/JTRRwCYq",
-    "slides": "",
+    "discord": "https://discord.gg/JTRRwCYq",
     "poster": "https://openreview.net/attachment?id=R3O5khOL6du&name=poster",
-    "code": "paper29.zip",
-    "software": ""
+    "code": "paper29.zip"
   },
   "paper30": {
     "authors": [
@@ -650,14 +546,8 @@
     "UID": "paper30",
     "start_time": "2022-07-21T11:30:00Z",
     "paper": "https://openreview.net/attachment?id=QFJe_CaA5Q9&name=paper",
-    "summary_video": "",
-    "full_video": "",
-    "discord": "https://discord.gg/E9k3k3BJ",
-    "voice chat": "https://discord.gg/awZCzcRd",
-    "slides": "",
-    "poster": "",
-    "code": "paper30.zip",
-    "software": ""
+    "discord": "https://discord.gg/awZCzcRd",
+    "code": "paper30.zip"
   },
   "paper31": {
     "authors": [
@@ -674,14 +564,10 @@
     "UID": "paper31",
     "start_time": "2022-07-21T11:45:00Z",
     "paper": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/729629666",
-    "discord": "https://discord.gg/2yGJhnrK",
-    "voice chat": "https://discord.gg/4tTgqsgP",
+    "discord": "https://discord.gg/4tTgqsgP",
     "slides": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=slides",
-    "poster": "",
-    "code": "paper31.zip",
-    "software": ""
+    "code": "paper31.zip"
   },
   "paper32": {
     "authors": [
@@ -694,14 +580,10 @@
     "UID": "paper32",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728955611",
-    "discord": "https://discord.gg/U5ABvREx",
-    "voice chat": "https://discord.gg/FCN8wVQN",
+    "discord": "https://discord.gg/FCN8wVQN",
     "slides": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=slides",
-    "poster": "",
-    "code": "paper32.zip",
-    "software": ""
+    "code": "paper32.zip"
   },
   "paper33": {
     "authors": [
@@ -719,14 +601,8 @@
     "UID": "paper33",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=UsRH5rYx1SX&name=paper",
-    "summary_video": "",
-    "full_video": "",
-    "discord": "https://discord.gg/aQtf7KMP",
-    "voice chat": "https://discord.gg/CjHZSnfe",
-    "slides": "",
-    "poster": "",
-    "code": "paper33.zip",
-    "software": ""
+    "discord": "https://discord.gg/CjHZSnfe",
+    "code": "paper33.zip"
   },
   "paper34": {
     "authors": ["Nikhil Singh"],
@@ -736,14 +612,8 @@
     "UID": "paper34",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=Rlxlf0a_8eK&name=paper",
-    "summary_video": "",
-    "full_video": "",
-    "discord": "https://discord.gg/TkM9fxae",
-    "voice chat": "https://discord.gg/mWSKBQm5",
-    "slides": "",
-    "poster": "",
-    "code": "paper34.zip",
-    "software": ""
+    "discord": "https://discord.gg/mWSKBQm5",
+    "code": "paper34.zip"
   },
   "paper35": {
     "authors": [
@@ -760,14 +630,10 @@
     "UID": "paper35",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=5OnApqNwVW&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728955769",
-    "discord": "https://discord.gg/DE2CWPkJ",
-    "voice chat": "https://discord.gg/wGkuTgpS",
+    "discord": "https://discord.gg/wGkuTgpS",
     "slides": "https://openreview.net/attachment?id=5OnApqNwVW&name=slides",
-    "poster": "",
-    "code": "paper35.zip",
-    "software": ""
+    "code": "paper35.zip"
   },
   "paper36": {
     "authors": [
@@ -781,14 +647,8 @@
     "UID": "paper36",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=nZ72ulItwNn&name=paper",
-    "summary_video": "",
-    "full_video": "",
-    "discord": "https://discord.gg/gHfJJmzy",
-    "voice chat": "https://discord.gg/uHBtuGdB",
-    "slides": "",
-    "poster": "",
-    "code": "paper36.zip",
-    "software": ""
+    "discord": "https://discord.gg/uHBtuGdB",
+    "code": "paper36.zip"
   },
   "paper37": {
     "authors": [
@@ -803,14 +663,10 @@
     "UID": "paper37",
     "start_time": "2022-07-21T11:10:00Z",
     "paper": "https://openreview.net/attachment?id=7h3zH7PW28&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728955735",
-    "discord": "https://discord.gg/yPRtnQ8q",
-    "voice chat": "https://discord.gg/nddUWVyT",
+    "discord": "https://discord.gg/nddUWVyT",
     "slides": "https://openreview.net/attachment?id=7h3zH7PW28&name=slides",
-    "poster": "",
-    "code": "paper37.zip",
-    "software": ""
+    "code": "paper37.zip"
   },
   "paper38": {
     "authors": [
@@ -826,14 +682,10 @@
     "UID": "paper38",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728955715",
-    "discord": "https://discord.gg/rjxASvqn",
-    "voice chat": "https://discord.gg/2FqCQGXz",
-    "slides": "",
+    "discord": "https://discord.gg/2FqCQGXz",
     "poster": "https://openreview.net/attachment?id=mf5iR1-xN7Q&name=poster",
-    "code": "paper38.zip",
-    "software": ""
+    "code": "paper38.zip"
   },
   "paper39": {
     "authors": [
@@ -847,14 +699,11 @@
     "UID": "paper39",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728955671",
-    "discord": "https://discord.gg/uU6b9c8j",
-    "voice chat": "https://discord.gg/vm6brn9K",
+    "discord": "https://discord.gg/vm6brn9K",
     "slides": "https://openreview.net/attachment?id=XA48unKQwW&name=slides",
     "poster": "https://openreview.net/attachment?id=XA48unKQwW&name=poster",
-    "code": "paper39.zip",
-    "software": ""
+    "code": "paper39.zip"
   },
   "paper40": {
     "authors": [
@@ -867,14 +716,10 @@
     "UID": "paper40",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728955651",
-    "discord": "https://discord.gg/qyu6XzRr",
-    "voice chat": "https://discord.gg/hmHu2YwY",
-    "slides": "",
+    "discord": "https://discord.gg/hmHu2YwY",
     "poster": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=poster",
-    "code": "paper40.zip",
-    "software": ""
+    "code": "paper40.zip"
   },
   "paper41": {
     "authors": [
@@ -889,14 +734,10 @@
     "UID": "paper41",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728956351",
-    "discord": "https://discord.gg/hcXJfmbG",
-    "voice chat": "https://discord.gg/qHP2DrMP",
-    "slides": "",
+    "discord": "https://discord.gg/qHP2DrMP",
     "poster": "https://openreview.net/attachment?id=_EysyNqo5X6&name=poster",
-    "code": "paper41.zip",
-    "software": ""
+    "code": "paper41.zip"
   },
   "paper42": {
     "authors": [
@@ -916,14 +757,10 @@
     "UID": "paper42",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=9A7TOTfnS9&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728956524",
-    "discord": "https://discord.gg/dsjbKuS2",
-    "voice chat": "https://discord.gg/raPdaQGB",
-    "slides": "",
+    "discord": "https://discord.gg/raPdaQGB",
     "poster": "https://openreview.net/attachment?id=9A7TOTfnS9&name=poster",
-    "code": "paper42.zip",
-    "software": ""
+    "code": "paper42.zip"
   },
   "paper43": {
     "authors": [
@@ -938,14 +775,10 @@
     "UID": "paper43",
     "start_time": "2022-07-21T10:30:00Z",
     "paper": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728956486",
-    "discord": "https://discord.gg/HyhvhCd2",
-    "voice chat": "https://discord.gg/DxAzSkhN",
+    "discord": "https://discord.gg/DxAzSkhN",
     "slides": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=slides",
-    "poster": "",
-    "code": "paper43.zip",
-    "software": ""
+    "code": "paper43.zip"
   },
   "paper44": {
     "authors": [
@@ -960,14 +793,11 @@
     "UID": "paper44",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=WUaesmeiki3&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728956470",
-    "discord": "https://discord.gg/uZDF3vsE",
-    "voice chat": "https://discord.gg/7GRh3uYW",
+    "discord": "https://discord.gg/7GRh3uYW",
     "slides": "https://openreview.net/attachment?id=WUaesmeiki3&name=slides",
     "poster": "https://openreview.net/attachment?id=WUaesmeiki3&name=poster",
-    "code": "paper44.zip",
-    "software": ""
+    "code": "paper44.zip"
   },
   "paper45": {
     "authors": [
@@ -982,14 +812,10 @@
     "UID": "paper45",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=paper",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728956443",
-    "discord": "https://discord.gg/Mtn4gPt7",
-    "voice chat": "https://discord.gg/RFUREtdk",
-    "slides": "",
+    "discord": "https://discord.gg/RFUREtdk",
     "poster": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=poster",
-    "code": "paper45.zip",
-    "software": ""
+    "code": "paper45.zip"
   },
   "paper46": {
     "authors": [
@@ -1003,34 +829,10 @@
     "UID": "paper46",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "",
-    "summary_video": "",
     "full_video": "https://vimeo.com/728956416",
-    "discord": "https://discord.gg/QuWxryPR",
-    "voice chat": "https://discord.gg/k66dA8RS",
+    "discord": "https://discord.gg/k66dA8RS",
     "slides": "https://openreview.net/attachment?id=NyAs0YiX2k&name=slides",
     "poster": "https://openreview.net/attachment?id=NyAs0YiX2k&name=poster",
-    "code": "paper46.zip",
-    "software": ""
-  },
-  "paper47": {
-    "authors": [
-      "Mohammad Arvan",
-      "Luis Pina",
-      "Natalie Parde"
-      ],
-    "title": "Reproducibility of Exploring Neural Text Simplification Models: A Review",
-    "session": "GenChal",
-    "abstract": "",
-    "UID": "paper47",
-    "start_time": "2022-07-21T12:00:00Z",
-    "paper": "",
-    "summary_video": "",
-    "full_video": "https://vimeo.com/728956393",
-    "discord": "https://discord.gg/uU6b9c8j",
-    "voice chat": "https://discord.gg/vm6brn9K",
-    "slides": "https://openreview.net/attachment?id=6KoS7uz6E_3&name=slides",
-    "poster": "https://openreview.net/attachment?id=6KoS7uz6E_3&name=poster",
-    "code": "paper47.zip",
-    "software": "",
+    "code": "paper46.zip"
   }
 }

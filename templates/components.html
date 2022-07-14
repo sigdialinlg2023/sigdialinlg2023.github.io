@@ -357,17 +357,17 @@ sessiongroup
 {% set rowloop = loop.index %}
 <div class="row">
   <div class="col-12" id="accordionExample">
-    <div class="card m-2">
+    <div class="card m-1">
       <div class="card-header">
         <a
           class=""
-          href="#"
+          href="#{{workshop.session}}"
           data-toggle="collapse"
           data-target="#collapse{{rowloop}}-{{loop.index}}"
           aria-expanded="true"
           aria-controls="collapse{{rowloop}}-{{loop.index}}"
         >
-          {{workshop.title}}</a>
+          <h2>{{workshop.title}}</h2></a>
       </div>
       <div
         id="collapse{{rowloop}}-{{loop.index}}"
@@ -375,45 +375,10 @@ sessiongroup
         data-parent="#accordionExample"
       >
         <div class="card-body">
-	  <h3 class="card-subtitle mb-2 text-muted text-center">
+          <h3 class="card-subtitle text-muted m-2" align="center">
 	    {{ workshop.organizers | join(", ") }}
 	  </h3>
 	  {{ workshop.abstract | markdown }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endfor %}
-{%- endmacro %}
-
-{% macro tutorialgroup(tutorials) -%}
-{% for tutorial in tutorials %}
-{% set rowloop = loop.index %}
-<div class="row">
-  <div class="col-12" id="accordionExample">
-    <div class="card m-2">
-      <div class="card-header">
-        <a
-          class=""
-          href="#"
-          data-toggle="collapse"
-          data-target="#collapse{{rowloop}}-{{loop.index}}"
-          aria-expanded="true"
-          aria-controls="collapse{{rowloop}}-{{loop.index}}"
-        >
-          {{tutorial.title}}</a>
-      </div>
-      <div
-        id="collapse{{rowloop}}-{{loop.index}}"
-        aria-labelledby="headingOne"
-        data-parent="#accordionExample"
-      >
-        <div class="card-body">
-	  <h3 class="card-subtitle mb-2 text-muted text-center">
-	    {{ tutorial.organizers | join(", ") }}
-	  </h3>
-	  {{ tutorial.abstract | markdown }}
         </div>
       </div>
     </div>

@@ -36,13 +36,13 @@ def main(site_data_path):
             by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
         by_date[dt.strftime('%A')]['sessions'][p["session"]] = {'name': p["session"], 'zoom': p["zoom"], 'start_time': dt, 'contents': []}
         
-    for typ in ["papers", "workshops", "tutorials", "speakers"]:
+    for typ in ["papers", "workshops", "tutorials", "panels", "hackathons", "speakers"]:
         by_uid[typ] = {}
         if typ == "papers":
            vals = site_data[typ].values()
         elif typ == "speakers":
             vals = site_data[typ]['speakers']
-        elif typ in ["workshops", "tutorials"]:
+        elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
             vals = [format_workshop(workshop) for workshop in site_data[typ]]
         else:
             vals = site_data[typ]
@@ -167,6 +167,24 @@ def tutorials():
     return render_template("tutorials.html", **data)
 
 
+@app.route("/panels.html")
+def panels():
+    data = _data()
+    data["panels"] = [
+        format_workshop(panel) for panel in site_data["panels"]
+    ]
+    return render_template("panels.html", **data)
+
+
+@app.route("/hackathons.html")
+def hackathons():
+    data = _data()
+    data["hackathons"] = [
+        format_workshop(hackathon) for hackathon in site_data["hackathons"]
+    ]
+    return render_template("hackathons.html", **data)
+
+
 @app.route("/sponsors.html")
 def sponsors():
     data = _data()
@@ -185,26 +203,10 @@ def extract_list_field(v, key):
 
 
 def format_paper(v):
-    list_keys = ["authors"]
-    list_fields = {}
-    for key in list_keys:
-        list_fields[key] = extract_list_field(v, key)
-
-    return {
-        "UID": v["UID"],
-        "title": v["title"],
-        "forum": v["UID"],
-        "authors": list_fields["authors"],
-        "abstract": v["abstract"],
-        "session": v["session"],
-        # links to external content per poster
-        "slides": v["slides"] if "slides" in v else "",
-        "poster": v["poster"] if "poster" in v else "", 
-        "summary_video": v["summary_video"],
-        "full_video": v["full_video"],
-        "link": v["paper"] # link to paper
-    }
-
+    v["authors"] = extract_list_field(v, "authors")
+    dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
+    v["time"] = dt.strftime('%A %m/%d %H:%M EST')
+    return v
 
 def format_workshop(v):
     list_keys = ["authors"]
