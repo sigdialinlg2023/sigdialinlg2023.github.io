@@ -49,6 +49,13 @@
     <script src="static/js/data/api.js"></script>
 
     
+    <script>
+      var auth0_domain = "dev-ma80app1.us.auth0.com";
+      var auth0_client_id = "ptF3gg7K6X0VN0FxOeCAVbKURrAis82d";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script src="static/js/modules/auth0protect.js"></script>
+    
 
     <!-- External CSS -->
     <link rel="stylesheet"
@@ -129,7 +136,10 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="speakers.html">Keynotes</a>
                     <a class="dropdown-item" href="panels.html">Panel</a>
-                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
+                    
+                    <a class="dropdown-item" href="papers.html">Papers</a>
+                    
+                    
                     <a class="dropdown-item" href="workshops.html">Workshops</a>
                     <a class="dropdown-item" href="tutorials.html">Tutorials</a>
                     <a class="dropdown-item" href="hackathons.html">Hackathon</a>
@@ -198,11 +208,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm border">
-      <h2>Welcome!</h2>
+      <h2>The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST <a href="https://colby.zoom.us/j/93438451939">here</a>.</h2>
+<h2>Welcome!</h2>
 <p>It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! </p>
 <p>The conference is a <em>hybrid</em> conference, jointly held for in person attendees at Colby College in Waterville, ME and for all attendees via zoom and discord. </p>
-<h3><i>The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST [here](https://colby.zoom.us/j/93438451939).</i></h3>
-
 <p>The local organizers will be happy to answer your questions on discord or in person: Amanda Stent, Amy Poulin and Charlotte Buswick.</p>
 <p>We want to thank our student volunteers who will staff the help desk during the week: Max Jacobs, Meredith Green, Matianyu Zang, Leo Qian, Yiheng Su, Baron Wang, Adaobi Nebuwa, Giang Pham and Changling Li.</p>
 <h2>Sponsors</h2>
@@ -237,6 +246,47 @@
   </div>
 </div>
 
+    
+    <script>
+      const updateUI = async () => {
+        const auth0_domain = "dev-ma80app1.us.auth0.com";
+        const auth0_client_id = "ptF3gg7K6X0VN0FxOeCAVbKURrAis82d";
+        const auth0 = await createAuth0Client({
+          domain: auth0_domain,
+          client_id: auth0_client_id,
+          cacheLocation: "localstorage",
+        });
+        const is_auth = await auth0.isAuthenticated();
+        console.log(is_auth, "--- is_auth");
+        if (is_auth) {
+          document.body.style.display = null;
+
+          // unused atm, hook up later; this won't get executed since we change location above
+          const user = await auth0.getUser();
+          $(".loginBtn").hide();
+          $(".logoutBtn").show();
+          $(".secret").show();
+          $(".user_name").text(user.name);
+          $(".login-message").text("You are logged in as");
+        } else {
+          $(".loginBtn").show();
+          $(".logoutBtn").hide();
+          $(".secret").hide();
+          $(".user_name").text("");
+          $(".login-message").text("You are currently not authenticated.");
+        }
+
+        $(".loginBtn").click(async function () {
+          window.location.href = `redirect.html?return=index.html`;
+        });
+        $(".logoutBtn").click(async function () {
+          await auth0.logout({
+            returnTo: window.location.href,
+          });
+        });
+      };
+      updateUI();
+    </script>
     
 
 
