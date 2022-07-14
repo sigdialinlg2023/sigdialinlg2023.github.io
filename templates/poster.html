@@ -63,11 +63,8 @@
                 Data
             </a>
 	    {% endif %}<br/>
-            {% if paper.summary_video != blank %}
-	  <iframe src="{{paper.summary_video}}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-	    {% endif %}
             {% if paper.full_video != blank %}
-	  <iframe src="{{paper.full_video}}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+	  <a href="{{paper.full_video}}"><img src="static/images/{{paper.UID}}.jpg" alt="{{paper.title}}"></a>
 	    {% endif %}
         </div>
     </div>

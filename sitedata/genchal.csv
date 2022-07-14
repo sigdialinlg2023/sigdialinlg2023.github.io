@@ -1,0 +1,16 @@
+UID,session,start_time,title,authors,abstract
+genchal1,GenChal,2022-07-21T10:30:00Z,GenChal,"Anastasia Shimorina","The Generation Challenges (GenChal) are an umbrella event designed to bring together a variety of shared-task efforts that involve the generation of natural language. This year GenChal features two new challenge proposals and reports of organisers and participants from three completed challenges.
+
+More information about previous challenges at GenChal [here](https://sites.google.com/site/genchalrepository/).
+
+#### New Challenge Proposals
+
+* [The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings](http://localhost:5000/poster_paper30.html) - Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Boj
+* [The Cross-lingual Conversation Summarization Challenge](http://localhost:5000/poster_paper31.html) - Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Xianchao Zhu, Yue Zhang
+
+#### Completed Challenges
+
+* [DialogSum Challenge: Summarizing Real-life Scenario Dialogues](https://cylnlp.github.io/dialogsum-challenge/) - Organisers: Yulong Chen, Yang Liu, Yue Zhang
+* [HinglishEval: Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text](https://sites.google.com/view/hinglisheval) - Organisers: Vivek Srivastava, Mayank Singh, Pritam Kadasi
+  *                     [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/1688)
+* [ReproGen: Shared Task on Reproducibility of Evaluations in NLG](https://reprogen.github.io/) - Organisers: Anya Belz, Maja Popovic, Anastasia Shimorina, Ehud Reiter

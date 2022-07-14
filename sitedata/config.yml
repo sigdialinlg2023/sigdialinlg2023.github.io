@@ -27,9 +27,9 @@ organization: INLG 2022 Organizers
 #user: miniconf@miniconf.com
 #pass: mIniconf1_
 
-use_auth0:
-auth0_client_id : JIdr6wi0z27LyLgwkJF0fpk700aj7MNH
-auth0_domain : miniconf.auth0.com
+use_auth0: True
+auth0_client_id : 9xzuAfGbRh1Uoe9Edvo7rc6YMQChClIV
+auth0_domain : dev-ma80app1.us.auth0.com
 
 calendar:
   colors: #  Colors for the different event hashtags:

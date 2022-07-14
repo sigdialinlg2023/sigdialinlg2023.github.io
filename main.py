@@ -30,17 +30,20 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
+    site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
+    
     for p in site_data["sessions"]:
         dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
         if dt.strftime('%A') not in by_date:
             by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
-        by_date[dt.strftime('%A')]['sessions'][p["session"]] = {'name': p["session"], 'zoom': p["zoom"], 'start_time': dt, 'contents': []}
+        p["contents"] = []
+        p["name"] = p["session"]
+        p["start_time"] = dt
+        by_date[dt.strftime('%A')]['sessions'][p["session"]] = p
         
-    for typ in ["papers", "workshops", "tutorials", "panels", "hackathons", "speakers"]:
+    for typ in ["papers", "speakers"]:
         by_uid[typ] = {}
-        if typ == "papers":
-           vals = site_data[typ].values()
-        elif typ == "speakers":
+        if typ == "speakers":
             vals = site_data[typ]['speakers']
         elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
             vals = [format_workshop(workshop) for workshop in site_data[typ]]
@@ -48,7 +51,6 @@ def main(site_data_path):
             vals = site_data[typ]
             
         for p in vals:
-            print(p)
             dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
             by_uid[typ][p["UID"]] = p
             by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
@@ -137,7 +139,7 @@ def about():
 @app.route("/papers.html")
 def papers():
     data = _data()
-    data["papers"] = [x for x in site_data["papers"].values()]
+    data["papers"] = site_data["papers"]
     data["papers"].sort(key=lambda x: x["title"])
     return render_template("papers.html", **data)
 
@@ -161,28 +163,37 @@ def workshops():
 @app.route("/tutorials.html")
 def tutorials():
     data = _data()
-    data["tutorials"] = [
+    data["workshops"] = [
         format_workshop(tutorial) for tutorial in site_data["tutorials"]
     ]
-    return render_template("tutorials.html", **data)
+    return render_template("workshops.html", **data)
 
 
 @app.route("/panels.html")
 def panels():
     data = _data()
-    data["panels"] = [
+    data["workshops"] = [
         format_workshop(panel) for panel in site_data["panels"]
     ]
-    return render_template("panels.html", **data)
+    return render_template("workshops.html", **data)
 
 
 @app.route("/hackathons.html")
 def hackathons():
     data = _data()
-    data["hackathons"] = [
+    data["workshops"] = [
         format_workshop(hackathon) for hackathon in site_data["hackathons"]
     ]
-    return render_template("hackathons.html", **data)
+    return render_template("workshops.html", **data)
+
+
+@app.route("/genchal.html")
+def genchal():
+    data = _data()
+    data["workshops"] = [
+        format_workshop(genchal) for genchal in site_data["genchal"]
+    ]
+    return render_template("workshops.html", **data)
 
 
 @app.route("/sponsors.html")
@@ -206,22 +217,14 @@ def format_paper(v):
     v["authors"] = extract_list_field(v, "authors")
     dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
     v["time"] = dt.strftime('%A %m/%d %H:%M EST')
+    v["title"] = v["title"].title()
     return v
 
 def format_workshop(v):
-    list_keys = ["authors"]
-    list_fields = {}
-    for key in list_keys:
-        list_fields[key] = extract_list_field(v, key)
-
-    return {
-        "UID": v["UID"],
-        "start_time": v["start_time"],
-        "session": v["session"],
-        "title": v["title"],
-        "organizers": list_fields["authors"],
-        "abstract": v["abstract"],
-    }
+    v["organizers"] = extract_list_field(v, "authors")
+    dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
+    v["time"] = dt.strftime('%A %m/%d %H:%M EST')
+    return v
 
 
 # ITEM PAGES
@@ -232,17 +235,8 @@ def poster(poster):
     uid = poster
     v = by_uid["papers"][uid]
     data = _data()
-    data["paper"] = format_paper(v)
+    data["paper"] = v
     return render_template("poster.html", **data)
-
-@app.route("/workshop_<workshop>.html")
-def workshop(workshop):
-    uid = workshop
-    v = by_uid["workshops"][uid]
-    data = _data()
-    data["workshop"] = format_workshop(v)
-    return render_template("workshop.html", **data)
-
 
 # FRONT END SERVING
 
@@ -251,7 +245,7 @@ def workshop(workshop):
 def paper_json():
     json = []
     for v in site_data["papers"].values():
-        json.append(format_paper(v))
+        json.append(v)
     json.sort(key=lambda x: x["title"])
     return jsonify(json)
 

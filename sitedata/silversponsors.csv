@@ -1,3 +1,3 @@
-UID,image,type,name
-1, https://huggingface.co/front/assets/huggingface_logo-noborder.svg, Silver, Huggingface
+UID,image,type,url,name
+3, https://huggingface.co/front/assets/huggingface_logo-noborder.svg, Silver, https://huggingface.co/, Huggingface
 

@@ -11,11 +11,11 @@
     "UID": "paper1",
     "start_time": "2022-07-19T16:00:00Z",
     "paper": "https://openreview.net/attachment?id=gw2rJYVnHeX&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=gw2rJYVnHeX&name=video_preview",
-    "summary_video_captions": "",
-    "full_video": "",
-    "full_video_captions": "",
-    "slides_link": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=slides"
+    
+    "full_video": "https://vimeo.com/728946890",
+    "discord": "https://discordapp.com/channels/991043733573218384/996467698332614666",
+    "slides": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=slides",
+    "code": "https://openreview.net/attachment?id=gw2rJYVnHeX&name=software"
   },
   "paper2": {
     "authors": [
@@ -32,11 +32,11 @@
     "UID": "paper2",
     "start_time": "2022-07-19T16:00:00Z",
     "paper": "https://openreview.net/pdf?id=lsaIVpSiGKE",
-    "summary_video": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=video_preview",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=presentation_video",
-    "full_video_captions": "",
-    "slides_link": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=slides"
+    "summary_video": "https://vimeo.com/728948631",
+    "full_video": "https://vimeo.com/728948641",
+    "discord": "https://discordapp.com/channels/991043733573218384/996467780922654740",
+    "slides": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=slides",
+    "code": "https://openreview.net/attachment?id=lsaIVpSiGKE&name=software"
   },
   "paper3": {
     "authors": [
@@ -50,11 +50,11 @@
     "UID": "paper3",
     "start_time": "2022-07-20T15:00:00Z",
     "paper": "https://openreview.net/pdf?id=Xv5Y2Jl0mbA",
-    "summary_video": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=presentation_video_captions",
-    "slides_link": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=slides"
+    "summary_video": "https://vimeo.com/728948619",
+    "full_video": "https://vimeo.com/728948586",
+    "discord": "https://discordapp.com/channels/991043733573218384/996467827760439396",
+    "slides": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=slides",
+    "code": "https://openreview.net/attachment?id=Xv5Y2Jl0mbA&name=software"
   },
   "paper4": {
     "authors": [
@@ -76,11 +76,10 @@
     "UID": "paper4",
     "start_time": "2022-07-20T15:00:00Z",
     "paper": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=presentation_video"
-,    "full_video_captions": "",
-    "slides_link": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=slides"
+    "full_video": "https://vimeo.com/728948556",
+    "discord": "https://discordapp.com/channels/991043733573218384/996467903161454694",
+    "slides": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=slides",
+    "code": "https://openreview.net/attachment?id=T7gJwMym9Fg&name=software"
   },
   "paper5": {
     "authors": [
@@ -94,11 +93,12 @@
     "UID": "paper5",
     "start_time": "2022-07-21T16:00:00Z",
     "paper": "https://openreview.net/forum?id=r_du-JsTqJ5",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=poster"
+    "full_video": "https://vimeo.com/728950707",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325127871340604",
+    "slides": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=slides",
+    "poster": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=poster",
+    "code": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=software",
+    "data": "https://openreview.net/attachment?id=ZPZAXsXMLeVs&name=data"
   },
   "paper6": {
     "authors": [
@@ -114,11 +114,11 @@
     "UID": "paper6",
     "start_time": "2022-07-19T14:20:00Z",
     "paper": "https://openreview.net/forum?id=k1EBwhNaNFU",
-    "summary_video": "",
-    "summary_video_captions": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=slides"
+    "full_video": "https://vimeo.com/728950889",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326800081637446",
+    "slides": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=slides",
+    "code": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=software",
+    "data": "https://openreview.net/attachment?id=kYl6QZO2cFm5&name=data"
   },
   "paper7": {
     "authors": [
@@ -130,12 +130,11 @@
     "abstract": "Text style transfer aims to change the style (e.g., sentiment, politeness) of a sentence while preserving its content. A common solution is the prototype editing approach, where stylistic tokens are deleted in the “mask” stage and then the masked sentences are infilled with the target style tokens in the “infill” stage. Despite their success, these approaches still suffer from the content preservation problem. By closely inspecting the results of existing approaches, we identify two common types of errors: 1) many content-related tokens are masked and 2) irrelevant words associated with the target style are infilled. Our paper aims to enhance content preservation by tackling each of them. In the “mask” stage, we utilize a BERT-based keyword extraction model that incorporates syntactic information to prevent content-related tokens from being masked. In the “infill” stage, we create a pseudo-parallel dataset and train a T5 model to infill the masked sentences without introducing irrelevant content. Empirical results show that our method outperforms the state-of-theart baselines in terms of content preservation, while maintaining comparable transfer effectiveness and language quality.",
     "UID": "paper7",
     "start_time": "2022-07-21T15:00:00Z",
-    "paper": "/forum?id=Hx-gj_gbgGq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Daclweb.org%2FACL%2FARR%2F2022%2FMarch%2FAuthors%23your-submissions)",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=9XWJRLhbK6&name=presentation_video"
-,    "full_video_captions": "",
-    "slides": "https://openreview.net/attachment?id=9XWJRLhbK6&name=slides"
+    "paper": "https://openreview.net/pdf?id=Hx-gj_gbgGq",
+    "full_video": "https://vimeo.com/728950843",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325254329618563",
+    "slides": "https://openreview.net/attachment?id=9XWJRLhbK6&name=slides",
+    "code": "https://openreview.net/attachment?id=9XWJRLhbK6&name=software"
   },
   "paper8": {
     "authors": [
@@ -150,11 +149,11 @@
     "UID": "paper8",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/pdf?id=reb82_ebeM9",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=MNEQkVei2UX&name=presentation_video"
-,    "full_video_captions": "",
-    "poster_link": "https://openreview.net/attachment?id=MNEQkVei2UX&name=poster"
+    "full_video": "https://vimeo.com/728950821",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325334491136110",
+    "poster": "https://openreview.net/attachment?id=MNEQkVei2UX&name=poster",
+    "code": "https://openreview.net/attachment?id=MNEQkVei2UX&name=software",
+    "data": "https://openreview.net/attachment?id=MNEQkVei2UX&name=data"
   },
   "paper9": {
     "authors": [
@@ -168,11 +167,11 @@
     "UID": "paper9",
    "start_time": "2022-07-20T11:10:00Z",
     "paper": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=slides"
+    "summary_video": "https://vimeo.com/728950808",
+    "full_video": "https://vimeo.com/728950786",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325394406781038",
+    "slides": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=slides",
+    "code": "https://openreview.net/attachment?id=OmaJ3Uv1tTxK&name=software"
   },
   "paper10": {
     "authors": [
@@ -184,11 +183,11 @@
     "UID": "paper10",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=AazNy3HOJFou&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=AazNy3HOJFou&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=AazNy3HOJFou&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=AazNy3HOJFou&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=AazNy3HOJFou&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=AazNy3HOJFou&name=poster"
+    "summary_video": "https://vimeo.com/728950773",
+    "full_video": "https://vimeo.com/728950752",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325442121170967",
+    "poster": "https://openreview.net/attachment?id=AazNy3HOJFou&name=poster",
+    "code": "https://openreview.net/attachment?id=AazNy3HOJFou&name=software"
   },
   "paper11": {
     "authors": [
@@ -203,11 +202,11 @@
     "UID": "paper11",
     "start_time": "2022-07-20T10:30:00Z",
     "paper": "https://openreview.net/attachment?id=UHY8uBA6l_&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=UHY8uBA6l_&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=UHY8uBA6l_&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=UHY8uBA6l_&name=slides"
+    "full_video": "https://vimeo.com/728950734",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325542268584026",
+    "slides": "https://openreview.net/attachment?id=UHY8uBA6l_&name=slides",
+    "code": "https://openreview.net/attachment?id=UHY8uBA6l_&name=software",
+    "data": "https://openreview.net/attachment?id=UHY8uBA6l_&name=data"
   },
   "paper12": {
     "authors": [
@@ -222,11 +221,10 @@
     "UID": "paper12",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=slides"
+    "full_video": "https://vimeo.com/728952993",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325603106947182",
+    "slides": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=slides",
+    "code": "https://openreview.net/attachment?id=_OU1ijTPbj5&name=software"
   },
   "paper13": {
     "authors": [
@@ -242,11 +240,10 @@
     "UID": "paper13",
     "start_time": "2022-07-21T16:40:00Z",
     "paper": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=presentation_video"
-,    "full_video_captions": "",
-    "slides": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=slides"
+    "full_video": "https://vimeo.com/728953287",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325681259421807",
+    "slides": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=slides",
+    "code": "https://openreview.net/attachment?id=eQ9x1x11wMl&name=software"
   },
   "paper14": {
     "authors": [
@@ -261,11 +258,12 @@
     "UID": "paper14",
     "start_time": "2022-07-20T10:50:00Z",
     "paper": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=slides"
+    "summary_video": "https://vimeo.com/728953260",
+    "full_video": "https://vimeo.com/728953255",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325759512543415",
+    "slides": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=slides",
+    "code": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=software",
+    "data": "https://openreview.net/attachment?id=4jfgTOYIf2Eo&name=data"
   },
   "paper15": {
     "authors": [
@@ -279,11 +277,11 @@
     "UID": "paper15",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=presentation_video"
-,    "full_video_captions": "",
-    "poster_link": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=poster"
+    "full_video": "https://vimeo.com/728953169",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325817221976124",
+    "slides": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=slides",
+    "poster": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=poster",
+    "code": "https://openreview.net/attachment?id=uqa37QTWa9jD&name=software"
   },
   "paper16": {
     "authors": [
@@ -298,11 +296,12 @@
     "UID": "paper16",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=presentation_video"
-,    "full_video_captions": "",
-    "poster_link": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=poster"
+    "full_video": "https://vimeo.com/728953139",
+    "discord": "https://discordapp.com/channels/991043733573218384/994325872309960884",
+    "slides": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=slides",
+    "poster": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=poster",
+    "code": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=software",
+    "data": "https://openreview.net/attachment?id=Hk2MuvZkPw&name=data"
   },
   "paper17": {
     "authors": [
@@ -315,11 +314,10 @@
     "UID": "paper17",
     "start_time": "2022-07-19T14:00:00Z",
     "paper": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=slides"
+    "full_video": "https://vimeo.com/728953112",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326054443433984",
+    "slides": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=slides",
+    "code": "https://openreview.net/attachment?id=5tgwpr8QlwQ&name=software"
   },
   "paper18": {
     "authors": [
@@ -333,12 +331,11 @@
     "abstract": "Asking questions during a lecture is a central part of the traditional classroom setting which benefits both students and instructors in many ways. However, no previous work has studied the task of automatically generating student questions based on explicit lecture context. We study the feasibility of automatically generating student questions given the lecture transcript windows where the questions were asked. First, we create a data set of student questions and their corresponding lecture transcript windows. Using this data set, we investigate variants of T5, a sequence-to-sequence generative language model, for a preliminary exploration of this task. Specifically, we compare the effects of training with continuous prefix tuning and pre-training with search engine queries. Question generation evaluation results on two MOOCs show that that pre-training on search engine queries tends to make the generation model more precise whereas continuous prefix tuning offers mixed results.",
     "UID": "paper18",
     "start_time": "2022-07-19T16:20:00Z",
-    "paper": "",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=poster"
+    "full_video": "https://vimeo.com/728953091",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326186408812696",
+    "slides": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=slides",
+    "poster": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=poster",
+    "code": "https://openreview.net/attachment?id=RfcIn_NEAJT&name=software"
   },
   "paper19": {
     "authors": [
@@ -352,11 +349,11 @@
     "UID": "paper19",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/attachment?id=znPsX-_W8Po&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=znPsX-_W8Po&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=znPsX-_W8Po&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=znPsX-_W8Po&name=slides"
+    "full_video": "https://vimeo.com/728953033",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326281632092171",
+    "slides": "https://openreview.net/attachment?id=znPsX-_W8Po&name=slides",
+    "code": "https://openreview.net/attachment?id=znPsX-_W8Po&name=software",
+    "data": "https://openreview.net/attachment?id=znPsX-_W8Po&name=data"
   },
   "paper20": {
     "authors": [
@@ -371,11 +368,10 @@
     "UID": "paper20",
     "start_time": "2022-07-21T17:00:00Z",
     "paper": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=slides"
+    "full_video": "https://vimeo.com/728953023",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326351727304804",
+    "slides": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=slides",
+    "code": "https://openreview.net/attachment?id=OgdQCfHMNrr&name=software"
   },
   "paper21": {
     "authors": [
@@ -395,11 +391,11 @@
     "UID": "paper21",
     "start_time": "2022-07-21T14:00:00Z",
     "paper": "https://openreview.net/attachment?id=Z3IMYmn7OOM&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "",
-    "full_video_captions": "",
-    "PDF": ""
+    "discord": "https://discordapp.com/channels/991043733573218384/994326403917025290",
+    "code": "https://openreview.net/attachment?id=Z3IMYmn7OOM&name=software",
+    "slides": "https://openreview.net/attachment?id=Z3IMYmn7OOM&name=slides",
+    "summary_video": "https://vimeo.com/729841279",
+    "full_video": "https://vimeo.com/729841361"
   },
   "paper22": {
     "authors": [
@@ -413,11 +409,11 @@
     "UID": "paper22",
     "start_time": "2022-07-21T16:20:00Z",
     "paper": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=slides"
+    "summary_video": "https://vimeo.com/728954426",
+    "full_video": "https://vimeo.com/729628309",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326448171135006",
+    "slides": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=slides",
+    "code": "https://openreview.net/attachment?id=3CD13Y0-uQh&name=software"
   },
   "paper23": {
     "authors": [
@@ -431,11 +427,11 @@
     "UID": "paper23",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=poster"
+    "full_video": "https://vimeo.com/728954773",
+    "discord": "https://discordapp.com/channels/991043733573218384/996848512421593199",
+    "slides": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=slides",
+    "poster": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=poster",
+    "code": "https://openreview.net/attachment?id=TlxXK9q4OoE&name=software"
   },
   "paper24": {
     "authors": [
@@ -450,11 +446,12 @@
     "UID": "paper24",
     "start_time": "2022-07-20T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=DE0XE2urXG0&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=DE0XE2urXG0&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=DE0XE2urXG0&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=DE0XE2urXG0&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=DE0XE2urXG0&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=DE0XE2urXG0&name=poster"
+    "summary_video": "https://vimeo.com/728954752",
+    "full_video": "https://vimeo.com/728954733",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326591452741783",
+    "slides": "https://openreview.net/attachment?id=DE0XE2urXG0&name=slides",
+    "poster": "https://openreview.net/attachment?id=DE0XE2urXG0&name=poster",
+    "code": "https://openreview.net/attachment?id=DE0XE2urXG0&name=software"
   },
   "paper25": {
     "authors": [
@@ -469,11 +466,10 @@
     "UID": "paper25",
     "start_time": "2022-07-21T14:20:00Z",
     "paper": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=slides"
+    "full_video": "https://vimeo.com/728954685",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326644896579694",
+    "slides": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=slides",
+    "code": "https://openreview.net/attachment?id=Xxkv1cMHKr9&name=software"
   },
   "paper26": {
     "authors": [
@@ -487,11 +483,11 @@
     "UID": "paper26",
     "start_time": "2022-07-20T11:30:00Z",
     "paper": "https://openreview.net/attachment?id=oud0NFEGxbo&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=oud0NFEGxbo&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=oud0NFEGxbo&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=oud0NFEGxbo&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=oud0NFEGxbo&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=oud0NFEGxbo&name=slides"
+    "summary_video": "https://vimeo.com/728954665",
+    "full_video": "https://vimeo.com/728954632",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326683014414468",
+    "slides": "https://openreview.net/attachment?id=oud0NFEGxbo&name=slides",
+    "code": "https://openreview.net/attachment?id=oud0NFEGxbo&name=software"
   },
   "paper27": {
     "authors": [
@@ -504,11 +500,9 @@
     "abstract": "We propose a novel application of prompting Pre-trained Language Models (PLMs) to generate analogies and study how to design effective prompts for two task settings: generating a source concept analogous to a given target concept (aka Analogous Concept Generation ACG), and generating an explanation of the similarity between a given pair of target concept and source concept (aka Analogous Concept Explanation or ACE). We found that it is feasible to prompt InstructGPT to generate meaningful analogies and the best prompts tend to be precise imperative statements especially with low temperature setting. We also systematically analyzed the sensitivity of the InstructGPT model to prompt design and temperature and found that the model is particularly sensitive to certain variations (e.g., questions vs. imperative statements). Further, we conducted human evaluation on 1.3k of the generated analogies and found that the quality of generations varies substantially by model size. The largest InstructGPT model can achieve human-level performance at generating meaningful analogies for a given target while there is still room for improvement on the ACE task.",
     "UID": "paper27",
     "start_time": "2022-07-21T14:40:00Z",
-    "paper": "https://openreview.net/forum?id=uBiMMgT3E77",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=S0E9Uaa86np&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=S0E9Uaa86np&name=presentation_video_captions",
+    "paper": "https://openreview.net/pdf?id=HfepFeWxf9",
+    "full_video": "https://vimeo.com/728954607",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326745383719042",
     "slides": "https://openreview.net/attachment?id=S0E9Uaa86np&name=slides"
   },
   "paper28": {
@@ -523,11 +517,10 @@
     "UID": "paper28",
     "start_time": "2022-07-19T14:50:00Z",
     "paper": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=slides"
+    "full_video": "https://vimeo.com/728954548",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326800081637446",
+    "slides": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=slides",
+    "code": "https://openreview.net/attachment?id=HS1Q9wdoIX4&name=software"
   },
   "paper29": {
     "authors": [
@@ -542,11 +535,11 @@
     "UID": "paper29",
     "start_time": "2022-07-19T16:20:00Z",
     "paper": "https://openreview.net/attachment?id=R3O5khOL6du&name=paper",
-    "summary_video": "https://openreview.net/attachment?id=R3O5khOL6du&name=video_preview",
-    "summary_video_captions": "https://openreview.net/attachment?id=R3O5khOL6du&name=video_preview_captions",
-    "full_video": "https://openreview.net/attachment?id=R3O5khOL6du&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=R3O5khOL6du&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=R3O5khOL6du&name=poster"
+    "summary_video": "https://vimeo.com/728954525",
+    "full_video": "https://vimeo.com/728954469",
+    "discord": "https://discordapp.com/channels/991043733573218384/994326994688933948",
+    "poster": "https://openreview.net/attachment?id=R3O5khOL6du&name=poster",
+    "code": "https://openreview.net/attachment?id=R3O5khOL6du&name=software"
   },
   "paper30": {
     "authors": [
@@ -562,11 +555,9 @@
     "UID": "paper30",
     "start_time": "2022-07-21T11:30:00Z",
     "paper": "https://openreview.net/attachment?id=QFJe_CaA5Q9&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "",
-    "full_video_captions": "",
-    "PDF": ""
+    "discord": "https://discordapp.com/channels/991043733573218384/994683942701641749",
+    "code": "https://openreview.net/attachment?id=QFJe_CaA5Q9&name=software",
+    "data": "https://openreview.net/attachment?id=QFJe_CaA5Q9&name=data"
   },
   "paper31": {
     "authors": [
@@ -583,11 +574,10 @@
     "UID": "paper31",
     "start_time": "2022-07-21T11:45:00Z",
     "paper": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=slides"
+    "full_video": "https://vimeo.com/729629666",
+    "discord": "https://discordapp.com/channels/991043733573218384/994684335389151372",
+    "slides": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=slides",
+    "code": "https://openreview.net/attachment?id=5eU7LXu-hY0&name=software"
   },
   "paper32": {
     "authors": [
@@ -600,11 +590,11 @@
     "UID": "paper32",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=presentation_video"
-,    "full_video_captions": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=slides"
+    "full_video": "https://vimeo.com/728955611",
+    "discord": "https://discordapp.com/channels/991043733573218384/994684517010899025",
+    "slides": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=slides",
+    "code": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=software",
+    "data": "https://openreview.net/attachment?id=bLbBeLDFfWy&name=data"
   },
   "paper33": {
     "authors": [
@@ -622,11 +612,8 @@
     "UID": "paper33",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=UsRH5rYx1SX&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "",
-    "full_video_captions": "",
-    "PDF": ""
+    "discord": "https://discordapp.com/channels/991043733573218384/994684674389594249",
+    "code": "https://openreview.net/attachment?id=UsRH5rYx1SX&name=software"
   },
   "paper34": {
     "authors": ["Nikhil Singh"],
@@ -636,11 +623,8 @@
     "UID": "paper34",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=Rlxlf0a_8eK&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "",
-    "full_video_captions": "",
-    "PDF": ""
+    "discord": "https://discordapp.com/channels/991043733573218384/994684935711502387",
+    "code": "https://openreview.net/attachment?id=Rlxlf0a_8eK&name=software"
   },
   "paper35": {
     "authors": [
@@ -657,11 +641,10 @@
     "UID": "paper35",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=5OnApqNwVW&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=5OnApqNwVW&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=5OnApqNwVW&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=5OnApqNwVW&name=slides"
+    "full_video": "https://vimeo.com/728955769",
+    "discord": "https://discordapp.com/channels/991043733573218384/994684997321641994",
+    "slides": "https://openreview.net/attachment?id=5OnApqNwVW&name=slides",
+    "code": "https://openreview.net/attachment?id=5OnApqNwVW&name=software"
   },
   "paper36": {
     "authors": [
@@ -675,11 +658,8 @@
     "UID": "paper36",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=nZ72ulItwNn&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "",
-    "full_video_captions": "",
-    "PDF": ""
+    "discord": "https://discordapp.com/channels/991043733573218384/994685110685282434",
+    "code": "https://openreview.net/attachment?id=nZ72ulItwNn&name=software"
   },
   "paper37": {
     "authors": [
@@ -694,11 +674,10 @@
     "UID": "paper37",
     "start_time": "2022-07-21T11:10:00Z",
     "paper": "https://openreview.net/attachment?id=7h3zH7PW28&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=7h3zH7PW28&name=presentation_video",
-    "full_video_captions": "",
-    "slides": "https://openreview.net/attachment?id=7h3zH7PW28&name=slides"
+    "full_video": "https://vimeo.com/728955735",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685192591638649",
+    "slides": "https://openreview.net/attachment?id=7h3zH7PW28&name=slides",
+    "code": "https://openreview.net/attachment?id=7h3zH7PW28&name=software"
   },
   "paper38": {
     "authors": [
@@ -708,17 +687,14 @@
       "Thiago Castro Ferreira",
       "Anya Belz"
       ],
-    "title": "Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System",
+    "title": "Two Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System",
     "session": "GenChal",
     "abstract": "",
     "UID": "paper38",
     "start_time": "2022-07-21T12:00:00Z",
-    "paper": "",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=mf5iR1-xN7Q&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=mf5iR1-xN7Q&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=mf5iR1-xN7Q&name=poster"
+    "full_video": "https://vimeo.com/728955715",
+    "discord": "https://discordapp.com/channels/991043733573218384/996858160595882074",
+    "poster": "https://openreview.net/attachment?id=mf5iR1-xN7Q&name=poster"
   },
   "paper39": {
     "authors": [
@@ -731,12 +707,10 @@
     "abstract": "",
     "UID": "paper39",
     "start_time": "2022-07-21T12:00:00Z",
-    "paper": "",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=XA48unKQwW&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=XA48unKQwW&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=XA48unKQwW&name=poster"
+    "full_video": "https://vimeo.com/728955671",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685416387117206",
+    "slides": "https://openreview.net/attachment?id=XA48unKQwW&name=slides",
+    "poster": "https://openreview.net/attachment?id=XA48unKQwW&name=poster"
   },
   "paper40": {
     "authors": [
@@ -749,11 +723,10 @@
     "UID": "paper40",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=poster"
+    "full_video": "https://vimeo.com/728955651",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685533244629176",
+    "poster": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=poster",
+    "code": "https://openreview.net/attachment?id=xuQNPCLuvjZ&name=software"
   },
   "paper41": {
     "authors": [
@@ -767,12 +740,9 @@
     "abstract": "",
     "UID": "paper41",
     "start_time": "2022-07-21T12:00:00Z",
-    "paper": "",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=_EysyNqo5X6&name=presentation_video",
-    "full_video_captions": "",
-    "poster_link": "https://openreview.net/attachment?id=_EysyNqo5X6&name=poster"
+    "full_video": "https://vimeo.com/728956351",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685594653425664",
+    "poster": "https://openreview.net/attachment?id=_EysyNqo5X6&name=poster"
   },
   "paper42": {
     "authors": [
@@ -792,11 +762,10 @@
     "UID": "paper42",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=9A7TOTfnS9&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=9A7TOTfnS9&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=9A7TOTfnS9&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=9A7TOTfnS9&name=poster"
+    "full_video": "https://vimeo.com/728956524",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685743744172112",
+    "poster": "https://openreview.net/attachment?id=9A7TOTfnS9&name=poster",
+    "code": "https://openreview.net/attachment?id=9A7TOTfnS9&name=software"
   },
   "paper43": {
     "authors": [
@@ -811,11 +780,10 @@
     "UID": "paper43",
     "start_time": "2022-07-21T10:30:00Z",
     "paper": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=presentation_video_captions",
-    "slides": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=slides"
+    "full_video": "https://vimeo.com/728956486",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685798416916512",
+    "slides": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=slides",
+    "code": "https://openreview.net/attachment?id=CUaMhP_jT4L&name=software"
   },
   "paper44": {
     "authors": [
@@ -830,11 +798,11 @@
     "UID": "paper44",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=WUaesmeiki3&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=WUaesmeiki3&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=WUaesmeiki3&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=WUaesmeiki3&name=poster"
+    "full_video": "https://vimeo.com/728956470",
+    "discord": "https://discordapp.com/channels/991043733573218384/994685949860647106",
+    "slides": "https://openreview.net/attachment?id=WUaesmeiki3&name=slides",
+    "poster": "https://openreview.net/attachment?id=WUaesmeiki3&name=poster",
+    "code": "https://openreview.net/attachment?id=WUaesmeiki3&name=software"
   },
   "paper45": {
     "authors": [
@@ -849,11 +817,10 @@
     "UID": "paper45",
     "start_time": "2022-07-21T12:00:00Z",
     "paper": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=paper",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=poster"
+    "full_video": "https://vimeo.com/728956443",
+    "discord": "https://discordapp.com/channels/991043733573218384/994686042420555896",
+    "poster": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=poster",
+    "code": "https://openreview.net/attachment?id=t1eYNeJTsAK&name=software"
   },
   "paper46": {
     "authors": [
@@ -866,11 +833,9 @@
     "abstract": "",
     "UID": "paper46",
     "start_time": "2022-07-21T12:00:00Z",
-    "paper": "",
-    "summary_video": "",
-    "summary_video_captions": "",
-    "full_video": "https://openreview.net/attachment?id=NyAs0YiX2k&name=presentation_video",
-    "full_video_captions": "https://openreview.net/attachment?id=NyAs0YiX2k&name=presentation_video_captions",
-    "poster_link": "https://openreview.net/attachment?id=NyAs0YiX2k&name=poster"
+    "full_video": "https://vimeo.com/728956416",
+    "discord": "https://discordapp.com/channels/991043733573218384/994686229125800090",
+    "slides": "https://openreview.net/attachment?id=NyAs0YiX2k&name=slides",
+    "poster": "https://openreview.net/attachment?id=NyAs0YiX2k&name=poster"
   }
 }

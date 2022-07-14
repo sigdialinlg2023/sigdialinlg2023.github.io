@@ -20,14 +20,13 @@ sessiongroup
   <div class="col-12" id="accordionExample">
     <div class="card m-2">
       <div class="card-header">
-	  <!-- {% if session.zoom != None %}
+	  {% if session.zoom != None %}
             <a href="{{session.zoom}}">
 	  {% endif %}
 	  {{session.name}}
           {% if session.zoom != None %}
             </a>
-          {% endif %} -->
-	  {{session.name}}
+          {% endif %}
           ({{session.start_time.strftime("%H:%M EST")}})
       </div>
       <div
@@ -36,17 +35,20 @@ sessiongroup
         data-parent="#accordionExample"
       >
         <div class="card-body">
+	  {% if session.url != blank %}
+		<a href="{{session.url}}">More Info</a>
+	  {% endif %}
           <ul>
 	  {% for paper in session.contents %}
           {% if paper.title != blank %}
             {% if paper.name != blank %}
-		  <li>{{paper.title}}<br/>{{paper.name}}<br/>{{paper.abstract}}</li>
+		  <li>{{paper.title}}<br/><i>{{paper.name}}</i><br/>{{paper.abstract}}</li>
 	    {% endif %}
             {% if paper.authors != blank %}
-		  <li><!-- <a href="poster_{{paper.UID}}.html">{{paper.title}}</a> -->{{paper.title}}<br/>{{ paper.authors | join(", ") }}</li>
+		  <li><a href="poster_{{paper.UID}}.html">{{paper.title}}</a><br/><i>{{ paper.authors | join(", ") }}</i></li>
 	    {% endif %}
             {% if paper.organizers != blank %}
-		  <li>{{paper.title}}<br/>{{ paper.organizers | join(", ") }}<br/>{{paper.abstract}}</li>
+		  <li>{{paper.title}}<br/><i>{{ paper.organizers | join(", ") }}</i><br/>{{paper.abstract}}</li>
 	    {% endif %}
           {% endif %}
           {% endfor %}
@@ -148,12 +150,13 @@ sessiongroup
 {% macro sponsorgroup(sponsors) -%}
 <div class="row">
   {% for org in sponsors %}
-  <div class="col-md-4 col-xs-6">
+  <div class="col-md-6 col-xs-6">
     <div class="pp-card">
       <div class="pp-card-header" class="text-muted">
-        <h5 class="card-title" align="center">{{org.name}}</h5>
+        <br/><br/><br/>
+        <br/><br/>
         <center>
-          <img src="{{org.image}}" class="rounded" style="height: 60px;" />
+          <a href="{{org.url}}"><img src="{{org.image}}" class="rounded" style="height: 75px;" alt="{{org.name}}"/></a>
         </center>
       </div>
     </div>
@@ -201,7 +204,7 @@ sessiongroup
         <h5 class="card-title" align="center"><a href="poster_{{paper.UID}}.html">{{paper.title}}</a></h5>
         <div>
           <h6 class="card-subtitle text-muted m-1" align="center">
-            {{ paper.authors | join(", ") }}
+            <i>{{ paper.authors | join(", ") }}</i>
           </h6>
         </div>
         <div>
@@ -359,15 +362,13 @@ sessiongroup
   <div class="col-12" id="accordionExample">
     <div class="card m-1">
       <div class="card-header">
-        <a
-          class=""
-          href="#{{workshop.session}}"
-          data-toggle="collapse"
-          data-target="#collapse{{rowloop}}-{{loop.index}}"
-          aria-expanded="true"
-          aria-controls="collapse{{rowloop}}-{{loop.index}}"
-        >
-          <h2>{{workshop.title}}</h2></a>
+          <center><h2>{{workshop.title}}</h2>
+	  {{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="{{workshop.zoom}}">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{workshop.discord}}">Discord</a><br/>
+          <i>
+	    {{ workshop.organizers | join(", ") }}
+	  </i>
+          </center>
       </div>
       <div
         id="collapse{{rowloop}}-{{loop.index}}"
@@ -375,9 +376,6 @@ sessiongroup
         data-parent="#accordionExample"
       >
         <div class="card-body">
-          <h3 class="card-subtitle text-muted m-2" align="center">
-	    {{ workshop.organizers | join(", ") }}
-	  </h3>
 	  {{ workshop.abstract | markdown }}
         </div>
       </div>
