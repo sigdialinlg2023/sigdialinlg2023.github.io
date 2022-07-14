@@ -1,3 +1,4 @@
+private: false
 name: INLG 2022
 tagline: 15th International Natural Language Generation Conference
 date: 18-22 July 2022
@@ -27,7 +28,7 @@ organization: INLG 2022 Organizers
 #user: miniconf@miniconf.com
 #pass: mIniconf1_
 
-use_auth0: false
+use_auth0: true
 auth0_client_id : ptF3gg7K6X0VN0FxOeCAVbKURrAis82d
 auth0_domain : dev-ma80app1.us.auth0.com
 

@@ -43,7 +43,7 @@ Choose a day to see the schedule for that day.
     aria-labelledby="nav-profile-tab"
   >
     <div id="day_{{day}}">
-	    {{ components.sessiongroup(days[day].sessions.values()) }}
+	    {{ components.sessiongroup(config.private, days[day].sessions.values()) }}
     </div>
   </div>
   {% endfor %} 
