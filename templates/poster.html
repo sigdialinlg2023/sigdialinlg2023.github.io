@@ -31,14 +31,19 @@
             {% for author in paper.authors %}
             <a href="papers.html?filter=authors&search={{author}}"
                class="text-muted"
-            >{{author}}</a
+            ><i>{{author}}</i></a
             >{{ "," if not loop.last }}
             {% endfor %}
         </h3>
         <div class="text-center p-3">
             {{paper.session}} - {{paper.time}}<br/>
+            {% if paper.paper != blank %}
 	    <a class="card-link" target="_blank" href="{{paper.paper}}">
                 Paper
+            </a>
+	    {% endif %}
+            <a href="{{paper.zoom}}" target="_blank" class="card-link">
+                Zoom
             </a>
             <a href="{{paper.discord}}" target="_blank" class="card-link">
                 Discord

@@ -27,7 +27,7 @@ organization: INLG 2022 Organizers
 #user: miniconf@miniconf.com
 #pass: mIniconf1_
 
-use_auth0: True
+use_auth0: true
 auth0_client_id : 9xzuAfGbRh1Uoe9Edvo7rc6YMQChClIV
 auth0_domain : dev-ma80app1.us.auth0.com
 
