@@ -244,7 +244,7 @@ def poster(poster):
 @app.route("/papers.json")
 def paper_json():
     json = []
-    for v in site_data["papers"].values():
+    for v in site_data["papers"]:
         json.append(v)
     json.sort(key=lambda x: x["title"])
     return jsonify(json)
@@ -266,7 +266,7 @@ def serve(path):
 
 @freezer.register_generator
 def generator():
-    for paper in site_data["papers"].values():
+    for paper in site_data["papers"]:
         yield "poster", {"poster": str(paper["UID"])}
 
     for key in site_data:

@@ -49,6 +49,13 @@
     <script src="static/js/data/api.js"></script>
 
     
+    <script>
+      var auth0_domain = "dev-ma80app1.us.auth0.com";
+      var auth0_client_id = "9xzuAfGbRh1Uoe9Edvo7rc6YMQChClIV";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script src="static/js/modules/auth0protect.js"></script>
+    
 
     <!-- External CSS -->
     <link rel="stylesheet"
@@ -127,12 +134,12 @@
                     Program
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
                     <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="panels.html">Panel</a>
+                    <a class="dropdown-item" href="papers.html">Papers</a>
                     <a class="dropdown-item" href="workshops.html">Workshops</a>
                     <a class="dropdown-item" href="tutorials.html">Tutorials</a>
-                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
-                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>
                     <a class="dropdown-item" href="genchal.html">GenChal</a>
                   </div>
                </li>
@@ -199,57 +206,88 @@
   <div class="row">
     <div class="col-sm border">
       <h2>Welcome!</h2>
-<p>We look forward to hosting you in the beautiful state of Maine July 18-22, 2022.</p>
-<p>It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! We will have:</p>
+<p>It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! </p>
+<p>The conference is a <em>hybrid</em> conference, jointly held for in person attendees at Colby College in Waterville, ME and for all attendees via zoom and discord. </p>
 <ul>
-<li>Four great keynote speakers</li>
-<li>A panel about ethics in natural language generation</li>
-<li>A workshop on NLG for health</li>
-<li>A tutorial on artificial text detection</li>
-<li>GenChal</li>
-<li>A hackathon on NLG for climate in Maine</li>
+<li>If you have registered, join the live conference site <a href="https://virtual-inlg2022.net">here</a>.</li>
+<li>The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST <a href="https://colby.zoom.us/j/93438451939">here</a>.</li>
 </ul>
-<p>We will also have social events for remote <em>and</em> in-person attendees. You can:</p>
-<ul>
-<li>Join us for an opening reception and a banquet</li>
-<li>Visit Allen Island off the coast of Maine</li>
-<li>See the night sky, guided by an astronomer</li>
-<li>Visit the Colby art museum</li>
-<li>Participate in a "treasure hunt"</li>
-<li>Participate in discord chats with presenters and other attendees</li>
-</ul>
-<p>... and more!</p>
-<p>We also aim to be a family friendly conference!</p>
-<ul>
-<li>Colby housing is open to you and your family (see the registration site)</li>
-<li>The banquet and select social events are open to you and your family</li>
-</ul>
-<h2>Locations</h2>
-<p>INLG 2022 will be a <em>hybrid</em> conference. </p>
+<p>The local organizers will be happy to answer your questions on discord or in person: Amanda Stent, Amy Poulin and Charlotte Buswick.</p>
+<p>We want to thank our student volunteers who will staff the help desk during the week: Max Jacobs, Meredith Green, Matianyu Zang, Leo Qian, Yiheng Su, Baron Wang, Adaobi Nebuwa, Giang Pham and Changling Li.</p>
 <h2>Sponsors</h2>
-<p>We gratefully acknowledge our sponsors:</p>
+<p>We gratefully acknowledge our <a href="sponsors.html">sponsors</a>:</p>
 <ul>
 <li>Arria</li>
 <li>Google</li>
 <li>Huggingface</li>
 <li>AX Semantics</li>
+<li>aiXplain</li>
 </ul>
-<h2>Schedule</h2>
-<p>The schedule will be announced in early June. In the meantime, here's a general overview:</p>
+<h2>ACL Code of Conduct</h2>
+<p>The open exchange of ideas, the freedom of thought and expression, and respectful scientific debate are central to the aims and goals of the ACL. These require a community and an environment that recognizes the inherent worth of every person and group, that fosters dignity, understanding, and mutual respect, and embraces diversity. For these reasons, ACL is dedicated to providing a harassment-free experience for all the members, as well as participants at our events and in our programs.</p>
+<p>Harassment and hostile behavior are unwelcome at any ACL conference, associated event, or in ACL-affiliated online discussions. This includes: speech or behavior that intimidates, creates discomfort, or interferes with a r an event. We aim for ACL-related activities to be an environment where harassment in any form does not happen, including but not limited to: harassment based on race, gender, religion, age, color, appearance, national origin, ancestry, disability, sexual orientation, or gender identity. Harassment includes degrading verbal comments, deliberate intimidation, stalking, harassing photography or recording, inappropriate physical contact, and unwelcome sexual attention. The policy is not intended to inhibit challenging scientific debate, but rather to promote it by ensuring that all are welcome to participate in the shared spirit of scientific inquiry. Vexatious complaints and willful misuse of this procedure will render the complainant subject to the same sanctions as a violation of the anti-harassment policy.</p>
+<p>It is the responsibility of the community as a whole to promote an inclusive and positive environment for our scholarly activities. In addition, anyone who experiences harassment or hostile behavior may contact any member of the ACL <a href="https://www.aclweb.org/adminwiki/index.php?title=Professional_Conduct_Committee">Professional Conduct Committee</a> or/and the <a href="organizers.html">Conference Organizers</a>. Members of thess committees will be instructed to keep any such contact in strict confidence, and those who approach the committee will be consulted before any actions are taken.</p>
+<h2>ACL COVID Policy</h2>
+<p>It is the policy of ACL conferences that attendees wear high-quality, well-fitting masks while attending indoor functions at ACL events, removing their masks only the minimal amount necessary to eat and drink. This policy is in force even if local regulations are less strict, but may be superseded by stricter local regulations. Furthermore, the ACL strongly encourages attendees to be cautious with masking in indoor space outside the conference venue (e.g. on public transit or while eating away from the venue) to avoid bringing COVID to the venue. </p>
+<h2>We Stand on Indigenous Land</h2>
+<p>At Colby we recognize that the land we inhabit was formed by the indigenous peoples of the Wabanaki Confederacy: the Abenaki, Penobscot, Passamaquoddy, Maliseet and Mi'kmaq peoples. We exist on their unceded homelands.</p>
+<p>To learn more about the history, culture and language of these peoples, please visit:</p>
 <ul>
-<li>Monday 7/18 tutorial and workshop</li>
-<li>Tuesday 7/19-Thursday 7/21 main conference</li>
-<li>Friday 7/22 hackathon</li>
+<li><a href="https://wabanakialliance.com/wabanaki-history/">https://wabanakialliance.com/wabanaki-history/</a></li>
+<li><a href="http://www.native-languages.org/maine.htm">http://www.native-languages.org/maine.htm</a></li>
 </ul>
 <h3>Acknowledgements</h3>
-<p>MiniConf was built by <a href="http://twitter.com/hen_str">Hendrik Strobelt</a> and <a href="http://twitter.com/srush_nlp">Sasha Rush</a>.</p>
-<p>Thanks to Darren Nelson for the original design sketches. Shakir Mohamed, Martha White, Kyunghyun Cho, Lee Campbell, and Adam White for planning and feedback. Hao Fang, Junaid Rahim, Jake Tae, Yasser Souri, Soumya Chatterjee, and Ankshita Gupta for contributions. </p>
+<p>This site is based on <a href="https://github.com/Mini-Conf/Mini-Conf">MiniConf</a> which was built by <a href="http://twitter.com/hen_str">Hendrik Strobelt</a> and <a href="http://twitter.com/srush_nlp">Sasha Rush</a>.</p>
     </div>
     <div class="col col-lg-2">
       <a class="twitter-timeline" data-height="500" href="https://twitter.com/inlgmeeting?ref_src=twsrc%5Etfw">Tweets by inlgmeeting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </div>
+
+    
+    <script>
+      const updateUI = async () => {
+        const auth0_domain = "dev-ma80app1.us.auth0.com";
+        const auth0_client_id = "9xzuAfGbRh1Uoe9Edvo7rc6YMQChClIV";
+        const auth0 = await createAuth0Client({
+          domain: auth0_domain,
+          client_id: auth0_client_id,
+          cacheLocation: "localstorage",
+        });
+        const is_auth = await auth0.isAuthenticated();
+        console.log(is_auth, "--- is_auth");
+        if (is_auth) {
+          document.body.style.display = null;
+
+          // unused atm, hook up later; this won't get executed since we change location above
+          const user = await auth0.getUser();
+          $(".loginBtn").hide();
+          $(".logoutBtn").show();
+          $(".secret").show();
+          $(".user_name").text(user.name);
+          $(".login-message").text("You are logged in as");
+        } else {
+          $(".loginBtn").show();
+          $(".logoutBtn").hide();
+          $(".secret").hide();
+          $(".user_name").text("");
+          $(".login-message").text("You are currently not authenticated.");
+        }
+
+        $(".loginBtn").click(async function () {
+          window.location.href = `redirect.html?return=index.html`;
+        });
+        $(".logoutBtn").click(async function () {
+          await auth0.logout({
+            returnTo: window.location.href,
+          });
+        });
+      };
+      updateUI();
+    </script>
+    
+
 
     </div>
 </div>

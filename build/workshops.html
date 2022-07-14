@@ -50,6 +50,13 @@
     <script src="static/js/data/api.js"></script>
 
     
+    <script>
+      var auth0_domain = "dev-ma80app1.us.auth0.com";
+      var auth0_client_id = "9xzuAfGbRh1Uoe9Edvo7rc6YMQChClIV";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script src="static/js/modules/auth0protect.js"></script>
+    
 
     <!-- External CSS -->
     <link rel="stylesheet"
@@ -128,12 +135,12 @@
                     Program
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
                     <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="panels.html">Panel</a>
+                    <a class="dropdown-item" href="papers.html">Papers</a>
                     <a class="dropdown-item" href="workshops.html">Workshops</a>
                     <a class="dropdown-item" href="tutorials.html">Tutorials</a>
-                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
-                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>
                     <a class="dropdown-item" href="genchal.html">GenChal</a>
                   </div>
                </li>
@@ -161,7 +168,31 @@
 
 
 <!-- User Overrides -->
- 
+
+<style>
+  .back {
+    background: url("static/images/main.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        15th International Natural Language Generation Conference
+      </h2>
+      <h2 class="p-5">
+        18-22 July 2022
+      </h2>
+    </div>
+  </div>
+</div>
+
 
 <div class="container">
     <!-- Tabs -->
@@ -174,28 +205,26 @@
 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
   <div id="day">
     <!-- Workshops -->
-    <div class="border-top my-3"></div>
+<!--    <div class="border-top my-3"></div>
 <div class="row p-4" id="faq">
   <div class="col-12 bd-content">
     <h2 class="text-center">Workshops</h2>
   </div>
-</div>
+</div> -->
     <div class="speakers">
       
 
 <div class="row">
   <div class="col-12" id="accordionExample">
-    <div class="card m-2">
+    <div class="card m-1">
       <div class="card-header">
-        <a
-          class=""
-          href="#"
-          data-toggle="collapse"
-          data-target="#collapse1-1"
-          aria-expanded="true"
-          aria-controls="collapse1-1"
-        >
-          NLG4Health</a>
+          <center><h2>NLG4Health</h2>
+	  Monday 07/18 14:00 EST&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://colby.zoom.us/j/93438451939">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://discordapp.com/channels/991043733573218384/996843166185562162">Discord</a><br/>
+          <i>
+	    Emiel Krahmer (Tilburg University), Kathy McCoy (University of Delaware), Ehud Reiter (University of Aberdeen)
+	  </i>
+          </center>
       </div>
       <div
         id="collapse1-1"
@@ -203,13 +232,10 @@
         data-parent="#accordionExample"
       >
         <div class="card-body">
-	  <h3 class="card-subtitle mb-2 text-muted text-center">
-	    Emiel Krahmer (Tilburg University), Kathy McCoy (University of Delaware), Ehud Reiter (University of Aberdeen)
-	  </h3>
 	  <p>There is a long tradition of applying NLG to healthcare problems in the research community, dating back to the 1990s. Many use cases have been investigated, including reporting, clinical decision support, patient information, and behaviour change. The common theme across these diverse use cases is using NLG to accurately and clearly present key information to doctors, patients, and other stakeholders, in order to enhance healthcare quality and outcomes.</p>
 <p>We will also encourage submissions about the NLG aspects of health dialog including health coaching, health chatbots and intelligent agents.</p>
 <p>The goal of this workshop is to bring together researchers interested in applying NLG to healthcare. We hope that this will encourage discussion about common issues, challenges, and discussion in NLG for healthcare.</p>
-<p><b>Website:</b> <a href=https://nlg4health.uvt.nl/">https://nlg4health.uvt.nl/</a>"</p>
+<p>Website: <a href="https://nlg4health.uvt.nl/">https://nlg4health.uvt.nl/</a></p>
         </div>
       </div>
     </div>

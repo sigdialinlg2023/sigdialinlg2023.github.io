@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +49,13 @@
     <!--    Internal Libs -->
     <script src="static/js/data/api.js"></script>
 
+    
+    <script>
+      var auth0_domain = "dev-ma80app1.us.auth0.com";
+      var auth0_client_id = "9xzuAfGbRh1Uoe9Edvo7rc6YMQChClIV";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script src="static/js/modules/auth0protect.js"></script>
     
 
     <!-- External CSS -->
@@ -108,34 +118,33 @@
                 id="navbarNav"
         >
             <ul class="navbar-nav ml-auto">
-                
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="calls.html">Calls</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="organizers.html">Organizers</a>
                 </li>
-                
-                <li class="nav-item dropdown">
+
+            <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Program
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
                     <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="panels.html">Panel</a>
+                    <a class="dropdown-item" href="papers.html">Papers</a>
                     <a class="dropdown-item" href="workshops.html">Workshops</a>
                     <a class="dropdown-item" href="tutorials.html">Tutorials</a>
-                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
-                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>
                     <a class="dropdown-item" href="genchal.html">GenChal</a>
                   </div>
                </li>
-                
+
                <li class="nav-item ">
                   <a class="nav-link" href="calendar.html">Schedule</a>
               </li>
@@ -143,15 +152,14 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="sponsors.html">Sponsors</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="registration.html">Registration</a>
                 </li>
-                
+
                 <li class="nav-item ">
                     <a class="nav-link" href="help.html">Help</a>
                 </li>
-                
             </ul>
         </div>
     </div>
@@ -160,7 +168,31 @@
 
 
 <!-- User Overrides -->
- 
+
+<style>
+  .back {
+    background: url("static/images/main.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        15th International Natural Language Generation Conference
+      </h2>
+      <h2 class="p-5">
+        18-22 July 2022
+      </h2>
+    </div>
+  </div>
+</div>
+
 
 <div class="container">
     <!-- Tabs -->
@@ -173,55 +205,52 @@
 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
   <div id="day">
     <!-- Workshops -->
+<!--    <div class="border-top my-3"></div>
 <div class="row p-4" id="faq">
   <div class="col-12 bd-content">
-    <h2 class="text-center">GenChal</h2>
+    <h2 class="text-center">Workshops</h2>
   </div>
-</div>
+</div> -->
     <div class="speakers">
       
-        <section>
-            <p>
-                The Generation Challenges (GenChal) are an umbrella event designed to bring together a variety of shared-task efforts that involve the generation of natural language. This year GenChal features two new challenge proposals and reports of organisers and participants from three completed challenges.
-            </p>
-            <p>
-                More information about previous challenges at GenChal <a href="https://sites.google.com/site/genchalrepository/">here</a>
-            </p>
-        </section>
-        <section>
-            <h3>New Challenge Proposals</h3>
-            <ul>
-                <li>The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings</li>
-                <ul>
-                    <li><i>Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Bojar</i></li>
-                </ul>
-                <li>The Cross-lingual Conversation Summarization Challenge</li>
-                <ul>
-                    <li><i>Yulong Chen , Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Xianchao Zhu, Yue Zhang</i></li>
-                </ul>
-            </ul>
-        </section>
-        <section>
-            <h3>Completed Challenges</h3>
-            <ul>
-                <li>DialogSum Challenge: Summarizing Real-life Scenario Dialogues</li>
-                <ul>
-                    <li>Organisers: <i>Yulong Chen, Yang Liu, Yue Zhang</i></li>
-                    <li><a href="https://cylnlp.github.io/dialogsum-challenge/">Homepage</a></li>
-                </ul>
-                <li>HinglishEval: Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text</li>
-                <ul>
-                    <li>Organisers: <i>Vivek Srivastava, Mayank Singh, Pritam Kadasi</i></li>
-                    <li><a href="https://sites.google.com/view/hinglisheval">Homepage</a></li>
-                    <li><a href="https://codalab.lisn.upsaclay.fr/competitions/1688">CodaLab</a></li>
-                </ul>
-                <li>ReproGen: Shared Task on Reproducibility of Evaluations in NLG </li>
-                <ul>
-                    <li>Organisers: <i>Anya Belz, Maja Popović, Anastasia Shimorina, Ehud Reiter</i></li>
-                    <li><a href="https://reprogen.github.io/">Homepage</a></li>
-                </ul>
-            </ul>
-        </section>
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+          <center><h2>GenChal</h2>
+	  Thursday 07/21 10:30 EST&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Discord</a><br/>
+          <i>
+	    Anastasia Shimorina
+	  </i>
+          </center>
+      </div>
+      <div
+        id="collapse1-1"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+	  <p>The Generation Challenges (GenChal) are an umbrella event designed to bring together a variety of shared-task efforts that involve the generation of natural language. This year GenChal features two new challenge proposals and reports of organisers and participants from three completed challenges.</p>
+<p>More information about previous challenges at GenChal <a href="https://sites.google.com/site/genchalrepository/">here</a>.</p>
+<h4>New Challenge Proposals</h4>
+<ul>
+<li><a href="http://localhost:5000/poster_paper30.html">The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings</a> - Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Boj</li>
+<li><a href="http://localhost:5000/poster_paper31.html">The Cross-lingual Conversation Summarization Challenge</a> - Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Xianchao Zhu, Yue Zhang</li>
+</ul>
+<h4>Completed Challenges</h4>
+<ul>
+<li><a href="https://cylnlp.github.io/dialogsum-challenge/">DialogSum Challenge: Summarizing Real-life Scenario Dialogues</a> - Organisers: Yulong Chen, Yang Liu, Yue Zhang</li>
+<li><a href="https://sites.google.com/view/hinglisheval">HinglishEval: Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text</a> - Organisers: Vivek Srivastava, Mayank Singh, Pritam Kadasi</li>
+<li><a href="https://codalab.lisn.upsaclay.fr/competitions/1688">CodaLab</a></li>
+<li><a href="https://reprogen.github.io/">ReproGen: Shared Task on Reproducibility of Evaluations in NLG</a> - Organisers: Anya Belz, Maja Popovic, Anastasia Shimorina, Ehud Reiter</li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>
