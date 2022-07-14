@@ -1,0 +1,1051 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+
+    <title>INLG 2022</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="https://inlg2021.github.io/img/logo.png"
+                    height="auto"
+            width="90px"
+            />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">15th International Natural Language Generation Conference</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="calls.html">Calls</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="organizers.html">Organizers</a>
+                </li>
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Program
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
+                    <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="workshops.html">Workshops</a>
+                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
+                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="genchal.html">GenChal</a>
+                  </div>
+               </li>
+
+               <li class="nav-item ">
+                  <a class="nav-link" href="calendar.html">Schedule</a>
+              </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+
+<style>
+  .back {
+    background: url("static/images/main.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        15th International Natural Language Generation Conference
+      </h2>
+      <h2 class="p-5">
+        18-22 July 2022
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+         
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+
+<!-- Organizers -->
+<div class="border-top my-3"></div>
+<div class="row p-4" id="faq">
+  <div class="col-12 bd-content">
+    <h2 class="text-center">Papers</h2>
+  </div>
+</div>
+<div class="row">
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper7.html">&#39;Slow Service&#39; $\cancel{\rightarrow}$ &#39;Great Food&#39;: Enhancing Content Preservation in Unsupervised Text Style Transfer</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Wanzheng Zhu, Suma Bhat
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper45.html">A Multi-Task Learning Approach for Summarization of Dialogues</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Saprativa Bhattacharjee, Kartik Shinde, Tirthankar Ghosal, Asif Ekbal
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper42.html">A reproduction study of methods for evaluating dialogue system output: Replicating Santhanam and Shaikh (2019)</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Anouck Braggaar, Frédéric Tomas, Peter Blomsma, Saar Hommes, Nadine Braun, Emiel van Miltenburg, Chris Van der Lee, Martijn Goudbeek, Emiel Krahmer
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper15.html">Amortized Noisy Channel Neural Machine Translation</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Richard Yuanzhe Pang, He He, Kyunghyun Cho
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper27.html">Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Bhavya Bhavya, Jinjun Xiong, ChengXiang Zhai
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper8.html">Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Jonathan Emami, Pierre Nugues, Ashraf Elnagar, Imad Afyouni
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper29.html">Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Amit Kumar Chaudhary, Alex J. Lucassen, Ioanna Tsani, Alberto Testoni
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=R3O5khOL6du&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper3.html">Automated Ad Creative Generation</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Vishakha Kadam, Yiping Jin, Bao-Dai Nguyen-Hoang
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=Xv5Y2Jl0mbA&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper12.html">Automatic Generation of Factual News Headlines in Finnish</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Maximilain Koppatz, Khalid Alnajjar, Mika Hämäläinen, Thierry Poibeau
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper35.html">BITS Pilani at HinglishEval: Quality Evaluation for Code-Mixed Hinglish Text Using Transformers</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Shaz Furniturewala, Vijay Kumari, Amulya Ratna Dash, Hriday Kedia, Naman Ahuja, Yashvardhan Sharma
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper1.html">BLAB Reporter: Automated journalism covering the Blue Amazon</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Yan Vianna Sym, João Gabriel Moura Campos, Fabio Cozman
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=gw2rJYVnHeX&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper17.html">Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Simone Balloccu, Ehud Reiter
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper14.html">Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Javier González Corbelle, Alberto Bugarín-Diz, Jose Maria Alonso-Moral, Juan Taboada
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=4jfgTOYIf2Eo&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper43.html">DialogSum Challenge: Results of the Dialogue Summarization Shared Task</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Naihao Deng, Yulong Chen, Yang Liu, Yue Zhang
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper46.html">Dialogue Summarization using BART</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Conrad Lundberg, Leyre Sánchez Viñuela, Siena Biales
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper5.html">Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Zhao Han, Polina Rygina, Thomas Williams
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper11.html">Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Nicolas Garneau, Eve Gaumond, Luc Lamontagne, Pierre-Luc Déziel
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper13.html">Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Nazia Attari, David Schlangen, Martin Heckmann, Heiko Wersing, Sina Sina Zarrieß
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper20.html">Generating Landmark-based Manipulation Instructions from Image Pairs</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Sina Zarrieß, Henrik Voigt, David Schlangen, Philipp Sadler
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper2.html">Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Andres Garcia-Silva, Cristian Berrio, Jose Manuel Gomez-Perez, Jose Antonio Martinez-Heras, Patrick Fleith, Stefano Scaglioni
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=lsaIVpSiGKE&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper18.html">Generation of Student Questions for Inquiry-based Learning</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Kevin Ros, Maxwell Jong, Chak Ho Chan, ChengXiang Zhai
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper32.html">HinglishEval Generation Challenge on Quality Estimation of Synthetic Code-mixed Text: Overview and Results</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Vivek Srivastava, Mayank Singh
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper36.html">JU_NLP at HinglishEval: Quality Evaluation of the Low-Resource Code-Mixed Hinglish Text</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Prantik Guha, Rudra Dhar, Dipankar Das
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper19.html">Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Ying-Hong Chan, Ho-Lam Chung, Yao-Chung Fan
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper25.html">LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper23.html">Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Nikolai Ilinykh, Yasmeen Emampoor, Simon Dobnik
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper16.html">Math Word Problem Generation with Multilingual Language Models</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Kashyapa Niyarepola, Dineth Athapaththu, Savindu Kalsara Ekanayake, Surangika Ranathunga
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper34.html">Niksss at HinglishEval: Language-agnostic BERT-based Contextual Embeddings with Catboost for Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Nikhil Singh
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper22.html">Nominal Metaphor Generation with Multitask Learning</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Yucheng Li, Chenghua Lin, Frank Guerin
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=3CD13Y0-uQh&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper10.html">Paraphrasing via Ranking Many Candidates</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Joosung Lee
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=AazNy3HOJFou&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper9.html">Plot Writing From Pre-Trained Language Models</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Yiping Jin, Vishakha Kadam, Dittaya Wanvarie
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=OmaJ3Uv1tTxK&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper33.html">PreCogIIITH at HinglishEval: Leveraging Code-Mixing Metrics &amp; Language Model Embeddings To Estimate Code-Mix Quality</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Prashant Kodali, Tanmay Sachan, Akshay Goindani, Anmol Goel, Naman Ahuja, Manish Shrivastava, Ponnurangam Kumaraguru
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper26.html">Quantum Natural Language Generation on Near-Term Devices</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Amin Karamlou, James R Wootton, Marcel Pfaffhauser
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=oud0NFEGxbo&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper39.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Mohammad Arvan, Luis Pina, Natalie Parde
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper47.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Mohammad Arvan, Luis Pina, Natalie Parde
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper41.html">Reproducing a Manual Evaluation of Simplicity in Text Simplification System Outputs</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Maja Popovic, Sheila Castilho, Rudali HUIDrom, Anya Belz
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper38.html">Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Rudali HUIDrom, Ondrej Dusek, Zdeněk Kasner, Thiago Castro Ferreira, Anya Belz
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper24.html">Strategies for framing argumentative conclusion generation</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Philipp Heinisch, Anette Frank, Juri Opitz, Philipp Cimiano
+          </h6>
+        </div>
+        <div>
+	  
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a href="https://openreview.net/attachment?id=DE0XE2urXG0&amp;name=video_preview">Summary Video</a>
+          </h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper44.html">TCS_WITM_2022 @ DialogSum: Topic oriented Summarization using Transformer based Encoder Decoder Model</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Vipul Chauhan, Prasenjeet Roy, Lipika Dey, Tushar Goel
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper4.html">THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Rudolf Rosa, Patrícia Schmidtová, Alisa Zakhtarenko, Ondrej Dusek, Tomáš Musil, David Mareček, Saad Obaid Ul Islam, Marie Nováková, Klára Vosecká, Daniel Hrbek, David Košťák
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper6.html">Template-based Approach to Zero-shot Intent Recognition</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Dmitry Lamanov, Pavel Burnyshev, Valentin Malykh, Andrey Bout, Irina Piontkovskaya
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper37.html">The 2022 ReproGen Shared Task on Reproducibility of Evaluations in NLG: Overview and Results</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Anya Belz, Anastasia Shimorina, Maja Popovic, Ehud Reiter
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper40.html">The Accuracy Evaluation Shared Task as a Retrospective Reproduction Study</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Craig Thomson, Ehud Reiter
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper31.html">The Cross-lingual Conversation Summarization Challenge</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Yue Zhang
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper30.html">The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Bojar
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper28.html">Towards Evaluation of Multi-party Dialogue Systems</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Khyati Mahajan, Sashank Santhanam, Samira Shaikh
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <h5 class="card-title" align="center"><a href="poster_paper21.html">Zero-shot Cross-Linguistic Learning of Event Semantics</a></h5>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Malihe Alikhani, Thomas H Kober, Bashar Alhafni, Yue Chen, Mert Inan, Elizabeth Kaye Nielsen, Shahab Raji, Mark Steedman, Matthew Stone
+          </h6>
+        </div>
+        <div>
+	  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 INLG 2022 Organizers</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

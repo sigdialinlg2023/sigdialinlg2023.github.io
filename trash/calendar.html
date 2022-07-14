@@ -1,0 +1,2008 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+
+    <title>INLG 2022: Schedule</title>
+    
+<script src="https://cdn.jsdelivr.net/npm/ical.js@1.4.0/build/ical.min.js" integrity="sha256-iFbWWsVYU6rIgbq5wJc4mp8zvV3SkqupxgH/7a9PanY=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/dist/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.31/builds/moment-timezone-with-data-10-year-range.min.js" integrity="sha256-Dx3P9LwbB/WuS+7Xv37Y+qcPS/14AwFH653Pw80AOhY=" crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.5.2/dist/tui-code-snippet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tui-dom@3.0.0/dist/tui-dom.min.js" integrity="sha256-Ha3QUAK/d/Z2BMN/hDoBjwP0Q0f5uS9MploTRSLqrLI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/css/bootstrap-select.min.css"
+/>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+<script src="static/js/modules/lazyLoad.js"></script>
+<script src="static/js/modules/urlParams.js"></script>
+<!-- <script type="text/javascript" src="static/js/views/calendar.js"></script> -->
+
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="https://inlg2021.github.io/img/logo.png"
+                    height="auto"
+            width="90px"
+            />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">15th International Natural Language Generation Conference</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="calls.html">Calls</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="organizers.html">Organizers</a>
+                </li>
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Program
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
+                    <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="workshops.html">Workshops</a>
+                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
+                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="genchal.html">GenChal</a>
+                  </div>
+               </li>
+
+               <li class="nav-item ">
+                  <a class="nav-link" href="calendar.html">Schedule</a>
+              </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+        
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-Monday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Monday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-Tuesday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Tuesday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-Wednesday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Wednesday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-Thursday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Thursday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-Friday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Friday
+    </a>
+  </li>
+  
+</ul>
+
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  
+  <div
+    class="tab-pane fade"
+    id="tab-Monday"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    <div id="day_Monday">
+	    
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93612543237">
+	   -->
+	  Tutorial
+          <!-- 
+            </a>
+           -->
+          (09:00 EST)
+      </div>
+      <div
+        id="collapse1-1"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+            
+		  <li>Artificial Text Detection<br/>Adaku Uchendu (The Pennsylvania State University), Vladislav Mikhailov (HSE University), Jooyoung Lee (The Pennsylvania State University), Saranya Venkatraman (The Pennsylvania State University), Tatiana Shavrina (AI Research Institute), Ekaterina Artemova (HSE University / Huawei Noah&#39;s Ark Lab)<br/>Recent advances in natural language generation have led to the development of models capable of generating high-quality and human-like texts among many languages and domains. However, it is known that such models can be misused for malicious purposes, including but not limited to generating fake news, spreading propaganda, and facilitating fraud. This tutorial aims at bringing awareness of artificial text detection, a fast-growing niche field devoted to mitigating the misuse of these models. It targets NLP researchers and industrial practitioners who work with text generative models and/or on mitigating ethical, social, and privacy harms. Our tutorial provides the attendees with a comprehensive background on this topic and reviews in a holistic manner: (1) issues of generative models that can exacerbate their misuse, (2) terminologies and task definitions, (3) models well-studied for the task, (4) existing datasets and benchmarks, (5) approaches to detecting generated texts, (6) standard crowd-sourcing practices and related critical studies, (7) downstream applications, and (8) established risks of harm. We conclude by outlining unresolved methodological problems and future work directions.</li>
+	    
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Morning Coffee
+          <!--  -->
+          (10:45 EST)
+      </div>
+      <div
+        id="collapse2-2"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Lunch
+          <!--  -->
+          (13:00 EST)
+      </div>
+      <div
+        id="collapse3-3"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93438451939">
+	   -->
+	  Workshop
+          <!-- 
+            </a>
+           -->
+          (14:00 EST)
+      </div>
+      <div
+        id="collapse4-4"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+            
+		  <li>NLG4Health<br/>Emiel Krahmer (Tilburg University), Kathy McCoy (University of Delaware), Ehud Reiter (University of Aberdeen)<br/>There is a long tradition of applying NLG to healthcare problems in the research community, dating back to the 1990s. Many use cases have been investigated, including reporting, clinical decision support, patient information, and behaviour change. The common theme across these diverse use cases is using NLG to accurately and clearly present key information to doctors, patients, and other stakeholders, in order to enhance healthcare quality and outcomes.
+
+We will also encourage submissions about the NLG aspects of health dialog including health coaching, health chatbots and intelligent agents.
+
+The goal of this workshop is to bring together researchers interested in applying NLG to healthcare. We hope that this will encourage discussion about common issues, challenges, and discussion in NLG for healthcare.
+
+&lt;b&gt;Website:&lt;/b&gt; &lt;a href=https://nlg4health.uvt.nl/&#34;&gt;https://nlg4health.uvt.nl/&lt;/a&gt;&#34;</li>
+	    
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Afternoon Coffee
+          <!--  -->
+          (15:45 EST)
+      </div>
+      <div
+        id="collapse5-5"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Opening Reception
+          <!--  -->
+          (18:00 EST)
+      </div>
+      <div
+        id="collapse6-6"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div
+    class="tab-pane fade"
+    id="tab-Tuesday"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    <div id="day_Tuesday">
+	    
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/94091228991">
+	   -->
+	  Zoom Walk along the Kennebec
+          <!-- 
+            </a>
+           -->
+          (07:00 EST)
+      </div>
+      <div
+        id="collapse1-1"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/96460285460">
+	   -->
+	  Keynote 1
+          <!-- 
+            </a>
+           -->
+          (09:00 EST)
+      </div>
+      <div
+        id="collapse2-2"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+		  <li>TBD<br/>Margaret Mitchell<br/></li>
+	    
+            
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Morning Coffee
+          <!--  -->
+          (10:00 EST)
+      </div>
+      <div
+        id="collapse3-3"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93438451939">
+	   -->
+	  Panel on Ethics in NLG
+          <!-- 
+            </a>
+           -->
+          (10:30 EST)
+      </div>
+      <div
+        id="collapse4-4"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="bhttps://colby.zoom.us/j/92392060048">
+	   -->
+	  SIGGEN Session
+          <!-- 
+            </a>
+           -->
+          (12:00 EST)
+      </div>
+      <div
+        id="collapse5-5"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Lunch
+          <!--  -->
+          (13:00 EST)
+      </div>
+      <div
+        id="collapse6-6"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/97880205507">
+	   -->
+	  Oral Session 1
+          <!-- 
+            </a>
+           -->
+          (14:00 EST)
+      </div>
+      <div
+        id="collapse7-7"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper17.html">Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain</a> --> Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain<br/>Simone Balloccu, Ehud Reiter</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper6.html">Template-based Approach to Zero-shot Intent Recognition</a> --> Template-based Approach to Zero-shot Intent Recognition<br/>Dmitry Lamanov, Pavel Burnyshev, Valentin Malykh, Andrey Bout, Irina Piontkovskaya</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper28.html">Towards Evaluation of Multi-party Dialogue Systems</a> --> Towards Evaluation of Multi-party Dialogue Systems<br/>Khyati Mahajan, Sashank Santhanam, Samira Shaikh</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Afternoon Coffee
+          <!--  -->
+          (15:30 EST)
+      </div>
+      <div
+        id="collapse8-8"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95764292532">
+	   -->
+	  Poster Session 1 Survey
+          <!-- 
+            </a>
+           -->
+          (16:00 EST)
+      </div>
+      <div
+        id="collapse9-9"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95764292532">
+	   -->
+	  Demo
+          <!-- 
+            </a>
+           -->
+          (16:00 EST)
+      </div>
+      <div
+        id="collapse10-10"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper1.html">BLAB Reporter: Automated journalism covering the Blue Amazon</a> --> BLAB Reporter: Automated journalism covering the Blue Amazon<br/>Yan Vianna Sym, João Gabriel Moura Campos, Fabio Cozman</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper2.html">Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering</a> --> Generating Quizzes to Support Training on Quality Management and Assurance in Space Science and Engineering<br/>Andres Garcia-Silva, Cristian Berrio, Jose Manuel Gomez-Perez, Jose Antonio Martinez-Heras, Patrick Fleith, Stefano Scaglioni</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper3.html">Automated Ad Creative Generation</a> --> Automated Ad Creative Generation<br/>Vishakha Kadam, Yiping Jin, Bao-Dai Nguyen-Hoang</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper4.html">THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts</a> --> THEaiTRobot: An Interactive Tool for Generating Theatre Play Scripts<br/>Rudolf Rosa, Patrícia Schmidtová, Alisa Zakhtarenko, Ondrej Dusek, Tomáš Musil, David Mareček, Saad Obaid Ul Islam, Marie Nováková, Klára Vosecká, Daniel Hrbek, David Košťák</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="">
+	   -->
+	  Poster Session 1
+          <!-- 
+            </a>
+           -->
+          (16:20 EST)
+      </div>
+      <div
+        id="collapse11-11"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper8.html">Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers</a> --> Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers<br/>Jonathan Emami, Pierre Nugues, Ashraf Elnagar, Imad Afyouni</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper18.html">Generation of Student Questions for Inquiry-based Learning</a> --> Generation of Student Questions for Inquiry-based Learning<br/>Kevin Ros, Maxwell Jong, Chak Ho Chan, ChengXiang Zhai</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper19.html">Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation</a> --> Keyword Provision Question Generation for Facilitating Educational Reading Comprehension Preparation<br/>Ying-Hong Chan, Ho-Lam Chung, Yao-Chung Fan</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper23.html">Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task</a> --> Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task<br/>Nikolai Ilinykh, Yasmeen Emampoor, Simon Dobnik</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper29.html">Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?</a> --> Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?<br/>Amit Kumar Chaudhary, Alex J. Lucassen, Ioanna Tsani, Alberto Testoni</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div
+    class="tab-pane fade"
+    id="tab-Wednesday"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    <div id="day_Wednesday">
+	    
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98954191774">
+	   -->
+	  Zoom Chat and BYO Coffee/Tea
+          <!-- 
+            </a>
+           -->
+          (07:00 EST)
+      </div>
+      <div
+        id="collapse1-1"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95082627087">
+	   -->
+	  Keynote 2
+          <!-- 
+            </a>
+           -->
+          (09:00 EST)
+      </div>
+      <div
+        id="collapse2-2"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+		  <li>NLG for Human-Robot Interaction: Challenges and Opportunities<br/>Dimitra Gkatzia<br/>Human-robot interaction (HRI) focuses on researching the interaction between humans and (mostly) physical robots. Despite the media coverage of robots displaying human-level capabilities in conversational dialogue and NLG, in reality, such robots use simple template-based approaches and follow pre-scripted interactions. In this talk, I will initially provide an overview of current approaches to NLG for HRI focusing on the limitations of current approaches and emphasising the challenges of developing flexible NLG approaches for HRI. Finally, I will provide an overview of our project [CiViL: Commonsense and Visually-enhanced natural Language generation](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/T014598/1) and discuss future directions.</li>
+	    
+            
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Morning Coffee
+          <!--  -->
+          (10:00 EST)
+      </div>
+      <div
+        id="collapse3-3"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/94311056456">
+	   -->
+	  Oral Session 2
+          <!-- 
+            </a>
+           -->
+          (10:30 EST)
+      </div>
+      <div
+        id="collapse4-4"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper11.html">Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description</a> --> Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description<br/>Nicolas Garneau, Eve Gaumond, Luc Lamontagne, Pierre-Luc Déziel</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper14.html">Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.</a> --> Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.<br/>Javier González Corbelle, Alberto Bugarín-Diz, Jose Maria Alonso-Moral, Juan Taboada</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper9.html">Plot Writing From Pre-Trained Language Models</a> --> Plot Writing From Pre-Trained Language Models<br/>Yiping Jin, Vishakha Kadam, Dittaya Wanvarie</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper26.html">Quantum Natural Language Generation on Near-Term Devices</a> --> Quantum Natural Language Generation on Near-Term Devices<br/>Amin Karamlou, James R Wootton, Marcel Pfaffhauser</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Lunch
+          <!--  -->
+          (12:00 EST)
+      </div>
+      <div
+        id="collapse5-5"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93362959372">
+	   -->
+	  Keynote 3
+          <!-- 
+            </a>
+           -->
+          (13:00 EST)
+      </div>
+      <div
+        id="collapse6-6"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+		  <li>TBD<br/>Mohit Bansal<br/></li>
+	    
+            
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Afternoon Coffee
+          <!--  -->
+          (14:00 EST)
+      </div>
+      <div
+        id="collapse7-7"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/91800599818">
+	   -->
+	  Poster Session 2 Survey
+          <!-- 
+            </a>
+           -->
+          (14:30 EST)
+      </div>
+      <div
+        id="collapse8-8"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="">
+	   -->
+	  Poster Session 2
+          <!-- 
+            </a>
+           -->
+          (14:50 EST)
+      </div>
+      <div
+        id="collapse9-9"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper10.html">Paraphrasing via Ranking Many Candidates</a> --> Paraphrasing via Ranking Many Candidates<br/>Joosung Lee</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper12.html">Automatic Generation of Factual News Headlines in Finnish</a> --> Automatic Generation of Factual News Headlines in Finnish<br/>Maximilain Koppatz, Khalid Alnajjar, Mika Hämäläinen, Thierry Poibeau</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper15.html">Amortized Noisy Channel Neural Machine Translation</a> --> Amortized Noisy Channel Neural Machine Translation<br/>Richard Yuanzhe Pang, He He, Kyunghyun Cho</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper16.html">Math Word Problem Generation with Multilingual Language Models</a> --> Math Word Problem Generation with Multilingual Language Models<br/>Kashyapa Niyarepola, Dineth Athapaththu, Savindu Kalsara Ekanayake, Surangika Ranathunga</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper24.html">Strategies for framing argumentative conclusion generation</a> --> Strategies for framing argumentative conclusion generation<br/>Philipp Heinisch, Anette Frank, Juri Opitz, Philipp Cimiano</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/93066423135">
+	   -->
+	  Test of Time Award
+          <!-- 
+            </a>
+           -->
+          (17:00 EST)
+      </div>
+      <div
+        id="collapse10-10"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Conference Dinner
+          <!--  -->
+          (18:00 EST)
+      </div>
+      <div
+        id="collapse11-11"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div
+    class="tab-pane fade"
+    id="tab-Thursday"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    <div id="day_Thursday">
+	    
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98696007060">
+	   -->
+	  Keynote 4
+          <!-- 
+            </a>
+           -->
+          (09:00 EST)
+      </div>
+      <div
+        id="collapse1-1"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+		  <li>From Generating Personalised Risk Descriptions to Data-driven Health Narratives: Applying NLG to Healthcare Data<br/>Emiel Krahmer<br/>TBD</li>
+	    
+            
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Morning Coffee
+          <!--  -->
+          (10:00 EST)
+      </div>
+      <div
+        id="collapse2-2"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98600533576">
+	   -->
+	  GenChal
+          <!-- 
+            </a>
+           -->
+          (10:30 EST)
+      </div>
+      <div
+        id="collapse3-3"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper43.html">DialogSum Challenge: Results of the Dialogue Summarization Shared Task</a> --> DialogSum Challenge: Results of the Dialogue Summarization Shared Task<br/>Naihao Deng, Yulong Chen, Yang Liu, Yue Zhang</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper37.html">The 2022 ReproGen Shared Task on Reproducibility of Evaluations in NLG: Overview and Results</a> --> The 2022 ReproGen Shared Task on Reproducibility of Evaluations in NLG: Overview and Results<br/>Anya Belz, Anastasia Shimorina, Maja Popovic, Ehud Reiter</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper30.html">The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings</a> --> The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings<br/>Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Bojar</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper31.html">The Cross-lingual Conversation Summarization Challenge</a> --> The Cross-lingual Conversation Summarization Challenge<br/>Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Yue Zhang</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper32.html">HinglishEval Generation Challenge on Quality Estimation of Synthetic Code-mixed Text: Overview and Results</a> --> HinglishEval Generation Challenge on Quality Estimation of Synthetic Code-mixed Text: Overview and Results<br/>Vivek Srivastava, Mayank Singh</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper33.html">PreCogIIITH at HinglishEval: Leveraging Code-Mixing Metrics &amp; Language Model Embeddings To Estimate Code-Mix Quality</a> --> PreCogIIITH at HinglishEval: Leveraging Code-Mixing Metrics &amp; Language Model Embeddings To Estimate Code-Mix Quality<br/>Prashant Kodali, Tanmay Sachan, Akshay Goindani, Anmol Goel, Naman Ahuja, Manish Shrivastava, Ponnurangam Kumaraguru</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper34.html">Niksss at HinglishEval: Language-agnostic BERT-based Contextual Embeddings with Catboost for Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text</a> --> Niksss at HinglishEval: Language-agnostic BERT-based Contextual Embeddings with Catboost for Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text<br/>Nikhil Singh</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper35.html">BITS Pilani at HinglishEval: Quality Evaluation for Code-Mixed Hinglish Text Using Transformers</a> --> BITS Pilani at HinglishEval: Quality Evaluation for Code-Mixed Hinglish Text Using Transformers<br/>Shaz Furniturewala, Vijay Kumari, Amulya Ratna Dash, Hriday Kedia, Naman Ahuja, Yashvardhan Sharma</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper36.html">JU_NLP at HinglishEval: Quality Evaluation of the Low-Resource Code-Mixed Hinglish Text</a> --> JU_NLP at HinglishEval: Quality Evaluation of the Low-Resource Code-Mixed Hinglish Text<br/>Prantik Guha, Rudra Dhar, Dipankar Das</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper38.html">Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System</a> --> Reproductions of a Human-Assessed Comparative Evaluation of a Semantic Error Detection System<br/>Rudali HUIDrom, Ondrej Dusek, Zdeněk Kasner, Thiago Castro Ferreira, Anya Belz</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper39.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a> --> Reproducibility of Exploring Neural Text Simplification Models: A Review<br/>Mohammad Arvan, Luis Pina, Natalie Parde</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper40.html">The Accuracy Evaluation Shared Task as a Retrospective Reproduction Study</a> --> The Accuracy Evaluation Shared Task as a Retrospective Reproduction Study<br/>Craig Thomson, Ehud Reiter</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper41.html">Reproducing a Manual Evaluation of Simplicity in Text Simplification System Outputs</a> --> Reproducing a Manual Evaluation of Simplicity in Text Simplification System Outputs<br/>Maja Popovic, Sheila Castilho, Rudali HUIDrom, Anya Belz</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper42.html">A reproduction study of methods for evaluating dialogue system output: Replicating Santhanam and Shaikh (2019)</a> --> A reproduction study of methods for evaluating dialogue system output: Replicating Santhanam and Shaikh (2019)<br/>Anouck Braggaar, Frédéric Tomas, Peter Blomsma, Saar Hommes, Nadine Braun, Emiel van Miltenburg, Chris Van der Lee, Martijn Goudbeek, Emiel Krahmer</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper44.html">TCS_WITM_2022 @ DialogSum: Topic oriented Summarization using Transformer based Encoder Decoder Model</a> --> TCS_WITM_2022 @ DialogSum: Topic oriented Summarization using Transformer based Encoder Decoder Model<br/>Vipul Chauhan, Prasenjeet Roy, Lipika Dey, Tushar Goel</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper45.html">A Multi-Task Learning Approach for Summarization of Dialogues</a> --> A Multi-Task Learning Approach for Summarization of Dialogues<br/>Saprativa Bhattacharjee, Kartik Shinde, Tirthankar Ghosal, Asif Ekbal</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper46.html">Dialogue Summarization using BART</a> --> Dialogue Summarization using BART<br/>Conrad Lundberg, Leyre Sánchez Viñuela, Siena Biales</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper47.html">Reproducibility of Exploring Neural Text Simplification Models: A Review</a> --> Reproducibility of Exploring Neural Text Simplification Models: A Review<br/>Mohammad Arvan, Luis Pina, Natalie Parde</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Lunch
+          <!--  -->
+          (12:00 EST)
+      </div>
+      <div
+        id="collapse4-4"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/98590322530">
+	   -->
+	  Oral Session 3
+          <!-- 
+            </a>
+           -->
+          (14:00 EST)
+      </div>
+      <div
+        id="collapse5-5"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper21.html">Zero-shot Cross-Linguistic Learning of Event Semantics</a> --> Zero-shot Cross-Linguistic Learning of Event Semantics<br/>Malihe Alikhani, Thomas H Kober, Bashar Alhafni, Yue Chen, Mert Inan, Elizabeth Kaye Nielsen, Shahab Raji, Mark Steedman, Matthew Stone</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper25.html">LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning</a> --> LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning<br/>Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper27.html">Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT</a> --> Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT<br/>Bhavya Bhavya, Jinjun Xiong, ChengXiang Zhai</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper7.html">&#39;Slow Service&#39; $\cancel{\rightarrow}$ &#39;Great Food&#39;: Enhancing Content Preservation in Unsupervised Text Style Transfer</a> --> &#39;Slow Service&#39; $\cancel{\rightarrow}$ &#39;Great Food&#39;: Enhancing Content Preservation in Unsupervised Text Style Transfer<br/>Wanzheng Zhu, Suma Bhat</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Afternoon Coffee
+          <!--  -->
+          (15:00 EST)
+      </div>
+      <div
+        id="collapse6-6"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/99072204530">
+	   -->
+	  Oral Session 4
+          <!-- 
+            </a>
+           -->
+          (16:00 EST)
+      </div>
+      <div
+        id="collapse7-7"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          
+            
+            
+		  <li><!-- <a href="poster_paper5.html">Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance</a> --> Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance<br/>Zhao Han, Polina Rygina, Thomas Williams</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper22.html">Nominal Metaphor Generation with Multitask Learning</a> --> Nominal Metaphor Generation with Multitask Learning<br/>Yucheng Li, Chenghua Lin, Frank Guerin</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper13.html">Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach</a> --> Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach<br/>Nazia Attari, David Schlangen, Martin Heckmann, Heiko Wersing, Sina Sina Zarrieß</li>
+	    
+            
+          
+          
+          
+            
+            
+		  <li><!-- <a href="poster_paper20.html">Generating Landmark-based Manipulation Instructions from Image Pairs</a> --> Generating Landmark-based Manipulation Instructions from Image Pairs<br/>Sina Zarrieß, Henrik Voigt, David Schlangen, Philipp Sadler</li>
+	    
+            
+          
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Star Gazing
+          <!--  -->
+          (19:30 EST)
+      </div>
+      <div
+        id="collapse8-8"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div
+    class="tab-pane fade"
+    id="tab-Friday"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    <div id="day_Friday">
+	    
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Trip to Allen Island
+          <!--  -->
+          (06:00 EST)
+      </div>
+      <div
+        id="collapse1-1"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/99706854532">
+	   -->
+	  Hackathon
+          <!-- 
+            </a>
+           -->
+          (09:00 EST)
+      </div>
+      <div
+        id="collapse2-2"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/99706854532">
+	   -->
+	  Hackathon on Generating Reports about the Gulf of Maine
+          <!-- 
+            </a>
+           -->
+          (09:00 EST)
+      </div>
+      <div
+        id="collapse3-3"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!-- 
+            <a href="https://colby.zoom.us/j/95014927995">
+	   -->
+	  Virtual Museum Tour
+          <!-- 
+            </a>
+           -->
+          (09:30 EST)
+      </div>
+      <div
+        id="collapse4-4"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Morning Coffee
+          <!--  -->
+          (10:00 EST)
+      </div>
+      <div
+        id="collapse5-5"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Lunch
+          <!--  -->
+          (12:00 EST)
+      </div>
+      <div
+        id="collapse6-6"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-2">
+      <div class="card-header">
+	  <!--  -->
+	  Closing Drinks
+          <!--  -->
+          (15:00 EST)
+      </div>
+      <div
+        id="collapse7-7"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          <ul>
+	  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+   
+
+  <script type="text/javascript">
+    window.onload = () => {
+      const tabPanes = $(".tab-pane");
+      // Create calendars:
+      make_cal(false).then(({ render }) => {
+        // render cal with all tabs visible
+        tabPanes.css("display", "block");
+        render();
+        tabPanes.css("display", "");
+
+        // re-render cal on resize
+        $(window).on(
+          "resize",
+          _.debounce(() => {
+            tabPanes.css("display", "block");
+            render();
+            tabPanes.css("display", "");
+          }, 500)
+        );
+      });
+      // ----
+      lazyLoader();
+    };
+  </script>
+</div>
+
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 INLG 2022 Organizers</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+
+    <title>INLG 2022: Workshops</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="https://inlg2021.github.io/img/logo.png"
+                    height="auto"
+            width="90px"
+            />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">15th International Natural Language Generation Conference</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="calls.html">Calls</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="organizers.html">Organizers</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="schedule.html">Calendar</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Program
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>
+                    <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="workshops.html">Workshops</a>
+                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                    <a class="dropdown-item" href="hackathon.html">Hackathon</a>
+                    <a class="dropdown-item" href="panel.html">Panel</a>
+                    <a class="dropdown-item" href="genchal.html">GenChal</a>
+                  </div>
+               </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html">Help</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+         
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  <div id="day">
+    <!-- Workshops -->
+    <div class="row p-4" id="faq">
+        <div class="col-12 bd-content">
+            <h2 class="text-center">Program</h2>
+        </div>
+    </div>
+    <div class="speakers">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-17-tab" data-bs-toggle="pill" data-bs-target="#pills-17" type="button" role="tab" aria-controls="pills-17" aria-selected="true">July 17th</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-18-tab" data-bs-toggle="pill" data-bs-target="#pills-18" type="button" role="tab" aria-controls="pills-18" aria-selected="false">July 18th</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-19-tab" data-bs-toggle="pill" data-bs-target="#pills-19" type="button" role="tab" aria-controls="pills-19" aria-selected="false">July 19th</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-20-tab" data-bs-toggle="pill" data-bs-target="#pills-20" type="button" role="tab" aria-controls="pills-20" aria-selected="false">July 20th</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-21-tab" data-bs-toggle="pill" data-bs-target="#pills-21" type="button" role="tab" aria-controls="pills-21" aria-selected="false">July 21st</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-22-tab" data-bs-toggle="pill" data-bs-target="#pills-22" type="button" role="tab" aria-controls="pills-22" aria-selected="false">July 22nd</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-17" role="tabpanel" aria-labelledby="pills-17-tab" tabindex="0">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>16:00-18:00</th>
+                        <th>Registration</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="pills-18" role="tabpanel" aria-labelledby="pills-18-tab" tabindex="0">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>09:00-13:00</th>
+                        <th>Tutorial: Artificial Text Detection</th>
+                    </tr>
+                    <tr>
+                        <th>10:45-11:15</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>13:00-14:00</th>
+                        <th>Lunch</th>
+                    </tr>
+                    <tr>
+                        <th>14:00-18:00</th>
+                        <th>Workshop: NLG4Health</th>
+                    </tr>
+                    <tr>
+                        <td>14:00-14:05</td>
+                        <td>Welcome</td>
+                    </tr>
+                    <tr>
+                        <td>14:05:15:00</td>
+                        <td>
+                            Keynote: Natalie Parde (University of Illinois, Chicago)<br>
+                            <i>The AI Doctor Is In: Towards Intelligent Automated Support for Healthcare Tasks using Natural Language Processing</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:00-15:20</td>
+                        <td>
+                            In-Domain Pre-Training Improves Clinical Note Generation from Doctor-Patient Conversations<br>
+                            <i>Colin A. Grambow, Longxiang Zhang, Thomas Schaaf</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:20-15:40</td>
+                        <td>
+                            Towards Development of an Automated Health Coach<br>
+                            <i>Leighanne Hsu, Rommy Marquez Hernandez, Kathleen McCoy, Keith Decker, Ajith Kumar Vemuri, Greg Dominic</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:40-16:15</td>
+                        <td>Coffee/Tea break</td>
+                    </tr>
+                    <tr>
+                        <td>16:15-16:30</td>
+                        <td>
+                            DrivingBeacon: Driving Behaviour Change Support System Considering Mobile Use and Geo-information <br>
+                            <i>Jawwad Baig, Guanyi Chen, Chenghua Lin, Ehud Reiter</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16:30-16:45</td>
+                        <td>
+                            Personalizing Weekly Diet Reports<br>
+                            <i>Elena Monfroglio, Luca Anselma, Alessandro Mazzei</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16:45-17:00</td>
+                        <td>
+                            LCHQA-Summ: Multi-perspective Summarization of Publicly Sourced Consumer Health Answers<br>
+                            <i>Abari Bhattacharya, Rochana Chaturvedi, Shweta Yadav</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17:00-17:55</td>
+                        <td>
+                            Panel discussion <br>
+                            <i>Timothy Bickmore (Northeasthern), Cathy Herbert (Arria), and Natalie Parde* (Illinois)</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17:55-18:00</td>
+                        <td>Closing</td>
+                    </tr>
+                    <tr>
+                        <th>18:00-20:00</th>
+                        <th>Reception Drinks</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="pills-19" role="tabpanel" aria-labelledby="pills-19-tab" tabindex="0">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>09:00-09:05</th>
+                        <th>Opening</th>
+                    </tr>
+                    <tr>
+                        <th>09:05-10:00</th>
+                        <th>Keynote 1: Margaret Mitchell (Huggingface)</th>
+                    </tr>
+                    <tr>
+                        <th>10:00-10:30</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>10:30-12:00</th>
+                        <th>
+                            Panel on Ethics in NLG<br>
+                            <i>Nina da Hora, Sebastian Gehrmann*, Sabelo Mhlambi, Nava Tintarev, Frank Schilder and Margaret Mitchell as moderator</i>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>12:00-13:00</th>
+                        <th>SIGGEN Session</th>
+                    </tr>
+                    <tr>
+                        <th>13:00-14:00</th>
+                        <th>Lunch</th>
+                    </tr>
+                    <tr>
+                        <th>14:00-15:30</th>
+                        <th>Oral Session 1</th>
+                    </tr>
+                    <tr>
+                        <td>14:00-14:20</td>
+                        <td>
+                            Comparing informativeness of an NLG chatbot vs graphical app in diet-information domain<br>
+                            <i>Simone Balloccu, Ehud Reiter</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14:20-14:50</td>
+                        <td>
+                            Template-based Approach to Zero-shot Intent Recognition<br>
+                            <i>Dmitry Lamanov, Pavel Burnyshev, Katya Artemova, Valentin Malykh, Andrey Bout, Irina Piontkovskaya</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14:50-15:10</td>
+                        <td>
+                            Towards Evaluation of Multi-party Dialogue Systems<br>
+                            <i>Khyati Mahajan, Sashank Santhanam, Samira Shaikh</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>15:10-16:00</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>16:00-16:20</th>
+                        <th>Poster Previews</th>
+                    </tr>
+                    <tr>
+                        <th>16:20-18:00</th>
+                        <th>Poster Session 1</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers <br>
+                            <i>Jonathan Emami, Pierre Nugues, Ashraf Elnagar, Imad Afyouni </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Are Current Decoding Strategies Capable of Facing the Challenges of Visual Dialogue?<br>
+                            <i>Amit Kumar Chaudhary, Alex J. Lucassen, Ioanna Tsani, Alberto Testoni </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Generation of Student Questions for Inquiry-based Learning<br>
+                            <i>Kevin Ros, Maxwell Jong, Chak Ho Chan, ChengXiang Zhai </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Improving Controllability of Educational Question Generation by Keyword Provision<br>
+                            <i>Ying-Hong Chan, Ho-Lam Chung, Yao-Chung Fan </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Language is Strong, Vision is Not: A Diagnostic Study of the Limitations of the Embodied Question Answering Task<br>
+                            <i>Nikolai Ilinykh, Yasmeen Emampoor, Simon Dobnik </i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="pills-20" role="tabpanel" aria-labelledby="pills-20-tab" tabindex="0">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>09:00-10:00</th>
+                        <th>Keynote 2: Dimitra Gkatzia (Edinburgh Napier University)</th>
+                    </tr>
+                    <tr>
+                        <th>10:00-10:30</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>10:30-12:00</th>
+                        <th>Oral Session 2</th>
+                    </tr>
+                    <tr>
+                        <td>10:30-10:50</td>
+                        <td>
+                            Evaluating Legal Accuracy of Neural Generators on the Generation of Criminal Court Dockets Description<br>
+                            <i>Nicolas Garneau, Eve Gaumond, Luc Lamontagne, Pierre-Luc Déziel </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10:50-11:10</td>
+                        <td>
+                            Dealing with hallucination and omission in neural Natural Language Generation: A use case on meteorology.<br>
+                            <i>Javier González Corbelle, Alberto Bugarín-Diz, Jose Maria Alonso-Moral, Juan Taboada </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:10-11:30</td>
+                        <td>
+                            Plot Writing From Pre-Trained Language Models<br>
+                            <i>Yiping Jin, Vishakha Kadam, Dittaya Wanvarie</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:30-11:50</td>
+                        <td>
+                            Quantum Natural Language Generation on Near-Term Devices<br>
+                            <i>Amin Karamlou, James R Wootton, Marcel Pfaffhauser</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>12:00-13:00</th>
+                        <th>Lunch</th>
+                    </tr>
+                    <tr>
+                        <th>13:00-14:00</th>
+                        <th>Keynote 3: Mohit Bansal (University of North Carolina, Chapel Hill)</th>
+                    </tr>
+                    <tr>
+                        <th>14:00-14:30</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>14:30-14:50</th>
+                        <th>Poster Previews</th>
+                    </tr>
+                    <tr>
+                        <th>14:50-16:30</th>
+                        <th>Poster Session 2</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Paraphrasing via Ranking Many Candidates<br>
+                            <i>Joosung Lee</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Automatic Generation of Factual News Headlines in Finnish<br>
+                            <i>Maximilain Koppatz, Khalid Alnajjar, Mika Hämäläinen, Thierry Poibeau </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Amortized Noisy Channel Neural Machine Translation<br>
+                            <i>Richard Yuanzhe Pang, He He, Kyunghyun Cho</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Strategies for framing argumentative conclusion generation<br>
+                            <i>Philipp Heinisch, Anette Frank, Juri Opitz, Philipp Cimiano</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Math Word Problem Generation with Multilingual Language Models<br>
+                            <i>Kashyapa Niyarepola, Dineth Athapaththu, Savindu Kalsara Ekanayake, Surangika Ranathunga </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>16:30-17:00</th>
+                        <th>Short Break</th>
+                    </tr>
+                    <tr>
+                        <th>17:00-18:00</th>
+                        <th>Test-of-Time Award</th>
+                    </tr>
+                    <tr>
+                        <th>18:00-20:00</th>
+                        <th>Banquet</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="pills-21" role="tabpanel" aria-labelledby="pills-21-tab" tabindex="0">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>09:00-10:00</th>
+                        <th>Keynote 4: Emiel Krahmer (Tilburg University)</th>
+                    </tr>
+                    <tr>
+                        <th>10:00-10:30</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>10:30-12:10</th>
+                        <th>GenChal</th>
+                    </tr>
+                    <tr>
+                        <td>10:30-10:50</td>
+                        <td>
+                            DialogSum Challenge: Summarizing Real-life Scenario Dialogues<br>
+                            <i>Yulong Chen, Yang Liu, Yue Zhang</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10:50-11:10</td>
+                        <td>
+                            HinglishEval: Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text <br>
+                            <i>Vivek Srivastava, Mayank Singh, Pritam Kadasi</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:10-11:30</td>
+                        <td>
+                            ReproGen: Shared Task on Reproducibility of Evaluations in NLG<br>
+                            <i>Anya Belz, Maja Popović, Anastasia Shimorina, Ehud Reiter</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:30-11:45</td>
+                        <td>
+                            The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings<br>
+                            <i>Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Bojar</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:45-12:00</td>
+                        <td>
+                            The Cross-lingual Conversation Summarization Challenge<br>
+                            <i>Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Xianchao Zhu, Yue Zhang</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>12:00-13:00</th>
+                        <th>GenChal Posters</th>
+                    </tr>
+                    <tr>
+                        <th>13:00-14:00</th>
+                        <th>Lunch</th>
+                    </tr>
+                    <tr>
+                        <th>14:00-15:30</th>
+                        <th>Oral Session 3</th>
+                    </tr>
+                    <tr>
+                        <td>14:00-14:20</td>
+                        <td>
+                            Zero-shot Cross-Linguistic Learning of Event Semantics<br>
+                            <i>Malihe Alikhani, Thomas H Kober, Bashar Alhafni, Mert Inan, Shahab Raji, Yue Chen, Elizabeth Kaye Nielsen, Mark Steedman, Matthew Stone</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14:20-14:40</td>
+                        <td>
+                            Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning<br>
+                            <i>Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14:40-15:00</td>
+                        <td>
+                            Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT<br>
+                            <i>Bhavya Bhavya, Jinjun Xiong, ChengXiang Zhai </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:00-15:20</td>
+                        <td>
+                            "Slow Service" $$\cancel{$\rightarrow$}$$ "Great Food": Enhancing Content Preservation in Unsupervised Text Style Transfer<br>
+                            <i>Wanzheng Zhu, Suma Bhat</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>15:30-16:00</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>16:00-17:30</th>
+                        <th>Oral Session 4</th>
+                    </tr>
+                    <tr>
+                        <td>16:00-16:20</td>
+                        <td>
+                            Evaluating Cognitive Status Informed Referring Form Selection Models Under Contexts of Ambiguity and Ignorance<br>
+                            <i>Zhao Han, Polina Rygina, Thomas Williams</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16:20-16:40</td>
+                        <td>
+                            Nominal Metaphor Generation with Multitask Learning<br>
+                            <i>Yucheng Li, Chenghua Lin, Frank Guerin </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16:40-17:00</td>
+                        <td>
+                            Generating Coherent and Informative Descriptions for Groups of Visual Objects and Categories: A Simple Decoding Approach<br>
+                            <i>Nazia Attari, David Schlangen, Martin Heckmann, Heiko Wersing, Sina Zarrieß</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17:00-17:20</td>
+                        <td>
+                            Generating Landmark-based Manipulation Instructions from Image Pairs<br>
+                            <i>Sina Zarrieß, Henrik Voigt, David Schlangen, Philipp Sadler</i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="pills-22" role="tabpanel" aria-labelledby="pills-22-tab" tabindex="0">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>06:00-17:00</th>
+                        <th>Trip to Allen Island</th>
+                    </tr>
+                    <tr>
+                        <th>09:00-12:00</th>
+                        <th>Hackathon on "Generating Reports about the Gulf of Maine" (Part 1)</th>
+                    </tr>
+                    <tr>
+                        <th>10:00-10:30</th>
+                        <th>Coffee Break</th>
+                    </tr>
+                    <tr>
+                        <th>12:00-13:00</th>
+                        <th>Lunch</th>
+                    </tr>
+                    <tr>
+                        <th>13:00-15:00</th>
+                        <th>Hackathon (Part 2)</th>
+                    </tr>
+                    <tr>
+                        <th>15:00-18:00</th>
+                        <th>Virtual Art Museum Tour</th>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+    </div>
+  </div>
+</div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 INLG 2022 Organizers</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>
