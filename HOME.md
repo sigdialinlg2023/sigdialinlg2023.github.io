@@ -20,6 +20,7 @@ We gratefully acknowledge our [sponsors](sponsors.html):
 * Huggingface
 * AX Semantics
 * aiXplain
+* Bloomberg
 
 ## ACL Code of Conduct
 The open exchange of ideas, the freedom of thought and expression, and respectful scientific debate are central to the aims and goals of the ACL. These require a community and an environment that recognizes the inherent worth of every person and group, that fosters dignity, understanding, and mutual respect, and embraces diversity. For these reasons, ACL is dedicated to providing a harassment-free experience for all the members, as well as participants at our events and in our programs.
