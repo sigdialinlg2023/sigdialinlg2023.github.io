@@ -5,6 +5,7 @@ from datetime import datetime
 import glob
 import json
 import os
+import re
 
 import yaml
 from flask import Flask, jsonify, redirect, render_template, send_from_directory
@@ -217,7 +218,9 @@ def format_paper(v):
     v["authors"] = extract_list_field(v, "authors")
     dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
     v["time"] = dt.strftime('%A %m/%d %H:%M EST')
+    v["short_time"] = dt.strftime('%H:%M EST')
     v["title"] = v["title"].title()
+    v["title"] = re.sub(r'Nlg', 'NLG', v["title"])
     return v
 
 def format_workshop(v):

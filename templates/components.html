@@ -32,6 +32,9 @@ sessiongroup
           {% endif %}
        {% endif %}
           ({{session.start_time.strftime("%H:%M EST")}})
+          {% if session.chair %}
+	      <i>Session Chair: {{session.chair}}</i>
+	  {% endif %}
       </div>
       <div
         id="collapse{{rowloop}}-{{loop.index}}"
@@ -44,7 +47,7 @@ sessiongroup
 	  {% endif %}
           <ul>
 	  {% for paper in session.contents %}
-          {% if paper.title != blank %}
+	{% if paper.title != blank %}
             {% if paper.name != blank %}
 		  <li>{{paper.title}}<br/><i>{{paper.name}}</i><br/>{{paper.abstract}}</li>
 	    {% endif %}
@@ -53,7 +56,7 @@ sessiongroup
                   {% if private %}
                   <a href="poster_{{paper.UID}}.html">
                   {% endif %}
-                  {{paper.title}}
+                  {{paper.short_time}} {{paper.title}}
                   {% if private %}
                   </a>
                   {% endif %}
