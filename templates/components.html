@@ -53,13 +53,9 @@ sessiongroup
 	    {% endif %}
             {% if paper.authors != blank %}
 		  <li>
-                  {% if private %}
                   <a href="poster_{{paper.UID}}.html">
-                  {% endif %}
                   {{paper.short_time}} {{paper.title}}
-                  {% if private %}
                   </a>
-                  {% endif %}
                   <br/><i>{{ paper.authors | join(", ") }}</i></li>
 	    {% endif %}
             {% if paper.organizers != blank %}
