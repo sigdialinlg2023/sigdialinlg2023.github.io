@@ -207,7 +207,7 @@ sessiongroup
 </div>
 {%- endmacro %}
 
-{% macro papergroup(papers) -%}
+{% macro papergroup(private, papers) -%}
 <div class="row">
   {% for paper in papers %}
   <div class="col-md-4 col-xs-6">
@@ -218,10 +218,22 @@ sessiongroup
 		<a href="poster_{{paper.UID}}.html">{{paper.title}}</a>
 	  </h5>
 	  {% if paper.summary_video %}
-<a href="{{paper.summary_video}}"><img src="static/images/{{paper.UID}}.jpg" height="144" width="256" alt="{{paper.title}}"></a>
+          {% if private %}
+	      <a href="{{paper.summary_video}}">
+	  {% endif %}
+	 <img src="static/images/{{paper.UID}}.jpg" height="144" width="256" alt="{{paper.title}}">
+          {% if private %}
+	      </a>
+	  {% endif %}
           {% endif %}
 	  {% if paper.summary_video == blank and paper.full_video %}
-	  <a href="{{paper.full_video}}"><img src="static/images/{{paper.UID}}.jpg" height="144" width="256" alt="{{paper.title}}"></a>
+          {% if private %}
+	      <a href="{{paper.full_video}}">
+	  {% endif %}
+	  <img src="static/images/{{paper.UID}}.jpg" height="144" width="256" alt="{{paper.title}}">
+          {% if private %}
+	      </a>
+          {% endif %}
           {% endif %}
 </center>
 <!--        <h5 class="card-title" align="center"><a href="poster_{{paper.UID}}.html">{{paper.title}}</a></h5>

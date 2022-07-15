@@ -1,10 +1,11 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8"/>
     <meta
@@ -80,8 +81,26 @@
     <link rel="stylesheet" href="static/css/lazy_load.css"/>
     <link rel="stylesheet" href="static/css/typeahead.css"/>
 
-    <title>INLG 2022: Workshops</title>
+    <title>INLG 2022: Generation Of Student Questions For Inquiry-Based Learning</title>
     
+<meta name="citation_title" content="Generation Of Student Questions For Inquiry-Based Learning"/>
+
+<meta name="citation_author" content="Kevin Ros"/>
+
+<meta name="citation_author" content="Maxwell Jong"/>
+
+<meta name="citation_author" content="Chak Ho Chan"/>
+
+<meta name="citation_author" content="ChengXiang Zhai"/>
+
+<meta name="citation_publication_date" content="July 2022"/>
+<meta name="citation_conference_title"
+      content="15th International Natural Language Generation Conference"/>
+<meta name="citation_inbook_title" content="Proceedings of the 15th International Natural Language Generation Conference"/>
+<meta name="citation_abstract" content="Asking questions during a lecture is a central part of the traditional classroom setting which benefits both students and instructors in many ways. However, no previous work has studied the task of automatically generating student questions based on explicit lecture context. We study the feasibility of automatically generating student questions given the lecture transcript windows where the questions were asked. First, we create a data set of student questions and their corresponding lecture transcript windows. Using this data set, we investigate variants of T5, a sequence-to-sequence generative language model, for a preliminary exploration of this task. Specifically, we compare the effects of training with continuous prefix tuning and pre-training with search engine queries. Question generation evaluation results on two MOOCs show that that pre-training on search engine queries tends to make the generation model more precise whereas continuous prefix tuning offers mixed results."/>
+
+
+
 </head>
 
 <body>
@@ -169,31 +188,7 @@
 
 
 <!-- User Overrides -->
-
-<style>
-  .back {
-    background: url("static/images/main.jpg") no-repeat center;
-    background-size: cover;
-  }
-  .back h2 {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-  }
-</style>
-
-<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
-  <div class="row header p-6 m-5">
-    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
-      <h2>
-        15th International Natural Language Generation Conference
-      </h2>
-      <h2 class="p-5">
-        18-22 July 2022
-      </h2>
-    </div>
-  </div>
-</div>
-
+ 
 
 <div class="container">
     <!-- Tabs -->
@@ -203,49 +198,56 @@
     <!-- Content -->
     <div class="content">
         
-<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-  <div id="day">
-    <!-- Workshops -->
-<!--    <div class="border-top my-3"></div>
-<div class="row p-4" id="faq">
-  <div class="col-12 bd-content">
-    <h2 class="text-center">Workshops</h2>
-  </div>
-</div> -->
-    <div class="speakers">
-      
 
-<div class="row">
-  <div class="col-12" id="accordionExample">
-    <div class="card m-1">
-      <div class="card-header">
-          <center><h2>Generating Reports about the Gulf of Maine</h2>
-	  Friday 07/22 09:00 EST&nbsp;&nbsp;&nbsp;&nbsp;
-          
-	  <br/>
-          <i>
-	    
-	  </i>
-          </center>
-      </div>
-      <div
-        id="collapse1-1"
-        aria-labelledby="headingOne"
-        data-parent="#accordionExample"
-      >
-        <div class="card-body">
-	  <p>The Gulf of Maine environment changes on a weekly basis due to fisheries, environmental conditions, harmful blooms, climate change and many other aspects of the environment. Researchers monitor such changes with real-time data streams to help inform decisions relating to fishery and aquaculture management, recreation, endangered species conservation, and many other applications. Converting data streams into text that summarizes these changes would facilitate the accessibility and use of this information by a broad audience.</p>
-<p>To help with the cause, the goal of this Hackathon is to develop a Natural Language Generation system able to convert the structured data into fluent and adequate reports, which can be read by the stakeholders, such as mariners, marine industry members, policy makers, and the general public. Examples of structured data and reports will be provided to help the participants.</p>
-<p>The event will be done in collaboration with the Tandy Center for Ocean Forecasting at the Bigelow Laboratory for Ocean Sciences (<a href="https://twitter.com/TandyForecast">@TandyForecast</a>, <a href="https://twitter.com/BigelowLab">@BigelowLab</a>).</p>
+<!-- Title -->
+<div class="pp-card m-3" style="">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center" style="">
+            Generation Of Student Questions For Inquiry-Based Learning
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=Kevin Ros"
+               class="text-muted"
+            ><i>Kevin Ros</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=Maxwell Jong"
+               class="text-muted"
+            ><i>Maxwell Jong</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=Chak Ho Chan"
+               class="text-muted"
+            ><i>Chak Ho Chan</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=ChengXiang Zhai"
+               class="text-muted"
+            ><i>ChengXiang Zhai</i></a
+            >
+            
+        </h3>
+        <div class="text-center p-3">
+            Demo/Poster Session 1 - Tuesday 07/19 16:30 EST<br/>
+            
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Asking questions during a lecture is a central part of the traditional classroom setting which benefits both students and instructors in many ways. However, no previous work has studied the task of automatically generating student questions based on explicit lecture context. We study the feasibility of automatically generating student questions given the lecture transcript windows where the questions were asked. First, we create a data set of student questions and their corresponding lecture transcript windows. Using this data set, we investigate variants of T5, a sequence-to-sequence generative language model, for a preliminary exploration of this task. Specifically, we compare the effects of training with continuous prefix tuning and pre-training with search engine queries. Question generation evaluation results on two MOOCs show that that pre-training on search engine queries tends to make the generation model more precise whereas continuous prefix tuning offers mixed results.
+            </div>
+        </div>
+        <p></p>
     </div>
-  </div>
 </div>
+
+
 
     </div>
 </div>

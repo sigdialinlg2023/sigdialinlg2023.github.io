@@ -37,17 +37,19 @@
         </h3>
         <div class="text-center p-3">
             {{paper.session}} - {{paper.time}}<br/>
-            {% if paper.paper != blank %}
+            {% if config.private %}
+           {% if paper.paper != blank %}
 	    <a class="card-link" target="_blank" href="{{paper.paper}}">
                 Paper
             </a>
 	    {% endif %}
-            <a href="{{paper.zoom}}" target="_blank" class="card-link">
+ 	    <a href="{{paper.zoom}}" target="_blank" class="card-link">
                 Zoom
             </a>
             <a href="{{paper.discord}}" target="_blank" class="card-link">
                 Discord
-            </a><br/>
+            </a>
+            <br/>
             {% if paper.slides != blank %}
             <a href="{{paper.slides}}" target="_blank" class="card-link">
                 Slides
@@ -71,9 +73,11 @@
             {% if paper.full_video != blank %}
 	  <a href="{{paper.full_video}}"><img src="static/images/{{paper.UID}}.jpg" alt="{{paper.title}}"></a>
 	    {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>
+{% if paper.abstract %}
 <div id="details" class="pp-card m-3">
     <div class="card-body">
         <div class="card-text">
@@ -85,5 +89,6 @@
         <p></p>
     </div>
 </div>
+{% endif %}
 
 {% endblock %}
