@@ -10,7 +10,7 @@ with open("sitedata/papers.jsonold") as f:
 for paper in papers.values():
     print(paper["UID"])
     id = re.search(r'(\d+)', paper["UID"])[1]
-    if int(id) > 40:
+    if int(id) > 33:
         for field in ["code", "data", "poster", "slides", "paper"]:
             if field in paper:
                 id = re.search(r'id=([^&]+)', paper[field])[1]
