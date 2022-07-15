@@ -5,12 +5,11 @@ More information about previous challenges at GenChal [here](https://sites.googl
 
 #### New Challenge Proposals
 
-* [The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings](http://localhost:5000/poster_paper30.html) - Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Boj
-* [The Cross-lingual Conversation Summarization Challenge](http://localhost:5000/poster_paper31.html) - Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Xianchao Zhu, Yue Zhang
+* [The Second Automatic Minuting (AutoMin) Challenge: Generating and Evaluating Minutes from Multi-Party Meetings](poster_paper30.html) - Tirthankar Ghosal, Marie Hledíková, Muskaan Singh, Anna Nedoluzhko, Ondrej Boj
+* [The Cross-lingual Conversation Summarization Challenge](poster_paper31.html) - Yulong Chen, Ming Zhong, Xuefeng Bai, Naihao Deng, Jing Li, Xianchao Zhu, Yue Zhang
 
 #### Completed Challenges
 
 * [DialogSum Challenge: Summarizing Real-life Scenario Dialogues](https://cylnlp.github.io/dialogsum-challenge/) - Organisers: Yulong Chen, Yang Liu, Yue Zhang
-* [HinglishEval: Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text](https://sites.google.com/view/hinglisheval) - Organisers: Vivek Srivastava, Mayank Singh, Pritam Kadasi
-  *                     [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/1688)
+* [HinglishEval: Quality Evaluation of the Low-Resource Synthetically Generated Code-Mixed Hinglish Text](https://sites.google.com/view/hinglisheval) - Organisers: Vivek Srivastava, Mayank Singh, Pritam Kadasi; [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/1688)
 * [ReproGen: Shared Task on Reproducibility of Evaluations in NLG](https://reprogen.github.io/) - Organisers: Anya Belz, Maja Popovic, Anastasia Shimorina, Ehud Reiter
