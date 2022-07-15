@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+    <script>
+      var auth0_domain = "dev-ma80app1.us.auth0.com";
+      var auth0_client_id = "ptF3gg7K6X0VN0FxOeCAVbKURrAis82d";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script src="static/js/modules/auth0protect.js"></script>
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+
+    <title>INLG 2022: The Second Automatic Minuting (Automin) Challenge: Generating And Evaluating Minutes From Multi-Party Meetings</title>
+    
+<meta name="citation_title" content="The Second Automatic Minuting (Automin) Challenge: Generating And Evaluating Minutes From Multi-Party Meetings"/>
+
+<meta name="citation_author" content="Tirthankar Ghosal"/>
+
+<meta name="citation_author" content="Marie Hledíková"/>
+
+<meta name="citation_author" content="Muskaan Singh"/>
+
+<meta name="citation_author" content="Anna Nedoluzhko"/>
+
+<meta name="citation_author" content="Ondrej Bojar"/>
+
+<meta name="citation_publication_date" content="July 2022"/>
+<meta name="citation_conference_title"
+      content="15th International Natural Language Generation Conference"/>
+<meta name="citation_inbook_title" content="Proceedings of the 15th International Natural Language Generation Conference"/>
+<meta name="citation_abstract" content="We would host the AutoMin generation challenge at INLG 2023 as a follow-up of the first AutoMin shared task at Interspeech 2021. Our shared task primarily concerns the automated generation of meeting minutes from multi-party meeting transcripts. In our first venture, we observed the difficulty of the task and highlighted a number of open problems for the community to discuss, attempt, and solve. Hence, we invite the Natural Language Generation (NLG) community to take part in the second iteration of AutoMin. Like the first, the second AutoMin will feature both English and Czech meetings and the core task of summarizing the manuallyrevised transcripts into bulleted minutes. A new challenge we are introducing this year is to devise efficient metrics for evaluating the quality of minutes. We will also host an optional track to generate minutes for European parliamentary sessions. We carefully curated the datasets for the above tasks. Our ELITR Minuting Corpus has been recently accepted to LREC 2022 and publicly released.1 We are already preparing a new test set for evaluating the new shared tasks. We hope to carry forward the learning from the first AutoMin and instigate more community attention and interest in this timely yet challenging problem. INLG, the premier forum for the NLG community, would be an appropriate venue to discuss the challenges and future of Automatic Minuting. The main objective of the AutoMin GenChal at INLG 2023 would be to come up with efficient methods to automatically generate meeting minutes and design evaluation metrics to measure the quality of the minutes."/>
+
+
+
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="https://inlg2021.github.io/img/logo.png"
+                    height="auto"
+            width="90px"
+            />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">15th International Natural Language Generation Conference</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="calls.html">Calls</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="organizers.html">Organizers</a>
+                </li>
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Program
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="speakers.html">Keynotes</a>
+                    <a class="dropdown-item" href="panels.html">Panel</a>
+                    
+                    
+                    <a class="dropdown-item" href="accepted_papers.html">Papers</a>
+                    
+                    <a class="dropdown-item" href="workshops.html">Workshops</a>
+                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>
+                    <a class="dropdown-item" href="genchal.html">GenChal</a>
+                  </div>
+               </li>
+
+               <li class="nav-item ">
+                  <a class="nav-link" href="calendar.html">Schedule</a>
+              </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+         
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+
+<!-- Title -->
+<div class="pp-card m-3" style="">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center" style="">
+            The Second Automatic Minuting (Automin) Challenge: Generating And Evaluating Minutes From Multi-Party Meetings
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=Tirthankar Ghosal"
+               class="text-muted"
+            ><i>Tirthankar Ghosal</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=Marie Hledíková"
+               class="text-muted"
+            ><i>Marie Hledíková</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=Muskaan Singh"
+               class="text-muted"
+            ><i>Muskaan Singh</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=Anna Nedoluzhko"
+               class="text-muted"
+            ><i>Anna Nedoluzhko</i></a
+            >,
+            
+            <a href="papers.html?filter=authors&search=Ondrej Bojar"
+               class="text-muted"
+            ><i>Ondrej Bojar</i></a
+            >
+            
+        </h3>
+        <div class="text-center p-3">
+            GenChal - Thursday 07/21 11:30 EST<br/>
+            
+	    <a class="card-link" target="_blank" href="static/paperfiles/paper30_paper.pdf">
+                Paper
+            </a>
+	    
+            <a href="" target="_blank" class="card-link">
+                Zoom
+            </a>
+            <a href="https://discordapp.com/channels/991043733573218384/994683942701641749" target="_blank" class="card-link">
+                Discord
+            </a><br/>
+            
+            
+            
+            <a href="static/paperfiles/paper30_code.zip" target="_blank" class="card-link">
+                Code
+            </a>
+	    
+            
+            <a href="static/paperfiles/paper30_data.zip" target="_blank" class="card-link">
+                Data
+            </a>
+	    <br/>
+            
+        </div>
+    </div>
+</div>
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                We would host the AutoMin generation challenge at INLG 2023 as a follow-up of the first AutoMin shared task at Interspeech 2021. Our shared task primarily concerns the automated generation of meeting minutes from multi-party meeting transcripts. In our first venture, we observed the difficulty of the task and highlighted a number of open problems for the community to discuss, attempt, and solve. Hence, we invite the Natural Language Generation (NLG) community to take part in the second iteration of AutoMin. Like the first, the second AutoMin will feature both English and Czech meetings and the core task of summarizing the manuallyrevised transcripts into bulleted minutes. A new challenge we are introducing this year is to devise efficient metrics for evaluating the quality of minutes. We will also host an optional track to generate minutes for European parliamentary sessions. We carefully curated the datasets for the above tasks. Our ELITR Minuting Corpus has been recently accepted to LREC 2022 and publicly released.1 We are already preparing a new test set for evaluating the new shared tasks. We hope to carry forward the learning from the first AutoMin and instigate more community attention and interest in this timely yet challenging problem. INLG, the premier forum for the NLG community, would be an appropriate venue to discuss the challenges and future of Automatic Minuting. The main objective of the AutoMin GenChal at INLG 2023 would be to come up with efficient methods to automatically generate meeting minutes and design evaluation metrics to measure the quality of the minutes.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 INLG 2022 Organizers</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>
