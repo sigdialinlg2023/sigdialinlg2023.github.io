@@ -21,9 +21,10 @@ speakers:
     session: Keynote 1
     start_time: "2022-07-19T09:00:00Z"
     image: https://inlgmeeting.github.io/static/images/margaret.jpg
-    title: TBD
+    title: Advancing Natural Language Generation (for better or worse)
     institution: Huggingface
     name: Margaret Mitchell
+    bio: "<a href=\"https://m-mitchell.com/bio/\">https://m-mitchell.com/bio/</a>"
   - UID: speaker4
     session: Keynote 3
     start_time: "2022-07-20T13:00:00Z"
