@@ -63,5 +63,9 @@ committee:
   - role: Area Chair
     name: Fei Liu
     aff: University of Central Florida
-
-
+  - name: Saad Mahamood
+    role: Area Chair
+    aff: trivago
+  - name: Tirthankar Ghosal
+    role: Area Chair
+    aff: Charles University    
