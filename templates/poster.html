@@ -43,9 +43,11 @@
                 Paper
             </a>
 	    {% endif %}
+	    {% if paper.zoom != blank %}
  	    <a href="{{paper.zoom}}" target="_blank" class="card-link">
                 Zoom
             </a>
+            {% endif %}
             <a href="{{paper.discord}}" target="_blank" class="card-link">
                 Discord
             </a>

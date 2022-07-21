@@ -55,7 +55,8 @@ def main(site_data_path):
             dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
             by_uid[typ][p["UID"]] = p
             by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
-            
+            p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+                                                              
         for day in by_date.values():
             day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start_time"]))
             for session in day['sessions'].values():

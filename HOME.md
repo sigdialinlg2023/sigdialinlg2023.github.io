@@ -1,5 +1,3 @@
-## The panel on the Ethics of Natural Language Generation is open to all. Join us on Tuesday, 7/19 at 10:30 am EST [here](https://colby.zoom.us/j/93438451939).
-
 ## Welcome!
 
 It is such an interesting and challenging time to do NLG. Never have there been more commercial applications for generation, and at the same time never have there been more societal risks for the applications of generation. Also, some of the biggest generation challenges remain unsolved and largely unexamined. Join us to discuss these issues! 
@@ -20,6 +18,14 @@ We gratefully acknowledge our [sponsors](sponsors.html):
 * AX Semantics
 * aiXplain
 * Bloomberg
+
+## Awards
+
+The Test of Time award goes to: Ehud Reiter, An architecture for data-to-text systems. In Proc. ENLG. [https://aclanthology.org/W07-2315/](https://aclanthology.org/W07-2315/)
+
+The Best Short Paper award goes to [LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning](poster_paper25.html).
+
+The Best Long Paper award goes to [Evaluating Referring Form Selection Models in Partially-Known Environments](poster_paper5.html).
 
 ## ACL Code of Conduct
 The open exchange of ideas, the freedom of thought and expression, and respectful scientific debate are central to the aims and goals of the ACL. These require a community and an environment that recognizes the inherent worth of every person and group, that fosters dignity, understanding, and mutual respect, and embraces diversity. For these reasons, ACL is dedicated to providing a harassment-free experience for all the members, as well as participants at our events and in our programs.

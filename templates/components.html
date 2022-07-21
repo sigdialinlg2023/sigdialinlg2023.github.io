@@ -30,11 +30,16 @@ sessiongroup
           {% if private %}
             </a>
           {% endif %}
-       {% endif %}
+          {% endif %}
           ({{session.start_time.strftime("%H:%M EST")}})
           {% if session.chair %}
 	      <i>Session Chair: {{session.chair}}</i>
 	  {% endif %}
+	  {% if session.full_video != blank %}
+          {% if private %}
+            <a href="{{session.full_video}}">Video</a>
+          {% endif %}
+          {% endif %}
       </div>
       <div
         id="collapse{{rowloop}}-{{loop.index}}"
@@ -107,7 +112,7 @@ sessiongroup
 </div>
 {%- endmacro %}
 
-{% macro speakergroup(speakers) -%}
+{% macro speakergroup(private, speakers) -%}
 {% for speaker in speakers %}
 {% set rowloop = loop.index %}
 <div class="row">
@@ -137,7 +142,17 @@ sessiongroup
             </div>
             <div class="col-md-10 col-sm-6">
               <h3>
+	      {% if private %}
+              {% if speaker.full_video != blank %}
+              <a href={{speaker.full_video}}>
+              {% endif %}
+              {% endif %}
                   {{speaker.title}}
+	      {% if private %}
+              {% if speaker.full_video != blank %}
+	      </a>
+              {% endif %}
+              {% endif %}
               </h3>
 	      {% if speaker.abstract %}
 	        <span class="font-weight-bold">Abstract:</span>
