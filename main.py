@@ -46,8 +46,8 @@ def main(site_data_path):
         by_uid[typ] = {}
         if typ == "speakers":
             vals = site_data[typ]['speakers']
-        elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
-            vals = [format_workshop(workshop) for workshop in site_data[typ]]
+        #elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
+        #    vals = [format_workshop(workshop) for workshop in site_data[typ]]
         else:
             vals = site_data[typ]
             
