@@ -234,24 +234,24 @@ def format_workshop(v):
 # ITEM PAGES
 
 
-@app.route("/poster_<poster>.html")
-def poster(poster):
-    uid = poster
-    v = by_uid["papers"][uid]
-    data = _data()
-    data["paper"] = v
-    return render_template("poster.html", **data)
+# @app.route("/poster_<poster>.html")
+# def poster(poster):
+#     uid = poster
+#     v = by_uid["papers"][uid]
+#     data = _data()
+#     data["paper"] = v
+#     return render_template("poster.html", **data)
 
 # FRONT END SERVING
 
 
-@app.route("/papers.json")
-def paper_json():
-    json = []
-    for v in site_data["papers"]:
-        json.append(v)
-    json.sort(key=lambda x: x["title"])
-    return jsonify(json)
+# @app.route("/papers.json")
+# def paper_json():
+#     json = []
+#     for v in site_data["papers"]:
+#         json.append(v)
+#     json.sort(key=lambda x: x["title"])
+#     return jsonify(json)
 
 
 @app.route("/static/<path:path>")
