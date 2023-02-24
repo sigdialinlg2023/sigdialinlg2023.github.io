@@ -138,73 +138,73 @@ def about():
     return render_template("help.html", **data)
 
 
-@app.route("/papers.html")
-def papers():
-    data = _data()
-    data["papers"] = site_data["papers"]
-    data["papers"].sort(key=lambda x: x["title"])
-    return render_template("papers.html", **data)
-
-
-@app.route("/calendar.html")
-def schedule():
-    data = _data()
-    data["days"] = by_date
-    return render_template("schedule.html", **data)
-
-
-@app.route("/workshops.html")
-def workshops():
-    data = _data()
-    data["workshops"] = [
-        format_workshop(workshop) for workshop in site_data["workshops"]
-    ]
-    return render_template("workshops.html", **data)
-
-
-@app.route("/tutorials.html")
-def tutorials():
-    data = _data()
-    data["workshops"] = [
-        format_workshop(tutorial) for tutorial in site_data["tutorials"]
-    ]
-    return render_template("workshops.html", **data)
-
-
-@app.route("/panels.html")
-def panels():
-    data = _data()
-    data["workshops"] = [
-        format_workshop(panel) for panel in site_data["panels"]
-    ]
-    return render_template("workshops.html", **data)
-
-
-@app.route("/hackathons.html")
-def hackathons():
-    data = _data()
-    data["workshops"] = [
-        format_workshop(hackathon) for hackathon in site_data["hackathons"]
-    ]
-    return render_template("workshops.html", **data)
-
-
-@app.route("/genchal.html")
-def genchal():
-    data = _data()
-    data["workshops"] = [
-        format_workshop(genchal) for genchal in site_data["genchal"]
-    ]
-    return render_template("workshops.html", **data)
-
-
-@app.route("/sponsors.html")
-def sponsors():
-    data = _data()
-    data["goldsponsors"] = site_data["goldsponsors"]
-    data["silversponsors"] = site_data["silversponsors"]
-    data["bronzesponsors"] = site_data["bronzesponsors"]
-    return render_template("sponsors.html", **data)
+# @app.route("/papers.html")
+# def papers():
+#     data = _data()
+#     data["papers"] = site_data["papers"]
+#     data["papers"].sort(key=lambda x: x["title"])
+#     return render_template("papers.html", **data)
+#
+#
+# @app.route("/calendar.html")
+# def schedule():
+#     data = _data()
+#     data["days"] = by_date
+#     return render_template("schedule.html", **data)
+#
+#
+# @app.route("/workshops.html")
+# def workshops():
+#     data = _data()
+#     data["workshops"] = [
+#         format_workshop(workshop) for workshop in site_data["workshops"]
+#     ]
+#     return render_template("workshops.html", **data)
+#
+#
+# @app.route("/tutorials.html")
+# def tutorials():
+#     data = _data()
+#     data["workshops"] = [
+#         format_workshop(tutorial) for tutorial in site_data["tutorials"]
+#     ]
+#     return render_template("workshops.html", **data)
+#
+#
+# @app.route("/panels.html")
+# def panels():
+#     data = _data()
+#     data["workshops"] = [
+#         format_workshop(panel) for panel in site_data["panels"]
+#     ]
+#     return render_template("workshops.html", **data)
+#
+#
+# @app.route("/hackathons.html")
+# def hackathons():
+#     data = _data()
+#     data["workshops"] = [
+#         format_workshop(hackathon) for hackathon in site_data["hackathons"]
+#     ]
+#     return render_template("workshops.html", **data)
+#
+#
+# @app.route("/genchal.html")
+# def genchal():
+#     data = _data()
+#     data["workshops"] = [
+#         format_workshop(genchal) for genchal in site_data["genchal"]
+#     ]
+#     return render_template("workshops.html", **data)
+#
+#
+# @app.route("/sponsors.html")
+# def sponsors():
+#     data = _data()
+#     data["goldsponsors"] = site_data["goldsponsors"]
+#     data["silversponsors"] = site_data["silversponsors"]
+#     data["bronzesponsors"] = site_data["bronzesponsors"]
+#     return render_template("sponsors.html", **data)
 
 
 def extract_list_field(v, key):
