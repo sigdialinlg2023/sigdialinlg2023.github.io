@@ -31,36 +31,36 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
+    #site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
     
-    for p in site_data["sessions"]:
-        dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-        if dt.strftime('%A') not in by_date:
-            by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
-        p["contents"] = []
-        p["name"] = p["session"]
-        p["start_time"] = dt
-        by_date[dt.strftime('%A')]['sessions'][p["session"]] = p
+    # for p in site_data["sessions"]:
+    #     dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
+    #     if dt.strftime('%A') not in by_date:
+    #         by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
+    #     p["contents"] = []
+    #     p["name"] = p["session"]
+    #     p["start_time"] = dt
+    #     by_date[dt.strftime('%A')]['sessions'][p["session"]] = p
         
-    for typ in ["papers", "speakers"]:
-        by_uid[typ] = {}
-        if typ == "speakers":
-            vals = site_data[typ]['speakers']
-        #elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
-        #    vals = [format_workshop(workshop) for workshop in site_data[typ]]
-        else:
-            vals = site_data[typ]
-            
-        for p in vals:
-            dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-            by_uid[typ][p["UID"]] = p
-            by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
-            p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
-                                                              
-        for day in by_date.values():
-            day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start_time"]))
-            for session in day['sessions'].values():
-                session['contents'] = sorted(session['contents'], key=lambda item: item["start_time"])
+    # for typ in ["papers", "speakers"]:
+    #     by_uid[typ] = {}
+    #     if typ == "speakers":
+    #         vals = site_data[typ]['speakers']
+    #     elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
+    #         vals = [format_workshop(workshop) for workshop in site_data[typ]]
+    #     else:
+    #         vals = site_data[typ]
+    #
+    #     for p in vals:
+    #         dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
+    #         by_uid[typ][p["UID"]] = p
+    #         by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
+    #         p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+    #
+    #     for day in by_date.values():
+    #         day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start_time"]))
+    #         for session in day['sessions'].values():
+    #             session['contents'] = sorted(session['contents'], key=lambda item: item["start_time"])
 
     print("Data Successfully Loaded")
     return extra_files
@@ -102,41 +102,41 @@ def home():
     data["home"] = open("Home.md").read()
     return render_template("index.html", **data)
 
-@app.route("/registration.html")
-def registration():
-    data = _data()
-    data["registration"] = open("registration.md").read()
-    return render_template("registration.html", **data)
-
-@app.route("/organizers.html")
-def organizers():
-    data = _data()
-    data["committee"] = site_data["committee"]["committee"]
-    return render_template("organizers.html", **data)
-
-
-@app.route("/speakers.html")
-def speakers():
-    data = _data()
-    data["speakers"] = site_data["speakers"]["speakers"]
-    return render_template("speakers.html", **data)
-
-
-@app.route("/calls.html")
-def calls():
-    data = _data()
-    data["calls"] = site_data["calls"]["calls"]
-    for call in data["calls"]:
-        call["bodytext"] = open(call["body"]).read()
-    return render_template("calls.html", **data)
-
-
-@app.route("/help.html")
-def about():
-    data = _data()
-    data["FAQ"] = site_data["faq"]["FAQ"]
-    return render_template("help.html", **data)
-
+# @app.route("/registration.html")
+# def registration():
+#     data = _data()
+#     data["registration"] = open("registration.md").read()
+#     return render_template("registration.html", **data)
+#
+# @app.route("/organizers.html")
+# def organizers():
+#     data = _data()
+#     data["committee"] = site_data["committee"]["committee"]
+#     return render_template("organizers.html", **data)
+#
+#
+# @app.route("/speakers.html")
+# def speakers():
+#     data = _data()
+#     data["speakers"] = site_data["speakers"]["speakers"]
+#     return render_template("speakers.html", **data)
+#
+#
+# @app.route("/calls.html")
+# def calls():
+#     data = _data()
+#     data["calls"] = site_data["calls"]["calls"]
+#     for call in data["calls"]:
+#         call["bodytext"] = open(call["body"]).read()
+#     return render_template("calls.html", **data)
+#
+#
+# @app.route("/help.html")
+# def about():
+#     data = _data()
+#     data["FAQ"] = site_data["faq"]["FAQ"]
+#     return render_template("help.html", **data)
+#
 
 # @app.route("/papers.html")
 # def papers():
