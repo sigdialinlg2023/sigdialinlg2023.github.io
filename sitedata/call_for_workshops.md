@@ -23,8 +23,8 @@ Those wishing to propose a workshop or tutorial may want to look at some of the 
 - [RoboDIAL 2022](https://robodial.github.io/)
 - [BigScience Workshop: LLMs 2021](https://bigscience.huggingface.co/)
 - [Interactive Natural Language Technology for Explainable Artificial Intelligence 2019](https://sites.google.com/view/nl4xai2019/)
-- https://www.inlg2019.com/workshop
-- https://www.sigdial.org/files/workshops/conference18/sessions.htm
+- [https://www.inlg2019.com/workshop](https://www.inlg2019.com/workshop)
+- [https://www.sigdial.org/files/workshops/conference18/sessions.htm](https://www.sigdial.org/files/workshops/conference18/sessions.htm)
 - [https://inlg2018.uvt.nl/workshops/](https://inlg2018.uvt.nl/workshops/)
 
 ### Important Dates
