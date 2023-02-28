@@ -122,13 +122,13 @@ def home():
 #     return render_template("speakers.html", **data)
 #
 #
-# @app.route("/calls.html")
-# def calls():
-#     data = _data()
-#     data["calls"] = site_data["calls"]["calls"]
-#     for call in data["calls"]:
-#         call["bodytext"] = open(call["body"]).read()
-#     return render_template("calls.html", **data)
+@app.route("/calls.html")
+def calls():
+    data = _data()
+    data["calls"] = site_data["calls"]["calls"]
+    for call in data["calls"]:
+        call["bodytext"] = open(call["body"]).read()
+    return render_template("calls.html", **data)
 #
 #
 # @app.route("/help.html")
