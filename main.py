@@ -129,14 +129,14 @@ def calls():
     for call in data["calls"]:
         call["bodytext"] = open(call["body"]).read()
     return render_template("calls.html", **data)
-#
-#
-# @app.route("/help.html")
-# def about():
-#     data = _data()
-#     data["FAQ"] = site_data["faq"]["FAQ"]
-#     return render_template("help.html", **data)
-#
+
+
+@app.route("/help.html")
+def about():
+    data = _data()
+    data["FAQ"] = site_data["faq"]["FAQ"]
+    return render_template("help.html", **data)
+
 
 # @app.route("/papers.html")
 # def papers():
