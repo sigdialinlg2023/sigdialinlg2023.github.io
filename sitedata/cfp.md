@@ -89,4 +89,4 @@ INLG 2023 will present several awards to recognize outstanding achievements in t
 * Best Demo Paper Award: This award will recognize the best demo paper submitted to the conference. This award considers not only the paper's quality but also the demonstration given at the conference. The demonstration will play a significant role in the judging process.
 * Best Evaluation Award: The award is a new addition to INLG 2023. This award is designed to honour authors who have demonstrated the most comprehensive and insightful analysis in evaluating their results. This award aims to highlight papers where the authors have gone the extra mile in providing a thorough and detailed analysis of their results, offering a nuanced understanding of their findings.
 
-Frequently asked questions about committing a paper from ACL Rolling Review are answered in the [Help](https://inlg2023.github.io/resource_statement.html) tab.
+Frequently asked questions about committing a paper from ACL Rolling Review are answered in the [Help](https://inlg2023.github.io/help.html) tab.
