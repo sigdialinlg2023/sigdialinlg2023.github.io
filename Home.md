@@ -10,6 +10,8 @@ More details coming soon!
 
 Feb 10: [Joint INLG&SIGDIAL Call for Workshop proposals](https://inlg2023.github.io/calls.html) is open, please check out the [Calls](https://inlg2023.github.io/calls.html) tab for more information.
 
+Mar 9: [INLG 2023 Call for Papers](https://inlg2023.github.io/calls.html)  is open, please check out the [Calls](https://inlg2023.github.io/calls.html) tab for more information.
+
 ### Acknowledgements
 
 This site is based on [MiniConf](https://github.com/Mini-Conf/Mini-Conf) which was built by [Hendrik Strobelt](http://twitter.com/hen_str) and [Sasha Rush](http://twitter.com/srush_nlp).

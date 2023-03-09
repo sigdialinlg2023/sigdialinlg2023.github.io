@@ -1,9 +1,9 @@
 
 calls:
   - id: 1
-    title: First Call for Papers
+    title: INLG 2023 Call for Papers
     deadline: May 22, 2023 11:59:59 AOE
-    body: sitedata/first_cfp.md
+    body: sitedata/cfp.md
   - id: 2
     title: Call for Workshop Proposals
     deadline: March 24, 2023 11:59:59 AOE
