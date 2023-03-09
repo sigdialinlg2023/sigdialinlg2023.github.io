@@ -130,6 +130,11 @@ def calls():
         call["bodytext"] = open(call["body"]).read()
     return render_template("calls.html", **data)
 
+@app.route("/resource_statement.html")
+def resource_statement():
+    data = _data()
+    data["resource_statement"] = open("sitedata/resource_statement.md").read()
+    return render_template("resource_statement.html", **data)
 
 @app.route("/help.html")
 def about():
