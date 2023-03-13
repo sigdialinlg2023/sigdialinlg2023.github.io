@@ -41,17 +41,15 @@ To make it easier for readers to find the supplementary materials, to understand
 The Supplementary Materials Availability Statement should be placed at the end of the paper, just before the References (and before Acknowledgements, if present). It does not count in the 8 pages page limit. It should be formatted as an inline paragraph with an italicized heading:
 
 
-```
-Supplementary Materials Availability Statement: Source code is available …
-```
 
+| _Supplementary Materials Availability Statement:_ Source code is available … |
+|------------------------------------------------------------------------------|
 
 In LaTeX, this can be achieved with the markup:
 
 
-```
 \paragraph*{Supplementary Materials  Availability Statement:} Source code is available …
-```
+
 
 
 In Word, authors can simply replicate the formatting shown in the box above.
@@ -90,16 +88,10 @@ In the unlikely case that the supplementary materials cannot be published openly
 **Examples of Supplementary Materials Availability Statements**
 
 
-```
-Supplementary Materials Availability Statement: Source code for OurX and the queries used in Section 4 are available from Github.1 The OurOntoX dataset is available from Zenodo [4]. The MyHealth dataset cannot be made available as it incorporates private user data.
-______________________________________________________________
-1 https://github.com/ThisIsUs/OurX
+| <span style="font-weight:normal">_Supplementary Materials Availability Statement:_ Source code for OurX and the queries used in Section 4 are available from Github.<sup>1</sup> The OurOntoX dataset is available from Zenodo [4]. The MyHealth dataset cannot be made available as it incorporates private user data. </span> |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 https://github.com/ThisIsUs/OurX </br> </br> References </br> … </br>  [4] This, I.U. OurX. Zenodo doi:10.5281/zenodo.12345678. (2023) https://doi.org/10.5281/zenodo.4035223 </br>  …                                                                                                                                        |
 
-References
-…
-[4] This, I.U. OurX. Zenodo doi:10.5281/zenodo.12345678. (2023) https://doi.org/10.5281/zenodo.4035223
-…
-```
 
 
 **Review of the Supplementary Materials Availability Statement**
