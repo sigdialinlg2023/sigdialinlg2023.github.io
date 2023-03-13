@@ -41,9 +41,12 @@ To make it easier for readers to find the supplementary materials, to understand
 The Supplementary Materials Availability Statement should be placed at the end of the paper, just before the References (and before Acknowledgements, if present). It does not count in the 8 pages page limit. It should be formatted as an inline paragraph with an italicized heading:
 
 
+<table>
+    <tr>
+        <td> <i>Supplementary Materials Availability Statement: </i> Source code is available …</td>
+    </tr>
+</table>
 
-| _Supplementary Materials Availability Statement:_ Source code is available … |
-|------------------------------------------------------------------------------|
 
 In LaTeX, this can be achieved with the markup:
 
