@@ -88,9 +88,17 @@ In the unlikely case that the supplementary materials cannot be published openly
 **Examples of Supplementary Materials Availability Statements**
 
 
-| <span style="font-weight:normal">_Supplementary Materials Availability Statement:_ Source code for OurX and the queries used in Section 4 are available from Github.<sup>1</sup> The OurOntoX dataset is available from Zenodo [4]. The MyHealth dataset cannot be made available as it incorporates private user data. </span> |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 https://github.com/ThisIsUs/OurX </br> </br> References </br> … </br>  [4] This, I.U. OurX. Zenodo doi:10.5281/zenodo.12345678. (2023) https://doi.org/10.5281/zenodo.4035223 </br>  …                                                                                                                                        |
+<span style="font-weight:normal">_Supplementary Materials Availability Statement:_ Source code for OurX and the queries used in Section 4 are available from Github.<sup>1</sup> The OurOntoX dataset is available from Zenodo [4]. The MyHealth dataset cannot be made available as it incorporates private user data. 
+___
+1 https://github.com/ThisIsUs/OurX
+
+References 
+
+… 
+
+[4] This, I.U. OurX. Zenodo doi:10.5281/zenodo.12345678. (2023) https://doi.org/10.5281/zenodo.4035223
+
+…                                                                                                                                    
 
 
 
