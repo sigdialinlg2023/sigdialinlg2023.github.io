@@ -40,22 +40,18 @@ To make it easier for readers to find the supplementary materials, to understand
 
 The Supplementary Materials Availability Statement should be placed at the end of the paper, just before the References (and before Acknowledgements, if present). It does not count in the 8 pages page limit. It should be formatted as an inline paragraph with an italicized heading:
 
+***
+Materials Availability Statement: Source code is available …
+***
 
-<table>
-    <tr>
-        <td> <i>Supplementary Materials Availability Statement: </i> Source code is available …</td>
-    </tr>
-</table>
-
+In Word, authors can simply replicate the formatting shown above.
 
 In LaTeX, this can be achieved with the markup:
 
-
+***
 \paragraph*{Supplementary Materials  Availability Statement:} Source code is available …
+***
 
-
-
-In Word, authors can simply replicate the formatting shown in the box above.
 
 **Content of the Resource Availability Statement**
 
@@ -91,7 +87,7 @@ In the unlikely case that the supplementary materials cannot be published openly
 **Examples of Supplementary Materials Availability Statements**
 
 
-<span style="font-weight:normal">_Supplementary Materials Availability Statement:_ Source code for OurX and the queries used in Section 4 are available from Github.<sup>1</sup> The OurOntoX dataset is available from Zenodo [4]. The MyHealth dataset cannot be made available as it incorporates private user data. 
+_Supplementary Materials Availability Statement:_ Source code for OurX and the queries used in Section 4 are available from Github.<sup>1</sup> The OurOntoX dataset is available from Zenodo [4]. The MyHealth dataset cannot be made available as it incorporates private user data. 
 ___
 1 https://github.com/ThisIsUs/OurX
 
