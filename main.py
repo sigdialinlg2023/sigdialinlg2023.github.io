@@ -142,6 +142,12 @@ def about():
     data["FAQ"] = site_data["faq"]["FAQ"]
     return render_template("help.html", **data)
 
+@app.route("/eval_blog.html")
+def eval_blog():
+    data = _data()
+    data["eval_blog"] = open("sitedata/eval_blog.md").read()
+    return render_template("eval_blog.html", **data)
+
 
 # @app.route("/papers.html")
 # def papers():
