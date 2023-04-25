@@ -9,6 +9,6 @@ calls:
     deadline: March 24, 2023 11:59:59 AOE
     body: sitedata/call_for_workshops.md
   - id: 3
-    title: Call for new Shared Task proposals
+    title: Call for new Shared Task proposals (GenChal)
     deadline: June 5, 2023 11:59:59 AOE
     body: sitedata/genchal.md
