@@ -10,6 +10,8 @@ More details coming soon!
 
 Apr 24: [INLG 2023 Call for Shared Task proposals (Generation Challenges)](https://inlg2023.github.io/calls.html)  is open, please check out the [Calls](https://inlg2023.github.io/calls.html) tab for more information.
 
+Apr 5: Emiel van Miltenburg wrote a [blog post about evaluation in NLG](https://inlg2023.github.io/eval_blog.html).
+
 Feb 10: [Joint INLG&SIGDIAL Call for Workshop proposals](https://inlg2023.github.io/calls.html) is open, please check out the [Calls](https://inlg2023.github.io/calls.html) tab for more information.
 
 Mar 9: [INLG 2023 Call for Papers](https://inlg2023.github.io/calls.html)  is open, please check out the [Calls](https://inlg2023.github.io/calls.html) tab for more information.
