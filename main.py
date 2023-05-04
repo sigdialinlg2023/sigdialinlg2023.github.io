@@ -148,6 +148,11 @@ def eval_blog():
     data["eval_blog"] = open("sitedata/eval_blog.md").read()
     return render_template("eval_blog.html", **data)
 
+@app.route("/workshops.html")
+def eval_blog():
+    data = _data()
+    data["workshops"] = open("sitedata/workshops.md").read()
+    return render_template("workshops_preliminary.html", **data)
 
 # @app.route("/papers.html")
 # def papers():
