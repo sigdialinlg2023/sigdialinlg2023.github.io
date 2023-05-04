@@ -7,6 +7,7 @@ The events will take place in Prague on September 11-15, 2023.
 More details coming soon!
 
 ### News
+May 5: The [list of Workshops](https://inlg2023.github.io/workshops.html) is now available.
 
 Apr 24: [INLG 2023 Call for Shared Task proposals (Generation Challenges)](https://inlg2023.github.io/calls.html)  is open, please check out the [Calls](https://inlg2023.github.io/calls.html) tab for more information.
 
