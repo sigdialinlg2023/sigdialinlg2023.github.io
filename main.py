@@ -149,7 +149,7 @@ def eval_blog():
     return render_template("eval_blog.html", **data)
 
 @app.route("/workshops.html")
-def eval_blog():
+def workshops():
     data = _data()
     data["workshops"] = open("sitedata/workshops.md").read()
     return render_template("workshops_preliminary.html", **data)
