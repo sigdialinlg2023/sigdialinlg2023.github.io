@@ -19,7 +19,7 @@ All deadlines are Anywhere on Earth (UTC-12)
 * Conference: 11-15 September 2023
 
 ### **Submission website**
-You can now make your submissions to INLG 2023 via [this link](https://softconf.com/n/inlg2023/)
+You can now make your submissions to INLG 2023 [here](https://softconf.com/n/inlg2023/)
 
 ### **Topics**
 
