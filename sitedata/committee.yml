@@ -1,6 +1,7 @@
 committee:
   - role: Program Chair
     name: Maria Keet
+    im: /static/images/maria.png
     aff: University of Cape Town
   - role: Program Chair
     name: Hung-Yi Lee
