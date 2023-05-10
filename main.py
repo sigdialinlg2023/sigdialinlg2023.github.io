@@ -108,11 +108,11 @@ def home():
 #     data["registration"] = open("registration.md").read()
 #     return render_template("registration.html", **data)
 #
-# @app.route("/organizers.html")
-# def organizers():
-#     data = _data()
-#     data["committee"] = site_data["committee"]["committee"]
-#     return render_template("organizers.html", **data)
+@app.route("/organizers.html")
+def organizers():
+    data = _data()
+    data["committee"] = site_data["committee"]["committee"]
+    return render_template("organizers.html", **data)
 #
 #
 # @app.route("/speakers.html")

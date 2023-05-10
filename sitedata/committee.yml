@@ -1,0 +1,37 @@
+committee:
+  - role: Program Chair
+    name: Maria Keet
+    aff: University of Cape Town
+  - role: Program Chair
+    name: Hung-Yi Lee
+    aff: National Taiwan University
+    im: /static/images/hungyilee.jpg
+  - role: Program Chair
+    name: Sina Zarrieß
+    aff: University of Bielefield
+  - role: Generation Challenge Chair
+    name: Simon Mille
+    aff: ADAPT Research Centre, Dublin City University
+    im: /static/images/simon.png
+  - role: SIGGEN Exec
+    name: Raquel Hervás
+    aff: University Complutense of Madrid
+    im: /static/images/raquel.jpg
+  - role: SIGGEN Exec
+    name: Emiel van Miltenburg
+    aff: Tilburg University
+    im: /static/images/emiel.jpg
+    #tw: evanmiltenburg
+  - role: Local Arrangements Chair
+    name: Ondřej Dušek
+    aff: Charles University
+    im: /static/images/ondra.jpg
+  - role: Sponsor Chair
+    name: Ramesh Manuvinakurike
+    aff: Intel Labs
+  - role: Proceedings Chair
+    name: Chung-Chi Chen
+    aff: National Institute of Advanced Industrial Science and Technology, Japan
+
+
+
