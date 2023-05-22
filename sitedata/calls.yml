@@ -2,13 +2,13 @@
 calls:
   - id: 1
     title: INLG 2023 Call for Papers
-    deadline: May 22, 2023 11:59:59 AOE
+    deadline: May 22, 2023 11:59:59 PM AOE
     body: sitedata/cfp.md
   - id: 2
     title: Call for Workshop Proposals
-    deadline: March 24, 2023 11:59:59 AOE
+    deadline: March 24, 2023 11:59:59 PM AOE
     body: sitedata/call_for_workshops.md
   - id: 3
     title: Call for new Shared Task proposals (GenChal)
-    deadline: June 5, 2023 11:59:59 AOE
+    deadline: June 5, 2023 11:59:59 PM AOE
     body: sitedata/genchal.md
