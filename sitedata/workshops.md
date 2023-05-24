@@ -10,7 +10,8 @@ Gavin Abercrombie, Contact: <G.Abercrombie@hw.ac.uk>
 Michel Galley, Contact: <mgalley@microsoft.com>  
 [https://dstc11.dstc.community/](https://dstc11.dstc.community/)
 - *PracticalD2T: 1st Workshop on Practical LLM-assisted Data-to-Text Generation*  
-Zdeněk Kasner, Contact: <kasner@ufal.mff.cuni.cz>
+Zdeněk Kasner, Contact: <kasner@ufal.mff.cuni.cz>  
+[http://practicald2t.github.io/](http://practicald2t.github.io/)
 
 ### 12 September
 
