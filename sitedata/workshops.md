@@ -1,7 +1,8 @@
 # Workshops
 
 ### 11 & 12 September
-- YRRSDS: 19th Young Researchers' Roundtable on Spoken Dialogue Systems
+- YRRSDS: 19th Young Researchers' Roundtable on Spoken Dialogue Systems  
+[http://www.yrrsds.org/](http://www.yrrsds.org/)
 
 ### 11 September
 - *The 1st Workshop on Counter Speech for Online Abuse*  
