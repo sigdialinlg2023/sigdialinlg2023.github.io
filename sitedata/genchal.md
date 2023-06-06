@@ -9,7 +9,8 @@ Submissions should describe possible future tasks in detail, including informati
 
 ### **Important dates**
 
-* Submission deadline: June 5th 2023
+* ~~Submission deadline: June 5th 2023~~
+* **EDIT!** Submission deadline: June 11th 2023
 * Notification: July 11th 2023
 * Camera-ready submission: July 25th 2023
 * INLG conference: September 11th-15th 2023
