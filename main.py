@@ -113,15 +113,13 @@ def organizers():
     data = _data()
     data["committee"] = site_data["committee"]["committee"]
     return render_template("organizers.html", **data)
-#
-#
-# @app.route("/speakers.html")
-# def speakers():
-#     data = _data()
-#     data["speakers"] = site_data["speakers"]["speakers"]
-#     return render_template("speakers.html", **data)
-#
-#
+
+@app.route("/speakers.html")
+def speakers():
+    data = _data()
+    data["speakers"] = site_data["speakers"]["speakers"]
+    return render_template("speakers.html", **data)
+
 @app.route("/calls.html")
 def calls():
     data = _data()
