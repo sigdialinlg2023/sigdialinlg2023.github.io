@@ -1,0 +1,7 @@
+speakers:
+  - id: 1
+    title: Elena Simperl
+    body: sitedata/spk_elena.md
+  - id: 2
+    title: Emmanuel Dupoux
+    body: sitedata/spk_emmanuel.md
