@@ -3,6 +3,7 @@ speakers:
     #session: Keynote 1
     #start_time: ""
     image: /static/images/elena.jpg
+    title: "Knowledge graph use cases in natural language generation"
     institution: King’s College London
     #full_video:
     name: Elena Simperl
@@ -11,7 +12,8 @@ speakers:
   - UID: EmmanuelDupoux
     #session: Keynote 1
     #start_time: ""
-    #image:
+    image: /static/images/emmanuel_dupoux.jfif
+    title: "Textless NLP: towards language processing from raw audio."
     institution: Ecole des Hautes Etudes en Sciences Sociales (EHESS)
     #full_video:
     name: Emmanuel Dupoux
