@@ -32,7 +32,7 @@ def main(site_data_path):
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
     #site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
-    
+
     # for p in site_data["sessions"]:
     #     dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
     #     if dt.strftime('%A') not in by_date:
@@ -41,7 +41,7 @@ def main(site_data_path):
     #     p["name"] = p["session"]
     #     p["start_time"] = dt
     #     by_date[dt.strftime('%A')]['sessions'][p["session"]] = p
-        
+
     # for typ in ["papers", "speakers"]:
     #     by_uid[typ] = {}
     #     if typ == "speakers":
@@ -151,6 +151,12 @@ def workshops():
     data = _data()
     data["workshops"] = open("sitedata/workshops.md").read()
     return render_template("workshops_preliminary.html", **data)
+
+@app.route("/local.html")
+def local():
+    data = _data()
+    data["local"] = open("sitedata/local.md").read()
+    return render_template("local.html", **data)
 
 # @app.route("/papers.html")
 # def papers():
