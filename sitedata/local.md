@@ -12,35 +12,16 @@ The conference will be hybrid, but primarily focused on in-person attendance. In
 
 SIGDIAL-INLG associated workshops are free to choose their own format – some of them may be hybrid, but some will be in-person only. Please check the websites of the respective workshops for details.
 
-### Registration Costs
+### Registration
 
-The registration includes lunch & coffee breaks, welcome reception on Sep 13 and conference dinner on Sep 14. The costs do not include Eventbrite processing fees.
+Apologies for the delay – we are currently in the process of setting up the registration and finalizing the costs. The registration should open later this week. 
 
-**Early / Regular**
-
-Conference only €475<br>
-Conference + workshops €525<br>
-Workshops only €120
-
-**Early / Student**
-
-Conference only €285<br>
-Conference + workshops €335<br>
-Workshops only €60
-
-**Late / Regular**
-
-Conference only €750<br>
-Conference + workshops €810<br>
-Workshops only €190
-
-**Late / Student**
-
-Conference only €380<br>
-Conference + workshops €430<br>
-Workshops only €95
-
+The expected cost is around €500/€300 (reg/stud) for early main conference registration. The registration will include lunch & coffee breaks, welcome reception on Sep 13 and conference dinner on Sep 14. 
 Online passive attendance will be free.
+
+### Visa
+
+In case you need an invitation letter for your visa application, please email Ondrej Dusek (https://ufal.mff.cuni.cz/ondrej-dusek).
 
 
 
