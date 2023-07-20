@@ -1,21 +1,21 @@
 private: false
-name: INLG 2023
-tagline: 16th International Natural Language Generation Conference
+name: Program of SIGDial & INLG 2023
+tagline: Visit SIGDial & INLG 2023 
 date: 11-15 September 2023
 citation_date: September 2023
-proceedings_title: Proceedings of the 16th International Natural Language Generation Conference
+proceedings_title: Proceedings of the SIGDial & Proceedings of INLG 2023 
 analytics: UA-
 logo:
-  image: https://inlg2021.github.io/img/logo.png
+  image: static/images/ingl-logo.png
   width: 90px
   height: auto
 # uncomment the following line to show the site title next to the logo image
-site_title: 16th International Natural Language Generation Conference
+site_title: Program of SIGDial & INLG 2023 and Workshops
 page_title:
   prefix: 'INLG 2023'
   separator: ': '
 background_image: static/images/prague_cropped.jpg
-organization: INLG 2023 Organizers
+organization: SigDial and INLG 2023 Organizers
 
 # Remove or change to your chat server.
 #chat_server: miniconf.sloppy.zone

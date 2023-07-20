@@ -88,15 +88,15 @@
 {% block header %}
 {% set navigation_bar = [
 ('index.html', 'Home'),
-('calls.html', 'Calls'),
-('organizers.html', 'Organizers'),
-('speakers.html', 'Keynotes'),
-('workshops.html', 'Workshops'),
 ('tutorials.html', 'Tutorials'),
-('sponsors.html', 'Sponsors'),
 ('registration.html', 'Registration'),
+('workshops.html', 'Workshops'),
+('sponsors.html', 'Sponsors'),
+('organizers.html', 'Organizers'),
 ('help.html', 'Help'),
 ] -%}
+{# ('calls.html', 'Calls'), #}
+{# ('speakers.html', 'Keynotes'), #}
 
 <nav
         class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
@@ -133,21 +133,13 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="calls.html">Calls</a>
-                </li>
+                {# <li class="nav-item "> #}
+                {#     <a class="nav-link" href="calls.html">Calls</a> #}
+                {# </li> #}
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="workshops.html">Workshops</a>
-                </li>
-
-                <li class="nav-item ">
-                    <a class="nav-link" href="organizers.html">Organizers</a>
-                </li>
-
-                <li class="nav-item ">
-                    <a class="nav-link" href="local.html">Participating</a>
-                </li>
+                {# <li class="nav-item "> #}
+                {#     <a class="nav-link" href="local.html">Participating</a> #}
+                {# </li> #}
 
             <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -165,23 +157,33 @@
                   </div>
             </li>
 
-<!--               <li class="nav-item ">-->
-<!--                  <a class="nav-link" href="calendar.html">Schedule</a>-->
-<!--              </li>-->
-
-<!--                <li class="nav-item ">-->
-<!--                    <a class="nav-link" href="sponsors.html">Sponsors</a>-->
-<!--                </li>-->
-
-<!--                <li class="nav-item ">-->
-<!--                    <a class="nav-link" href="registration.html">Registration</a>-->
-<!--                </li>-->
+                <li class="nav-item ">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
 
                 <li class="nav-item ">
-                    <a class="nav-link" href="help.html">Help</a>
+                    <a class="nav-link" href="registration.html">Registration</a>
                 </li>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="organizers.html">Organizers</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html">FAQ</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="workshops.html">Workshops</a>
+                </li>
+
                 <li class="nav-item ">
                     <a class="nav-link" href="https://2023.sigdial.org/">SIGDIAL 2023</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://inlg2023.sigdial.org/">INLG 2023</a>
                 </li>
             </ul>
         </div>
