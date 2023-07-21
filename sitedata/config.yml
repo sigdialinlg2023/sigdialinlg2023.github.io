@@ -6,7 +6,7 @@ citation_date: September 2023
 proceedings_title: Proceedings of the SIGdial & Proceedings of INLG 2023 
 analytics: UA-
 logo:
-  image: static/images/ingl-logo.png
+  image: static/images/inlg_says_sigdial.png
   width: 90px
   height: auto
 # uncomment the following line to show the site title next to the logo image
@@ -14,7 +14,7 @@ site_title: SIGdial & INLG 2023 Program
 page_title:
   prefix: 'Program Sgidail & INLG 2023'
   separator: ': '
-background_image: static/images/prague_cropped.jpg
+background_image: static/images/hradcany_cropped.jpg
 organization: SigDial and INLG 2023 Organizers
 
 # Remove or change to your chat server.
