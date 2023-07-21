@@ -1,28 +1,21 @@
 ## Registration
 
-The registration site is [here](https://colbyevents.regfox.com/inlg). Here are the fees: 
+The registration site is [here-TBD](TBD). Here are the fees: 
 
-### Early (before June 25th)
-
-  * Online
-    * Student $50
-    * Regular $100
-  * In person
-    * Student $110
-    * Regular $220
-
-### Late (after June 25th)
+### Early (before August 10th)
 
   * Online
-    * Student $75
-    * Regular $150
+    * Student $TBD
+    * Regular $TBD
   * In person
-    * Student $160
-    * Regular $320
+    * Student $TBD
+    * Regular $TBD
 
-### Optional Fees
+### Late (after August 10th)
 
-  * Colby housing (optional, per person, includes all meals and access to campus facilities):
-    * Downtown apartments $80 per night
-    * On campus dorm room $60 per night
-  * Banquet (per person): $50
+  * Online
+    * Student $TBD
+    * Regular $TBD
+  * In person
+    * Student $TBD
+    * Regular $TBD
