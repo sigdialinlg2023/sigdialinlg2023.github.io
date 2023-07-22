@@ -71,7 +71,7 @@ def main(site_data_path):
 app = Flask(__name__)
 app.config.from_object(__name__)
 freezer = Freezer(app)
-markdown = Markdown(app)
+markdown = Markdown(app, extensions=['tables'])
 
 
 # MAIN PAGES
