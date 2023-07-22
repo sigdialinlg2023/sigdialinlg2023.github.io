@@ -36,6 +36,4 @@ The registration costs for paper presenters are the same, regardless of in-perso
 
 ### Visa
 
-In case you need an invitation letter for your visa application, please email Ondrej Dusek (https://ufal.mff.cuni.cz/ondrej-dusek).
-
-
+In case you need an invitation letter for your visa application, please email [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek).
