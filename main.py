@@ -105,13 +105,13 @@ def home():
 @app.route("/registration.html")
 def registration():
     data = _data()
-    data["registration"] = open("registration.md").read()
+    data["registration"] = open("sitedata/registration.md").read()
     return render_template("registration.html", **data)
 
 @app.route("/venue.html")
 def venue():
     data = _data()
-    data["venue"] = open("venue.md").read()
+    data["venue"] = open("sitedata/venue.md").read()
     return render_template("venue.html", **data)
 
 @app.route("/organizers.html")
@@ -146,23 +146,11 @@ def about():
     data["FAQ"] = site_data["faq"]["FAQ"]
     return render_template("help.html", **data)
 
-@app.route("/eval_blog.html")
-def eval_blog():
-    data = _data()
-    data["eval_blog"] = open("sitedata/eval_blog.md").read()
-    return render_template("eval_blog.html", **data)
-
 @app.route("/workshops.html")
 def workshops():
     data = _data()
     data["workshops"] = open("sitedata/workshops.md").read()
     return render_template("workshops_preliminary.html", **data)
-
-@app.route("/local.html")
-def local():
-    data = _data()
-    data["local"] = open("sitedata/local.md").read()
-    return render_template("local.html", **data)
 
 # @app.route("/papers.html")
 # def papers():
