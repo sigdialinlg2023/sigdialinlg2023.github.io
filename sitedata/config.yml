@@ -3,7 +3,7 @@ name: Program of SIGdial & INLG
 tagline: Visit SIGdial & INLG 2023 
 date: 11-15 September 2023
 citation_date: September 2023
-proceedings_title: Proceedings of the SIGdial & Proceedings of INLG 2023 
+proceedings_title: Proceedings of SIGdial 2023 & Proceedings of INLG 2023 
 analytics: UA-
 logo:
   image: static/images/inlg_says_sigdial.png
@@ -15,7 +15,7 @@ page_title:
   prefix: 'Program Sgidail & INLG 2023'
   separator: ': '
 background_image: static/images/hradcany_cropped.jpg
-organization: SigDial and INLG 2023 Organizers
+organization: SIGDIAL-INLG 2023 Organizers
 
 # Remove or change to your chat server.
 #chat_server: miniconf.sloppy.zone
