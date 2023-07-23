@@ -37,3 +37,14 @@ The registration costs for paper presenters are the same, regardless of in-perso
 ### Visa
 
 In case you need an invitation letter for your visa application, please email [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek).
+
+To speed up the process, please include the following in your request (all in accordance with what it says on your passport):
+
+* Your full name
+* Your pronouns
+* Your academic title, if any
+* Your passport number
+* Your date and place (city/municipality/province) of birth
+* Your affiliation
+* The title of your accepted paper
+* Which Czech embassy or consulate you're addressing
