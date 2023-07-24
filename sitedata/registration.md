@@ -1,6 +1,10 @@
 ## Registration
 
 Registration proceeds through Eventbrite [under this link](https://www.eventbrite.com/e/678564603997). 
+Note that the registration form includes a questionnaire for participants, most of which appears _after_ you buy the tickets.
+Please do not forget to fill in the ID of the paper you are presenting.
+
+In case of any problems with the registration, please contact [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek).
 
 ## Fees
 
