@@ -12,7 +12,7 @@ logo:
 # uncomment the following line to show the site title next to the logo image
 site_title: SIGdial & INLG 2023 Program
 page_title:
-  prefix: 'Program Sgidail & INLG 2023'
+  prefix: 'Program SIGdial & INLG 2023'
   separator: ': '
 background_image: static/images/hradcany_cropped.jpg
 organization: SIGDIAL-INLG 2023 Organizers
