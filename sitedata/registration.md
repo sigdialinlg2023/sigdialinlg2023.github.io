@@ -40,6 +40,13 @@ The registration costs for paper presenters are the same, regardless of in-perso
 | Student – workshops only         | $113.88 |
 
 
+#### Additional
+
+
+| Type                             | Cost incl. fees |
+| ----                             | --- |
+| +1 Banquet ticket (for Sep 14)   | $65.87 |
+
 ### Visa
 
 In case you need an invitation letter for your visa application, please email [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek).
