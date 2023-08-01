@@ -1,8 +1,10 @@
 FAQ:
-  - Section: Frequently Asked Questions about websites
+  - Section: Website
     QA:
       - Question: How many websites are there for this conference?
         Answer: Three. One for [SIGdial](https://2023.sigdial.org), second for [INLG](https://inlg2023.github.io), and [this website](https://sigdialinlg2023.github.io) for the local info and online presence during the conference.
+  - Section: Registration
+    QA:
       - Question: Can I pay the conference by invoice/bank transfer?
         Answer: Unfortunately, we are not able to accept other types of payment than card payments.
       - Question: Can I get an invoice with my university/company name for reimbursement purposes.
