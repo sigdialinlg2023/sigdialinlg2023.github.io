@@ -13,3 +13,5 @@ FAQ:
         Answer: For US bank cards, this is used for fraud detection purposes. For cards outside of the US, the entered value shouldn't make a difference for your payment. You can enter your own postal code in your country, or just "00000", both options have been tested to work.
       - Question: I need a visa invitation letter. Can I get one?
         Answer: Yes, please contact [Ondrej Dusek](http://ufal.mff.cuni.cz/ondrej-dusek). Please see the [registration](registration.html) page for details on what information we need from you.
+      - Question: Where can I apply for a Czech visa?
+        Answer: You can apply at Czech Embassies, Consulates General, or in a Czech visa center. See the [list of Czech embassies and consulates](https://www.mzv.cz/jnp/en/diplomatic_missions/czech_missions_abroad/index.html) and the [list of Czech visa centers](https://www.mzv.cz/jnp/en/information_for_aliens/short_stay_visa/outsourcing/index.html). Note that _Honorary_ Consulates do not process visas. If you apply at a visa center, your application will get passed on to the nearest embassy.

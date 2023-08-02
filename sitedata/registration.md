@@ -60,4 +60,7 @@ To speed up the process, please include the following in your request (all in ac
 * Your date and place (city/municipality/province) of birth
 * Your affiliation
 * The title of your accepted paper
-* Which Czech embassy or consulate you're addressing
+* Which Czech Embassy or Consulate General you're addressing 
+
+
+You can see the [list of Czech embassies and consulates](https://www.mzv.cz/jnp/en/diplomatic_missions/czech_missions_abroad/index.html) here. Note that _Honorary_ Consulates do not process visas. In addition to embassies and consulates general, you can also apply for a visa in one of the [visa centers](https://www.mzv.cz/jnp/en/information_for_aliens/short_stay_visa/outsourcing/index.html). Your application will then get passed on to the nearest embassy.
