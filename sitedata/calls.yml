@@ -1,14 +1,6 @@
 
 calls:
   - id: 1
-    title: INLG 2023 Call for Papers
-    deadline: May 22, 2023 11:59:59 PM AOE
+    title: SIGDIAL & INLG 2023 Call for Participation
+    deadline: Aug 10, 2023 (Early) / Sep 15, 2023 (Late & free online non-presenters)
     body: sitedata/cfp.md
-  - id: 2
-    title: Call for Workshop Proposals
-    deadline: March 24, 2023 11:59:59 PM AOE
-    body: sitedata/call_for_workshops.md
-  - id: 3
-    title: Call for new Shared Task proposals (GenChal)
-    deadline: June 11, 2023 11:59:59 PM AOE
-    body: sitedata/genchal.md
