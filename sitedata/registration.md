@@ -6,6 +6,8 @@ Please do not forget to fill in the ID of the paper you are presenting.
 
 Your registration confirmation includes a link for booking accommodation at the [venue hotel](venue.html) with special rates (available until 10 August).
 
+After you complete the registration payment, you can request an [invoice here](invoice.html). Note that the payment must be done by card on Eventbrite, we are only able to generate invoices after the payment has been made and cannot accept direct bank transfers.
+
 In case of any problems with the registration, please check the [FAQ](help.html) or contact [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek).
 
 ## Fees

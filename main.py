@@ -108,6 +108,12 @@ def registration():
     data["registration"] = open("sitedata/registration.md").read()
     return render_template("registration.html", **data)
 
+@app.route("/invoice.html")
+def invoice():
+    data = _data()
+    data["invoice"] = open("sitedata/invoice.md").read()
+    return render_template("invoice.html", **data)
+
 @app.route("/venue.html")
 def venue():
     data = _data()

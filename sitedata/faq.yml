@@ -6,9 +6,9 @@ FAQ:
   - Section: Registration
     QA:
       - Question: Can I pay the conference by invoice/bank transfer?
-        Answer: Unfortunately, we are not able to accept other types of payment than card payments.
+        Answer: Unfortunately, we are not able to accept other types of payment than card payments over Eventbrite.
       - Question: Can I get an invoice with my university/company name for reimbursement purposes?
-        Answer: Yes, we can provide that for you. We're working on the details right now.
+        Answer: Yes, we can provide that for you. You can request an [invoice to be generated here](invoice.html).
       - Question: Eventbrite asks for a ZIP code but I don't have one.
         Answer: For US bank cards, this is used for fraud detection purposes. For cards outside of the US, the entered value shouldn't make a difference for your payment. You can enter your own postal code in your country, or just "00000", both options have been tested to work.
       - Question: I need a visa invitation letter. Can I get one?
