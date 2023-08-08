@@ -22,6 +22,7 @@ Robert Xiangru Tang, Contact: <xiangru.tang@yale.edu>
 [https://ctrlnlg.github.io/](https://ctrlnlg.github.io/)
 - *Workshop on Multimodal, Multilingual Natural Language Generation and Multilingual WebNLG Challenge*  
 Albert Gatt, Contact: <a.gatt@uu.nl>
+[https://synalp.gitlabpages.inria.fr/mmnlg2023/](https://synalp.gitlabpages.inria.fr/mmnlg2023/)
 
 #### Half-day
 ###### Morning
