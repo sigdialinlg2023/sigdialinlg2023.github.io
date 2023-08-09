@@ -16,7 +16,13 @@ More local information details are coming soon. The site will be populated with 
 
 ### News
 
-Jul 24: [Registration](registration.html) is now open. Early rates are available until August 10. You can also book a room at the conference venue at a discounted rate (reservation link will be included in your registration confirmation email).
+Aug 9: The early registration deadline has been extended until August 18! Discounted hotel rates are still available.
+
+Aug 9: In case you are looking for childcare at the conference, please contact [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek). We are not able to provide childcare ourselves but can connect you to other participants needing childcare, so that you can arrange it together.
+
+Aug 8: You can now [get an invoice generated](invoice.html) for your registration payment.
+
+Jul 24: [Registration](registration.html) is now open. Early rates are available until August 18. You can also book a room at the conference venue at a discounted rate (reservation link will be included in your registration confirmation email).
 
 
 This site is based on [MiniConf](https://github.com/Mini-Conf/Mini-Conf) which was built by [Hendrik Strobelt](http://twitter.com/hen_str) and [Sasha Rush](http://twitter.com/srush_nlp).
