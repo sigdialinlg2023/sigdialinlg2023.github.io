@@ -4,7 +4,7 @@
 Note that the registration form includes a questionnaire for participants, most of which appears _after_ you buy the tickets.
 Please do not forget to fill in the ID of the paper you are presenting.
 
-Your registration confirmation includes a link for booking accommodation at the [venue hotel](venue.html) with special rates (available until 10 August).
+Your registration confirmation includes a link for booking accommodation at the [venue hotel](venue.html) with special rates (available until 18 August).
 
 After you complete the registration payment, you can request an [invoice here](invoice.html). Note that the payment must be done by card on Eventbrite, we are only able to generate invoices after the payment has been made and cannot accept direct bank transfers.
 
@@ -19,7 +19,7 @@ The registration costs for paper presenters are the same, regardless of in-perso
 
 **Online attendance without a presentation** will be **free**. You still need to register to access the online system.
 
-#### Early (before August 10th)
+#### Early (before August 18th -- extended!)
 
 | Type                             | Cost incl. fees |
 | ----                             | --- |
@@ -30,7 +30,7 @@ The registration costs for paper presenters are the same, regardless of in-perso
 | Student – conference + workshops | $401.99 |
 | Student – workshops only         |  $71.20 |
 
-#### Late (after August 10th)
+#### Late (after August 18th)
 
 | Type                             | Cost incl. fees |
 | ----                             | --- |
