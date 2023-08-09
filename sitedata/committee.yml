@@ -1,38 +1,46 @@
 committee:
-  - role: Program Chair
+  - role: General Chair
+    name: David Schlangen
+    aff: University of Potsdam
+  - role: Local Chair
+    name: Ondřej Dušek
+    aff: Charles University
+  - role: Sponsorships Chair
+    name: Ramesh Manuvinakurike
+    aff: Intel Labs
+  - role: SIGdial Program chair
+    name: Svetlana Stoyanchev
+    aff: Toshiba Cambridge Research Laboratory
+  - role: SIGdial Program chair
+    name: Shafiq Joty
+    aff: Nanyang Technological University / Salesforce Research
+  - role: SIGdial Mentoring chair
+    name: Casey Kennington
+    aff: Boise State University
+  - role: SIGdial Publication Chair
+    name: Malihe Alikhani
+    aff: University of Pittsburgh
+  - role: INLG Program Chair
     name: Maria Keet
-    im: /static/images/maria.png
     aff: University of Cape Town
-  - role: Program Chair
+  - role: INLG Program Chair
     name: Hung-Yi Lee
     aff: National Taiwan University
-    im: /static/images/hungyilee.jpg
-  - role: Program Chair
+  - role: INLG Program Chair
     name: Sina Zarrieß
     aff: University of Bielefield
-  - role: Generation Challenge Chair
+  - role: INLG Proceedings Chair
+    name: Chung-Chi Chen
+    aff: National Institute of Advanced Industrial Science and Technology, Japan
+  - role: INLG Generation Challenges Chair
     name: Simon Mille
     aff: ADAPT Research Centre, Dublin City University
-    im: /static/images/simon.png
   - role: SIGGEN Exec
     name: Raquel Hervás
     aff: University Complutense of Madrid
-    im: /static/images/raquel.jpg
   - role: SIGGEN Exec
     name: Emiel van Miltenburg
     aff: Tilburg University
-    im: /static/images/emiel.jpg
-    #tw: evanmiltenburg
-  - role: Local Arrangements Chair
-    name: Ondřej Dušek
-    aff: Charles University
-    im: /static/images/ondra.jpg
-  - role: Sponsor Chair
-    name: Ramesh Manuvinakurike
-    aff: Intel Labs
-  - role: Proceedings Chair
-    name: Chung-Chi Chen
-    aff: National Institute of Advanced Industrial Science and Technology, Japan
 
 
 
