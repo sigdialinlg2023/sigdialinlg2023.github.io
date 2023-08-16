@@ -1,12 +1,13 @@
 {% set active_page = "Venue" %}
 {% extends "base.html" %}
-   
+
 {% block top %}
 <style>
   .back {
     background: url("{{config.background_image}}") no-repeat center;
     background-size: cover;
   }
+
   .back h2 {
     font-family: "Lato", sans-serif;
     font-weight: 900;
@@ -28,12 +29,10 @@
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="col-sm border">
-      {{ venue | markdown }}
-    </div>
+<div class="row">
+  <div class="col-sm">
+    {{ venue | markdown }}
   </div>
 </div>
+</div>
 {% endblock %}
-
-      

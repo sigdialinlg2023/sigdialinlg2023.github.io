@@ -1,23 +1,27 @@
 {% set active_page = "Registration" %}
 {% extends "base.html" %}
-   
+
 {% block top %}
 <style>
   .back {
     background: url("{{config.background_image}}") no-repeat center;
     background-size: cover;
   }
+
   .back h2 {
     font-family: "Lato", sans-serif;
     font-weight: 900;
   }
-  table td, table th {
-      padding: 2pt 0.5em;
+
+  table td,
+  table th {
+    padding: 2pt 0.5em;
   }
+
   table {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      margin: 1em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 1em 0;
   }
 </style>
 
@@ -36,12 +40,10 @@
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="col-sm border">
-      {{ registration | markdown }}
-    </div>
+<div class="row">
+  <div class="col-sm">
+    {{ registration | markdown }}
   </div>
 </div>
+</div>
 {% endblock %}
-
-      
