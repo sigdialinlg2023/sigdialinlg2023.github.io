@@ -120,6 +120,12 @@ def venue():
     data["venue"] = open("sitedata/venue.md").read()
     return render_template("venue.html", **data)
 
+@app.route("/programatglance.html")
+def programatglance():
+    data = _data()
+    data["programatglance"] = open("sitedata/programatglance.md").read()
+    return render_template("programatglance.html", **data)
+
 @app.route("/organizers.html")
 def organizers():
     data = _data()
@@ -164,15 +170,15 @@ def workshops():
 #     data["papers"] = site_data["papers"]
 #     data["papers"].sort(key=lambda x: x["title"])
 #     return render_template("papers.html", **data)
-#
-#
-# @app.route("/calendar.html")
-# def schedule():
-#     data = _data()
-#     data["days"] = by_date
-#     return render_template("schedule.html", **data)
-#
-#
+
+
+@app.route("/calendar.html")
+def schedule():
+    data = _data()
+    data["days"] = by_date
+    return render_template("schedule.html", **data)
+
+
 # @app.route("/workshops.html")
 # def workshops():
 #     data = _data()
