@@ -1,0 +1,668 @@
+[
+    {
+        "UID": "dstc1",
+        "title": "DSTC 1",
+        "start": "2023-09-11T09:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T10:30:00+02:00",
+        "calendarId": "dstc"
+    },
+    {
+        "UID": "csoa1",
+        "title": "CSOA 1",
+        "start": "2023-09-11T09:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-11T10:30:00+02:00",
+        "calendarId": "csoa"
+    },
+    {
+        "UID": "practicaldt1",
+        "title": "PracticalDT 1",
+        "start": "2023-09-11T09:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-11T10:30:00+02:00",
+        "calendarId": "practicaldt"
+    },
+    {
+        "UID": "yrrsds1",
+        "title": "YRRSDS 1",
+        "start": "2023-09-11T09:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-11T10:30:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "coffeebreak1",
+        "title": "Coffee break",
+        "start": "2023-09-11T10:30:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T11:00:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "dstc2",
+        "title": "DSTC 2",
+        "start": "2023-09-11T11:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T13:00:00+02:00",
+        "calendarId": "dstc"
+    },
+    {
+        "UID": "csoa2",
+        "title": "CSOA 2",
+        "start": "2023-09-11T11:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-11T13:00:00+02:00",
+        "calendarId": "csoa"
+    },
+    {
+        "UID": "practicaldt2",
+        "title": "PracticalDT 2",
+        "start": "2023-09-11T11:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-11T13:00:00+02:00",
+        "calendarId": "practicaldt"
+    },
+    {
+        "UID": "yrrsds2",
+        "title": "YRRSDS 2",
+        "start": "2023-09-11T11:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-11T13:00:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "lunch1",
+        "title": "Lunch",
+        "start": "2023-09-11T13:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T14:00:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "dstc3",
+        "title": "DSTC 3",
+        "start": "2023-09-11T14:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T15:30:00+02:00",
+        "calendarId": "dstc"
+    },
+    {
+        "UID": "csoa3",
+        "title": "CSOA 3",
+        "start": "2023-09-11T14:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-11T15:30:00+02:00",
+        "calendarId": "csoa"
+    },
+    {
+        "UID": "practicaldt3",
+        "title": "PracticalDT 3",
+        "start": "2023-09-11T14:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-11T15:30:00+02:00",
+        "calendarId": "practicaldt"
+    },
+    {
+        "UID": "yrrsds3",
+        "title": "YRRSDS 3",
+        "start": "2023-09-11T14:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-11T15:30:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "coffeebreak2",
+        "title": "Coffee break",
+        "start": "2023-09-11T15:30:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T16:00:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "dstc4",
+        "title": "DSTC 4",
+        "start": "2023-09-11T16:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-11T18:00:00+02:00",
+        "calendarId": "dstc"
+    },
+    {
+        "UID": "csoa4",
+        "title": "CSOA 4",
+        "start": "2023-09-11T16:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-11T18:00:00+02:00",
+        "calendarId": "csoa"
+    },
+    {
+        "UID": "practicaldt4",
+        "title": "PracticalDT 4",
+        "start": "2023-09-11T16:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-11T18:00:00+02:00",
+        "calendarId": "practicaldt"
+    },
+    {
+        "UID": "yrrsds4",
+        "title": "YRRSDS 4",
+        "start": "2023-09-11T16:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-11T18:00:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "yrrsds5",
+        "title": "YRRSDS 5",
+        "start": "2023-09-12T09:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-12T10:30:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "mmnlg1",
+        "title": "MMNLG 1",
+        "start": "2023-09-12T09:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T10:30:00+02:00",
+        "calendarId": "mmnlg"
+    },
+    {
+        "UID": "tamingllm1",
+        "title": "TamingLLM 1",
+        "start": "2023-09-12T09:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-12T10:30:00+02:00",
+        "calendarId": "tamingllm"
+    },
+    {
+        "UID": "multiaiautism1",
+        "title": "MultiAIAutism 1",
+        "start": "2023-09-12T09:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-12T10:30:00+02:00",
+        "calendarId": "multiaiautism"
+    },
+    {
+        "UID": "coffeebreak3",
+        "title": "Coffee break",
+        "start": "2023-09-12T10:30:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T11:00:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "mmnlg2",
+        "title": "MMNLG 2",
+        "start": "2023-09-12T11:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T13:00:00+02:00",
+        "calendarId": "mmnlg"
+    },
+    {
+        "UID": "tamingllm2",
+        "title": "TamingLLM 2",
+        "start": "2023-09-12T11:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-12T13:00:00+02:00",
+        "calendarId": "tamingllm"
+    },
+    {
+        "UID": "multiaiautism2",
+        "title": "MultiAIAutism 2",
+        "start": "2023-09-12T11:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-12T13:00:00+02:00",
+        "calendarId": "multiaiautism"
+    },
+    {
+        "UID": "yrrsds6",
+        "title": "YRRSDS 6",
+        "start": "2023-09-12T11:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-12T13:00:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "lunch2",
+        "title": "Lunch",
+        "start": "2023-09-12T13:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T14:00:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "mmnlg3",
+        "title": "MMNLG 3",
+        "start": "2023-09-12T14:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T15:30:00+02:00",
+        "calendarId": "mmnlg"
+    },
+    {
+        "UID": "tamingllm3",
+        "title": "TamingLLM 3",
+        "start": "2023-09-12T14:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-12T15:30:00+02:00",
+        "calendarId": "tamingllm"
+    },
+    {
+        "UID": "yrrsds7",
+        "title": "YRRSDS 7",
+        "start": "2023-09-12T14:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-12T15:30:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "taskssdsdata1",
+        "title": "TasksSDSData 1",
+        "start": "2023-09-12T14:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-12T15:30:00+02:00",
+        "calendarId": "taskssdsdata"
+    },
+    {
+        "UID": "coffeebreak4",
+        "title": "Coffee break",
+        "start": "2023-09-12T15:30:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T16:00:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "mmnlg4",
+        "title": "MMNLG 4",
+        "start": "2023-09-12T16:00:00+02:00",
+        "room": "Jupiter (90)",
+        "category": "time",
+        "end": "2023-09-12T18:00:00+02:00",
+        "calendarId": "mmnlg"
+    },
+    {
+        "UID": "tamingllm4",
+        "title": "TamingLLM 4",
+        "start": "2023-09-12T16:00:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-12T18:00:00+02:00",
+        "calendarId": "tamingllm"
+    },
+    {
+        "UID": "taskssdsdata2",
+        "title": "TasksSDSData 2",
+        "start": "2023-09-12T16:00:00+02:00",
+        "room": "Uranus (50)",
+        "category": "time",
+        "end": "2023-09-12T18:00:00+02:00",
+        "calendarId": "taskssdsdata"
+    },
+    {
+        "UID": "yrrsds8",
+        "title": "YRRSDS 8",
+        "start": "2023-09-12T16:00:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-12T18:00:00+02:00",
+        "calendarId": "yrrsds"
+    },
+    {
+        "UID": "opening",
+        "title": "Opening",
+        "start": "2023-09-13T09:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T09:15:00+02:00",
+        "calendarId": "business"
+    },
+    {
+        "UID": "keynotedupoux",
+        "title": "Keynote Dupoux",
+        "start": "2023-09-13T09:15:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T10:15:00+02:00",
+        "calendarId": "keynote"
+    },
+    {
+        "UID": "coffeebreak5",
+        "title": "Coffee break",
+        "start": "2023-09-13T10:15:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T10:45:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "inlgoralsession1",
+        "title": "INLG Oral Session 1",
+        "start": "2023-09-13T10:45:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "end": "2023-09-13T12:30:00+02:00",
+        "calendarId": "inlgoral"
+    },
+    {
+        "UID": "sigdialoralsession1",
+        "title": "Sigdial Oral Session 1",
+        "start": "2023-09-13T10:45:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T12:30:00+02:00",
+        "calendarId": "sigdialoral"
+    },
+    {
+        "UID": "lunch3",
+        "title": "Lunch",
+        "start": "2023-09-13T12:30:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T13:30:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "inlgoralsession2",
+        "title": "INLG Oral Session 2",
+        "start": "2023-09-13T13:30:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "end": "2023-09-13T15:10:00+02:00",
+        "calendarId": "inlgoral"
+    },
+    {
+        "UID": "sigdialpostersession1",
+        "title": "Sigdial Poster Session 1",
+        "start": "2023-09-13T13:30:00+02:00",
+        "room": "Foyer",
+        "category": "time",
+        "end": "2023-09-13T15:10:00+02:00",
+        "calendarId": "sigdialposter"
+    },
+    {
+        "UID": "coffeebreak6",
+        "title": "Coffee break",
+        "start": "2023-09-13T15:10:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T15:40:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "sigdialoralsession2",
+        "title": "Sigdial Oral Session 2",
+        "start": "2023-09-13T15:40:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T17:00:00+02:00",
+        "calendarId": "sigdialoral"
+    },
+    {
+        "UID": "inlgpostersession+flash",
+        "title": "INLG Poster session +flash",
+        "start": "2023-09-13T15:40:00+02:00",
+        "room": "Foyer",
+        "category": "time",
+        "end": "2023-09-13T17:00:00+02:00",
+        "calendarId": "inlgposter"
+    },
+    {
+        "UID": "keynotelowe",
+        "title": "Keynote Lowe",
+        "start": "2023-09-13T17:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T18:00:00+02:00",
+        "calendarId": "keynote"
+    },
+    {
+        "UID": "panel",
+        "title": "Panel",
+        "start": "2023-09-13T18:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T18:45:00+02:00",
+        "calendarId": "keynote"
+    },
+    {
+        "UID": "welcomereception",
+        "title": "Welcome reception",
+        "start": "2023-09-13T19:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-13T20:00:00+02:00",
+        "calendarId": "social"
+    },
+    {
+        "UID": "sigdialoralsession3",
+        "title": "Sigdial Oral Session 3",
+        "start": "2023-09-14T09:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T10:40:00+02:00",
+        "calendarId": "sigdialoral"
+    },
+    {
+        "UID": "inlgoralsession3",
+        "title": "INLG Oral Session 3",
+        "start": "2023-09-14T09:00:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "end": "2023-09-14T10:40:00+02:00",
+        "calendarId": "inlgoral"
+    },
+    {
+        "UID": "coffeebreak7",
+        "title": "Coffee break",
+        "start": "2023-09-14T10:40:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T11:10:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "keynotedieugenio",
+        "title": "Keynote di Eugenio",
+        "start": "2023-09-14T11:10:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T12:10:00+02:00",
+        "calendarId": "keynote"
+    },
+    {
+        "UID": "sponsors",
+        "title": "Sponsors",
+        "start": "2023-09-14T12:10:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T12:40:00+02:00",
+        "calendarId": "business"
+    },
+    {
+        "UID": "birdsoffeather",
+        "title": "BirdsofFeather",
+        "start": "2023-09-14T12:10:00+02:00",
+        "room": "Foyer",
+        "category": "time",
+        "end": "2023-09-14T12:40:00+02:00",
+        "calendarId": "social"
+    },
+    {
+        "UID": "lunch4",
+        "title": "Lunch",
+        "start": "2023-09-14T12:40:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T13:40:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "inlgoralsession4",
+        "title": "INLG Oral Session 4",
+        "start": "2023-09-14T13:40:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "end": "2023-09-14T15:20:00+02:00",
+        "calendarId": "inlgoral"
+    },
+    {
+        "UID": "sigdialpostersession2",
+        "title": "Sigdial Poster Session 2",
+        "start": "2023-09-14T13:40:00+02:00",
+        "room": "Foyer",
+        "category": "time",
+        "end": "2023-09-14T15:20:00+02:00",
+        "calendarId": "sigdialposter"
+    },
+    {
+        "UID": "coffeebreak8",
+        "title": "Coffee break",
+        "start": "2023-09-14T15:20:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T15:50:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "sigdialoralsession4",
+        "title": "Sigdial Oral Session 4",
+        "start": "2023-09-14T15:50:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T18:00:00+02:00",
+        "calendarId": "sigdialoral"
+    },
+    {
+        "UID": "inlggenchalpresentation",
+        "title": "INLG genChal presentation",
+        "start": "2023-09-14T15:50:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "end": "2023-09-14T18:00:00+02:00",
+        "calendarId": "inlgoral"
+    },
+    {
+        "UID": "genchalpostersession+demos",
+        "title": "GenChal Poster Session + demos",
+        "start": "2023-09-14T15:50:00+02:00",
+        "room": "Foyer",
+        "category": "time",
+        "end": "2023-09-14T18:00:00+02:00",
+        "calendarId": "inlgposter"
+    },
+    {
+        "UID": "conferencedinner",
+        "title": "Conference dinner",
+        "start": "2023-09-14T19:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-14T23:00:00+02:00",
+        "calendarId": "social"
+    },
+    {
+        "UID": "virtualpostersession",
+        "title": "Virtual Poster Session",
+        "start": "2023-09-15T09:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T10:00:00+02:00",
+        "calendarId": "sigdialposter"
+    },
+    {
+        "UID": "keynotesimperl",
+        "title": "Keynote Simperl",
+        "start": "2023-09-15T10:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T11:00:00+02:00",
+        "calendarId": "keynote"
+    },
+    {
+        "UID": "coffeebreak9",
+        "title": "Coffee break",
+        "start": "2023-09-15T11:00:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T11:30:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "sigdialoralsession5",
+        "title": "Sigdial Oral Session 5",
+        "start": "2023-09-15T11:30:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T13:10:00+02:00",
+        "calendarId": "sigdialoral"
+    },
+    {
+        "UID": "inlgoralsession5",
+        "title": "INLG Oral Session 5",
+        "start": "2023-09-15T11:30:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "end": "2023-09-15T13:10:00+02:00",
+        "calendarId": "inlgoral"
+    },
+    {
+        "UID": "lunch5",
+        "title": "Lunch",
+        "start": "2023-09-15T13:10:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T14:10:00+02:00",
+        "calendarId": "break"
+    },
+    {
+        "UID": "businessmeetingandclosing",
+        "title": "Business meeting and closing",
+        "start": "2023-09-15T14:10:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T15:30:00+02:00",
+        "calendarId": "business"
+    },
+    {
+        "UID": "coffeebreak10",
+        "title": "Coffee break",
+        "start": "2023-09-15T15:30:00+02:00",
+        "room": "Sun I",
+        "category": "time",
+        "end": "2023-09-15T16:00:00+02:00",
+        "calendarId": "break"
+    }
+]
