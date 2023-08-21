@@ -33,34 +33,38 @@ def main(site_data_path):
 
     #site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
 
-    # for p in site_data["sessions"]:
-    #     dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    #     if dt.strftime('%A') not in by_date:
-    #         by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
-    #     p["contents"] = []
-    #     p["name"] = p["session"]
-    #     p["start_time"] = dt
-    #     by_date[dt.strftime('%A')]['sessions'][p["session"]] = p
+    # load main calendar
+    for p in site_data["main_calendar"]:
+        dt = datetime.fromisoformat(p["start"])
+        if dt.strftime('%A') not in by_date:
+            by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
+        p["contents"] = []
+        p["name"] = p["title"]
+        p["start_time"] = dt
+        by_date[dt.strftime('%A')]['sessions'][p["UID"]] = p
 
-    # for typ in ["papers", "speakers"]:
-    #     by_uid[typ] = {}
-    #     if typ == "speakers":
-    #         vals = site_data[typ]['speakers']
-    #     elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
-    #         vals = [format_workshop(workshop) for workshop in site_data[typ]]
-    #     else:
-    #         vals = site_data[typ]
-    #
-    #     for p in vals:
-    #         dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    #         by_uid[typ][p["UID"]] = p
-    #         by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
-    #         p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
-    #
-    #     for day in by_date.values():
-    #         day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start_time"]))
-    #         for session in day['sessions'].values():
-    #             session['contents'] = sorted(session['contents'], key=lambda item: item["start_time"])
+    # fill calendar with contents
+    for typ in ["speakers"]:  # TODO add "papers"
+        by_uid[typ] = {}
+        if typ == "speakers":
+            vals = site_data[typ]['speakers']
+            for p in vals:  # load session start times from calendar (avoid duplication)
+                p["start"] = [s for s in site_data["main_calendar"] if s["UID"] == p["session"]][0]["start"]
+        elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
+            vals = [format_workshop(workshop) for workshop in site_data[typ]]
+        else:
+            vals = site_data[typ]
+
+        for p in vals:
+            dt = datetime.fromisoformat(p["start"])
+            by_uid[typ][p["UID"]] = p
+            by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
+            #p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+
+        for day in by_date.values():
+            day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start"]))
+            for session in day['sessions'].values():
+                session['contents'] = sorted(session['contents'], key=lambda item: item["start"])
 
     print("Data Successfully Loaded")
     return extra_files
@@ -120,6 +124,12 @@ def venue():
     data["venue"] = open("sitedata/venue.md").read()
     return render_template("venue.html", **data)
 
+@app.route("/programatglance.html")
+def programatglance():
+    data = _data()
+    data["programatglance"] = open("sitedata/programatglance.md").read()
+    return render_template("programatglance.html", **data)
+
 @app.route("/organizers.html")
 def organizers():
     data = _data()
@@ -164,15 +174,16 @@ def workshops():
 #     data["papers"] = site_data["papers"]
 #     data["papers"].sort(key=lambda x: x["title"])
 #     return render_template("papers.html", **data)
-#
-#
-# @app.route("/calendar.html")
-# def schedule():
-#     data = _data()
-#     data["days"] = by_date
-#     return render_template("schedule.html", **data)
-#
-#
+
+
+@app.route("/calendar.html")
+def schedule():
+    data = _data()
+    data["days"] = by_date
+    out = render_template("schedule.html", **data)
+    return out
+
+
 # @app.route("/workshops.html")
 # def workshops():
 #     data = _data()
@@ -238,8 +249,8 @@ def extract_list_field(v, key):
 
 def format_paper(v):
     v["authors"] = extract_list_field(v, "authors")
-    dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    v["time"] = dt.strftime('%A %m/%d %H:%M EST')
+    dt = datetime.fromisoformat(v["start"])
+    v["time"] = dt.strftime('%A %m/%d %H:%M CEST')
     v["short_time"] = dt.strftime('%H:%M EST')
     v["title"] = v["title"].title()
     v["title"] = re.sub(r'Nlg', 'NLG', v["title"])
@@ -247,8 +258,8 @@ def format_paper(v):
 
 def format_workshop(v):
     v["organizers"] = extract_list_field(v, "authors")
-    dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    v["time"] = dt.strftime('%A %m/%d %H:%M EST')
+    dt = datetime.fromisoformat(v["start"])
+    v["time"] = dt.strftime('%A %m/%d %H:%M CEST')
     return v
 
 

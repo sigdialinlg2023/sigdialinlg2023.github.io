@@ -6,9 +6,13 @@
 {% include 'schedule_head.html' %}
 {% endblock %}
 
-Choose a day to see the schedule for that day.
 
 {% block tabs %}
+
+<div class="notice">
+The currently displayed schedule is preliminary and subject to change. More details will be added later.
+</div>
+
 {{ components.tabs([("calendar", "Calendar", "active"), ("Monday", "Monday"), ("Tuesday", "Tuesday"), ("Wednesday", "Wednesday"), ("Thursday", "Thursday"), ("Friday", "Friday")]) }}
 {% endblock %}
 
