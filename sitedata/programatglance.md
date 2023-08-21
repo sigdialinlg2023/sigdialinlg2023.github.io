@@ -11,7 +11,8 @@ Please see the individual [workshops](workshops.html)' websites for detailed pro
 
 ![Program at Glance workshops](/static/images/program_workshops.png)
 
-## SIGdial & INGL main conference
+## SIGdial & INLG main conference
+
 ![Program at Glance main conference](/static/images/program_main.png)
 
 
