@@ -1,9 +1,10 @@
 
 
-## Program At Glance
+## Workshops
+![Program at Glance workshops](/static/images/program_workshops.png)
 
-![Program at Glance as png](/static/images/program_od_consolidated_08_17.png)
-
+## SIGdial & INGL main conference
+![Program at Glance main conference](/static/images/program_main.png)
 
 ### Rooms
 - Jupyter has capacity of 90 attendants.
