@@ -16,6 +16,9 @@ More local information details are coming soon. The site will be populated with 
 
 ### News
 
+
+Aug 21: The first [preliminary program](calendar.html) is available. Note that the program is still subject to change.
+
 Aug 9: The early registration deadline has been extended until August 18! Discounted hotel rates are still available.
 
 Aug 9: In case you are looking for childcare at the conference, please contact [Ondrej Dusek](https://ufal.mff.cuni.cz/ondrej-dusek). We are not able to provide childcare ourselves but can connect you to other participants needing childcare, so that you can arrange it together.
