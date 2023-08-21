@@ -124,12 +124,6 @@ def venue():
     data["venue"] = open("sitedata/venue.md").read()
     return render_template("venue.html", **data)
 
-@app.route("/programatglance.html")
-def programatglance():
-    data = _data()
-    data["programatglance"] = open("sitedata/programatglance.md").read()
-    return render_template("programatglance.html", **data)
-
 @app.route("/organizers.html")
 def organizers():
     data = _data()
