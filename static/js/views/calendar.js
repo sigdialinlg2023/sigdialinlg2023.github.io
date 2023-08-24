@@ -111,6 +111,7 @@ async function make_cal(handleResize = true) {
   calendar.on({
     clickSchedule(e) {
       const s = e.schedule;
+      console.log(e);
       if (s.location.length > 0) {
         const dayNumber = s.start.getDay();
         const dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dayNumber];
