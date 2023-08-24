@@ -20,7 +20,7 @@ const MODE = {
 }
 
 
-let render_mode = MODE.compact;
+let render_mode = MODE.mini;
 
 const updateCards = (papers) => {
   Promise.all([
@@ -158,8 +158,6 @@ const start = () => {
 
   Promise.all([API.getPapers(), API.getConfig()])
     .then(([papers, config]) => {
-      console.log(papers, "--- papers");
-
       // persistor = new Persistor("miniconf-" + config.name);
 
       shuffleArray(papers);
@@ -270,16 +268,16 @@ const card_icon_cal = icon_cal(16);
 const card_live = (link) =>
   `<a class="text-muted" href="${link}">${card_icon_video}</a>`;
 const card_cal = (paper, i) =>
-  `<a class="text-muted" href="${API.posterICS(paper,i)}">${card_icon_cal}</a>`;
+  `<a class="text-muted" href="${API.posterICS(paper, i)}">${card_icon_cal}</a>`;
 
 const card_time_detail = (paper, show) => {
   return show ? `
 <!--    <div class="pp-card-footer">-->
     <div class="text-center text-monospace small" style="margin-top: 10px;">
     ${paper.sessions.filter(s => s.match(/.*[0-9]/g))
-    .map((s, i) => `${s} ${paper.session_times[i]} ${card_live(
-      paper.session_links[i])}   `)
-    .join('<br>')}
+      .map((s, i) => `${s} ${paper.session_times[i]} ${card_live(
+        paper.session_links[i])}   `)
+      .join('<br>')}
     </div>
 <!--    </div>-->
     ` : '';
@@ -299,8 +297,7 @@ const card_html = (paper) =>
                 <a href="${API.posterLink(paper)}"
                 target="_blank"
                    class="text-muted">
-                   <h5 class="card-title" align="center"> ${
-    paper.title
+                   <h5 class="card-title" align="center"> ${paper.title
   } </h5></a>
                 <h6 class="card-subtitle text-muted" align="center">
                         ${paper.authors.join(", ")}

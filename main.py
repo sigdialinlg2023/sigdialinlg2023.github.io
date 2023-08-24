@@ -195,12 +195,12 @@ def workshops():
     return render_template("workshops_preliminary.html", **data)
 
 
-# @app.route("/papers.html")
-# def papers():
-#     data = _data()
-#     data["papers"] = site_data["papers"]
-#     data["papers"].sort(key=lambda x: x["title"])
-#     return render_template("papers.html", **data)
+@app.route("/papers.html")
+def papers():
+    data = _data()
+    data["papers"] = site_data["papers"]
+    data["papers"].sort(key=lambda x: x["title"])
+    return render_template("papers.html", **data)
 
 
 @app.route("/calendar.html")
@@ -306,13 +306,14 @@ def poster(poster):
 # FRONT END SERVING
 
 
-# @app.route("/papers.json")
-# def paper_json():
-#     json = []
-#     for v in site_data["papers"]:
-#         json.append(v)
-#     json.sort(key=lambda x: x["title"])
-#     return jsonify(json)
+@app.route("/papers.json")
+def paper_json():
+    json = []
+    for v in site_data["papers"]:
+        json.append(v)
+    json.sort(key=lambda x: x["title"])
+
+    return jsonify(json)
 
 
 @app.route("/static/<path:path>")
