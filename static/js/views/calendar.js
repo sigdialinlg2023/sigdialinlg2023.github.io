@@ -61,7 +61,7 @@ async function make_cal(handleResize = true) {
     max_hours = 24;
   }
 
-  const {Calendar} = tui;
+  const { Calendar } = tui;
   const calendar = new Calendar("#calendar", {
     defaultView: "week",
     isReadOnly: true,
@@ -112,7 +112,15 @@ async function make_cal(handleResize = true) {
     clickSchedule(e) {
       const s = e.schedule;
       if (s.location.length > 0) {
-        window.open(s.location, "_blanket");
+        const dayNumber = s.start.getDay();
+        const dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dayNumber];
+        const selectedTab = `#tab-${dayName}`;
+        window.location.hash = selectedTab;
+        $('.nav-link[href="' + selectedTab + '"]').trigger('click');
+        $('html, body').animate({
+          scrollTop: $(s.location).offset().top - 120
+        }, 200);
+        // window.open(s.location, "_blanket");
       }
     },
   });
@@ -167,7 +175,15 @@ async function make_cal(handleResize = true) {
       clickSchedule(e) {
         const s = e.schedule;
         if (s.location.length > 0) {
-          window.open(s.location, "_blanket");
+          const dayNumber = s.start.getDay();
+          const dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dayNumber];
+          const selectedTab = `#tab-${dayName}`;
+          window.location.hash = selectedTab;
+          $('.nav-link[href="' + selectedTab + '"]').trigger('click');
+          $('html, body').animate({
+            scrollTop: $(s.location).offset().top - 150
+          }, 200);
+          // window.open(s.location, "_blanket");
         }
       },
     });
@@ -192,7 +208,7 @@ async function make_cal(handleResize = true) {
   }
 
 
-  const renderAll = () => {all_cals.forEach(c => c.render(true));}
+  const renderAll = () => { all_cals.forEach(c => c.render(true)); }
   renderAll();
 
   if (handleResize) {
