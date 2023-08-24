@@ -63,25 +63,26 @@ def main(site_data_path):
         for p in vals:
             by_uid[typ][p["UID"]] = p
 
-            if "start" not in p:
-                if p["session"]:
-                    # paper mapped to session, calculate start relative to session start
-                    related_session = id_to_session[p["session"]]
+            sessions = p["session"].split("|") if p["session"] else []
+            orders = p["order"].split("|") if "order" in p else [0] * len(sessions)
+            start = p["start"] if "start" in p else None
+
+            if not start:
+                # paper mapped to session, calculate start relative to session start
+                for session, order in zip(sessions, orders):
+                    related_session = id_to_session[session]
                     session_start_datetime = datetime.fromisoformat(related_session["start"])
-                    session_contents = related_session["contents"]
 
-                    # add len(session_contents) * 20 minutes to paper start time
-                    start_time = session_start_datetime + timedelta(minutes=len(session_contents) * 20)
+                    # add order * 20 minutes to paper start time
+                    start_time = session_start_datetime + timedelta(minutes=int(order) * 20)
                     p["start"] = start_time.isoformat()
-                else:
-                    # paper not mapped to session, will not be included in the program for now
-                    continue
 
-            dt = datetime.fromisoformat(p["start"])
-            day = dt.strftime("%A")
+            for session in sessions:
+                dt = datetime.fromisoformat(p["start"])
+                day = dt.strftime("%A")
 
-            by_date[day]["sessions"][p["session"]]["contents"].append(p)
-            # p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+                by_date[day]["sessions"][session]["contents"].append(p)
+                # p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
 
         for day in by_date.values():
             day["sessions"] = dict(sorted(day["sessions"].items(), key=lambda item: item[1]["start"]))

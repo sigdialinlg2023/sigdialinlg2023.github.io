@@ -22,13 +22,15 @@ data = []
 # Find all tables in the HTML
 tables = soup.find_all("table")
 
-tsv_headers = f"paper_id\tpaper_title\tauthors\tsession"
+tsv_headers = f"paper_id\tpaper_title\tauthors\tsession\torder"
 data.append(tsv_headers)
 
 # Iterate through each table
 for table in tables:
     # Find all rows in the table
     rows = table.find_all("tr")
+
+    paper_order = 0
 
     # Iterate through each row
     for row in rows:
@@ -52,10 +54,12 @@ for table in tables:
             session_info = row.find_previous("p", class_="c21").text.strip()
 
             # Combine the extracted information into a single string
-            tsv_line = f"{paper_id}\t{paper_title}\t{authors}\t{session_info}"
+            tsv_line = f"{paper_id}\t{paper_title}\t{authors}\t{session_info}\t{paper_order}"
 
             # Append the line to the data list
             data.append(tsv_line)
+
+            paper_order += 1
         else:
             print(f"Skipping row: {row}")
 

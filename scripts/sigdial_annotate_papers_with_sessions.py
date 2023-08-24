@@ -12,69 +12,60 @@ df_tsv = pd.read_csv(
     "scripts/sigdial_sessions_exported.tsv",
     sep="\t",
     header=0,
-    names=["id", "title", "authors", "session"],
+    names=["id", "title", "authors", "session", "order"],
 )
 
 # Read the CSV file into a DataFrame
 df_csv = pd.read_csv("sitedata/papers.csv")
 
 
-def find_matching_row(title):
+def find_matching_rows(title):
     # Use regular expressions to extract session details
     # ignore any non-word characters
     title = re.sub(r"\W", "", title)
     df_tsv["title"] = df_tsv["title"].apply(lambda x: re.sub(r"\W", "", x))
-    matching_row = df_tsv[df_tsv["title"].str.contains(title, case=False)]
-    return matching_row
+    matching_rows = df_tsv[df_tsv["title"].str.contains(title, case=False)]
+    return matching_rows
 
 
-# Function to map full session names to short names
-def map_session_name(title):
-    matching_row = find_matching_row(title)
+def get_session_uid(full_session_name):
+    if "virtual" in full_session_name.lower():
+        return f"virtualpostersession"
 
-    if not matching_row.empty:
-        full_session_name = matching_row.iloc[0]["session"]
+    match = re.search(r"Session\s*(\d+)", full_session_name, re.IGNORECASE)
 
-        if "virtual" in full_session_name.lower():
-            return f"virtualpostersession"
+    if match:
+        session_number = match.group(1)
 
-        match = re.search(r"Session\s*(\d+)", full_session_name, re.IGNORECASE)
-
-        if match:
-            session_number = match.group(1)
-
-            if "poster" in full_session_name.lower():
-                return f"sigdialpostersession{session_number}"
-            else:
-                return f"sigdialoralsession{session_number}"
+        if "poster" in full_session_name.lower():
+            return f"sigdialpostersession{session_number}"
         else:
-            return ""
+            return f"sigdialoralsession{session_number}"
+
+    return ""
 
 
-# def map_day(title):
-#     matching_row = find_matching_row(title)
+df_csv["order"] = 0
 
-#     if not matching_row.empty:
-#         full_session_name = matching_row.iloc[0]["session"]
-#         match = re.search(r"September\s*(\d+)", full_session_name, re.IGNORECASE)
+# iterate through each row in the CSV DataFrame
+for i, row in df_csv.iterrows():
+    title = row["title"]
+    matching_rows = find_matching_rows(title)
+    session = ""
 
-#         if match:
-#             day_number = match.group(1)
-#             day_name = {
-#                 "11": "Monday",
-#                 "12": "Tuesday",
-#                 "13": "Wednesday",
-#                 "14": "Thursday",
-#                 "15": "Friday",
-#             }[day_number]
-#             return day_name
-#         else:
-#             return ""
+    if not matching_rows.empty:
+        shortcodes = []
+        for _, matching_row in matching_rows.iterrows():
+            full_session_name = matching_row["session"]
+            session_shortcode = get_session_uid(full_session_name)
+            if session_shortcode:
+                shortcodes.append(session_shortcode)
 
+        df_csv.at[i, "session"] = "|".join(shortcodes)
+        df_csv.at[i, "order"] = "|".join([str(x) for x in matching_rows["order"]])
 
-# Apply the function to update the 'session' column in the CSV DataFrame
-df_csv["session"] = df_csv["title"].apply(map_session_name)
-# df_csv["day"] = df_csv["title"].apply(map_day)
+# # Apply the function to update the 'session' column in the CSV DataFrame
+# df_csv["session"] = df_csv["title"].apply(map_session_name)
 
 
 # Save the updated DataFrame to a new CSV file
