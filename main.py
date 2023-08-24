@@ -1,7 +1,7 @@
 # pylint: disable=global-statement,redefined-outer-name
 import argparse
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 import glob
 import json
 import os
@@ -15,6 +15,7 @@ from flaskext.markdown import Markdown
 site_data = {}
 by_uid = {}
 by_date = {}
+
 
 def main(site_data_path):
     global site_data, extra_files
@@ -31,40 +32,59 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    #site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
-
+    id_to_session = {}
     # load main calendar
     for p in site_data["main_calendar"]:
         dt = datetime.fromisoformat(p["start"])
-        if dt.strftime('%A') not in by_date:
-            by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
+        if dt.strftime("%A") not in by_date:
+            by_date[dt.strftime("%A")] = {"name": dt.strftime("%A"), "sessions": {}}
         p["contents"] = []
         p["name"] = p["title"]
         p["start_time"] = dt
-        by_date[dt.strftime('%A')]['sessions'][p["UID"]] = p
+        by_date[dt.strftime("%A")]["sessions"][p["UID"]] = p
+        id_to_session[p["UID"]] = p
 
     # fill calendar with contents
-    for typ in ["speakers"]:  # TODO add "papers"
+    for typ in ["speakers", "papers"]:  # TODO add "papers"
         by_uid[typ] = {}
         if typ == "speakers":
-            vals = site_data[typ]['speakers']
+            vals = site_data[typ]["speakers"]
             for p in vals:  # load session start times from calendar (avoid duplication)
                 p["start"] = [s for s in site_data["main_calendar"] if s["UID"] == p["session"]][0]["start"]
         elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
             vals = [format_workshop(workshop) for workshop in site_data[typ]]
+        elif typ == "papers":
+            vals = [format_paper(x) for x in site_data["papers"]]
         else:
             vals = site_data[typ]
 
         for p in vals:
-            dt = datetime.fromisoformat(p["start"])
             by_uid[typ][p["UID"]] = p
-            by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
-            #p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+
+            if "start" not in p:
+                if p["session"]:
+                    # paper mapped to session, calculate start relative to session start
+                    related_session = id_to_session[p["session"]]
+                    session_start_datetime = datetime.fromisoformat(related_session["start"])
+                    session_contents = related_session["contents"]
+
+                    # add len(session_contents) * 20 minutes to paper start time
+                    start_time = session_start_datetime + timedelta(minutes=len(session_contents) * 20)
+                    p["start"] = start_time.isoformat()
+                else:
+                    # paper not mapped to session, will not be included in the program for now
+                    continue
+
+            dt = datetime.fromisoformat(p["start"])
+            day = dt.strftime("%A")
+
+            by_date[day]["sessions"][p["session"]]["contents"].append(p)
+            # p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
 
         for day in by_date.values():
-            day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start"]))
-            for session in day['sessions'].values():
-                session['contents'] = sorted(session['contents'], key=lambda item: item["start"])
+            day["sessions"] = dict(sorted(day["sessions"].items(), key=lambda item: item[1]["start"]))
+            for session in day["sessions"].values():
+                session["contents"] = sorted(session["contents"], key=lambda item: item["start"])
 
     print("Data Successfully Loaded")
     return extra_files
@@ -75,7 +95,7 @@ def main(site_data_path):
 app = Flask(__name__)
 app.config.from_object(__name__)
 freezer = Freezer(app)
-markdown = Markdown(app, extensions=['tables'])
+markdown = Markdown(app, extensions=["tables"])
 
 
 # MAIN PAGES
@@ -106,11 +126,13 @@ def home():
     data["home"] = open("Home.md").read()
     return render_template("index.html", **data)
 
+
 @app.route("/registration.html")
 def registration():
     data = _data()
     data["registration"] = open("sitedata/registration.md").read()
     return render_template("registration.html", **data)
+
 
 @app.route("/invoice.html")
 def invoice():
@@ -118,11 +140,13 @@ def invoice():
     data["invoice"] = open("sitedata/invoice.md").read()
     return render_template("invoice.html", **data)
 
+
 @app.route("/venue.html")
 def venue():
     data = _data()
     data["venue"] = open("sitedata/venue.md").read()
     return render_template("venue.html", **data)
+
 
 @app.route("/organizers.html")
 def organizers():
@@ -130,11 +154,13 @@ def organizers():
     data["committee"] = site_data["committee"]["committee"]
     return render_template("organizers.html", **data)
 
+
 @app.route("/speakers.html")
 def speakers():
     data = _data()
     data["speakers"] = site_data["speakers"]["speakers"]
     return render_template("speakers.html", **data)
+
 
 @app.route("/calls.html")
 def calls():
@@ -144,11 +170,13 @@ def calls():
         call["bodytext"] = open(call["body"]).read()
     return render_template("calls.html", **data)
 
+
 @app.route("/resource_statement.html")
 def resource_statement():
     data = _data()
     data["resource_statement"] = open("sitedata/resource_statement.md").read()
     return render_template("resource_statement.html", **data)
+
 
 @app.route("/help.html")
 def about():
@@ -156,11 +184,13 @@ def about():
     data["FAQ"] = site_data["faq"]["FAQ"]
     return render_template("help.html", **data)
 
+
 @app.route("/workshops.html")
 def workshops():
     data = _data()
     data["workshops"] = open("sitedata/workshops.md").read()
     return render_template("workshops_preliminary.html", **data)
+
 
 # @app.route("/papers.html")
 # def papers():
@@ -243,17 +273,18 @@ def extract_list_field(v, key):
 
 def format_paper(v):
     v["authors"] = extract_list_field(v, "authors")
-    dt = datetime.fromisoformat(v["start"])
-    v["time"] = dt.strftime('%A %m/%d %H:%M CEST')
-    v["short_time"] = dt.strftime('%H:%M EST')
+    # dt = datetime.fromisoformat(v["start"])
+    # v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
+    # v["short_time"] = dt.strftime("%H:%M EST")
     v["title"] = v["title"].title()
-    v["title"] = re.sub(r'Nlg', 'NLG', v["title"])
+    v["title"] = re.sub(r"Nlg", "NLG", v["title"])
     return v
+
 
 def format_workshop(v):
     v["organizers"] = extract_list_field(v, "authors")
     dt = datetime.fromisoformat(v["start"])
-    v["time"] = dt.strftime('%A %m/%d %H:%M CEST')
+    v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
     return v
 
 

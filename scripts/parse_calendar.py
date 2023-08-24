@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import json
 
@@ -17,9 +19,7 @@ def parse_arguments():
         help="ICS file to parse (local or via http)",
     )
 
-    parser.add_argument(
-        "--out", default="../sitedata/main_calendar.json", help="ICS file to parse"
-    )
+    parser.add_argument("--out", default="../sitedata/main_calendar.json", help="ICS file to parse")
 
     return parser.parse_args()
 
