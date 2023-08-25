@@ -35,6 +35,12 @@ auth0_domain : ufal-cuni.eu.auth0.com
 calendar:
   colors: #  Colors for the different event hashtags:
     ---: '#bed972'
-    qa: '#4FCAEB'
-    talk: '#ccc'
+    keynote: '#A8D08D'
+    break: '#FFE598'
+    sigdialoral: '#DEEAF6'
+    inlgoral: '#DEEAF6'
+    business: '#E6B8AF'
+    sigdialposter: '#F4CCCC'
+    inlgposter: '#F4CCCC'
+    social: '#FEF2CB'
   sunday_saturday: false  #  Include Sunday and Saturday

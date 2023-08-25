@@ -1,7 +1,7 @@
 # pylint: disable=global-statement,redefined-outer-name
 import argparse
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 import glob
 import json
 import os
@@ -32,36 +32,62 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    # site_data["papers"] = [format_paper(x) for x in site_data["papers"].values()]
+    id_to_session = {}
+    # load main calendar
+    for p in site_data["main_calendar"]:
+        dt = datetime.fromisoformat(p["start"])
+        if dt.strftime("%A") not in by_date:
+            by_date[dt.strftime("%A")] = {"name": dt.strftime("%A"), "sessions": {}}
+        p["contents"] = []
+        p["name"] = p["title"]
+        p["start_time"] = dt
+        # links the calendar box to the session info
+        p["location"] = f"#{p['UID']}"
+        by_date[dt.strftime("%A")]["sessions"][p["UID"]] = p
+        id_to_session[p["UID"]] = p
 
-    # for p in site_data["sessions"]:
-    #     dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    #     if dt.strftime('%A') not in by_date:
-    #         by_date[dt.strftime('%A')] = {'name': dt.strftime('%A'), 'sessions': {}}
-    #     p["contents"] = []
-    #     p["name"] = p["session"]
-    #     p["start_time"] = dt
-    #     by_date[dt.strftime('%A')]['sessions'][p["session"]] = p
+    # fill calendar with contents
+    for typ in ["speakers", "papers"]:  # TODO add "papers"
+        by_uid[typ] = {}
+        if typ == "speakers":
+            vals = site_data[typ]["speakers"]
+            for p in vals:  # load session start times from calendar (avoid duplication)
+                p["start"] = [s for s in site_data["main_calendar"] if s["UID"] == p["session"]][0]["start"]
+        elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
+            vals = [format_workshop(workshop) for workshop in site_data[typ]]
+        elif typ == "papers":
+            vals = [format_paper(x) for x in site_data["papers"]]
+        else:
+            vals = site_data[typ]
 
-    # for typ in ["papers", "speakers"]:
-    #     by_uid[typ] = {}
-    #     if typ == "speakers":
-    #         vals = site_data[typ]['speakers']
-    #     elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
-    #         vals = [format_workshop(workshop) for workshop in site_data[typ]]
-    #     else:
-    #         vals = site_data[typ]
-    #
-    #     for p in vals:
-    #         dt = datetime.strptime(p["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    #         by_uid[typ][p["UID"]] = p
-    #         by_date[dt.strftime('%A')]['sessions'][p["session"]]['contents'].append(p)
-    #         p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
-    #
-    #     for day in by_date.values():
-    #         day['sessions'] = dict(sorted(day['sessions'].items(), key=lambda item: item[1]["start_time"]))
-    #         for session in day['sessions'].values():
-    #             session['contents'] = sorted(session['contents'], key=lambda item: item["start_time"])
+        for p in vals:
+            by_uid[typ][p["UID"]] = p
+
+            sessions = p["session"].split("|") if p["session"] else []
+            orders = p["order"].split("|") if "order" in p else [0] * len(sessions)
+            start = p["start"] if "start" in p else None
+
+            if not start:
+                # paper mapped to session, calculate start relative to session start
+                for session, order in zip(sessions, orders):
+                    related_session = id_to_session[session]
+                    session_start_datetime = datetime.fromisoformat(related_session["start"])
+
+                    # add order * 20 minutes to paper start time
+                    start_time = session_start_datetime + timedelta(minutes=int(order) * 20)
+                    p["start"] = start_time.isoformat()
+
+            for session in sessions:
+                dt = datetime.fromisoformat(p["start"])
+                day = dt.strftime("%A")
+
+                by_date[day]["sessions"][session]["contents"].append(p)
+                # p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+
+        for day in by_date.values():
+            day["sessions"] = dict(sorted(day["sessions"].items(), key=lambda item: item[1]["start"]))
+            for session in day["sessions"].values():
+                session["contents"] = sorted(session["contents"], key=lambda item: item["start"])
 
     print("Data Successfully Loaded")
     return extra_files
@@ -177,14 +203,14 @@ def papers():
     return render_template("papers.html", **data)
 
 
-#
-# @app.route("/calendar.html")
-# def schedule():
-#     data = _data()
-#     data["days"] = by_date
-#     return render_template("schedule.html", **data)
-#
-#
+@app.route("/calendar.html")
+def schedule():
+    data = _data()
+    data["days"] = by_date
+    out = render_template("schedule.html", **data)
+    return out
+
+
 # @app.route("/workshops.html")
 # def workshops():
 #     data = _data()
@@ -250,9 +276,9 @@ def extract_list_field(v, key):
 
 def format_paper(v):
     v["authors"] = extract_list_field(v, "authors")
-    dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    v["time"] = dt.strftime("%A %m/%d %H:%M EST")
-    v["short_time"] = dt.strftime("%H:%M EST")
+    # dt = datetime.fromisoformat(v["start"])
+    # v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
+    # v["short_time"] = dt.strftime("%H:%M EST")
     v["title"] = v["title"].title()
     v["title"] = re.sub(r"Nlg", "NLG", v["title"])
     return v
@@ -260,32 +286,34 @@ def format_paper(v):
 
 def format_workshop(v):
     v["organizers"] = extract_list_field(v, "authors")
-    dt = datetime.strptime(v["start_time"], "%Y-%m-%dT%H:%M:%SZ")
-    v["time"] = dt.strftime("%A %m/%d %H:%M EST")
+    dt = datetime.fromisoformat(v["start"])
+    v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
     return v
 
 
 # ITEM PAGES
 
 
-# @app.route("/poster_<poster>.html")
-# def poster(poster):
-#     uid = poster
-#     v = by_uid["papers"][uid]
-#     data = _data()
-#     data["paper"] = v
-#     return render_template("poster.html", **data)
+@app.route("/poster_<poster>.html")
+def poster(poster):
+    uid = poster
+    v = by_uid["papers"][uid]
+    data = _data()
+    data["paper"] = v
+    return render_template("poster.html", **data)
+
 
 # FRONT END SERVING
 
 
-# @app.route("/papers.json")
-# def paper_json():
-#     json = []
-#     for v in site_data["papers"]:
-#         json.append(v)
-#     json.sort(key=lambda x: x["title"])
-#     return jsonify(json)
+@app.route("/papers.json")
+def paper_json():
+    json = []
+    for v in site_data["papers"]:
+        json.append(v)
+    json.sort(key=lambda x: x["title"])
+
+    return jsonify(json)
 
 
 @app.route("/static/<path:path>")

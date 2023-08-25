@@ -1,7 +1,7 @@
 {% set active_page = "Papers" %}
 {% set page_title = "Papers" %}
-{% extends "base.html" %}
 
+{% extends "base.html" %}
 {% block head %}
 {{ super() }}
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
@@ -12,37 +12,94 @@
 
 {% endblock %}
 
-{% block top %}
-<style>
-  .back {
-    background: url("{{config.background_image}}") no-repeat center;
-    background-size: cover;
-  }
-  .back h2 {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-  }
-</style>
+{% block content %}
+<div class="row p-3"></div>
 
-<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
-  <div class="row header p-6 m-5">
-    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
-      <h2>
-        {{config.tagline|safe}}
-      </h2>
-      <h2 class="p-5">
-        {{config.date|safe}}
-      </h2>
-    </div>
+<!-- Session -->
+<div class="row d-none session_notice">
+  <div class="alert alert-warning alert-dismissible fade show col-12" role="alert">
+    Showing papers for
+    <span id="session_name" style="font-weight: bold;"></span>.
+    <button type="button" class="close remove_session" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
 </div>
+
+<!-- Buttons -->
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control typeahead_all" placeholder="Search" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary typeahead_all_clear" type="button">
+          &times;
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center" style="margin-bottom: 10px;">
+    <div class="btn-group btn-group-toggle filter_option">
+      <label class="btn btn-outline-secondary" data-tippy-content="Search for papers titles">
+        <input type="radio" name="options" value="titles" autocomplete="off" checked />
+        title
+      </label>
+      <label class="btn btn-outline-secondary" data-tippy-content="Search for papers with specific keywords">
+        <input type="radio" name="options" value="keywords" autocomplete="off" />
+        keyword
+      </label>
+      <label class="btn btn-outline-secondary active" data-tippy-content="Search for papers from specific authors">
+        <input type="radio" name="options" value="authors" autocomplete="off" />
+        author
+      </label>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4">
+    <button class="btn btn-outline-secondary reshuffle">shuffle</button>
+    <!-- <div class="float-right">
+      <div class="btn-group btn-group-toggle render_option" data-toggle="buttons">
+        <label class="btn btn-outline-secondary active">
+          <input type="radio" name="options" value="mini" autocomplete="off" />
+          mini
+        </label>
+        <label class="btn btn-outline-secondary active">
+          <input type="radio" name="options" value="compact" autocomplete="off" checked />
+          compact
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="options" value="detail" autocomplete="off" />
+          detail
+        </label>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- Cards -->
+<div class="cards row"></div>
+<script src="static/js/modules/urlParams.js"></script>
+<script src="static/js/modules/typeaheadSetup.js"></script>
+<script src="static/js/modules/lazyLoad.js"></script>
+<script src="static/js/data/persistor.js"></script>
+<script src="static/js/data/wrangle.js"></script>
+<script src="static/js/views/papers.js"></script>
+<script>
+  $(document).ready(function () {
+    tippy("[data-tippy-content]", { trigger: "mouseenter focus" });
+    start();
+  });
+</script>
+
 {% endblock %}
 
-{% block content %}
+{% block footer %}
 
-<!-- Papers -->
-{{ components.section("Papers") }}
-{{ components.papergroup(config.private, papers) }}
+<div class="gdpr bg-dark text-light" style="padding: 10pt; position: fixed; bottom: 0; display: none;">
+  We use cookies to store which papers have been visited.
+  <div class="gdpr-btn btn btn-sm btn-info" style="margin-left: 15pt;">
+    I agree
+  </div>
+</div>
+<script src="static/js/modules/gdprCookies.js"></script>
 
 {% endblock %}
-
