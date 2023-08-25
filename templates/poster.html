@@ -4,17 +4,16 @@
 {% block head %}
 
 {{ super() }}
-<meta name="citation_title" content="{{paper.title}}"/>
+<meta name="citation_title" content="{{paper.title}}" />
 {% for author in paper.authors %}
-<meta name="citation_author" content="{{author}}"/>
+<meta name="citation_author" content="{{author}}" />
 {% endfor %}
-<meta name="citation_publication_date" content="{{config.citation_date}}"/>
-<meta name="citation_conference_title"
-      content="{{config.tagline|striptags|title}}"/>
-<meta name="citation_inbook_title" content="{{config.proceedings_title}}"/>
-<meta name="citation_abstract" content="{{paper.abstract}}"/>
+<meta name="citation_publication_date" content="{{config.citation_date}}" />
+<meta name="citation_conference_title" content="{{config.tagline|striptags|title}}" />
+<meta name="citation_inbook_title" content="{{config.proceedings_title}}" />
+<meta name="citation_abstract" content="{{paper.abstract}}" />
 {% for pdf in paper.pdf_url %}
-<meta name="citation_pdf_url" content="{{pdf|default('') }}"/>
+<meta name="citation_pdf_url" content="{{pdf|default('') }}" />
 {% endfor %}
 
 {% endblock %}
@@ -22,59 +21,61 @@
 {% block content %}
 
 <!-- Title -->
-<div class="pp-card m-3" style="">
+<div class="public-content notice">
+    You need to log in to access the paper page.
+</div>
+
+<div class="pp-card m-3 gated-content">
     <div class="card-header">
-        <h2 class="card-title main-title text-center" style="">
+        <h2 class="card-title main-title text-center">
             {{paper.title}}
         </h2>
         <h3 class="card-subtitle mb-2 text-muted text-center">
             {% for author in paper.authors %}
-            <a href="papers.html?filter=authors&search={{author}}"
-               class="text-muted"
-            ><i>{{author}}</i></a
-            >{{ "," if not loop.last }}
+            <a href="papers.html?filter=authors&search={{author}}" class="text-muted"><i>{{author}}</i></a>{{ "," if not
+            loop.last }}
             {% endfor %}
         </h3>
         <div class="text-center p-3">
-            {{paper.session}} - {{paper.time}}<br/>
+            {{paper.session}} - {{paper.time}}<br />
             {% if config.private %}
-           {% if paper.paper != blank %}
-	    <a class="card-link" target="_blank" href="{{paper.paper}}">
+            {% if paper.paper != blank %}
+            <a class="card-link" target="_blank" href="{{paper.paper}}">
                 Paper
             </a>
-	    {% endif %}
-	    {% if paper.zoom != blank %}
- 	    <a href="{{paper.zoom}}" target="_blank" class="card-link">
+            {% endif %}
+            {% if paper.zoom != blank %}
+            <a href="{{paper.zoom}}" target="_blank" class="card-link">
                 Zoom
             </a>
             {% endif %}
             <a href="{{paper.discord}}" target="_blank" class="card-link">
                 Discord
             </a>
-            <br/>
+            <br />
             {% if paper.slides != blank %}
             <a href="{{paper.slides}}" target="_blank" class="card-link">
                 Slides
             </a>
-	    {% endif %}
+            {% endif %}
             {% if paper.poster != blank %}
             <a href="{{paper.poster}}" target="_blank" class="card-link">
                 Poster
             </a>
-	    {% endif %}
+            {% endif %}
             {% if paper.code != blank %}
             <a href="{{paper.code}}" target="_blank" class="card-link">
                 Code
             </a>
-	    {% endif %}
+            {% endif %}
             {% if paper.data != blank %}
             <a href="{{paper.data}}" target="_blank" class="card-link">
                 Data
             </a>
-	    {% endif %}<br/>
+            {% endif %}<br />
             {% if paper.full_video != blank %}
-	  <a href="{{paper.full_video}}"><img src="static/images/{{paper.UID}}.jpg" alt="{{paper.title}}"></a>
-	    {% endif %}
+            <a href="{{paper.full_video}}"><img src="static/images/{{paper.UID}}.jpg" alt="{{paper.title}}"></a>
+            {% endif %}
             {% endif %}
         </div>
     </div>

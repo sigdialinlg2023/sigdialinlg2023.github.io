@@ -1,24 +1,24 @@
 let auth0Client;
 
 const login = async () => {
-  if (!window.location.href.includes("index.html")) {
-    window.location.href = "index.html";
-  }
+  // if (!window.location.href.includes("index.html")) {
+  //   window.location.href = "index.html";
+  // }
   await auth0Client.loginWithRedirect({
     authorizationParams: {
-      redirect_uri: window.location.href
+      redirect_uri: window.location.origin + "/index.html"
     }
   });
 };
 
 const logout = () => {
-  if (!window.location.href.includes("index.html")) {
-    window.location.href = "index.html";
-  }
+  // if (!window.location.href.includes("index.html")) {
+  //   window.location.href = "index.html";
+  // }
 
   auth0Client.logout({
     logoutParams: {
-      returnTo: window.location.href
+      returnTo: window.location.origin + "/index.html"
     }
   });
 };
@@ -44,20 +44,25 @@ const updateUI = async () => {
     $("#btn-logout").show();
 
     $(".gated-content").show();
-    $("#ipt-access-token").text(await auth0Client.getTokenSilently());
-    $("#ipt-user-profile").text(JSON.stringify(await auth0Client.getUser()));
+    $(".public-content").hide();
+
+    $("#ipt-user-email").text(user.email);
+    // $("#ipt-access-token").text(await auth0Client.getTokenSilently());
+    // $("#ipt-user-profile").text(JSON.stringify(await auth0Client.getUser()));
 
 
   } else {
     $("#btn-login").show();
     $("#btn-logout").hide();
     $(".gated-content").hide();
+    $(".public-content").show();
   }
 };
 
 
 window.onload = async () => {
   console.log("window.onload");
+
   await configureClient();
 
   updateUI();

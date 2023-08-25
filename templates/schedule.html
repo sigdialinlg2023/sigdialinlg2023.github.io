@@ -10,50 +10,41 @@
 {% block tabs %}
 
 <div class="notice">
-The currently displayed schedule is preliminary and subject to change. More details will be added later.
+  The currently displayed schedule is preliminary and subject to change. Log in to access the individual paper pages.
 </div>
 
-{{ components.tabs([("calendar", "Calendar", "active"), ("Monday", "Monday"), ("Tuesday", "Tuesday"), ("Wednesday", "Wednesday"), ("Thursday", "Thursday"), ("Friday", "Friday")]) }}
+{{ components.tabs([("calendar", "Calendar", "active"), ("Monday", "Monday"), ("Tuesday", "Tuesday"), ("Wednesday",
+"Wednesday"), ("Thursday", "Thursday"), ("Friday", "Friday")]) }}
 {% endblock %}
 
 {% block content %}
 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
   <!-- Calender tab -->
-    <div
-    class="tab-pane active"
-    id="tab-calendar"
-    role="tabpanel"
-    aria-labelledby="nav-profile-tab"
-  >
+  <div class="tab-pane active" id="tab-calendar" role="tabpanel" aria-labelledby="nav-profile-tab">
     <div class="form-group col">
       <label for="tzOptions">Timezone:</label>
       <select id="tzOptions" class="selectpicker" data-live-search="true">
       </select>
-    </div> 
+    </div>
 
     <!-- full cal for browser-->
-    <div id="calendar" class="d-none d-sm-block"></div> 
+    <div id="calendar" class="d-none d-sm-block"></div>
 
     <!-- small cal for smart phones-->
     <div id="calendar_small" class="d-sm-none"></div>
-  </div> 
+  </div>
 
   <!-- Day Tab -->
   {% for day in days %}
-  <div
-    class="tab-pane fade"
-    id="tab-{{day}}"
-    role="tabpanel"
-    aria-labelledby="nav-profile-tab"
-  >
+  <div class="tab-pane fade" id="tab-{{day}}" role="tabpanel" aria-labelledby="nav-profile-tab">
     <div id="day_{{day}}">
-	    {{ components.sessiongroup(config.private, days[day].sessions.values()) }}
+      {{ components.sessiongroup(config.private, days[day].sessions.values()) }}
     </div>
   </div>
-  {% endfor %} 
+  {% endfor %}
 
   <script type="text/javascript">
-    window.onload = () => {
+    window.addEventListener("load", () => {
       const tabPanes = $(".tab-pane");
       // Create calendars:
       make_cal(false).then(({ render }) => {
@@ -74,7 +65,7 @@ The currently displayed schedule is preliminary and subject to change. More deta
       });
       // ----
       lazyLoader();
-    };
+    }, "false");
   </script>
 </div>
 {% endblock %}

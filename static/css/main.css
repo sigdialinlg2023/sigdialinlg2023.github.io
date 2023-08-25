@@ -37,6 +37,11 @@ body {
 
 .btn-login {
   margin-left: 10px;
+  display: none;
+}
+
+.btn-logout {
+  display: none;
 }
 
 .btn {
@@ -147,6 +152,7 @@ h3.card-subtitle.text-muted {
   color: #2294e0;
   font-family: "Exo";
 }
+
 
 .myAccordion {
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
@@ -297,6 +303,10 @@ body .carousel-control-prev {
 .checkbox-bookmark.selected {
   opacity: 1;
   color: #bed972;
+}
+
+.gated-content {
+  display: none;
 }
 
 /*@supports (-webkit-text-stroke: 1px gray) {*/
