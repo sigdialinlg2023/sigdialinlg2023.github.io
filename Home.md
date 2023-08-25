@@ -15,7 +15,9 @@ More local information details are coming soon. The site will be populated with 
 
 
 ### News
+Aug 26: You can create an account on this website. With the account, you will be able to log in for accessing the pages for individual papers (currently in preparation). *Note: use the e-mail you used for registering for the conference.*
 
+Aug 26: Detailed information about the venue, the city, and the paper presentations has been published in the section [For participants](/venue.html).
 
 Aug 21: The first [preliminary program](calendar.html) is available. Note that the program is still subject to change.
 
