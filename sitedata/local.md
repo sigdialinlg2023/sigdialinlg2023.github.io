@@ -19,7 +19,7 @@ An easy way to buy a ticket is through the **PID Lítačka app** ([Android](http
 
 You can also buy a **paper ticket** at some tram stops, most subway stations, or at some newspaper stands. Tickets bought before-hand **must be validated (stamped) upon entry** to the first tram/bus/subway station (stick the ticket into any of the yellow boxes with a slot; this will print the validity start time).
 
-You can also buy tickets **inside trams and busses** upon boarding (contactless card only), ticket machines are typically near the middle door of the vehicle. These tickets are already validated when you buy them.
+You can also buy tickets **inside trams and buses** upon boarding (contactless card only), ticket machines are typically near the middle door of the vehicle. These tickets are already validated when you buy them.
 
 Other **useful apps** you can use for planning your journey around (or outside of) Prague:
 - Google Maps ([Android](https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=cs&gl=US), [iOS](https://apps.apple.com/us/app/google-maps/id585027354)),
