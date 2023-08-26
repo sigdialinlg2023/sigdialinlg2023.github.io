@@ -151,6 +151,20 @@ def venue():
     return render_template("venue.html", **data)
 
 
+@app.route("/presenters.html")
+def presenters():
+    data = _data()
+    data["presenters"] = open("sitedata/presenters.md").read()
+    return render_template("presenters.html", **data)
+
+
+@app.route("/local.html")
+def local():
+    data = _data()
+    data["local"] = open("sitedata/local.md").read()
+    return render_template("local.html", **data)
+
+
 @app.route("/organizers.html")
 def organizers():
     data = _data()
