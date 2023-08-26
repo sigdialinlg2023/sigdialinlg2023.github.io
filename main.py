@@ -47,7 +47,7 @@ def main(site_data_path):
         id_to_session[p["UID"]] = p
 
     # fill calendar with contents
-    for typ in ["speakers", "papers"]:  # TODO add "papers"
+    for typ in ["speakers", "papers"]:
         by_uid[typ] = {}
         if typ == "speakers":
             vals = site_data[typ]["speakers"]

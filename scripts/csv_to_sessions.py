@@ -42,6 +42,12 @@ def process_file(in_file, cal_file):
                     sess = re.sub(r"posters", "Poster Session", sess, flags=re.I)
                     sess = re.sub(r"\([^)]*\)", "", sess)
                     # sess = re.sub(r'[0-9-]*', '', sess)
+                    m = re.search(r' till ([0-9:]+)', sess)
+                    if m:
+                        endtime = tz.localize(dt.combine(current_date, datetime.datetime.strptime(m.group(1), "%H:%M").time())).isoformat()
+                        sess = re.sub(r' till.*', '', sess)
+                    else:
+                        endtime = None
                     sess = sess.strip()
                     sess = sess[0].upper() + sess[1:]
                     sessid = sess.lower().replace(" ", "")
@@ -67,6 +73,8 @@ def process_file(in_file, cal_file):
                         "room": loc,
                         "category": "time",
                     }
+                    if endtime:
+                        sessions[sessid]["end"] = endtime
             except ValueError:
                 pass
 
@@ -74,7 +82,8 @@ def process_file(in_file, cal_file):
     dts = sorted(list(dts))
 
     for session in sessions:
-        session["end"] = dts[dts.index(session["start"]) + 1]
+        if "end" not in session:
+            session["end"] = dts[dts.index(session["start"]) + 1]
         category = session["UID"]
         category = re.sub(r"[0-9]+$", "", category)
         category = re.sub(r"presentation", "oral", category)

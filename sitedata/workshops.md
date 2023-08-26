@@ -31,6 +31,6 @@ Tahiya Chowdhury, Contact: <tchowdhu@colby.edu>
 [https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home](https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home)
 
 ###### Afternoon
-- *Designing divergent agent tasks for SDS data collection*  
+- **[CANCELLED]** *Designing divergent agent tasks for SDS data collection*  
 Paola Peña, Contact: <paola.pena@ucdconnect.ie>  
 [https://icsresearch.ucd.ie/sigDial23/web/index.html](https://icsresearch.ucd.ie/sigDial23/web/index.html)
