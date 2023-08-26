@@ -20,7 +20,7 @@ Aug 26: You can create an account on this website. With the account, you will be
 
 Aug 26: Detailed information about the venue, the city, and the paper presentations has been published in the section [For participants](/venue.html).
 
-Aug 25: The [Designing divergent agent tasks for SDS data collection](https://icsresearch.ucd.ie/sigDial23/web/index.html) has been unfortunately canceled by the workshop organizers. We apologize for any inconvenience this may cause.
+Aug 25: The [Designing divergent agent tasks for SDS data collection](https://icsresearch.ucd.ie/sigDial23/web/index.html) workshop has been unfortunately canceled by the workshop organizers. We apologize for any inconvenience this may cause.
 
 Aug 25: A (still preliminary) version 2 of the [program](calendar.html) is available.
 
