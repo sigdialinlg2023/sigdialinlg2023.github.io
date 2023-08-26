@@ -84,7 +84,7 @@ window.onload = async () => {
     const error = query.split("error=")[1].split("&")[0];
     const error_description = query.split("error_description=")[1].split("&")[0];
     if (error === "access_denied" && error_description.includes("verified")) {
-      $("#error-message").text("Please, verify your email before logging in.");
+      $("#error-message").text("Please verify your email address before logging in (click the link you received by email).");
     } else {
       $("#error-message").text(error_description);
     }
