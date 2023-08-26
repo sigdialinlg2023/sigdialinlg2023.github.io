@@ -18,7 +18,7 @@ More local information details are coming soon. The site will be populated with 
 
 Aug 26: You can create an account on this website. With the account, you will be able to log in for accessing the pages for individual papers (currently in preparation). *Note: use the e-mail you used for registering for the conference.*
 
-Aug 26: We have published information about the [venue](/venue.html), the [city](/local.html), and the [presentations](/presenters.html). You can find the in the section *For participants*.
+Aug 26: We have published the information about the [venue](/venue.html), the [local information](/local.html), and the [instructions for presenters](/presenters.html). You can find all of these in the section *For participants*.
 
 Aug 25: The [Designing divergent agent tasks for SDS data collection](https://icsresearch.ucd.ie/sigDial23/web/index.html) workshop has been unfortunately canceled by the workshop organizers. We apologize for any inconvenience this may cause.
 
