@@ -79,6 +79,15 @@ window.onload = async () => {
 
     // Use replaceState to redirect the user away and remove the querystring parameters
     window.history.replaceState({}, document.title, "/");
+  } else if (query.includes("error=") && query.includes("error_description=")) {
+    // if error is "access_denied" and the description contains "verified", display information about how to verify email
+    const error = query.split("error=")[1].split("&")[0];
+    const error_description = query.split("error_description=")[1].split("&")[0];
+    if (error === "access_denied" && error_description.includes("verified")) {
+      $("#error-message").text("Please, verify your email before logging in.");
+    } else {
+      $("#error-message").text(error_description);
+    }
   }
 };
 

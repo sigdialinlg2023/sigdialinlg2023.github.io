@@ -309,6 +309,17 @@ body .carousel-control-prev {
   display: none;
 }
 
+.error-message {
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  /* center horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
 /*@supports (-webkit-text-stroke: 1px gray) {*/
 /*  .checkbox-paper {*/
 /*    opacity: 0.2;*/

@@ -185,14 +185,15 @@
   {% block body %}
   <!-- User Overrides -->
   {% block top %} {% endblock %}
-
   <div class="container">
     <!-- Tabs -->
     <div class="tabs">
       {% block tabs %} {% endblock %}
     </div>
+
     <!-- Content -->
     <div class="content">
+      <div id="error-message" class="error-message"></div>
       {% block content %} {% endblock %}
     </div>
   </div>
