@@ -30,8 +30,9 @@ To get from the **Prague Václav Havel Airport** (Ruzyně) to the conference ven
 
 *   **Use public transport** – the preferrable route is the following:  
     1) Take the bus no. 191 (direction _Na Knížecí_) to the stop _Vypich_.  
-    2) Then take tram no. 25 (direction _Palmovka / Lehovec_) and get off after 6 stops at _Malovanka_.   The journey takes about 45 minutes in total, the fare is CZK 40 (ca. EUR 1.66). More information about public transport in Prague can be found [below](#public-transport).
-*   **Take [Uber](https://www.uber.com)** – The journey between the Václav Havel Airport to the conference venue should cost between 300-500 CZK.
+    2) Then take tram no. 25 (direction _Palmovka / Lehovec_) and get off after 6 stops at _Malovanka_.   The journey takes about 45 minutes in total, the fare is CZK 40 (ca. EUR 1.66). More information about public transport in Prague can be found [on the local information page](local.html#public-transport).
+*   **Take [Uber](https://www.uber.com)** or [Bolt](https://bolt.eu/en-cz/cities/prague/) – The journey between the Václav Havel Airport to the conference venue should cost between 300-500 CZK.
+*   To take a local taxi, we recommend using the [Liftago](https://www.liftago.com/) app, which shows drivers' ratings and prices beforehand, or to stick to large established companies (see [details on the local information page](local.html#taxis)). 
 
 
 #### By train or bus
@@ -43,14 +44,14 @@ To get to the venue **using** **public transport**:
 *   From **Hlavní nádraží (main station)**:  
     1) take the metro line C (red line, direction _Letňany_) to the _Vltavská_ station (2 stops).  
     2) Then take tram no. 25  (direction _Bílá Hora_) and get off at _Malovanka_ (10 stops).  
-    The journey takes about 30 minutes, the fare is CZK 32 (ca. EUR 1.33).
+    The journey takes about 30 minutes, the fare is CZK 30 (ca. EUR 1.33).
      
 *   From **Florenc** bus station:  
     1) take the metro line C (red line, direction _Letňany_) to the _Vltavská_ station (1 stop).  
     2) Then take tram no. 25  (direction _Bílá Hora_) and get off at _Malovanka_ (10 stops).  
-    The journey takes about 30 minutes, the fare is CZK 32 (ca. EUR 1.33).
+    The journey takes about 30 minutes, the fare is CZK 30 (ca. EUR 1.33).
 
-**Using [Uber](https://www.uber.com)** – The journey should cost around 200 CZK.
+**Using [Uber](https://www.uber.com)** or [Bolt](https://bolt.eu/en-cz/cities/prague/) – The journey should cost around 200 CZK. See details on local taxis on the [local information page](local.html#taxis).
 
 #### To the venue by car
 

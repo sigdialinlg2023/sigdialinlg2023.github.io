@@ -41,6 +41,13 @@ committee:
   - role: SIGGEN Exec
     name: Emiel van Miltenburg
     aff: Tilburg University
-
-
+  - role: Webmaster
+    name: Zdeněk Kasner
+    aff: Charles University
+  - role: Webmaster
+    name: Ondřej Plátek
+    aff: Charles University
+  - role: Webmaster
+    name: Patrícia Schmidtová
+    aff: Charles University
 

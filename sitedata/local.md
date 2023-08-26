@@ -1,15 +1,10 @@
 
 Local Information
 =================
-### Visa
-
-The Czech Republic is part of the European Union (incl. [Schengen border-less region](http://en.wikipedia.org/wiki/Schengen_Agreement)). Please see the [Ministry of Foreign Affairs website](http://www.mzv.cz/jnp/en/information_for_aliens/frequently_asked_questions/index.html) to check if you need a visa and how to obtain it. Note that Czech embassies need 30 days to decide if they grant you the visa or not, so be sure to apply soon enough.
-
-See the [Registration page](/registration.html) for more information about obtaining invitation letters.
 
 ### Public Transport
 
-Prague has an excellent public transport network that includes metro (subway), trams, buses, suburban trains, and river ferries. It is the recommended mean of transportation around the city. It operates 5am-midnight, with night trams and buses running overnight. It is quite reliable and safe (safe to the extent as any capital city may be – beware of pickpockets!).
+Prague has an excellent public transport network that includes metro (subway), trams, buses, suburban trains, and river ferries. It is the recommended means of transport around the city. It operates 5am-midnight, with night trams and buses running overnight. It is very reliable and safe (safe to the extent as any capital city may be – beware of pickpockets!).
 
 Basic ticket prices (more details can be found on the [Prague Transport Co. website](http://www.dpp.cz/en/)):
 
@@ -22,30 +17,37 @@ Any **transfers are allowed** among regularly scheduled routes within the city l
 
 An easy way to buy a ticket is through the **PID Lítačka app** ([Android](https://play.google.com/store/apps/details?id=cz.dpp.praguepublictransport&hl=cs&gl=US), [iOS](https://apps.apple.com/cz/app/pid-l%C3%ADta%C4%8Dka/id983071129)). You can also use the app for journey planning since it includes up-to-date schedules with real-time locations.
 
-You can also buy a **paper ticket** at some tram stops, most subway stations, or at some newspaper stands. Tickets bought before-hand **have to be stamped upon entry** to the first tram/bus/subway station (stick the ticket into any of the yellow boxes with a slot; it will print the validity start time).
+You can also buy a **paper ticket** at some tram stops, most subway stations, or at some newspaper stands. Tickets bought before-hand **must be validated (stamped) upon entry** to the first tram/bus/subway station (stick the ticket into any of the yellow boxes with a slot; this will print the validity start time).
 
-You can also buy tickets **inside the trams** upon boarding (card-only). These tickets do not have to be validated.
+You can also buy tickets **inside trams and busses** upon boarding (contactless card only), ticket machines are typically near the middle door of the vehicle. These tickets are already validated when you buy them.
 
 Other **useful apps** you can use for planning your journey around (or outside of) Prague:
 - Google Maps ([Android](https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=cs&gl=US), [iOS](https://apps.apple.com/us/app/google-maps/id585027354)),
 - IDOS ([Android](https://play.google.com/store/apps/details?id=cz.mafra.jizdnirady&hl=cs&gl=US), [iOS](https://apps.apple.com/cz/app/j%C3%ADzdn%C3%AD-%C5%99%C3%A1dy-idos/id473503749?l=cs)),
 - Pubtran ([Android](https://play.google.com/store/apps/details?id=cz.fhejl.pubtran&hl=en_US), [iOS](https://apps.apple.com/us/app/pubtran/id1005549504)).
 
+
 ### Bike sharing
+
 **Bike sharing** is a convenient and fun way to get around the city. There are two major bike-sharing companies operating in Prague, **[Nextbike](https://www.nextbikeczech.com)** and **[Rekola](https://www.rekola.cz)**. Nextbike is an international company (so you might know it from other cities) while Rekola is a local one. Both companies have a pretty good coverage in the wider city center and in the vicinity of metro stations.
 
 For using a shared bike, you need to create an account in the app and pay **one-time fee** which is approximately the same as a single public transport ticket (30 CZK for Nextbike, 35 CZK for Rekola) for a 30-minute ride. 
 
 The bikes need to be **returned to a designated station**. You can find the stations in the app. For Rekola, you also need to take a photo of the bike upon return. You do **not** need to dock the bikes (so the number of parking places is **unlimited**).
 
-Prague is a relatively bike-friendly city, although in some areas you need to be careful for heavy car traffic and some areas can also get quite hilly.
+Prague is a bikeable city, but in some areas you need to be careful for heavy car traffic and some areas can also get quite hilly.
 
 
 ### Taxis
 
-Taxi drivers in the Prague city center are notorious for overcharging. This happens mostly when taking a “no-name” taxi on the street, so to be on the safe side, order taxis of larger companies such as _[AAA](http://www.aaataxi.cz/)_, _[111 airport cars](http://www.airportcars.cz/?lang=en)_, or _[TickTack](http://www.ticktack.cz/en)_ online or on the phone. Taxi stands at the airport and the train stations should be OK (more details given [above](#by-plane)).
+You can use [Uber](https://www.uber.com) or [Bolt](https://bolt.eu/en-cz/cities/prague/) in Prague. 
 
-When using a taxi, ask about the fare and payment options (CC, EUR) beforehand.
+For taking regular local taxis, we recommend using the [Liftago](https://www.liftago.com/) app, which shows drivers' ratings and prices beforehand.
+
+If you don't like apps, stick to large established companies such as _[AAA](http://www.aaataxi.cz/)_, _[111 airport cars](http://www.airportcars.cz/?lang=en)_, or _[TickTack](http://www.ticktack.cz/en)_ and order online or on the phone.
+When you hail a random “no-name” taxi on the street, there is a risk that the driver will overcharge.
+Ask about the fare and payment options (CC, EUR) beforehand.
+
 
 ### Currency
 
@@ -53,13 +55,20 @@ The local currency is the **Czech Crown** (Česká Koruna, **CZK**). The exchang
 
 *   [Current exchange rates of the Czech National Bank](https://www.cnb.cz/en/financial-markets/foreign-exchange-market/central-bank-exchange-rate-fixing/central-bank-exchange-rate-fixing/)
 
-When exchanging currency on the street, always check for commission charge and/or worse rates for lower amounts exchanged. Depending on the conditions of your home bank, the best way to get Czech Crowns might be using an ATM, which are plentiful around the city (in that case, letting your bank handling the exchange is usually preferrable to using the ATM's rate).
+When exchanging currency on the street, always check for commission charge and/or worse rates for lower amounts exchanged. When withdrawing at an ATM, watch out for extra charges and check the exchange course (letting your bank handling the exchange is usually preferrable to using the ATM's own rate). [See here](https://expatwiki.org/Czechia/Banking/Cash) for preferrable ATMs with no extra fees.
 
-In most places you should be able to pay using a Visa or Mastercard debit card.
+In most places (restaurants, shops around the city center) you should be able to pay using a Visa or Mastercard. Food stands or smaller restaurants outside the center may be cash-only.
+
 
 ### Car rental
 
 The usual car rental companies (Avis, Hertz, Budget, Europcar, Sixt) and many other national ones are in the ground floor of the Prague Airport Terminal 1 building, and also in the Airport Parking garage "C".
+
+### Visas
+
+The Czech Republic is part of the European Union's [Schengen Area](http://en.wikipedia.org/wiki/Schengen_Agreement). Please see the [Ministry of Foreign Affairs website](http://www.mzv.cz/jnp/en/information_for_aliens/frequently_asked_questions/index.html) to check if you need a visa and how to obtain it. Note that Czech embassies need 30 days to decide if they grant you the visa or not, so be sure to apply soon enough.
+See the [Registration page](/registration.html) for more information about obtaining invitation letters.
+
 
 ### Sightseeing and more
 
