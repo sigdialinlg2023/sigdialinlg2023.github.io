@@ -59,7 +59,7 @@ body {
 
 .pp-card {
   font-family: "Exo";
-  box-shadow: 0 0 14px 0 rgba(204, 204, 204, 1);
+  /* box-shadow: 0 0 14px 0 rgba(204, 204, 204, 1); */
   margin-bottom: 1em;
   display: block;
   overflow: hidden;
@@ -110,10 +110,13 @@ body .nav-pills .nav-link.active {
 
 .card-header {
   font-family: "Exo";
+  background-color: rgba(0,0,0,.03);
 }
 
 .card-header .card-title {
   font-family: "Exo";
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .cards.myCard {
