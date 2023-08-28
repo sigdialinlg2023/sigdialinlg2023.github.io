@@ -8,7 +8,7 @@ The length of oral presentations is:
 
 * **SIGDIAL**: 20 minutes (15 minutes talk and 5 minutes questions)
 * **INLG**: 25 minutes (20 + 5)
-* **INLG GenChal**: 10 minutes for short papers, 15 minutes for long papers
+* **INLG GenChal**: 10 minutes for short papers, 15 minutes for long papers (including questions)
 
 **Remote oral presentations** are going to be live over Zoom and will follow the same format as in-person presentations.
 
