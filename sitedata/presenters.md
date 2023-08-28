@@ -5,6 +5,7 @@ Instructions for Presenters
 ### Oral presentations
 
 The length of oral presentations is:
+
 * **SIGDIAL**: 20 minutes (15 minutes talk and 5 minutes questions)
 * **INLG**: 25 minutes (20 + 5)
 * **INLG GenChal**: 10 minutes for short papers, 15 minutes for long papers
