@@ -6,7 +6,8 @@
 
 ### 11 September
 - *The 1st Workshop on Counter Speech for Online Abuse*  
-Gavin Abercrombie, Contact: <G.Abercrombie@hw.ac.uk>
+Gavin Abercrombie, Contact: <G.Abercrombie@hw.ac.uk>  
+[https://sites.google.com/view/cs4oa/](https://sites.google.com/view/cs4oa/)
 - *DSTC11: The 11th Dialog System Technology Challenge*  
 Michel Galley, Contact: <mgalley@microsoft.com>  
 [https://dstc11.dstc.community/](https://dstc11.dstc.community/)
@@ -21,7 +22,7 @@ Zdeněk Kasner, Contact: <kasner@ufal.mff.cuni.cz>
 Robert Xiangru Tang, Contact: <xiangru.tang@yale.edu>  
 [https://ctrlnlg.github.io/](https://ctrlnlg.github.io/)
 - *Workshop on Multimodal, Multilingual Natural Language Generation and Multilingual WebNLG Challenge*  
-Albert Gatt, Contact: <a.gatt@uu.nl>
+Albert Gatt, Contact: <a.gatt@uu.nl>  
 [https://synalp.gitlabpages.inria.fr/mmnlg2023/](https://synalp.gitlabpages.inria.fr/mmnlg2023/)
 
 #### Half-day

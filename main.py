@@ -271,13 +271,14 @@ def schedule():
 #
 #
 
-# @app.route("/sponsors.html")
-# def sponsors():
-#     data = _data()
-#     data["goldsponsors"] = site_data["goldsponsors"]
-#     data["silversponsors"] = site_data["silversponsors"]
-#     data["bronzesponsors"] = site_data["bronzesponsors"]
-#     return render_template("sponsors.html", **data)
+@app.route("/sponsors.html")
+def sponsors():
+    data = _data()
+    data["platinumsponsors"] = site_data["platinumsponsors"]
+    data["goldsponsors"] = site_data["goldsponsors"]
+    data["silversponsors"] = site_data["silversponsors"]
+    data["bronzesponsors"] = site_data["bronzesponsors"]
+    return render_template("sponsors.html", **data)
 
 
 def extract_list_field(v, key):

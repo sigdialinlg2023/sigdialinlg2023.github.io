@@ -33,7 +33,7 @@ speakers:
     session: keynotelowe
     #start_time: ""
     image: /static/images/ryan_lowe.jpg
-    title: "Knowledge graph use cases in natural language generation"
+    title: "Aligning ChatGPT: past, present, and future"
     institution: OpenAI
     #full_video:
     name: Ryan Lowe
