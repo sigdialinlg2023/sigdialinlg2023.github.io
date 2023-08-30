@@ -44,4 +44,11 @@ calendar:
     sigdialposter: '#F4CCCC'
     inlgposter: '#F4CCCC'
     social: '#FEF2CB'
+    dstc: '#D1EAFB'
+    csoa: '#FDD835'
+    yrrsds: '#ED8A6D' # '#F1835E'
+    practicald2t: '#B5E853'
+    mmnlg: '#95E2D9' # '#009485'
+    tamingllm: '#BFCAFF' # '#5F70BD'
+    icard: '#FFE7B7'
   sunday_saturday: false  #  Include Sunday and Saturday
