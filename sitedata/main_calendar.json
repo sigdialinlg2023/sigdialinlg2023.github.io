@@ -1,210 +1,102 @@
 [
     {
-        "UID": "dstc111",
-        "title": "DSTC11 1",
+        "UID": "dstc11",
+        "title": "DSTC11",
         "start": "2023-09-11T09:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
-        "end": "2023-09-11T10:30:00+02:00",
+        "end": "2023-09-11T18:40:00+02:00",
         "calendarId": "dstc"
     },
     {
-        "UID": "csoa1",
-        "title": "CSOA 1",
+        "UID": "csoa",
+        "title": "CSOA",
         "start": "2023-09-11T09:00:00+02:00",
         "room": "Neptune (60)",
         "category": "time",
-        "end": "2023-09-11T10:30:00+02:00",
+        "end": "2023-09-11T16:40:00+02:00",
         "calendarId": "csoa"
     },
     {
-        "UID": "practicald2t1",
-        "title": "PracticalD2T 1",
+        "UID": "practicald2t",
+        "title": "PracticalD2T",
         "start": "2023-09-11T09:00:00+02:00",
         "room": "Uranus (50)",
         "category": "time",
-        "end": "2023-09-11T10:30:00+02:00",
+        "end": "2023-09-11T18:00:00+02:00",
         "calendarId": "practicald2t"
     },
     {
         "UID": "yrrsds1",
         "title": "YRRSDS 1",
-        "start": "2023-09-11T09:00:00+02:00",
+        "start": "2023-09-11T09:30:00+02:00",
         "room": "Observatory (40)",
         "category": "time",
-        "end": "2023-09-11T10:30:00+02:00",
+        "end": "2023-09-11T16:15:00+02:00",
         "calendarId": "yrrsds"
     },
     {
         "UID": "coffeebreak1",
         "title": "Coffee break",
-        "start": "2023-09-11T10:30:00+02:00",
+        "start": "2023-09-11T10:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-11T11:00:00+02:00",
         "calendarId": "break"
     },
     {
-        "UID": "dstc112",
-        "title": "DSTC11 2",
-        "start": "2023-09-11T11:00:00+02:00",
-        "room": "Jupiter (90)",
-        "category": "time",
-        "end": "2023-09-11T13:00:00+02:00",
-        "calendarId": "dstc"
-    },
-    {
-        "UID": "csoa2",
-        "title": "CSOA 2",
-        "start": "2023-09-11T11:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-11T13:00:00+02:00",
-        "calendarId": "csoa"
-    },
-    {
-        "UID": "practicald2t2",
-        "title": "PracticalD2T 2",
-        "start": "2023-09-11T11:00:00+02:00",
-        "room": "Uranus (50)",
-        "category": "time",
-        "end": "2023-09-11T13:00:00+02:00",
-        "calendarId": "practicald2t"
-    },
-    {
-        "UID": "yrrsds2",
-        "title": "YRRSDS 2",
-        "start": "2023-09-11T11:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-11T13:00:00+02:00",
-        "calendarId": "yrrsds"
-    },
-    {
         "UID": "lunch1",
         "title": "Lunch",
-        "start": "2023-09-11T13:00:00+02:00",
+        "start": "2023-09-11T12:30:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
-        "end": "2023-09-11T14:00:00+02:00",
+        "end": "2023-09-11T13:30:00+02:00",
         "calendarId": "break"
-    },
-    {
-        "UID": "dstc113",
-        "title": "DSTC11 3",
-        "start": "2023-09-11T14:00:00+02:00",
-        "room": "Jupiter (90)",
-        "category": "time",
-        "end": "2023-09-11T15:30:00+02:00",
-        "calendarId": "dstc"
-    },
-    {
-        "UID": "csoa3",
-        "title": "CSOA 3",
-        "start": "2023-09-11T14:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-11T15:30:00+02:00",
-        "calendarId": "csoa"
-    },
-    {
-        "UID": "practicald2t3",
-        "title": "PracticalD2T 3",
-        "start": "2023-09-11T14:00:00+02:00",
-        "room": "Uranus (50)",
-        "category": "time",
-        "end": "2023-09-11T15:30:00+02:00",
-        "calendarId": "practicald2t"
-    },
-    {
-        "UID": "yrrsds3",
-        "title": "YRRSDS 3",
-        "start": "2023-09-11T14:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-11T15:30:00+02:00",
-        "calendarId": "yrrsds"
     },
     {
         "UID": "coffeebreak2",
         "title": "Coffee break",
-        "start": "2023-09-11T15:30:00+02:00",
+        "start": "2023-09-11T15:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-11T16:00:00+02:00",
         "calendarId": "break"
     },
     {
-        "UID": "dstc114",
-        "title": "DSTC11 4",
-        "start": "2023-09-11T16:00:00+02:00",
-        "room": "Jupiter (90)",
-        "category": "time",
-        "end": "2023-09-11T18:00:00+02:00",
-        "calendarId": "dstc"
-    },
-    {
-        "UID": "csoa4",
-        "title": "CSOA 4",
-        "start": "2023-09-11T16:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-11T18:00:00+02:00",
-        "calendarId": "csoa"
-    },
-    {
-        "UID": "practicald2t4",
-        "title": "PracticalD2T 4",
-        "start": "2023-09-11T16:00:00+02:00",
-        "room": "Uranus (50)",
-        "category": "time",
-        "end": "2023-09-11T18:00:00+02:00",
-        "calendarId": "practicald2t"
-    },
-    {
-        "UID": "yrrsds4",
-        "title": "YRRSDS 4",
-        "start": "2023-09-11T16:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-11T18:00:00+02:00",
-        "calendarId": "yrrsds"
-    },
-    {
-        "UID": "yrrsds5",
-        "title": "YRRSDS 5",
-        "start": "2023-09-12T09:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-12T10:30:00+02:00",
-        "calendarId": "yrrsds"
-    },
-    {
-        "UID": "mmnlg1",
-        "title": "MMNLG 1",
+        "UID": "mmnlg",
+        "title": "MMNLG",
         "start": "2023-09-12T09:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
-        "end": "2023-09-12T10:30:00+02:00",
+        "end": "2023-09-12T17:30:00+02:00",
         "calendarId": "mmnlg"
     },
     {
-        "UID": "tamingllm1",
-        "title": "TamingLLM 1",
-        "start": "2023-09-12T09:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-12T10:30:00+02:00",
-        "calendarId": "tamingllm"
-    },
-    {
-        "UID": "multiaiautism1",
-        "title": "MultiAIAutism 1",
+        "UID": "icard",
+        "title": "ICARD",
         "start": "2023-09-12T09:00:00+02:00",
         "room": "Uranus (50)",
         "category": "time",
-        "end": "2023-09-12T10:30:00+02:00",
-        "calendarId": "multiaiautism"
+        "end": "2023-09-12T13:00:00+02:00",
+        "calendarId": "icard"
+    },
+    {
+        "UID": "tamingllm",
+        "title": "TamingLLM",
+        "start": "2023-09-12T09:30:00+02:00",
+        "room": "Neptune (60)",
+        "category": "time",
+        "end": "2023-09-12T18:00:00+02:00",
+        "calendarId": "tamingllm"
+    },
+    {
+        "UID": "yrrsds2",
+        "title": "YRRSDS 2",
+        "start": "2023-09-12T09:30:00+02:00",
+        "room": "Observatory (40)",
+        "category": "time",
+        "end": "2023-09-12T15:00:00+02:00",
+        "calendarId": "yrrsds"
     },
     {
         "UID": "coffeebreak3",
@@ -212,134 +104,26 @@
         "start": "2023-09-12T10:30:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
-        "end": "2023-09-12T11:00:00+02:00",
+        "end": "2023-09-12T11:30:00+02:00",
         "calendarId": "break"
-    },
-    {
-        "UID": "mmnlg2",
-        "title": "MMNLG 2",
-        "start": "2023-09-12T11:00:00+02:00",
-        "room": "Jupiter (90)",
-        "category": "time",
-        "end": "2023-09-12T13:00:00+02:00",
-        "calendarId": "mmnlg"
-    },
-    {
-        "UID": "tamingllm2",
-        "title": "TamingLLM 2",
-        "start": "2023-09-12T11:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-12T13:00:00+02:00",
-        "calendarId": "tamingllm"
-    },
-    {
-        "UID": "multiaiautism2",
-        "title": "MultiAIAutism 2",
-        "start": "2023-09-12T11:00:00+02:00",
-        "room": "Uranus (50)",
-        "category": "time",
-        "end": "2023-09-12T13:00:00+02:00",
-        "calendarId": "multiaiautism"
-    },
-    {
-        "UID": "yrrsds6",
-        "title": "YRRSDS 6",
-        "start": "2023-09-12T11:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-12T13:00:00+02:00",
-        "calendarId": "yrrsds"
     },
     {
         "UID": "lunch2",
         "title": "Lunch",
-        "start": "2023-09-12T13:00:00+02:00",
+        "start": "2023-09-12T12:30:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
-        "end": "2023-09-12T14:00:00+02:00",
+        "end": "2023-09-12T13:30:00+02:00",
         "calendarId": "break"
-    },
-    {
-        "UID": "mmnlg3",
-        "title": "MMNLG 3",
-        "start": "2023-09-12T14:00:00+02:00",
-        "room": "Jupiter (90)",
-        "category": "time",
-        "end": "2023-09-12T15:30:00+02:00",
-        "calendarId": "mmnlg"
-    },
-    {
-        "UID": "tamingllm3",
-        "title": "TamingLLM 3",
-        "start": "2023-09-12T14:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-12T15:30:00+02:00",
-        "calendarId": "tamingllm"
-    },
-    {
-        "UID": "yrrsds7",
-        "title": "YRRSDS 7",
-        "start": "2023-09-12T14:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-12T15:30:00+02:00",
-        "calendarId": "yrrsds"
-    },
-    {
-        "UID": "-1",
-        "title": "- 1",
-        "start": "2023-09-12T14:00:00+02:00",
-        "room": "Uranus (50)",
-        "category": "time",
-        "end": "2023-09-12T15:30:00+02:00",
-        "calendarId": "-"
     },
     {
         "UID": "coffeebreak4",
         "title": "Coffee break",
-        "start": "2023-09-12T15:30:00+02:00",
+        "start": "2023-09-12T15:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-12T16:00:00+02:00",
         "calendarId": "break"
-    },
-    {
-        "UID": "mmnlg4",
-        "title": "MMNLG 4",
-        "start": "2023-09-12T16:00:00+02:00",
-        "room": "Jupiter (90)",
-        "category": "time",
-        "end": "2023-09-12T18:00:00+02:00",
-        "calendarId": "mmnlg"
-    },
-    {
-        "UID": "tamingllm4",
-        "title": "TamingLLM 4",
-        "start": "2023-09-12T16:00:00+02:00",
-        "room": "Neptune (60)",
-        "category": "time",
-        "end": "2023-09-12T18:00:00+02:00",
-        "calendarId": "tamingllm"
-    },
-    {
-        "UID": "-2",
-        "title": "- 2",
-        "start": "2023-09-12T16:00:00+02:00",
-        "room": "Uranus (50)",
-        "category": "time",
-        "end": "2023-09-12T18:00:00+02:00",
-        "calendarId": "-"
-    },
-    {
-        "UID": "yrrsds8",
-        "title": "YRRSDS 8",
-        "start": "2023-09-12T16:00:00+02:00",
-        "room": "Observatory (40)",
-        "category": "time",
-        "end": "2023-09-12T18:00:00+02:00",
-        "calendarId": "yrrsds"
     },
     {
         "UID": "opening",
