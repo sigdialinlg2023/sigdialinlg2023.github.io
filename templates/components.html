@@ -330,24 +330,21 @@ sessiongroup
 </div>
 {%- endmacro %}
 
-{% macro workshopgroup(private, workshops) -%}
+{% macro workshopgroup(private, grouptitle, workshops) -%}
+<h2>{{grouptitle}}</h2>
 {% for workshop in workshops %}
 {% set rowloop = loop.index %}
 <div class="row">
   <div class="col-12" id="accordionExample">
     <div class="card m-1">
       <div class="card-header">
-        <center>
-          <h2>{{workshop.title}}</h2>
-          {{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;
+            <h4><a href="{{workshop.url}}">{%if workshop.abbrev|length %}{{workshop.abbrev}}: {%endif%}{{workshop.title}}</a></h4>
+          <!--{{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;-->
           {% if private == true %}
           <a href="{{workshop.zoom}}">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{workshop.discord}}">Discord</a>
-          {% endif %}
           <br />
-          <i>
-            {{ workshop.organizers | join(", ") }}
-          </i>
-        </center>
+          {% endif %}
+          <i>Main organizer: {{ workshop.organizers }}, Contact: {{ workshop.contact | email_link }}</i>
       </div>
       <div id="collapse{{rowloop}}-{{loop.index}}" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">

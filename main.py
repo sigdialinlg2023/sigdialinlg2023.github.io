@@ -11,6 +11,7 @@ import yaml
 from flask import Flask, jsonify, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
+from markupsafe import Markup
 
 site_data = {}
 by_uid = {}
@@ -218,13 +219,6 @@ def about():
     return render_template("help.html", **data)
 
 
-@app.route("/workshops.html")
-def workshops():
-    data = _data()
-    data["workshops"] = open("sitedata/workshops.md").read()
-    return render_template("workshops_preliminary.html", **data)
-
-
 @app.route("/papers.html")
 def papers():
     data = _data()
@@ -241,14 +235,24 @@ def schedule():
     return out
 
 
-# @app.route("/workshops.html")
-# def workshops():
-#     data = _data()
-#     data["workshops"] = [
-#         format_workshop(workshop) for workshop in site_data["workshops"]
-#     ]
-#     return render_template("workshops.html", **data)
-#
+@app.route("/workshops.html")
+def workshops():
+    data = _data()
+    #data["workshops"] = open("sitedata/workshops.md").read()
+    #return render_template("workshops_preliminary.html", **data)
+    data["wgroups"] = [
+        {'grouptitle': grouptitle, 'workshops': [format_workshop(w) for w in workshops]}
+        for grouptitle, workshops in site_data["workshops"]["workshops"].items()
+    ]
+    return render_template("workshops.html", **data)
+
+
+@app.template_filter()
+def email_link(text):
+    text = ''.join(['&#' + str(ord(c)) + ';' for c in text])
+    mailto = ''.join(['&#' + str(ord(c)) + ';' for c in 'mailto:'])
+    return Markup(f'<a href="{mailto}{text}">{text}</a>')
+
 #
 # @app.route("/tutorials.html")
 # def tutorials():
@@ -317,9 +321,8 @@ def format_paper(v):
 
 
 def format_workshop(v):
-    v["organizers"] = extract_list_field(v, "authors")
-    dt = datetime.fromisoformat(v["start"])
-    v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
+    #dt = datetime.fromisoformat(v["start"])
+    #v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
     return v
 
 
