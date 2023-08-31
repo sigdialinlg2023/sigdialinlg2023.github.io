@@ -17,6 +17,21 @@ by_uid = {}
 by_date = {}
 
 
+def get_minutes_per_paper(session_uid):
+    if "poster" in session_uid:
+        # posters last the whole session
+        return 0
+    elif "sigdial" in session_uid:
+        return 20
+    elif "genchal" in session_uid:
+        # should be 10 for short papers but we have no good way to tell which paper is short in here
+        return 15
+    elif "inlg" in session_uid:
+        return 25
+    else:
+        raise ValueError(f"Unknown session type: {session_uid}")
+
+
 def main(site_data_path):
     global site_data, extra_files
     extra_files = ["Home.md"]
@@ -73,8 +88,9 @@ def main(site_data_path):
                     related_session = id_to_session[session]
                     session_start_datetime = datetime.fromisoformat(related_session["start"])
 
-                    # add order * 20 minutes to paper start time
-                    start_time = session_start_datetime + timedelta(minutes=int(order) * 20)
+                    minutes_per_paper = get_minutes_per_paper(related_session["UID"])
+                    # add order * X minutes to paper start time where X depends on the session type
+                    start_time = session_start_datetime + timedelta(minutes=int(order) * minutes_per_paper)
                     p["start"] = start_time.isoformat()
 
             for session in sessions:
@@ -270,6 +286,7 @@ def schedule():
 #     return render_template("workshops.html", **data)
 #
 #
+
 
 @app.route("/sponsors.html")
 def sponsors():
