@@ -41,6 +41,8 @@ sessiongroup
         {% endif %}
         {% endif %}
       </div>
+
+      {% if session.contents %}
       <div id="collapse{{rowloop}}-{{loop.index}}" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
           {% if session.url != blank %}
@@ -71,6 +73,7 @@ sessiongroup
           </ul>
         </div>
       </div>
+      {% endif %}
     </div>
   </div>
 </div>
