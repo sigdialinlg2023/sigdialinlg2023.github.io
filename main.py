@@ -86,12 +86,13 @@ def main(site_data_path):
                 session_start_datetime = datetime.fromisoformat(related_session["start"])
 
                 if typ == "papers":
+                    # papers: add order * X minutes to paper start time where X depends on the session type
                     minutes_per_paper = get_minutes_per_paper(related_session["UID"])
-                    # add order * X minutes to paper start time where X depends on the session type
                     start_time = session_start_datetime + timedelta(minutes=int(order) * minutes_per_paper)
                 else:
+                    # keynotes, workshops etc. are the whole session, no offset needed
                     start_time = session_start_datetime
-                p = dict(p)  # so that multiple sessions don't overwrite each other's times
+                p = dict(p)  # prevent multiple sessions from overwriting each other's times (=copy contents)
                 p["start"] = start_time.isoformat()
                 day = start_time.strftime("%A")
                 by_date[day]["sessions"][session]["contents"].append(p)
