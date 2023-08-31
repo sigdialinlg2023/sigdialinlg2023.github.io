@@ -153,8 +153,8 @@
         "calendarId": "break"
     },
     {
-        "UID": "inlgoralsession1-4",
-        "title": "INLG Oral Session 1-4",
+        "UID": "inlgoralsession1",
+        "title": "INLG Oral Session 1",
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -180,8 +180,8 @@
         "calendarId": "break"
     },
     {
-        "UID": "inlgoralsession5-8",
-        "title": "INLG Oral Session 5-8",
+        "UID": "inlgoralsession2",
+        "title": "INLG Oral Session 2",
         "start": "2023-09-13T13:30:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -216,8 +216,8 @@
         "calendarId": "sigdialoral"
     },
     {
-        "UID": "inlgpostersession1-16+flash",
-        "title": "INLG Poster session 1-16+flash",
+        "UID": "inlgpostersession+flash",
+        "title": "INLG Poster session +flash",
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Foyer",
         "category": "time",
@@ -279,8 +279,8 @@
         "calendarId": "sigdialoral"
     },
     {
-        "UID": "inlgoralsession9-12",
-        "title": "INLG Oral Session 9-12",
+        "UID": "inlgoralsession3",
+        "title": "INLG Oral Session 3",
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -306,8 +306,8 @@
         "calendarId": "break"
     },
     {
-        "UID": "inlgoralsession13-16",
-        "title": "INLG Oral Session 13-16",
+        "UID": "inlgoralsession4",
+        "title": "INLG Oral Session 4",
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -405,8 +405,8 @@
         "calendarId": "sigdialoral"
     },
     {
-        "UID": "inlgoralsession17-20",
-        "title": "INLG Oral Session 17-20",
+        "UID": "inlgoralsession5",
+        "title": "INLG Oral Session 5",
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun II",
         "category": "time",

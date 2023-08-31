@@ -41,6 +41,7 @@ def process_file(in_file, cal_file):
                     sess = re.sub(r"(long paper )?talks", "Oral Session", sess, flags=re.I)
                     sess = re.sub(r"posters", "Poster Session", sess, flags=re.I)
                     sess = re.sub(r"\([^)]*\)", "", sess)
+                    sess = re.sub(r"[0-9]+-[0-9]+", "", sess)
                     # sess = re.sub(r'[0-9-]*', '', sess)
                     m = re.search(r' till ([0-9:]+)', sess)
                     if m:
