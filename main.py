@@ -63,14 +63,12 @@ def main(site_data_path):
         id_to_session[p["UID"]] = p
 
     # fill calendar with contents
-    for typ in ["speakers", "papers"]:
+    for typ in ["speakers", "papers", "workshops"]:
         by_uid[typ] = {}
         if typ == "speakers":
-            vals = site_data[typ]["speakers"]
-            for p in vals:  # load session start times from calendar (avoid duplication)
-                p["start"] = [s for s in site_data["main_calendar"] if s["UID"] == p["session"]][0]["start"]
-        elif typ in ["workshops", "tutorials", "panels", "hackathons"]:
-            vals = [format_workshop(workshop) for workshop in site_data[typ]]
+            vals = site_data["speakers"]["speakers"]
+        elif typ in ["workshops"]: #, "tutorials", "panels", "hackathons"]:
+            vals = [w for wgroup in site_data["workshops"]["workshops"].values() for w in wgroup]
         elif typ == "papers":
             vals = [format_paper(x) for x in site_data["papers"]]
         else:
@@ -79,27 +77,25 @@ def main(site_data_path):
         for p in vals:
             by_uid[typ][p["UID"]] = p
 
-            sessions = p["session"].split("|") if p["session"] else []
+            sessions = p["session"].split("|") if p.get("session") else []
             orders = p["order"].split("|") if "order" in p else [0] * len(sessions)
-            start = p["start"] if "start" in p else None
 
-            if not start:
-                # paper mapped to session, calculate start relative to session start
-                for session, order in zip(sessions, orders):
-                    related_session = id_to_session[session]
-                    session_start_datetime = datetime.fromisoformat(related_session["start"])
+            # paper mapped to session, calculate start relative to session start
+            for session, order in zip(sessions, orders):
+                related_session = id_to_session[session]
+                session_start_datetime = datetime.fromisoformat(related_session["start"])
 
+                if typ == "papers":
                     minutes_per_paper = get_minutes_per_paper(related_session["UID"])
                     # add order * X minutes to paper start time where X depends on the session type
                     start_time = session_start_datetime + timedelta(minutes=int(order) * minutes_per_paper)
-                    p["start"] = start_time.isoformat()
-
-            for session in sessions:
-                dt = datetime.fromisoformat(p["start"])
-                day = dt.strftime("%A")
-
+                else:
+                    start_time = session_start_datetime
+                p = dict(p)  # so that multiple sessions don't overwrite each other's times
+                p["start"] = start_time.isoformat()
+                day = start_time.strftime("%A")
                 by_date[day]["sessions"][session]["contents"].append(p)
-                # p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
+                # p["zoom"] = by_date[start_time.strftime('%A')]['sessions'][p["session"]]['zoom']
 
         for day in by_date.values():
             day["sessions"] = dict(sorted(day["sessions"].items(), key=lambda item: item[1]["start"]))
@@ -249,6 +245,7 @@ def workshops():
 
 @app.template_filter()
 def email_link(text):
+    "Basic anti-spam protection for emails by turning them into HTML entities (same as Flask's markdown)."
     text = ''.join(['&#' + str(ord(c)) + ';' for c in text])
     mailto = ''.join(['&#' + str(ord(c)) + ';' for c in 'mailto:'])
     return Markup(f'<a href="{mailto}{text}">{text}</a>')
