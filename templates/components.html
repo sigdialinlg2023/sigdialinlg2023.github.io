@@ -52,9 +52,11 @@ sessiongroup
             {% for paper in session.contents %}
             {% if paper.title != blank %}
             {% if paper.name != blank %}
-            <li>{{paper.title}}<br /><i>{{paper.name}}</i><br />{{paper.abstract}}</li>
+            <!-- a keynote talk -->
+            <li><a href="speakers.html#{{paper.UID}}">{{paper.title}}</a><br /><i>{{paper.name}}</i><br />{{paper.abstract}}</li>
             {% endif %}
             {% if paper.authors != blank %}
+            <!-- a paper -->
             <li>
               <a href="poster_{{paper.UID}}.html" class="gated-content">
                 <b>{{paper.short_time}} {{paper.title}}</b>
@@ -66,7 +68,8 @@ sessiongroup
             </li>
             {% endif %}
             {% if paper.organizers != blank %}
-            <li>{{paper.title}}<br /><i>{{ paper.organizers | join(", ") }}</i><br />{{paper.abstract}}</li>
+            <!-- a workshop -->
+            <li><a href="{{paper.url}}">{{paper.title}}</a><br /><i>Organizers: {{ paper.organizers | join(", ") }}</i><br />{{paper.abstract}}<br/><a href="{{paper.schedule_url}}">⯈ Workshop schedule</a></li>
             {% endif %}
             {% endif %}
             {% endfor %}
@@ -330,24 +333,21 @@ sessiongroup
 </div>
 {%- endmacro %}
 
-{% macro workshopgroup(private, workshops) -%}
+{% macro workshopgroup(private, grouptitle, workshops) -%}
+<h2>{{grouptitle}}</h2>
 {% for workshop in workshops %}
 {% set rowloop = loop.index %}
 <div class="row">
   <div class="col-12" id="accordionExample">
     <div class="card m-1">
       <div class="card-header">
-        <center>
-          <h2>{{workshop.title}}</h2>
-          {{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;
+            <h4><a href="{{workshop.url}}">{%if workshop.abbrev|length %}{{workshop.abbrev}}: {%endif%}{{workshop.title}}</a></h4>
+          <!--{{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;-->
           {% if private == true %}
           <a href="{{workshop.zoom}}">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{workshop.discord}}">Discord</a>
-          {% endif %}
           <br />
-          <i>
-            {{ workshop.organizers | join(", ") }}
-          </i>
-        </center>
+          {% endif %}
+          <i>Organizers: {{ workshop.organizers | join(", ") }}<br>Contact: {{ workshop.contact | email_link }}</i>
       </div>
       <div id="collapse{{rowloop}}-{{loop.index}}" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">

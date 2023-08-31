@@ -12,6 +12,12 @@
     font-family: "Lato", sans-serif;
     font-weight: 900;
   }
+  .speakers h2 {
+    margin: 1em 0;
+  }
+  .speakers h4 {
+    font-family: "Lato", sans-serif;
+  }
 </style>
 
 <div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
@@ -34,9 +40,11 @@
   <div id="day">
     <!-- Workshops -->
 <!--    {{ components.section("Workshops") }} -->
+    {% for wgroup in wgroups %}
     <div class="speakers">
-      {{ components.workshopgroup(config.private, workshops) }}
+      {{ components.workshopgroup(config.private, wgroup.grouptitle, wgroup.workshops) }}
     </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}
