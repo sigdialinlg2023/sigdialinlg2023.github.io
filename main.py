@@ -82,6 +82,10 @@ def main(site_data_path):
                 day = dt.strftime("%A")
 
                 by_date[day]["sessions"][session]["contents"].append(p)
+                # TODO
+                # add zoom
+                # add key discord and add discord link
+                # TODO add room also j:
                 # p["zoom"] = by_date[dt.strftime('%A')]['sessions'][p["session"]]['zoom']
 
         for day in by_date.values():
