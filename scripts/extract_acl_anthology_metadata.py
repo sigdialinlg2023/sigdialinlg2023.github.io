@@ -32,6 +32,9 @@ for folder_name in os.listdir(top_folder):
             abstract_end = metadata.find("Author{1}{Firstname}#=%=#")
             paper_abstract = metadata[abstract_start:abstract_end].strip()
 
+            # Remove all newlines from the abstract
+            paper_abstract = paper_abstract.replace("\n", " ")
+
             # Append the data to the list
             data.append([paper_id, paper_abstract])
 
