@@ -42,7 +42,6 @@ def process_file(in_file, cal_file):
                     sess = re.sub(r"posters", "Poster Session", sess, flags=re.I)
                     sess = re.sub(r"\([^)]*\)", "", sess)
                     sess = re.sub(r"[0-9]+-[0-9]+", "", sess)
-                    # sess = re.sub(r'[0-9-]*', '', sess)
                     m = re.search(r' till ([0-9:]+)', sess)
                     if m:
                         endtime = tz.localize(dt.combine(current_date, datetime.datetime.strptime(m.group(1), "%H:%M").time())).isoformat()
@@ -97,10 +96,10 @@ def process_file(in_file, cal_file):
             "sponsors": "business",
             "closing": "business",
             "opening": "business",
+            "birds-of-feather": "discussion",
+            "panel": "discussion",
             "welcomereception": "social",
             "conferencedinner": "social",
-            "birdsoffeather": "social",
-            "panel": "keynote",
         }.get(category, category)
         session["calendarId"] = category
 

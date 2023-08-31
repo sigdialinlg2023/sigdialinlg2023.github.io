@@ -240,7 +240,7 @@
         "room": "Sun I",
         "category": "time",
         "end": "2023-09-13T18:45:00+02:00",
-        "calendarId": "keynote"
+        "calendarId": "discussion"
     },
     {
         "UID": "welcomereception",
@@ -447,7 +447,7 @@
         "room": "Sun I",
         "category": "time",
         "end": "2023-09-15T15:30:00+02:00",
-        "calendarId": "birds-of-feather"
+        "calendarId": "discussion"
     },
     {
         "UID": "coffeebreak10",
