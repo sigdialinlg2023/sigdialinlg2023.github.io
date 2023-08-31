@@ -3,7 +3,7 @@
 """
 Parses the following document https://docs.google.com/document/d/1a2PrGH_PE8idJpMsZhO8qnYJXy8vxgavW4t7BvaZ3OM/edit exported as html and creates a TSV file with papers, authors, and sessions.
 
-The TSV can be further mapped to papers.csv using `sigdial_annotate_papers_with_sessions.py`
+The TSV can be further mapped to papers.csv using `annotate_papers_with_sessions.py`
 """
 
 from bs4 import BeautifulSoup
