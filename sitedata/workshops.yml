@@ -77,7 +77,7 @@ workshops:
     - sessions: null
       UID: DivergentSDSData
       title: Designing divergent agent tasks for SDS data collection
-      organizers: Paola Peña
+      organizers: ['Paola Peña', 'Philip R. Doyle', 'Yunhan Wu', 'Oliver Lemon', 'Benjamin R. Cowan']
       contact: paola.pena@ucdconnect.ie
       url: https://icsresearch.ucd.ie/sigDial23/web/index.html
       abstract: "**THIS WORKSHOP WAS CANCELLED.**"
