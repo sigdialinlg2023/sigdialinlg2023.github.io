@@ -55,6 +55,8 @@ for folder_name in os.listdir(top_folder):
 # Create a Pandas DataFrame
 df = pd.DataFrame(data, columns=["paper_id", "abstract", "paper"])
 
+# prepend the conference name to the paper_id for each item in the column
+df["paper_id"] = df["paper_id"].apply(lambda x: f"{conference}{x}")
 
 # Load the existing CSV file into a DataFrame
 existing_df = pd.read_csv("sitedata/papers.csv")
@@ -63,7 +65,7 @@ existing_df = pd.read_csv("sitedata/papers.csv")
 existing_df.drop(columns=["paper_id", "abstract", "paper"], inplace=True, errors="ignore")
 
 # Merge the existing DataFrame with the 'df' DataFrame on 'original_id' and 'paper_id'
-merged_df = existing_df.merge(df, left_on="original_id", right_on="paper_id", how="left")
+merged_df = existing_df.merge(df, left_on="UID", right_on="paper_id", how="left")
 
 # Remove duplicate columns
 merged_df = merged_df.loc[:, ~merged_df.columns.duplicated()]
