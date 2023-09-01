@@ -34,7 +34,7 @@ There are three Zoom links used during the time of the SIGdial and INLG conferen
 ## Website Features important During Conference
 - Any changes in the program will be reflected in the [calendar](/calendar.html) under the `Program / Schedule` menu.
 - See the list of [all presented papers](/papers.html) 
-- Access to camera ready version of the [papers]](/papers.html) in the pdf format at individual page for each paper (login required). 
+- Access to camera ready version of the [papers](/papers.html) in the pdf format at individual page for each paper (login required). 
 - Invite link to Discord, Zoom links and their mapping to sessions on this very page  (login required). 
 - Links for [workshops](/workshops.html) under the `Program / Workshops` menu.
 
