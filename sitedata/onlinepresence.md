@@ -1,12 +1,12 @@
 ## Join Discord!
 
-**Use the invite link [https://discord.gg/zxquHwKy5](https://discord.gg/zxquHwKy5)
+**Use the invite link [https://discord.gg/zxquHwKy5](https://discord.gg/zxquHwKy5).**
 
 ## Zoom
 
-There are three Zoom links used during the time of the conference. Each links corresponds to a room at the Venue in Prague.
+There are three Zoom links used during the time of the SIGdial and INLG conference. Each links corresponds to a room at the Venue in Prague.
 <!-- See sitedata/sessions_links.yml -->
-During SIGdial & INLG conference 
+
 - [https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09"](First Zoom link will be used for events in the _Sun I_ room.
 - Second link will be used for the events in the _Sun II_ room. (Will be provided soon)
 - Third link will be used only for workshop purposes. (Will be provided soon)
@@ -18,7 +18,7 @@ During SIGdial & INLG conference
 - [Get help!](https://discord.com/channels/1112733937828102206/1146404262994260018l)
 - Visit many of the dedicated workshops, keynotes, oral sessions' channels and start chatting with your fellow researchers.
 - **We encourage authors to introduce themselves in channels dedicated for the sessions containing their work!**
-- Discuss virtually presented posters on Friday 9:00, September 15 in one of the [VIRTUAL POSTERs channels](https://discord.com/channels/1112733937828102206/1146936529722277908).
+- Discuss virtually presented posters on Friday 9:00, September 15 in one of the [VIRTUAL POSTERs category channels](https://discord.com/channels/1112733937828102206/1146936529722277908).
 
 **Use Discord instead of the build-in Zoom chat. The Zoom chat won't be supported.**
 
