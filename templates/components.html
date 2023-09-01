@@ -25,10 +25,10 @@ sessiongroup
         {# {% if private %} #}
         {# {% endif %} #}
         ({{session.start_time.strftime("%H:%M CEST")}}, {{session.room}}
-          <span class="gated-content"> 
-            {% if session.zoom != None %}, <a href="{{session.zoom}}">Watch on Zoom </a> {% endif %}
-            {% if session.discord != None %}, <a href="{{session.discord}}">Chat on Discord</a> {% endif %}
-          </span>
+        <span class="gated-content">
+          {% if session.zoom != None %}, <a href="{{session.zoom}}">Watch on Zoom </a> {% endif %}
+          {% if session.discord != None %}, <a href="{{session.discord}}">Chat on Discord</a> {% endif %}
+        </span>
         )
         {% if session.chair %}
         <i>Session Chair: {{session.chair}}</i>
@@ -51,7 +51,9 @@ sessiongroup
             {% if paper.title != blank %}
             {% if paper.name != blank %}
             <!-- a keynote talk -->
-            <li><a href="speakers.html#{{paper.UID}}">{{paper.title}}</a><br /><i>{{paper.name}}</i><br />{{paper.abstract}}</li>
+            <li><a
+                href="speakers.html#{{paper.UID}}">{{paper.title}}</a><br /><i>{{paper.name}}</i><br />{{paper.abstract}}
+            </li>
             {% endif %}
             {% if paper.authors != blank %}
             <!-- a paper -->
@@ -67,7 +69,8 @@ sessiongroup
             {% endif %}
             {% if paper.organizers != blank %}
             <!-- a workshop -->
-            <li><a href="{{paper.url}}">{{paper.title}}</a><br /><i>Organizers: {{ paper.organizers | join(", ") }}</i><br />{{paper.abstract}}<br/><a href="{{paper.schedule_url}}">⯈ Workshop schedule</a></li>
+            <li><a href="{{paper.url}}">{{paper.title}}</a><br /><i>Organizers: {{ paper.organizers | join(", ")
+                }}</i><br />{{paper.abstract}}<br /><a href="{{paper.schedule_url}}">⯈ Workshop schedule</a></li>
             {% endif %}
             {% endif %}
             {% endfor %}
@@ -121,8 +124,7 @@ sessiongroup
           aria-expanded="true" aria-controls="collapse{{rowloop}}-{{loop.index}}">
           {{speaker.name}}</a>, {{speaker.institution}}
       </div>
-      <div id="collapse{{rowloop}}-{{loop.index}}" class="collapse" aria-labelledby="headingOne"
-        data-parent="#accordionExample">
+      <div id="collapse{{rowloop}}-{{loop.index}}" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
           <div class="row">
             <div class="col-md-2 col-sm-5">
@@ -339,13 +341,14 @@ sessiongroup
   <div class="col-12" id="accordionExample">
     <div class="card m-1">
       <div class="card-header">
-            <h4><a href="{{workshop.url}}">{%if workshop.abbrev|length %}{{workshop.abbrev}}: {%endif%}{{workshop.title}}</a></h4>
-          <!--{{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;-->
-          {% if private == true %}
-          <a href="{{workshop.zoom}}">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{workshop.discord}}">Discord</a>
-          <br />
-          {% endif %}
-          <i>Organizers: {{ workshop.organizers | join(", ") }}<br>Contact: {{ workshop.contact | email_link }}</i>
+        <h4><a href="{{workshop.url}}">{%if workshop.abbrev|length %}{{workshop.abbrev}}:
+            {%endif%}{{workshop.title}}</a></h4>
+        <!--{{workshop.time}}&nbsp;&nbsp;&nbsp;&nbsp;-->
+        {% if private == true %}
+        <a href="{{workshop.zoom}}">Zoom</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{workshop.discord}}">Discord</a>
+        <br />
+        {% endif %}
+        <i>Organizers: {{ workshop.organizers | join(", ") }}<br>Contact: {{ workshop.contact | email_link }}</i>
       </div>
       <div id="collapse{{rowloop}}-{{loop.index}}" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">

@@ -71,7 +71,5 @@ merged_df = merged_df.loc[:, ~merged_df.columns.duplicated()]
 # Rename the new column as needed (e.g., 'paper_abstract')
 # merged_df.rename(columns={"paper_abstract": "abstract", "paper_name": "paper"}, inplace=True)
 
-breakpoint()
-
 # Save the updated DataFrame back to the CSV file
 merged_df.to_csv("sitedata/papers.csv", index=False)
