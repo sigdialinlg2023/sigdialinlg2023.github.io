@@ -1,10 +1,15 @@
+## Join Discord!
 
+**Use the invite link [https://discord.gg/zxquHwKy5](https://discord.gg/zxquHwKy5)
 
+## Zoom
 
-## Registering and Logging in This Website
-Use the `Log In` button visible from any page at [https://sigdialinlg2023.github.io/](https://sigdialinlg2023.github.io/).
-
-Sign up using **the e-mail you used for registering for the conference on Eventbrite**!
+There are three Zoom links used during the time of the conference. Each links corresponds to a room at the Venue in Prague.
+<!-- See sitedata/sessions_links.yml -->
+During SIGdial & INLG conference 
+- [https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09"](First Zoom link will be used for events in the _Sun I_ room.
+- Second link will be used for the events in the _Sun II_ room. (Will be provided soon)
+- Third link will be used only for workshop purposes. (Will be provided soon)
 
 ## Navigate Discord
 
