@@ -64,7 +64,6 @@ existing_df = pd.read_csv("sitedata/papers.csv")
 # drop the existing columns "paper_id", "abstract", "paper" if they exist
 existing_df.drop(columns=["paper_id", "abstract", "paper"], inplace=True, errors="ignore")
 
-breakpoint()
 # Merge the existing DataFrame with the 'df' DataFrame on 'original_id' and 'paper_id'
 merged_df = existing_df.merge(df, left_on="UID", right_on="paper_id", how="left")
 
