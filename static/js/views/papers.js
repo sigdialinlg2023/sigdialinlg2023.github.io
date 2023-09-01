@@ -103,11 +103,16 @@ const render = () => {
   Object.keys(filters).forEach((k) => {
     filters[k] ? f_test.push([k, filters[k]]) : null;
   });
+  var papers = allPapers;
 
+  const conference = $("div.btn-group input[name='conference-papers']:checked").val();
+  if (conference != "all") {
+    papers = allPapers.filter((p) => p.conference == conference);
+  }
   // console.log(f_test, filters, "--- f_test, filters");
-  if (f_test.length === 0) updateCards(allPapers);
+  if (f_test.length === 0) updateCards(papers);
   else {
-    const fList = allPapers.filter((d) => {
+    var fList = papers.filter((d) => {
       let i = 0;
       let pass_test = true;
       while (i < f_test.length && pass_test) {
@@ -199,15 +204,16 @@ d3.selectAll(".remove_session").on("click", () => {
 });
 
 d3.selectAll(".render_option input").on("click", function () {
-  const me = d3.select(this);
-  render_mode = me.property("value");
-
   render();
 });
 
 d3.select(".reshuffle").on("click", () => {
   shuffleArray(allPapers);
 
+  render();
+});
+
+d3.selectAll(".conference_option input").on("click", function () {
   render();
 });
 
