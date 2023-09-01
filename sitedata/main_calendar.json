@@ -236,7 +236,7 @@
         "start": "2023-09-13T13:30:00+02:00",
         "room": "Foyer",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146764659957960735",
         "zoom": null,
         "end": "2023-09-13T15:10:00+02:00",
         "calendarId": "sigdialposter"
@@ -269,7 +269,7 @@
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Foyer",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146935553963602051",
         "zoom": null,
         "end": "2023-09-13T17:00:00+02:00",
         "calendarId": "inlgposter"
@@ -302,7 +302,7 @@
         "start": "2023-09-13T19:00:00+02:00",
         "room": "Sun I",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146767491599695963",
         "zoom": null,
         "end": "2023-09-13T20:00:00+02:00",
         "calendarId": "social"
@@ -390,7 +390,7 @@
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Foyer",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146764993052807258",
         "zoom": null,
         "end": "2023-09-14T15:40:00+02:00",
         "calendarId": "sigdialposter"
@@ -434,7 +434,7 @@
         "start": "2023-09-14T17:35:00+02:00",
         "room": "Foyer",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146935690710487040",
         "zoom": null,
         "end": "2023-09-14T18:30:00+02:00",
         "calendarId": "inlgposter"
@@ -445,7 +445,7 @@
         "start": "2023-09-14T19:00:00+02:00",
         "room": "Sun I",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146771899741917314",
         "zoom": null,
         "end": "2023-09-14T22:00:00+02:00",
         "calendarId": "social"
@@ -456,7 +456,7 @@
         "start": "2023-09-15T09:00:00+02:00",
         "room": "Sun I",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146936529722277908",
         "zoom": null,
         "end": "2023-09-15T10:00:00+02:00",
         "calendarId": "sigdialposter"
@@ -544,7 +544,7 @@
         "start": "2023-09-15T15:00:00+02:00",
         "room": "Sun I",
         "category": "time",
-        "discord": null,
+        "discord": "https://discord.com/channels/1112733937828102206/1146791902969085962",
         "zoom": null,
         "end": "2023-09-15T15:30:00+02:00",
         "calendarId": "discussion"

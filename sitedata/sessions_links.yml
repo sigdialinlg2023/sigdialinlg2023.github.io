@@ -3,6 +3,27 @@ rooms2zoom:
   "Sun I": https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09  
   "Sun II": zoom2
   # "MISSING ROOM": zoom3
+zoom:
+  - sigdialoralsession1
+  - sigdialoralsession2
+  - sigdialoralsession3
+  - sigdialoralsession4
+  - sigdialoralsession5
+  - inlgoralsession1
+  - inlgoralsession2
+  - inlgoralsession3
+  - inlgoralsession4
+  - inlgoralsession5
+  - inlggenchalpresentation
+  - keynotesimperl
+  - keynotedupoux
+  - keynotelowe
+  - keynotedieugenio
+  - panel
+  - opening
+  - businessmeeting
+  - sponsors
+  - closing
 session2discord:
   # TODO add posters
   sigdialoralsession1: https://discord.com/channels/1112733937828102206/1146764525962543115
@@ -25,6 +46,16 @@ session2discord:
   businessmeeting: https://discord.com/channels/1112733937828102206/1146769461609762847
   sponsors: https://discord.com/channels/1112733937828102206/1146772127501013035
   closing: https://discord.com/channels/1112733937828102206/1146772195918487613
+  # above with zoom, below discord only
+  virtualpostersession: https://discord.com/channels/1112733937828102206/1146936529722277908
+  welcomereception: https://discord.com/channels/1112733937828102206/1146767491599695963
+  conferencedinner: https://discord.com/channels/1112733937828102206/1146771899741917314
+  birds-of-feather: https://discord.com/channels/1112733937828102206/1146791902969085962
+  sigdialpostersession1: https://discord.com/channels/1112733937828102206/1146764659957960735
+  sigdialpostersession2: https://discord.com/channels/1112733937828102206/1146764993052807258
+  inlgpostersession+flash: https://discord.com/channels/1112733937828102206/1146935553963602051
+  genchalpostersession+demos: https://discord.com/channels/1112733937828102206/1146935690710487040
+
 # TODO connect in main
 posters2discords:
   sigdial29:  https://discord.com/channels/1112733937828102206/1146772195918487613

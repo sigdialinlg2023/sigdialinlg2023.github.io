@@ -14,6 +14,7 @@ def process_file(in_file, cal_file, sessions_links_file):
 
     sessions_links = yaml.load(open(sessions_links_file).read(), Loader=yaml.SafeLoader)
     session2discord = sessions_links["session2discord"]
+    sessions_with_zoom = sessions_links["zoom"]
 
     sessions = {}
     counters = {}
@@ -98,12 +99,10 @@ def process_file(in_file, cal_file, sessions_links_file):
     dts = sorted(list(dts))
 
     for session in sessions:
-        discord_url = session2discord.get(session["UID"])
-        if discord_url is not None:
-            session["discord"] = discord_url
+        session["discord"] = session2discord.get(session["UID"], None)
+        if session["UID"] in sessions_with_zoom:
             session["zoom"] = room2zoom.get(session["room"])
         else:
-            session["discord"] = None
             session["zoom"] = None
 
 
