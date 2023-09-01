@@ -21,10 +21,12 @@ sessiongroup
     <div class="card m-2">
       <div class="card-header">
         {{session.name}}
-        {% if private %}
+        {# {% if private %} #}
+        <div class="gated-content">
         {% if session.zoom != None %} <a href="{{session.zoom}}">Watch on Zoom! </a> {% endif %}
         {% if session.discord != None %} <a href="{{session.discord}}">Chat on Discord! </a> {% endif %}
-        {% endif %}
+        </div>
+        {# {% endif %} #}
         ({{session.start_time.strftime("%H:%M CEST")}})
         {% if session.chair %}
         <i>Session Chair: {{session.chair}}</i>
