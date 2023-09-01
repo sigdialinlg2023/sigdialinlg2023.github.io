@@ -343,11 +343,12 @@ def poster(poster):
     # sessions = [session for session in d["sessions"] for d in by_date.values()]
 
 
-    sessions = dict([(session['UID'], session) for d in by_date.values() for session in d["sessions"].values()])
+    sessions = dict([(session['UID'], (session, day_name)) for day_name, d in by_date.items() for session in d["sessions"].values()])
     v["sessions"] = []
     paper_sessions = v["session"].split("|")
     for paper_session in paper_sessions:
-        new_session = sessions[paper_session] 
+        new_session, day_name = sessions[paper_session] 
+        new_session["day"] = day_name
         assert all([p in new_session for p in ["room", "zoom", "discord", "start", "end", "title"]])
         v["sessions"].append(new_session)
     data["paper"] = v
