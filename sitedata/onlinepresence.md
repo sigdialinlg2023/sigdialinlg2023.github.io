@@ -24,21 +24,22 @@ The follewing Zoom links will be used during the conference. Each link correspon
 
 When you are logged in, you can always find the right Zoom link in the conference schedule.
 
-### Recommended Workflow for Visiting the Conference Virtually
+### Recommended Workflow
 
-1. Sign up and log in at [https://sigdialinlg2023.github.io/](https://sigdialinlg2023.github.io/).
-2. Go to [Program / Schedule (calendar)](/calendar.html).
-3. Click on one of the currently happening sessions in the [calendar](/calendar.html). The session opens in the day-by-day view.
-4. Open the corresponding sessions's Discord channel on e.g., [Keynote Dupoux on Wednesday](https://sigdialinlg2023.github.io/calendar.html#tab-Wednesday). Monitor organisational updates or ask questions.
-5. Open also the Zoom session to watch the video feed.
-6. After the session, feel free to Return to the Discord channel to discuss the session with the presenter and your fellow participants.
+1. Go to [Program / Schedule (calendar)](/calendar.html).
+2. Click on one of the currently happening sessions in the [calendar](/calendar.html). The session opens in the day-by-day view.
+3. Open the corresponding sessions's Discord channel on e.g., [Keynote Dupoux on Wednesday](https://sigdialinlg2023.github.io/calendar.html#tab-Wednesday). Monitor organisational updates or ask questions.
+4. Open the Zoom session to watch the video feed.
+5. After the session, feel free to Return to the Discord channel to discuss the session with the presenter and your fellow participants.
 
 
-### Website Features Important During the Conference
+### Important Website Features 
 
 - See the detailed schedule in the [calendar](/calendar.html) under the `Program / Schedule` menu.
 - See the list of [all presented papers](/papers.html) 
 - Access camera-ready PDFs of the [papers](/papers.html), as well as corresponding Zoom & Discord links at each paper's detail page (login required). 
 - Links to [workshops](/workshops.html) are under the `Program / Workshops` menu as well as in the schedule.
+
+---
 
 If you have any questions regarding Zoom or Discord, please contact <a href="https://ufal.mff.cuni.cz/ondrej-platek">Ondrej Platek</a>.
