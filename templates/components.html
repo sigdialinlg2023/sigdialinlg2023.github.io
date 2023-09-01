@@ -69,8 +69,8 @@ sessiongroup
             {% endif %}
             {% if paper.organizers != blank %}
             <!-- a workshop -->
-            <li><a href="{{paper.url}}">{{paper.title}}</a><br /><i>Organizers: {{ paper.organizers | join(", ")
-                }}</i><br />{{paper.abstract}}<br /><a href="{{paper.schedule_url}}">⯈ Workshop schedule</a></li>
+            <li><a href="{{paper.url}}">{{paper.title}}</a><br /><i>Organizers: {{ paper.organizers | join(", ") }}</i>
+                <br />{{paper.abstract}}<br /><a href="{{paper.schedule_url}}">🔗 Workshop schedule</a></li>
             {% endif %}
             {% endif %}
             {% endfor %}
