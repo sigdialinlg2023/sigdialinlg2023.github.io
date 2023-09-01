@@ -6,6 +6,8 @@
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-11T18:40:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "dstc"
     },
     {
@@ -15,6 +17,8 @@
         "room": "Neptune (60)",
         "category": "time",
         "end": "2023-09-11T16:40:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "cs4oa"
     },
     {
@@ -24,6 +28,8 @@
         "room": "Uranus (50)",
         "category": "time",
         "end": "2023-09-11T18:00:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "practicald2t"
     },
     {
@@ -33,6 +39,8 @@
         "room": "Observatory (40)",
         "category": "time",
         "end": "2023-09-11T16:15:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "yrrsds"
     },
     {
@@ -41,6 +49,8 @@
         "start": "2023-09-11T10:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-11T11:00:00+02:00",
         "calendarId": "break"
     },
@@ -50,6 +60,8 @@
         "start": "2023-09-11T12:30:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-11T13:30:00+02:00",
         "calendarId": "break"
     },
@@ -59,6 +71,8 @@
         "start": "2023-09-11T15:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-11T16:00:00+02:00",
         "calendarId": "break"
     },
@@ -69,6 +83,8 @@
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-12T17:30:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "mmnlg"
     },
     {
@@ -78,6 +94,8 @@
         "room": "Uranus (50)",
         "category": "time",
         "end": "2023-09-12T13:00:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "icard"
     },
     {
@@ -87,6 +105,8 @@
         "room": "Neptune (60)",
         "category": "time",
         "end": "2023-09-12T18:00:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "tamingllm"
     },
     {
@@ -96,6 +116,8 @@
         "room": "Observatory (40)",
         "category": "time",
         "end": "2023-09-12T15:00:00+02:00",
+        "discord": null,
+        "zoom": null,
         "calendarId": "yrrsds"
     },
     {
@@ -104,6 +126,8 @@
         "start": "2023-09-12T10:30:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-12T11:30:00+02:00",
         "calendarId": "break"
     },
@@ -113,6 +137,8 @@
         "start": "2023-09-12T12:30:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-12T13:30:00+02:00",
         "calendarId": "break"
     },
@@ -122,6 +148,8 @@
         "start": "2023-09-12T15:00:00+02:00",
         "room": "Jupiter (90)",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-12T16:00:00+02:00",
         "calendarId": "break"
     },
@@ -153,6 +181,8 @@
         "start": "2023-09-13T10:15:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-13T10:45:00+02:00",
         "calendarId": "break"
     },
@@ -184,6 +214,8 @@
         "start": "2023-09-13T12:30:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-13T13:30:00+02:00",
         "calendarId": "break"
     },
@@ -204,6 +236,8 @@
         "start": "2023-09-13T13:30:00+02:00",
         "room": "Foyer",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-13T15:10:00+02:00",
         "calendarId": "sigdialposter"
     },
@@ -213,6 +247,8 @@
         "start": "2023-09-13T15:10:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-13T15:40:00+02:00",
         "calendarId": "break"
     },
@@ -233,6 +269,8 @@
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Foyer",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-13T17:00:00+02:00",
         "calendarId": "inlgposter"
     },
@@ -264,6 +302,8 @@
         "start": "2023-09-13T19:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-13T20:00:00+02:00",
         "calendarId": "social"
     },
@@ -284,6 +324,8 @@
         "start": "2023-09-14T10:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-14T10:30:00+02:00",
         "calendarId": "break"
     },
@@ -326,6 +368,8 @@
         "start": "2023-09-14T13:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-14T14:00:00+02:00",
         "calendarId": "break"
     },
@@ -346,6 +390,8 @@
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Foyer",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-14T15:40:00+02:00",
         "calendarId": "sigdialposter"
     },
@@ -355,6 +401,8 @@
         "start": "2023-09-14T15:40:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-14T16:10:00+02:00",
         "calendarId": "break"
     },
@@ -386,6 +434,8 @@
         "start": "2023-09-14T17:35:00+02:00",
         "room": "Foyer",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-14T18:30:00+02:00",
         "calendarId": "inlgposter"
     },
@@ -395,6 +445,8 @@
         "start": "2023-09-14T19:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-14T22:00:00+02:00",
         "calendarId": "social"
     },
@@ -404,6 +456,8 @@
         "start": "2023-09-15T09:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-15T10:00:00+02:00",
         "calendarId": "sigdialposter"
     },
@@ -424,6 +478,8 @@
         "start": "2023-09-15T11:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-15T11:30:00+02:00",
         "calendarId": "break"
     },
@@ -455,6 +511,8 @@
         "start": "2023-09-15T13:10:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-15T14:10:00+02:00",
         "calendarId": "break"
     },
@@ -486,6 +544,8 @@
         "start": "2023-09-15T15:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-15T15:30:00+02:00",
         "calendarId": "discussion"
     },
@@ -495,6 +555,8 @@
         "start": "2023-09-15T15:00:00+02:00",
         "room": "Foyer",
         "category": "time",
+        "discord": null,
+        "zoom": null,
         "end": "2023-09-15T15:30:00+02:00",
         "calendarId": "break"
     }
