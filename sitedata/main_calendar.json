@@ -131,6 +131,8 @@
         "start": "2023-09-13T09:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146766816962687037",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-13T09:15:00+02:00",
         "calendarId": "business"
     },
@@ -140,6 +142,8 @@
         "start": "2023-09-13T09:15:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146437363778736169",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-13T10:15:00+02:00",
         "calendarId": "keynote"
     },
@@ -158,6 +162,8 @@
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun II",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146792102357913642",
+        "zoom": "zoom2",
         "end": "2023-09-13T12:30:00+02:00",
         "calendarId": "inlgoral"
     },
@@ -167,6 +173,8 @@
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146764525962543115",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-13T12:30:00+02:00",
         "calendarId": "sigdialoral"
     },
@@ -185,6 +193,8 @@
         "start": "2023-09-13T13:30:00+02:00",
         "room": "Sun II",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146792165721243729",
+        "zoom": "zoom2",
         "end": "2023-09-13T15:10:00+02:00",
         "calendarId": "inlgoral"
     },
@@ -212,6 +222,8 @@
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146764763242696774",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-13T17:00:00+02:00",
         "calendarId": "sigdialoral"
     },
@@ -230,6 +242,8 @@
         "start": "2023-09-13T17:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146437622122680340",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-13T18:00:00+02:00",
         "calendarId": "keynote"
     },
@@ -239,6 +253,8 @@
         "start": "2023-09-13T18:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146767095502225499",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-13T18:45:00+02:00",
         "calendarId": "discussion"
     },
@@ -257,6 +273,8 @@
         "start": "2023-09-14T09:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146438238190436402",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-14T10:00:00+02:00",
         "calendarId": "keynote"
     },
@@ -275,6 +293,8 @@
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146764891114438696",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-14T12:10:00+02:00",
         "calendarId": "sigdialoral"
     },
@@ -284,6 +304,8 @@
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun II",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146800395604197387",
+        "zoom": "zoom2",
         "end": "2023-09-14T12:10:00+02:00",
         "calendarId": "inlgoral"
     },
@@ -293,6 +315,8 @@
         "start": "2023-09-14T12:10:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146769461609762847",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-14T13:00:00+02:00",
         "calendarId": "business"
     },
@@ -311,6 +335,8 @@
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Sun II",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146800475061112903",
+        "zoom": "zoom2",
         "end": "2023-09-14T15:40:00+02:00",
         "calendarId": "inlgoral"
     },
@@ -339,6 +365,8 @@
         "room": "Sun I",
         "category": "time",
         "end": "2023-09-14T17:50:00+02:00",
+        "discord": "https://discord.com/channels/1112733937828102206/1146765087852470373",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "calendarId": "sigdialoral"
     },
     {
@@ -348,6 +376,8 @@
         "room": "Sun II",
         "category": "time",
         "end": "2023-09-14T17:35:00+02:00",
+        "discord": "https://discord.com/channels/1112733937828102206/1146800666669490256",
+        "zoom": "zoom2",
         "calendarId": "inlgoral"
     },
     {
@@ -383,6 +413,8 @@
         "start": "2023-09-15T10:00:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146439829605842996",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-15T11:00:00+02:00",
         "calendarId": "keynote"
     },
@@ -401,6 +433,8 @@
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146765264529150012",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-15T13:10:00+02:00",
         "calendarId": "sigdialoral"
     },
@@ -410,6 +444,8 @@
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun II",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146800770625314897",
+        "zoom": "zoom2",
         "end": "2023-09-15T13:10:00+02:00",
         "calendarId": "inlgoral"
     },
@@ -428,6 +464,8 @@
         "start": "2023-09-15T14:10:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146772127501013035",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-15T14:40:00+02:00",
         "calendarId": "business"
     },
@@ -437,6 +475,8 @@
         "start": "2023-09-15T14:40:00+02:00",
         "room": "Sun I",
         "category": "time",
+        "discord": "https://discord.com/channels/1112733937828102206/1146772195918487613",
+        "zoom": "https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09",
         "end": "2023-09-15T15:00:00+02:00",
         "calendarId": "business"
     },

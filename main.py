@@ -156,6 +156,12 @@ def registration():
     data["registration"] = open("sitedata/registration.md").read()
     return render_template("registration.html", **data)
 
+@app.route("/onlinepresence.html")
+def onlinepresence():
+    data = _data()
+    data["onlinepresence"] = open("sitedata/onlinepresence.md").read()
+    return render_template("onlinepresence.html", **data)
+
 
 @app.route("/invoice.html")
 def invoice():

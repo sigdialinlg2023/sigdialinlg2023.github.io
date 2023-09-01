@@ -1,0 +1,30 @@
+rooms2zoom:
+  "Sun I": https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09  
+  "Sun II": zoom2
+  # "MISSING ROOM": zoom3
+session2discord:
+  # TODO add posters
+  sigdialoralsession1: https://discord.com/channels/1112733937828102206/1146764525962543115
+  sigdialoralsession2: https://discord.com/channels/1112733937828102206/1146764763242696774
+  sigdialoralsession3: https://discord.com/channels/1112733937828102206/1146764891114438696
+  sigdialoralsession4: https://discord.com/channels/1112733937828102206/1146765087852470373
+  sigdialoralsession5: https://discord.com/channels/1112733937828102206/1146765264529150012
+  inlgoralsession1: https://discord.com/channels/1112733937828102206/1146792102357913642
+  inlgoralsession2: https://discord.com/channels/1112733937828102206/1146792165721243729
+  inlgoralsession3: https://discord.com/channels/1112733937828102206/1146800395604197387
+  inlgoralsession4: https://discord.com/channels/1112733937828102206/1146800475061112903
+  inlgoralsession5: https://discord.com/channels/1112733937828102206/1146800770625314897
+  inlggenchalpresentation: https://discord.com/channels/1112733937828102206/1146800666669490256
+  keynotesimperl: https://discord.com/channels/1112733937828102206/1146439829605842996
+  keynotedupoux: https://discord.com/channels/1112733937828102206/1146437363778736169
+  keynotelowe: https://discord.com/channels/1112733937828102206/1146437622122680340
+  keynotedieugenio: https://discord.com/channels/1112733937828102206/1146438238190436402
+  panel: https://discord.com/channels/1112733937828102206/1146767095502225499
+  opening: https://discord.com/channels/1112733937828102206/1146766816962687037
+  businessmeeting: https://discord.com/channels/1112733937828102206/1146769461609762847
+  sponsors: https://discord.com/channels/1112733937828102206/1146772127501013035
+  closing: https://discord.com/channels/1112733937828102206/1146772195918487613
+# TODO connect in main
+posters2discords:
+  sigdial29:  https://discord.com/channels/1112733937828102206/1146772195918487613
+    # TODO add the rest

@@ -1,0 +1,66 @@
+{% set active_page = "Venue" %}
+{% extends "base.html" %}
+
+{% block top %}
+<style>
+  .back {
+    background: url("{{config.background_image}}") no-repeat center;
+    background-size: cover;
+  }
+
+  .notice {
+      font-weight: bold;
+      color: red;
+      padding: 1em 0;
+  }
+
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        {{config.tagline|safe}}
+      </h2>
+      <h2 class="p-5">
+        {{config.date|safe}}
+      </h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-sm">
+
+    <h1> Online Tools for in Person and Virtual Conference</h1>
+
+    {% if private %}
+
+    <h2>Join Discord using the invite link <a href="https://discord.gg/zxquHwKy5">https://discord.gg/zxquHwKy5</a>!</h2>
+
+    <h2>Zoom</h2>
+      There are three Zoom links used during the time of the conference. Each links corresponds to a room at the Venue in Prague.
+      </br>
+      {% for room2zoom in session.rooms2zoom %}
+      <a href="{{ room2zoom.zoom }}">Zoom link for room <i>{{ room2zoom.room }}</i></a></br>.
+      {% endfor %}
+
+    {% else %}
+    <div class="notice">Please login to display crucial information!</div>
+    <div>
+    Login is needed to display invite link to Discord, Zoom sessions links or to download conference papers as pdfs.
+    </div>
+    {% endif %}
+
+    {{ onlinepresence | markdown }}
+
+  </div>
+</div>
+</div>
+{% endblock %}

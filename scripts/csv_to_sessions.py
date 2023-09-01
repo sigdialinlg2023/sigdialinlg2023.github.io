@@ -6,12 +6,18 @@ import datetime
 import pytz
 import re
 import json
+import yaml
 
 
-def process_file(in_file, cal_file):
+def process_file(in_file, cal_file, sessions_links_file):
+
+
+    sessions_links = yaml.load(open(sessions_links_file).read(), Loader=yaml.SafeLoader)
+    session2discord = sessions_links["session2discord"]
 
     sessions = {}
     counters = {}
+    uniq_locations = set()
 
     with open(in_file, "r", encoding="UTF-8") as fh:
         tz = pytz.timezone("Europe/Prague")
@@ -36,6 +42,7 @@ def process_file(in_file, cal_file):
                 dt = tz.localize(dt.combine(current_date, dt.time()))
                 dts.add(dt.isoformat())
                 for sess, loc in zip(row[1:], locations):
+                    uniq_locations.add(loc)
                     if not sess:
                         continue
                     sess = re.sub(r"(long paper )?talks", "Oral Session", sess, flags=re.I)
@@ -79,9 +86,23 @@ def process_file(in_file, cal_file):
                 pass
 
     sessions = sorted(sessions.values(), key=lambda s: s["start"])
+    sessions_uids = [s["UID"] for s in sessions]
+    assert len(set(sessions_uids)) == len(sessions_uids), f"{sessions_uids=} ARE NOT UNIQUE!"
+    discord_sessions = sorted(session2discord.keys())
+    assert all(s in sessions_uids for s in discord_sessions), f"{sessions_uids=} vs {discord_sessions=}"
+    room2zoom = sessions_links["rooms2zoom"]
+    rooms_for_zoom = sorted(room2zoom.keys())
+    assert all(r in uniq_locations for r in rooms_for_zoom), f"{rooms_for_zoom=} vs {uniq_locations=}"
+
+
     dts = sorted(list(dts))
 
     for session in sessions:
+        discord_url = session2discord.get(session["UID"])
+        if discord_url is not None:
+            session["discord"] = discord_url
+            session["zoom"] = room2zoom.get(session["room"])
+
         if "end" not in session:
             session["end"] = dts[dts.index(session["start"]) + 1]
         category = session["UID"]
@@ -111,6 +132,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--in-file", required=True, type=str, help="Input CSV")
     ap.add_argument("-c", "--cal-file", required=True, type=str, help="Output calendar JSON")
+    ap.add_argument("-s", "--sessions_links_file", default="./sitedata/sessions_links.yml", help="File for managing links to Discord and Zoom links for each sessions")
 
     args = ap.parse_args()
-    process_file(args.in_file, args.cal_file)
+    process_file(args.in_file, args.cal_file, args.sessions_links_file)
