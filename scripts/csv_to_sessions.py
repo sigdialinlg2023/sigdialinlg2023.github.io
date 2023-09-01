@@ -102,6 +102,10 @@ def process_file(in_file, cal_file, sessions_links_file):
         if discord_url is not None:
             session["discord"] = discord_url
             session["zoom"] = room2zoom.get(session["room"])
+        else:
+            session["discord"] = None
+            session["zoom"] = None
+
 
         if "end" not in session:
             session["end"] = dts[dts.index(session["start"]) + 1]
