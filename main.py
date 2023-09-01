@@ -340,6 +340,16 @@ def poster(poster):
     uid = poster
     v = by_uid["papers"][uid]
     data = _data()
+    # sessions = [session for session in d["sessions"] for d in by_date.values()]
+
+
+    sessions = dict([(session['UID'], session) for d in by_date.values() for session in d["sessions"].values()])
+    v["sessions"] = []
+    paper_sessions = v["session"].split("|")
+    for paper_session in paper_sessions:
+        new_session = sessions[paper_session] 
+        assert all([p in new_session for p in ["room", "zoom", "discord", "start", "end", "title"]])
+        v["sessions"].append(new_session)
     data["paper"] = v
     return render_template("poster.html", **data)
 

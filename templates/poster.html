@@ -39,23 +39,21 @@
                 {% endfor %}
             </h3>
             <div class="text-center p-3">
-                <!-- {{paper.session}} - {{paper.time}}<br /> -->
                 {% if paper.paper != blank %}
-                <a class="card-link" target="_blank" href="{{paper.paper}}">
-                    Paper
-                </a>
+                <a class="card-link" target="_blank" href="{{paper.paper}}"> Paper </a>
                 {% endif %}
-                {% if paper.zoom != blank %}
-                <a href="{{paper.zoom}}" target="_blank" class="card-link">
-                    Zoom
-                </a>
-                {% endif %}
-                {% if paper.discord != blank %}
-                <a href="{{paper.discord}}" target="_blank" class="card-link">
-                    Discord
-                </a>
-                {% endif %}
-                <br />
+
+                In Sessions:
+                {% for session in paper.sessions %}
+                <!-- {{session}} - {{paper.time}}<br /> -->
+                <p>
+                    {{session.title}}: ({{session.start_time.strftime("%H:%M CEST")}}, {{session.room}}
+                    {% if session.zoom != blank %}, <a href="{{session.zoom}}" target="_blank" class="card-link">Watch on Zoom</a> {% endif %}
+                    {% if paper.discord != blank %}, <a href="{{paper.discord}}" target="_blank" class="card-link">Chat on Discord </a> {% endif %}
+                    )
+                </p>
+                {% endfor %}
+
                 {% if paper.slides != blank %}
                 <a href="{{paper.slides}}" target="_blank" class="card-link">
                     Slides
