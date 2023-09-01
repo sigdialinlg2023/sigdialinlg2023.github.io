@@ -97,11 +97,20 @@ body {
 }
 
 body .nav-pills .nav-link.active {
-  background-color: #bed972;
+  /* background-color: #bed972; */
+  background-color: #dae0e5;
 }
 
 .container {
   margin-top: 10px;
+}
+
+#conference-toggle {
+  margin-bottom: 10px;
+  /* centering */
+  /* display: block; */
+  /* align-items: center; */
+
 }
 
 .card {
