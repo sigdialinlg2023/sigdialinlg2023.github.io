@@ -9,13 +9,13 @@
         "calendarId": "dstc"
     },
     {
-        "UID": "csoa",
-        "title": "CSOA",
+        "UID": "cs4oa",
+        "title": "CS4OA",
         "start": "2023-09-11T09:00:00+02:00",
         "room": "Neptune (60)",
         "category": "time",
         "end": "2023-09-11T16:40:00+02:00",
-        "calendarId": "csoa"
+        "calendarId": "cs4oa"
     },
     {
         "UID": "practicald2t",

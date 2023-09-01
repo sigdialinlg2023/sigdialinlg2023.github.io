@@ -1,0 +1,83 @@
+workshops:
+  "11 & 12 September":
+    - session: 'yrrsds1|yrrsds2'
+      UID: YRRSDS
+      abbrev: YRRSDS
+      title: The 19th Young Researchers' Roundtable on Spoken Dialogue Systems  
+      url: https://sites.google.com/view/yrrsds2023
+      organizers: ['Vojtěch Hudeček', 'Patrícia Schmidtová', 'Tanvi Dinkar', 'Weronika Sieińska', 'Javier Chiyah-García']
+      contact: hudecek@ufal.mff.cuni.cz
+      schedule_url: https://sites.google.com/view/yrrsds2023/program
+      abstract: "YRRSDS 2023 is an open forum for spoken dialog researchers to discuss their work and research interests. This is the 19th edition of the annual roundtable that provides a networking platform for young researchers in the field. It serves as a playground for stimulating new ideas, sharing tools, and discussing current issues in the Spoken Dialog Systems research."
+
+  "11 September": 
+    - session: cs4oa
+      UID: CS4OA
+      abbrev: CS4OA
+      title: The 1st Workshop on Counter Speech for Online Abuse
+      url: https://sites.google.com/view/cs4oa/
+      organizers: ['Gavin Abercombie', 'Yi-Ling Chnug', 'Helena Bonaldi', 'Marco Guerini']
+      contact: G.Abercrombie@hw.ac.uk
+      schedule_url: https://sites.google.com/view/cs4oa/schedule
+      abstract: "A workshop for creating, investigating and improving tools for producing and evaluating counter speech."
+
+
+    - session: dstc11
+      UID: DSTC11
+      abbrev: DSTC11
+      title: The 11th Dialog System Technology Challenge
+      url: https://dstc11.dstc.community/
+      organizers: ['Michel Galley', 'Yun-Nung (Vivian) Chen', 'Raghav Gupta', 'Zhang Chen', 'Paul Crook', 'Seungwhan (Shane) Moon', 'Chulaka Gunasekara', 'Satwik Kottur', 'Sarik Ghazarian', 'Behnam Hedayatnia']
+      contact: mgalley@microsoft.com
+      schedule_url: https://dstc11.dstc.community/workshop/workshop-program
+      abstract: "In this eleventh challenge, the call for task proposals has resulted into the following 5 different tracks split across two sessions: (1) Ambiguous Candidate Identification and Coreference Resolution for Immersive Multimodal Conversations, (2) Intent Induction from Conversations for Task-Oriented Dialogue, (3) Speech-Aware Dialog Systems Technology Challenge, (4) Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems and (5) Task-oriented Conversational Modeling with Subjective Knowledge."
+
+    - session: practicald2t
+      UID: PracticalD2T
+      abbrev: PracticalD2T
+      title: 1st Workshop on Practical LLM-assisted Data-to-Text Generation
+      organizers: ['Zdeněk Kasner', 'Ondřej Plátek', 'Ondřej Dušek', 'Dimitra Gkatzia', 'Simon Mille']
+      contact: kasner@ufal.mff.cuni.cz
+      url: http://practicald2t.github.io/
+      schedule_url: https://practicald2t.github.io/#schedule
+      abstract: "Playing with large language models can be fun. But what if you really need them? Bring your own laptop, programming skills, and open mind. In a team of 3-5 people, you will have 6 hours to build a system for data-to-text generation."
+
+  "12 September": 
+
+    - session: tamingllm
+      UID: TamingLLM
+      abbrev: TamingLLM
+      title: "Taming Large Language Models: Controllability in the era of Interactive Assistants"
+      organizers: ['Robert Xiangru Tang', 'Devamanyu Hazarika', 'Di Jin', 'CHao-Wei Huang', 'Sherry Tongshuang Wu']
+      contact: xiangru.tang@yale.edu
+      url: https://ctrlnlg.github.io/
+      schedule_url: https://ctrlnlg.github.io/#schedule
+      abstract: "The goal of our workshop is to provide a common ground for experts working on different models and tasks related to controllable text generation. The interplay between research on controlled-generation and instruction-based learning paradigms sits at the heart of our discussions. Here, they can share task-agnostic solutions, engage in evaluations, and discuss task-specific challenges. By encouraging communication, collaboration, and research amongst attendees, the workshop intends to foster insightful debates about the recent progress of the NLG community."
+
+    - session: mmnlg
+      UID: MMNLG
+      abbrev: MMNLG
+      title: Workshop on Multimodal, Multilingual Natural Language Generation and Multilingual WebNLG Challenge
+      organizers: ['Albert Gatt', 'Anya Belz', 'Claudia Borg', 'Liam Cripwell', 'Aykut Erdem', 'Erkut Erdem', 'Claire Gardent', 'John Judge', 'William Soto-Martinez']
+      contact: a.gatt@uu.nl
+      url: https://synalp.gitlabpages.inria.fr/mmnlg2023/
+      schedule_url: https://synalp.gitlabpages.inria.fr/mmnlg2023/schedule/
+      abstract: "This event aims to bring together researchers working on text generation from multimodal input data. The workshop also emphasises multilinguality as an ongoing, open challenge for text generation methods, especially for languages which are relatively under-resourced."
+
+    - session: icard
+      UID: ICARD
+      abbrev: ICARD
+      title: Connecting multiple disciplines to AI techniques in interaction-centric autism research and diagnosis
+      organizers: ['Tahyia Chowdhury', 'Malihe Alikhani', 'Julia Parish-Morris', "Emily Prud'hommeaux", 'Veronica Romero'] 
+      contact: tchowdhu@colby.edu
+      url: https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home
+      schedule_url: https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home
+      abstract: "In this workshop, we invite researchers and practitioners both in academia and industry with backgrounds across different disciplines including psychology, artificial intelligence, natural language processing, and autism research for a discussion on how to connect these disciplines to different AI techniques for autism research and diagnosis focused on interaction."
+
+    - sessions: null
+      UID: DivergentSDSData
+      title: Designing divergent agent tasks for SDS data collection
+      organizers: ['Paola Peña', 'Philip R. Doyle', 'Yunhan Wu', 'Oliver Lemon', 'Benjamin R. Cowan']
+      contact: paola.pena@ucdconnect.ie
+      url: https://icsresearch.ucd.ie/sigDial23/web/index.html
+      abstract: "**THIS WORKSHOP WAS CANCELLED.**"
