@@ -12,6 +12,12 @@
     font-family: "Lato", sans-serif;
     font-weight: 900;
   }
+
+  .notice {
+      font-weight: bold;
+      color: red;
+      padding: 1em 0;
+  }
 </style>
 
 <div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
@@ -31,7 +37,12 @@
 {% block content %}
 <div class="row">
   <div class="col-sm">
+    <div class="public-content">
+        <div class="notice">Please <a href="onlinepresence.html">log in</a> to access presenter information.</div>        
+    </div>
+    <div class="gated-content">
     {{ presenters | markdown }}
+    </div>
   </div>
 </div>
 </div>
