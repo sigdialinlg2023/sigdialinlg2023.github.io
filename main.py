@@ -153,6 +153,9 @@ def registration():
 def onlinepresence():
     data = _data()
     data["onlinepresence"] = open("sitedata/onlinepresence.md").read()
+
+    # TODO load dynamically
+    # data["rooms2zoom"] = yaml.load(open("sitedata/sessions_links.yml").read(), Loader=yaml.SafeLoader)["rooms2zoom"]
     return render_template("onlinepresence.html", **data)
 
 

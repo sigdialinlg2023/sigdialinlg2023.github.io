@@ -1,4 +1,5 @@
 rooms2zoom:
+  # TODO sync manually in sitedata/onlinepresence.html
   "Sun I": https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09  
   "Sun II": zoom2
   # "MISSING ROOM": zoom3

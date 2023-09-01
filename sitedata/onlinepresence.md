@@ -1,11 +1,12 @@
-<!--The title and Zoom links and Discord invite link are displayed using code in templates/onlinepresence.html-->
+
+
 
 ## Registering and Logging in This Website
 Use the `Log In` button visible from any page at [https://sigdialinlg2023.github.io/](https://sigdialinlg2023.github.io/).
 
 Sign up using **the e-mail you used for registering for the conference on Eventbrite**!
 
-## Join Discord! 
+## Navigate Discord
 
 - Follow announcements in the [INTRO/general](https://discord.com/channels/1112733937828102206/1112733937828102209) channel.
 - [Meet other fellow researchers and introduce yourself.](https://discord.com/channels/1112733937828102206/1146806529492787220)
