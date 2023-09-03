@@ -336,6 +336,11 @@ def format_workshop(v):
 # ITEM PAGES
 
 
+@app.route("/poster_<poster>.html")
+def poster(poster):
+    return paper(poster)
+
+
 @app.route("/paper_<paper>.html")
 def paper(paper):
     uid = paper
