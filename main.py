@@ -67,7 +67,7 @@ def main(site_data_path):
         by_uid[typ] = {}
         if typ == "speakers":
             vals = site_data["speakers"]["speakers"]
-        elif typ in ["workshops"]: #, "tutorials", "panels", "hackathons"]:
+        elif typ in ["workshops"]:  # , "tutorials", "panels", "hackathons"]:
             vals = [w for wgroup in site_data["workshops"]["workshops"].values() for w in wgroup]
         elif typ == "papers":
             vals = [format_paper(x) for x in site_data["papers"]]
@@ -148,6 +148,7 @@ def registration():
     data = _data()
     data["registration"] = open("sitedata/registration.md").read()
     return render_template("registration.html", **data)
+
 
 @app.route("/onlinepresence.html")
 def onlinepresence():
@@ -242,10 +243,10 @@ def schedule():
 @app.route("/workshops.html")
 def workshops():
     data = _data()
-    #data["workshops"] = open("sitedata/workshops.md").read()
-    #return render_template("workshops_preliminary.html", **data)
+    # data["workshops"] = open("sitedata/workshops.md").read()
+    # return render_template("workshops_preliminary.html", **data)
     data["wgroups"] = [
-        {'grouptitle': grouptitle, 'workshops': [format_workshop(w) for w in workshops]}
+        {"grouptitle": grouptitle, "workshops": [format_workshop(w) for w in workshops]}
         for grouptitle, workshops in site_data["workshops"]["workshops"].items()
     ]
     return render_template("workshops.html", **data)
@@ -254,9 +255,10 @@ def workshops():
 @app.template_filter()
 def email_link(text):
     "Basic anti-spam protection for emails by turning them into HTML entities (same as Flask's markdown)."
-    text = ''.join(['&#' + str(ord(c)) + ';' for c in text])
-    mailto = ''.join(['&#' + str(ord(c)) + ';' for c in 'mailto:'])
+    text = "".join(["&#" + str(ord(c)) + ";" for c in text])
+    mailto = "".join(["&#" + str(ord(c)) + ";" for c in "mailto:"])
     return Markup(f'<a href="{mailto}{text}">{text}</a>')
+
 
 #
 # @app.route("/tutorials.html")
@@ -326,8 +328,8 @@ def format_paper(v):
 
 
 def format_workshop(v):
-    #dt = datetime.fromisoformat(v["start"])
-    #v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
+    # dt = datetime.fromisoformat(v["start"])
+    # v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
     return v
 
 
@@ -336,22 +338,28 @@ def format_workshop(v):
 
 @app.route("/poster_<poster>.html")
 def poster(poster):
-    uid = poster
+    return paper(poster)
+
+
+@app.route("/paper_<paper>.html")
+def paper(paper):
+    uid = paper
     v = by_uid["papers"][uid]
     data = _data()
     # sessions = [session for session in d["sessions"] for d in by_date.values()]
 
-
-    sessions = dict([(session['UID'], (session, day_name)) for day_name, d in by_date.items() for session in d["sessions"].values()])
+    sessions = dict(
+        [(session["UID"], (session, day_name)) for day_name, d in by_date.items() for session in d["sessions"].values()]
+    )
     v["sessions"] = []
     paper_sessions = v["session"].split("|")
     for paper_session in paper_sessions:
-        new_session, day_name = sessions[paper_session] 
+        new_session, day_name = sessions[paper_session]
         new_session["day"] = day_name
         assert all([p in new_session for p in ["room", "zoom", "discord", "start", "end", "title"]])
         v["sessions"].append(new_session)
     data["paper"] = v
-    return render_template("poster.html", **data)
+    return render_template("paper.html", **data)
 
 
 # FRONT END SERVING
@@ -384,7 +392,7 @@ def serve(path):
 @freezer.register_generator
 def generator():
     for paper in site_data["papers"]:
-        yield "poster", {"poster": str(paper["UID"])}
+        yield "paper", {"paper": str(paper["UID"])}
 
     for key in site_data:
         yield "serve", {"path": key}

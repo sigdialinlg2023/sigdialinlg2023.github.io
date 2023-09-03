@@ -15,7 +15,7 @@
 
 ### Zoom
 
-The follewing Zoom links will be used during the conference. Each link corresponds to a room at the venue in Prague.
+The following Zoom links will be used during the conference. Each link corresponds to a room at the venue in Prague.
 <!-- See sitedata/sessions_links.yml -->
 
 - [Zoom link will be used for main conference events in the _Sun I_ room](https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09).

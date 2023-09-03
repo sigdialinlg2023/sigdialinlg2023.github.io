@@ -58,7 +58,7 @@ sessiongroup
             {% if paper.authors != blank %}
             <!-- a paper -->
             <li>
-              <a href="poster_{{paper.UID}}.html" class="gated-content">
+              <a href="paper_{{paper.UID}}.html" class="gated-content">
                 {{paper.short_time}} {{paper.title}}
               </a>
               <span class="public-content">
@@ -70,7 +70,8 @@ sessiongroup
             {% if paper.organizers != blank %}
             <!-- a workshop -->
             <li><a href="{{paper.url}}">{{paper.title}}</a><br /><i>Organizers: {{ paper.organizers | join(", ") }}</i>
-                <br />{{paper.abstract}}<br /><a href="{{paper.schedule_url}}">🔗 Workshop schedule</a></li>
+              <br />{{paper.abstract}}<br /><a href="{{paper.schedule_url}}">🔗 Workshop schedule</a>
+            </li>
             {% endif %}
             {% endif %}
             {% endfor %}
@@ -202,7 +203,7 @@ sessiongroup
       <div class="pp-card-header" class="text-muted">
         <center>
           <h5>
-            <a href="poster_{{paper.UID}}.html">{{paper.title}}</a>
+            <a href="paper_{{paper.UID}}.html">{{paper.title}}</a>
           </h5>
           {% if paper.summary_video %}
           {% if private %}
@@ -299,7 +300,7 @@ sessiongroup
         <div class="col-md-4 col-xs-6 fluid">
           <div class="pp-card">
             <div class="pp-card-header">
-              <a href="poster_{{openreview.UID}}.html" class="text-muted">
+              <a href="paper_{{openreview.UID}}.html" class="text-muted">
                 <h5 class="card-title" align="center">
                   {{openreview.title}}
                 </h5>

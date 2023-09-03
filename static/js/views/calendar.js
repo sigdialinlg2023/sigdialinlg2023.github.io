@@ -5,12 +5,16 @@ async function make_cal(handleResize = true) {
 
   const setupTZSelector = () => {
     const tzOptons = d3.select("#tzOptions");
+
     tzOptons
       .selectAll("option")
       .data(tzNames)
       .join("option")
       .attr("data-tokens", (d) => d.split("/").join(" "))
       .text((d) => d);
+
+    $("#tzOptions").selectpicker('refresh');
+
     $(".selectpicker")
       .selectpicker("val", current_tz)
       .on("changed.bs.select", function (
@@ -22,6 +26,7 @@ async function make_cal(handleResize = true) {
         new_tz = tzNames[clickedIndex];
         window.open(`${window.location.pathname}?tz=${new_tz}`, "_self");
       });
+
   };
   setupTZSelector();
 

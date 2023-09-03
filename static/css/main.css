@@ -344,3 +344,7 @@ body .carousel-control-prev {
 /*    -webkit-text-fill-color: #bed972;*/
 /*  }*/
 /*}*/
+
+.discord-link {
+  margin-left: 0px !important;
+}
