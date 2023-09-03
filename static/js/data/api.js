@@ -22,6 +22,10 @@ class API {
     return API.paperCache;
   }
 
+  static getSessionLinks() {
+    return $.get("serve_sessions_links.json");
+  }
+
   static getPapersAndProjection() {
     return Promise.all([
       API.getPapers(),
