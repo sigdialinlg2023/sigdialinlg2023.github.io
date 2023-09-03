@@ -48,8 +48,10 @@
                 <!-- {{session}} - {{paper.time}}<br /> -->
                 <p>
                     {{session.title}}: ({{session.day}}, {{session.start_time.strftime("%H:%M CEST")}}, {{session.room}}
-                    {% if session.zoom is not none %}, <a href="{{session.zoom}}" target="_blank" class="card-link">Watch on Zoom</a> {% endif %}
-                    {% if session.discord is not none %}, <a href="{{session.discord}}" target="_blank" class="card-link">Chat on Discord </a> {% endif %}
+                    {% if session.zoom is not none %}, <a href="{{session.zoom}}" target="_blank"
+                        class="card-link">Watch on Zoom</a> {% endif %}
+                    {% if session.discord is not none %}, <a href="{{session.discord}}" target="_blank"
+                        class="card-link">Chat on Discord </a> {% endif %}
                     )
                 </p>
                 {% endfor %}
