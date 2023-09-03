@@ -22,7 +22,7 @@ data = []
 # Find all tables in the HTML
 tables = soup.find_all("table")
 
-tsv_headers = f"paper_id\tpaper_title\tauthors\tsession\torder"
+tsv_headers = f"paper_id\tpaper_title\tauthors\tsession\torder\tnote"
 data.append(tsv_headers)
 
 # Iterate through each table
@@ -44,6 +44,13 @@ for table in tables:
             paper_title = cells[1].text.strip()
             authors = cells[2].text.strip()
 
+            if "(REMOTE)" in paper_title:
+                note = "REMOTE"
+            elif "(VIRTUAL)" in paper_title:
+                note = "VIRTUAL"
+            else:
+                note = ""
+
             # find if the paper has some notes such as "(VIRTUAL)" or "(DEMO)" in the title and if so, remove it
             paper_title = re.sub(r"\s+\(\w+\)$", "", paper_title, flags=re.IGNORECASE)
 
@@ -51,10 +58,10 @@ for table in tables:
             paper_id = paper_id.strip()[:3]
 
             # Extract the session information from the previous <p> tag
-            session_info = row.find_previous("p", class_="c21").text.strip()
+            session_info = row.find_previous("p", class_="c0 c17").text.strip()
 
             # Combine the extracted information into a single string
-            tsv_line = f"{paper_id}\t{paper_title}\t{authors}\t{session_info}\t{paper_order}"
+            tsv_line = f"{paper_id}\t{paper_title}\t{authors}\t{session_info}\t{paper_order}\t{note}"
 
             # Append the line to the data list
             data.append(tsv_line)

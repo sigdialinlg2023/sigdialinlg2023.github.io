@@ -8,15 +8,15 @@ import pandas as pd
 import re
 import sys
 
+conference = sys.argv[1]
 # Path to the exported TSV file
-exported_tsv_file = sys.argv[1]
+exported_tsv_file = f"scripts/{conference}_sessions_exported.tsv"
 
 # Read the TSV file into a DataFrame
 df_tsv = pd.read_csv(
     exported_tsv_file,
     sep="\t",
     header=0,
-    # names=["id", "title", "authors", "session", "order"],
 )
 
 # Read the CSV file into a DataFrame
@@ -50,31 +50,32 @@ def get_session_uid(full_session_name):
     return ""
 
 
-df_csv["order"] = 0
+if __name__ == "__main__":
+    # iterate through each paper for the conference `conference`
+    for i, row in df_csv.iterrows():
+        if row["conference"] != conference:
+            continue
 
-# iterate through each row in the CSV DataFrame
-for i, row in df_csv.iterrows():
-    title = row["title"]
-    matching_rows = find_matching_rows(title)
-    session = ""
+        title = row["title"]
+        paper_id = row["original_id"]
 
-    if not matching_rows.empty:
-        shortcodes = []
-        for _, matching_row in matching_rows.iterrows():
+        if conference == "sigdial":
+            matching_paper = find_matching_rows(title).iloc[0]
+        elif conference == "inlg":
+            matching_paper = df_tsv[df_tsv["paper_id"] == paper_id].iloc[0]
 
-            if not "session_uid" in matching_row:
-                full_session_name = matching_row["session"]
-                session_shortcode = get_session_uid(full_session_name)
-            else:
-                session_shortcode = matching_row["session_uid"]
-            if session_shortcode:
-                shortcodes.append(session_shortcode)
+        session = ""
 
-        df_csv.at[i, "session"] = "|".join(shortcodes)
-        df_csv.at[i, "order"] = "|".join([str(x) for x in matching_rows["order"]])
+        if not "session_uid" in matching_paper:
+            # sigdial
+            full_session_name = matching_paper["session"]
+            session_shortcode = get_session_uid(full_session_name)
+        else:
+            # inlg
+            session_shortcode = matching_paper["session_uid"]
 
-# # Apply the function to update the 'session' column in the CSV DataFrame
-# df_csv["session"] = df_csv["title"].apply(map_session_name)
+        df_csv.at[i, "session"] = session_shortcode
+        df_csv.at[i, "order"] = matching_paper["order"]
 
 
 # Save the updated DataFrame to a new CSV file
