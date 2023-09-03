@@ -19,6 +19,7 @@ function sessIDtoLink(match, sessionLinks){
   return match; // do nothing if not found
 }
 
+
 async function updateLinks(){
 
   // Get all hyperlinks on the page
@@ -28,14 +29,18 @@ async function updateLinks(){
 
   // Loop through each link
   links.forEach(link => {
-    // Replace in the URL
-    link.href = link.href.replace(searchRegex, match => {
-      return sessIDtoLink(match, sessionLinks);
-    });
-
+    // Replace in the URL -- don't touch other links (will mess with calendar tabs etc.)
+    if (link.href.match(searchRegex)) {
+        link.href = link.href.replace(searchRegex, match => {
+          return sessIDtoLink(match, sessionLinks);
+        });
+    };
     // Replace in the link text
-    link.textContent = link.textContent.replace(searchRegex, match => {
-      return sessIDtoLink(match, sessionLinks);
-    });
+    if (link.textContent.match(searchRegex)) {
+        link.textContent = link.textContent.replace(searchRegex, match => {
+          return sessIDtoLink(match, sessionLinks);
+        });
+    };
   });
 }
+
