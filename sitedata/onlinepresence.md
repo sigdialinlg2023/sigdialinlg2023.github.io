@@ -5,8 +5,8 @@
 **Use the invite link [https://discord.gg/zxquHwKy5](https://discord.gg/zxquHwKy5) to join the conference Discord.**
 
 - Follow announcements in the [INTRO/general](https://discord.com/channels/1112733937828102206/1112733937828102209) channel.
-- [Meet other fellow researchers and introduce yourself.](https://discord.com/channels/1112733937828102206/1146806529492787220)
-- [Get help!](https://discord.com/channels/1112733937828102206/1146404262994260018l)
+- Meet other fellow researchers and introduce yourself in the [INTRO/random-social](https://discord.com/channels/1112733937828102206/1146806529492787220)
+- Ask in the [INTRO/help-me](https://discord.com/channels/1112733937828102206/1146404262994260018l) channel.
 - Visit the dedicated workshops, keynotes, or oral sessions channels and start chatting with your fellow researchers.
 * **Use Discord instead of the built-in Zoom chat to ask & comment during the oral sessions.** The Zoom chat will not be monitored.
 - **If you are presenting a paper, please introduce yourself** in the channel dedicated to the sessions containing your presentation, so others can easily contact you.
@@ -36,7 +36,7 @@ When you are logged in, you can always find the right Zoom link in the conferenc
 ### Important Website Features 
 
 - See the detailed schedule in the [calendar](/calendar.html) under the `Program / Schedule` menu.
-- See the list of [all presented papers](/papers.html) 
+- See the list of [all presented papers](/papers.html) under the `Program / Papers` menu. 
 - Access camera-ready PDFs of the [papers](/papers.html), as well as corresponding Zoom & Discord links at each paper's detail page (login required). 
 - Links to [workshops](/workshops.html) are under the `Program / Workshops` menu as well as in the schedule.
 
