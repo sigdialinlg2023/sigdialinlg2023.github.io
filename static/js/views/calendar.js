@@ -100,7 +100,7 @@ async function make_cal(handleResize = true) {
       time(schedule) {
         return `<strong>${moment(schedule.start.getTime())
           .tz(timezoneName)
-          .format("hh:mm")}</strong> ${schedule.title}`;
+          .format("HH:mm")}</strong> ${schedule.title}`;
       },
       milestone(schedule) {
         return `<span class="calendar-font-icon ic-milestone-b"></span> <span style="background-color: ${schedule.bgColor}"> M: ${schedule.title}</span>`;
