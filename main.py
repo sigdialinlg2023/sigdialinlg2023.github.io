@@ -57,6 +57,7 @@ def main(site_data_path):
         p["contents"] = []
         p["name"] = p["title"]
         p["start_time"] = dt
+        p["end_time"] = datetime.fromisoformat(p["end"])
         # links the calendar box to the session info
         p["location"] = f"#{p['UID']}"
         by_date[dt.strftime("%A")]["sessions"][p["UID"]] = p

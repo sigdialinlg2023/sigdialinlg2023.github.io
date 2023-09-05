@@ -24,7 +24,7 @@ sessiongroup
         <a href="{{session.url}}#{{session.UID}}" id="{{session.UID}}">{{session.name}}</a>
         {# {% if private %} #}
         {# {% endif %} #}
-        ({{session.start_time.strftime("%H:%M CEST")}}, {{session.room}}
+        ({{session.start_time.strftime("%H:%M")}}-{{session.end_time.strftime("%H:%M CEST")}}, {{session.room}}
         <span class="gated-content">
           {% if session.zoom != None %}, <a href="{{session.zoom}}">Watch on Zoom </a> {% endif %}
           {% if session.discord != None %}, <a href="{{session.discord}}">Chat on Discord</a> {% endif %}
