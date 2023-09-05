@@ -4,6 +4,8 @@
 Parses the following document https://docs.google.com/document/d/1a2PrGH_PE8idJpMsZhO8qnYJXy8vxgavW4t7BvaZ3OM/edit exported as html and creates a TSV file with papers, authors, and sessions.
 
 The TSV can be further mapped to papers.csv using `annotate_papers_with_sessions.py`
+
+TODO the class of the paragraph has to be setup manually from the HTML everytime the documet is redownloaded
 """
 
 from bs4 import BeautifulSoup
@@ -58,7 +60,8 @@ for table in tables:
             paper_id = paper_id.strip()[:3]
 
             # Extract the session information from the previous <p> tag
-            session_info = row.find_previous("p", class_="c0 c17").text.strip()
+            # TODO the class of the paragraph has to be setup manually from the HTML everytime the documet is redownloaded
+            session_info = row.find_previous("p", class_="c3 c12").text.strip()
 
             # Combine the extracted information into a single string
             tsv_line = f"{paper_id}\t{paper_title}\t{authors}\t{session_info}\t{paper_order}\t{note}"

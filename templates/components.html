@@ -59,10 +59,10 @@ sessiongroup
             <!-- a paper -->
             <li>
               <a href="paper_{{paper.UID}}.html" class="gated-content">
-                {{paper.short_time}} {{paper.title}}
+                {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
               </a>
               <span class="public-content">
-                {{paper.short_time}} {{paper.title}}
+                {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %}[{{paper.notes}}] {% endif %}
               </span>
               <br /><i>{{ paper.authors | join(", ") }}</i>
             </li>

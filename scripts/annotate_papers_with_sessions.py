@@ -51,6 +51,10 @@ def get_session_uid(full_session_name):
 
 
 if __name__ == "__main__":
+    # if df_csv does not contain the column "notes", add it
+    if not "notes" in df_csv:
+        df_csv["notes"] = ""
+
     # iterate through each paper for the conference `conference`
     for i, row in df_csv.iterrows():
         if row["conference"] != conference:
@@ -76,6 +80,7 @@ if __name__ == "__main__":
 
         df_csv.at[i, "session"] = session_shortcode
         df_csv.at[i, "order"] = matching_paper["order"]
+        df_csv.at[i, "notes"] = matching_paper["note"] if "note" in matching_paper else ""
 
 
 # Save the updated DataFrame to a new CSV file
