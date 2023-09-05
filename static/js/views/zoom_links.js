@@ -24,7 +24,7 @@ async function updateLinks(){
 
   // Get all hyperlinks on the page
   const links = document.querySelectorAll('a');
-  const searchRegex = /###[a-zA-Z0-9% ]+###/g;
+  const searchRegex = /###[a-zA-Z0-9% -]+###/g;
   const sessionLinks = await API.getSessionLinks();
 
   // Loop through each link
