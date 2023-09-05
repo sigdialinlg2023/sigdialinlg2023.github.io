@@ -1,0 +1,15 @@
+paper id	paper name	authors	session_uid	order
+130	A Report on FCG GenChal 2022: Shared Task on Feedback Comment Generation for Language Learners	Ryo Nagata, Masato Hagiwara, Kazuaki Hanawa and Masato Mita	inlggenchalpresentation
+136	AIWolfDial 2023: Summary of Natural Language Division of 5th International AIWolf Contest	Yoshinobu Kano, Neo Watanabe, Kaito Kagaminuma, Claus Aranha, Jaewon Lee, Benedek Hauer, Hisaichi Shibata, Soichiro Miki, Yuta Nakamura and Takuya Okubo	inlggenchalpresentation
+142	Overview of the Second Shared Task on Automatic Minuting (AutoMin) at INLG 2023	Tirthankar Ghosal, Ondřej Bojar, Marie Hledíková, Tom Kocmi and Anna Nedoluzhko	inlggenchalpresentation
+116	LOWRECORP: the Low-Resource NLG Corpus Building Challenge	Khyathi Raghavi Chandu, David M. Howcroft, Dimitra Gkatzia, Yi-ling Chung, Yufang Hou, Chris Chinenye Emezue, Pawan Rajpoot and Tosin Adewumi	inlggenchalpresentation
+117	Long Story Generation Challenge	Nikolay Mikhaylovskiy	inlggenchalpresentation
+119	Visually Grounded Story Generation Challenge	Xudong Hong, Khushboo Mehra, Asad Sayeed and Vera Demberg	inlggenchalpresentation
+120	The VDG Challenge: Response Generation and Evaluation in Collaborative Visual Dialogue	Nikolai Ilinykh and Simon Dobnik	inlggenchalpresentation
+132	Retrieval, Masking, and Generation: Feedback Comment Generation using Masked Comment Examples	Mana Ihori, Hiroshi Sato, Tomohiro Tanaka and Ryo Masumura	genchalpostersession+demos
+138	Team Synapse @ AutoMin 2023: Leveraging BART-Based Models for Automatic Meeting Minuting	Kristýna Klesnilová and Michelle Elizabeth	genchalpostersession+demos
+139	Team Iterate @ AutoMin 2023 - Experiments with Iterative Minuting	František Kmječ and Ondřej Bojar	genchalpostersession+demos
+140	Darbarer@AutoMin2023: Transcription simplification for concise minute generation from multi-party conversations	Ismaël Rousseau, Loïc Fosse, Youness Dkhissi, Geraldine Damnati and Gwénolé Lecorvé	genchalpostersession+demos
+133	TMU Feedback Comment Generation System Using Pretrained Sequence-to-Sequence Language Models	Naoya Ueda and Mamoru Komachi	virtualpostersession
+137	Team Zoom @ AutoMin 2023: Utilizing Topic Segmentation And LLM Data Augmentation For Long-Form Meeting Summarization	Felix Schneider and Marco Turchi	virtualpostersession
+141	Team NTR @ AutoMin 2023: Dolly LLM Improves Minuting Performance, Semantic Segmentation Doesn’t	Eugene Borisov and Nikolay Mikhaylovskiy	virtualpostersession
