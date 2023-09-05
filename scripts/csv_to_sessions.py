@@ -11,11 +11,6 @@ import yaml
 
 def process_file(in_file, cal_file, sessions_links_file):
 
-
-    sessions_links = yaml.load(open(sessions_links_file).read(), Loader=yaml.SafeLoader)
-    session2discord = sessions_links["session2discord"]
-    sessions_with_zoom = sessions_links["zoom"]
-
     sessions = {}
     counters = {}
     uniq_locations = set()
@@ -86,6 +81,10 @@ def process_file(in_file, cal_file, sessions_links_file):
             except ValueError:
                 pass
 
+    sessions_links = yaml.load(open(sessions_links_file).read(), Loader=yaml.SafeLoader)
+    session2discord = sessions_links["session2discord"]
+    sessions_with_zoom = sessions_links["zoom"]
+
     sessions = sorted(sessions.values(), key=lambda s: s["start"])
     sessions_uids = [s["UID"] for s in sessions]
     assert len(set(sessions_uids)) == len(sessions_uids), f"{sessions_uids=} ARE NOT UNIQUE!"
@@ -99,12 +98,8 @@ def process_file(in_file, cal_file, sessions_links_file):
     dts = sorted(list(dts))
 
     for session in sessions:
-        session["discord"] = session2discord.get(session["UID"], None)
-        if session["UID"] in sessions_with_zoom:
-            session["zoom"] = room2zoom.get(session["room"])
-        else:
-            session["zoom"] = None
-
+        session["discord"] = f'https://discord.com/channels/###{session["UID"]}###' if session["UID"] in session2discord else None
+        session["zoom"] = f'https://zoom.us/j/###{session["room"]}###' if session["UID"] in sessions_with_zoom else None
 
         if "end" not in session:
             session["end"] = dts[dts.index(session["start"]) + 1]
