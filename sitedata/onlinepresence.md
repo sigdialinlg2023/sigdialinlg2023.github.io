@@ -1,6 +1,6 @@
 ## Online Tools for In-Person and Virtual Conference
 
-### Discord
+### Chat on Discord
 
 **Use the invite link [https://discord.gg/zxquHwKy5](https://discord.gg/zxquHwKy5) to join the conference Discord.**
 
@@ -10,17 +10,22 @@
 - Visit the dedicated workshops, keynotes, or oral sessions channels and start chatting with your fellow researchers.
 * **Use Discord instead of the built-in Zoom chat to ask & comment during the oral sessions.** The Zoom chat will not be monitored.
 - **If you are presenting a paper, please introduce yourself** in the channel dedicated to the sessions containing your presentation, so others can easily contact you.
-- **Discuss virtually presented posters** on Friday September 15 at 9:00am CEST in one of the [VIRTUAL POSTERs category channels](https://discord.com/channels/###virtualpostersession###).
+- **Discuss virtually presented posters** on Friday September 15 at 9:00am CEST in one of the [VIRTUAL POSTERs category **voice** channels](https://discord.com/channels/###virtualpostersession###).
 
 
-### Zoom
+### Watch on Zoom
+
+During workshop days on Monday and Tuesday the following workshop will be streamed on Zoom:
+- [DSTC11 Zoom meeting](https://zoom.us/j/###DSTC11###).
+- [CS4OA Zoom meeting](https://zoom.us/j/###CS4OA###).
+- [ICARD Zoom meeting](https://zoom.us/j/###ICARD###).
+- [MMNLG Zoom meeting](https://zoom.us/j/###MMNLG###).
+- [TamingLLM Zoom meeting](https://zoom.us/j/###TamingLLM###).
 
 The following Zoom links will be used during the conference. Each link corresponds to a room at the venue in Prague.
-<!-- See sitedata/sessions_links.yml -->
 
-- [Zoom link will be used for main conference events in the _Sun I_ room](https://zoom.us/j/###Sun I###).
-- Second link will be used for the events in the _Sun II_ room. (Will be provided soon)
-- Links for workshop purposes. (Will be provided soon)
+- [Zoom meeting will be used for main conference events in the _Sun I_ room](https://zoom.us/j/###Sun I###).
+- [Zoom meeting will be used for main conference events in the _Sun II_ room](https://zoom.us/j/###Sun II###).
 
 When you are logged in, you can always find the right Zoom link in the conference schedule.
 
