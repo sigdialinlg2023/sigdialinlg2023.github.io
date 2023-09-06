@@ -60,10 +60,10 @@ for folder_name in os.listdir(top_folder):
 
         # Construct the path to the metadata file
 
-        if conference == "inlg":
-            paper_file = os.path.join(folder_path, f"{paper_id}_Paper.pdf")
-        else:
-            paper_file = os.path.join(folder_path, f"{paper_id}.pdf")
+        # if conference == "inlg":
+        paper_file = os.path.join(folder_path, f"{paper_id}_Paper.pdf")
+        # else:
+        # paper_file = os.path.join(folder_path, f"{paper_id}.pdf")
 
         # Check if the paper file exists
         if os.path.isfile(paper_file):
