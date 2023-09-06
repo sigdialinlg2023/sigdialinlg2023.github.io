@@ -6,8 +6,8 @@
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-11T18:40:00+02:00",
-        "discord": null,
-        "zoom": null,
+        "discord": "https://discord.com/channels/###dstc11###",
+        "zoom": "https://zoom.us/j/###DSTC11###",
         "calendarId": "dstc"
     },
     {
@@ -17,8 +17,8 @@
         "room": "Neptune (60)",
         "category": "time",
         "end": "2023-09-11T16:40:00+02:00",
-        "discord": null,
-        "zoom": null,
+        "discord": "https://discord.com/channels/###cs4oa###",
+        "zoom": "https://zoom.us/j/###CS4OA###",
         "calendarId": "cs4oa"
     },
     {
@@ -28,7 +28,7 @@
         "room": "Uranus (50)",
         "category": "time",
         "end": "2023-09-11T18:00:00+02:00",
-        "discord": null,
+        "discord": "https://discord.com/channels/###practicald2t###",
         "zoom": null,
         "calendarId": "practicald2t"
     },
@@ -39,7 +39,7 @@
         "room": "Observatory (40)",
         "category": "time",
         "end": "2023-09-11T16:15:00+02:00",
-        "discord": null,
+        "discord": "https://discord.com/channels/###yrrsds1###",
         "zoom": null,
         "calendarId": "yrrsds"
     },
@@ -83,8 +83,8 @@
         "room": "Jupiter (90)",
         "category": "time",
         "end": "2023-09-12T17:30:00+02:00",
-        "discord": null,
-        "zoom": null,
+        "discord": "https://discord.com/channels/###mmnlg###",
+        "zoom": "https://zoom.us/j/###MMNLG###",
         "calendarId": "mmnlg"
     },
     {
@@ -94,8 +94,8 @@
         "room": "Uranus (50)",
         "category": "time",
         "end": "2023-09-12T13:00:00+02:00",
-        "discord": null,
-        "zoom": null,
+        "discord": "https://discord.com/channels/###icard###",
+        "zoom": "https://zoom.us/j/###ICARD###",
         "calendarId": "icard"
     },
     {
@@ -105,8 +105,8 @@
         "room": "Neptune (60)",
         "category": "time",
         "end": "2023-09-12T18:00:00+02:00",
-        "discord": null,
-        "zoom": null,
+        "discord": "https://discord.com/channels/###tamingllm###",
+        "zoom": "https://zoom.us/j/###TamingLLM###",
         "calendarId": "tamingllm"
     },
     {
@@ -116,7 +116,7 @@
         "room": "Observatory (40)",
         "category": "time",
         "end": "2023-09-12T15:00:00+02:00",
-        "discord": null,
+        "discord": "https://discord.com/channels/###yrrsds2###",
         "zoom": null,
         "calendarId": "yrrsds"
     },

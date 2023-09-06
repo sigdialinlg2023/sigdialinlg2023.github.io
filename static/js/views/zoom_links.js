@@ -13,9 +13,6 @@ function sessIDtoLink(match, sessionLinks){
   else if (sessLink in sessionLinks.session2discord) {
     return sessionLinks.session2discord[sessLink];
   }
-  else if (sessLink in sessionLinks.posters2discords) {
-    return sessionLinks.posters2discords[sessLink];
-  }
   return match; // do nothing if not found
 }
 
