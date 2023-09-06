@@ -13,9 +13,29 @@ The hotel is ca. 20 minutes tram ride away from the city center, within walking 
 
 ### The Conference Dinner
 
-The Conference dinner will take place on Wednesday, **Thursday 14th** at **7pm** in the brewery [**Klášterní Pivovar Strahov**](https://www.klasterni-pivovar.cz), about 8 minutes' walk from the venue ([Google Map](https://goo.gl/maps/PJZO5)).
+The Conference dinner will take place on Wednesday, **Thursday 14th** at **7pm** in the brewery [**Klášterní Pivovar Strahov**](https://www.klasterni-pivovar.cz), about 8 minutes' walk from the venue ([Google Map](https://goo.gl/maps/itbsdnGw7jzYLkZQ9)).
 
 **Address:** Klášterní Pivovar Strahov, Strahovské nádvoří 301, 118 00 Prague 1, Czechia.
+
+
+### Lunches
+Lunches are **included in the registration** and will be provided **directly at the venue**. 
+
+Please, wear the badge to prove you are registered for the conference.
+
+The lunch will be provided as a bufet and will include various dietary options.
+
+### Restaurants
+
+As an alternative, here are several tips for lunch/dinner options around the conference venue:
+
+- [Restaurace Na Marjánce](https://goo.gl/maps/uUSe4f9GgRHB9RTF8) - Czech restaurant, 6 minutes' walk from the venue
+- [Restaurace Malovanka](https://goo.gl/maps/BBSn1n2pBppNFAJXA) - Czech restaurant, 6 minutes' walkfrom the venue
+- [U Zelené brány](https://goo.gl/maps/ApmcjimtGrzzGBeCA) - Czech restaurant, 3 minutes' walkfrom the venue
+- [Curry King - Břevnov](https://goo.gl/maps/VuQA8MtKVNGTntR18) - Indian restaurant, 7 minutes' walk from the venue
+
+Many restaurants in Prague offer daily lunch menus from about 11:30am till 2pm, with usualy two to five options, cheaper and faster than the usual menu.
+
 
 Travel
 ------
@@ -61,14 +81,3 @@ Parking:
 
 *   There is a parking lot within a hotel which is 200,- CZK/night for registered guests.
 
-
-### Restaurants
-
-Here is a non-exhaustive list of lunch/dinner options around the conference venue:
-
-- [Restaurace Na Marjánce](https://goo.gl/maps/uUSe4f9GgRHB9RTF8) - Czech restaurant, 6 minutes' walk from the venue
-- [Restaurace Malovanka](https://goo.gl/maps/BBSn1n2pBppNFAJXA) - Czech restaurant, 6 minutes' walkfrom the venue
-- [U Zelené brány](https://goo.gl/maps/ApmcjimtGrzzGBeCA) - Czech restaurant, 3 minutes' walkfrom the venue
-- [Curry King - Břevnov](https://goo.gl/maps/VuQA8MtKVNGTntR18) - Indian restaurant, 7 minutes' walk from the venue
-
-Many restaurants in Prague offer daily lunch menus from about 11:30am till 2pm, with usualy two to five options, cheaper and faster than the usual menu.
