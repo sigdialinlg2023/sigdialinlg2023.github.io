@@ -16,6 +16,7 @@
 ### Watch on Zoom
 
 During workshop days on Monday and Tuesday the following workshop will be streamed on Zoom:
+
 - [DSTC11 Zoom meeting](https://zoom.us/j/###DSTC11###).
 - [CS4OA Zoom meeting](https://zoom.us/j/###CS4OA###).
 - [ICARD Zoom meeting](https://zoom.us/j/###ICARD###).
