@@ -11,9 +11,9 @@ The hotel is ca. 20 minutes tram ride away from the city center, within walking 
 
 **Address:** OREA Hotel Pyramida, Bělohorská 24, 169 01 Praha 6, Czechia.
 
-### The Conference Dinner
+### Conference Dinner
 
-The Conference dinner will take place on Wednesday, **Thursday 14th** at **7pm** in the brewery [**Klášterní Pivovar Strahov**](https://www.klasterni-pivovar.cz), about 8 minutes' walk from the venue ([Google Map](https://goo.gl/maps/itbsdnGw7jzYLkZQ9)).
+The conference dinner will take place on Wednesday, **Thursday 14th** at **7pm** in the brewery [**Klášterní Pivovar Strahov**](https://www.klasterni-pivovar.cz), about 8 minutes' walk from the venue ([Google Map](https://goo.gl/maps/itbsdnGw7jzYLkZQ9)).
 
 **Address:** Klášterní Pivovar Strahov, Strahovské nádvoří 301, 118 00 Prague 1, Czechia.
 
