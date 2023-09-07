@@ -6,7 +6,7 @@ import glob
 import json
 import os
 import re
-
+import titlecase
 import yaml
 from flask import Flask, jsonify, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
@@ -323,8 +323,8 @@ def format_paper(v):
     # dt = datetime.fromisoformat(v["start"])
     # v["time"] = dt.strftime("%A %m/%d %H:%M CEST")
     # v["short_time"] = dt.strftime("%H:%M EST")
-    v["title"] = v["title"].title()
-    v["title"] = re.sub(r"Nlg", "NLG", v["title"])
+    v["title"] = titlecase.titlecase(v["title"])
+    # v["title"] = re.sub(r"Nlg", "NLG", v["title"])
     return v
 
 
