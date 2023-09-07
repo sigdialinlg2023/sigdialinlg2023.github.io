@@ -69,7 +69,7 @@ workshops:
       abbrev: ICARD
       title: Connecting multiple disciplines to AI techniques in interaction-centric autism research and diagnosis
       organizers: ['Tahyia Chowdhury', 'Malihe Alikhani', 'Julia Parish-Morris', "Emily Prud'hommeaux", 'Veronica Romero'] 
-      contact: tchowdhu@colby.edu
+      contact: vcromero@colby.edu
       url: https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home
       schedule_url: https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home
       abstract: "In this workshop, we invite researchers and practitioners both in academia and industry with backgrounds across different disciplines including psychology, artificial intelligence, natural language processing, and autism research for a discussion on how to connect these disciplines to different AI techniques for autism research and diagnosis focused on interaction."
