@@ -10,7 +10,11 @@ This website is joint for both conferences, and includes the [program](calendar.
 
 ### News
 
-**Aug 26**: You can now log in to access participant-only information (currently in preparation). Simply use the e-mail you used for conference registration to create an account, choose your password, and confirm your account in an email link.
+**Sep 7**: The (temporary) links to the INLG2023 proceedings are now available! There are three volumes: the [main track](https://preview.aclanthology.org/inlg-23-ingestion/volumes/2023.inlg-1/), the [demo papers](https://preview.aclanthology.org/inlg-23-ingestion/volumes/2023.inlg-demos/), and the [generation challenge](https://preview.aclanthology.org/inlg-23-ingestion/volumes/2023.inlg-genchal/).
+
+**Sep 5**: The paper abstracts and PDFs are now accessible on individual paper pages after logging in.
+
+**Aug 26**: You can now log in to access participant-only information. Use the e-mail you used for conference registration to create an account, choose your password, and confirm your account in an email link.
 
 **Aug 26**: We have published the information about the [venue](/venue.html), the [local information](/local.html), and the [instructions for presenters](/presenters.html). You can find all of these in the section *For participants*.
 
