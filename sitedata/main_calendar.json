@@ -199,7 +199,7 @@
     },
     {
         "UID": "sigdialoralsession1",
-        "title": "Sigdial Oral Session 1",
+        "title": "Sigdial Oral Session 1, Analysis of discourse and dialogue",
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -254,7 +254,7 @@
     },
     {
         "UID": "sigdialoralsession2",
-        "title": "Sigdial Oral Session 2",
+        "title": "Sigdial Oral Session 2, LLM for dialogue",
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -331,7 +331,7 @@
     },
     {
         "UID": "sigdialoralsession3",
-        "title": "Sigdial Oral Session 3",
+        "title": "Sigdial Oral Session 3, Dialogue modeling and evaluation",
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -408,7 +408,7 @@
     },
     {
         "UID": "sigdialoralsession4",
-        "title": "Sigdial Oral Session 4",
+        "title": "Sigdial Oral Session 4, Language understanding and multimodality",
         "start": "2023-09-14T16:10:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -485,7 +485,7 @@
     },
     {
         "UID": "sigdialoralsession5",
-        "title": "Sigdial Oral Session 5",
+        "title": "Sigdial Oral Session 5, Topics in open-domain dialogue",
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun I",
         "category": "time",
