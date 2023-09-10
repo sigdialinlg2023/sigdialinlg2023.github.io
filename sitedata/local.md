@@ -69,6 +69,29 @@ The usual car rental companies (Avis, Hertz, Budget, Europcar, Sixt) and many ot
 The Czech Republic is part of the European Union's [Schengen Area](http://en.wikipedia.org/wiki/Schengen_Agreement). Please see the [Ministry of Foreign Affairs website](http://www.mzv.cz/jnp/en/information_for_aliens/frequently_asked_questions/index.html) to check if you need a visa and how to obtain it. Note that Czech embassies need 30 days to decide if they grant you the visa or not, so be sure to apply soon enough.
 See the [Registration page](/registration.html) for more information about obtaining invitation letters.
 
+### Restaurants
+
+Lunches will be provided at the conference venue. As an alternative, here are several tips for food options (not only) around the conference venue:
+
+- [Restaurace Na Marjánce](https://goo.gl/maps/uUSe4f9GgRHB9RTF8) - Czech restaurant, 6 minutes' walk from the venue
+- [Restaurace Malovanka](https://goo.gl/maps/BBSn1n2pBppNFAJXA) - Czech restaurant, 6 minutes' walkfrom the venue
+- [U Zelené brány](https://goo.gl/maps/ApmcjimtGrzzGBeCA) - Czech restaurant, 3 minutes' walkfrom the venue
+- [Curry King - Břevnov](https://goo.gl/maps/VuQA8MtKVNGTntR18) - Indian restaurant, 7 minutes' walk from the venue
+* [Klášterní šenk](https://goo.gl/maps/yXfqSofCsqRfw5wB7) – old-style Czech restaurant with a brewery, 4 tram stops (~10 min) from the venue
+* [Angelato Bělohorská](https://goo.gl/maps/mFYtaYr9ZnF8h2gT8) – ice-cream parlor, 5 minutes' walk from the venue
+* [Lokál](https://goo.gl/maps/nixggHsr1FG5Tprj7) – modern Czech restaurants with Pilsner beer, multiple locations across the city center
+
+Many restaurants in Prague offer daily lunch menus from about 11:30am till 2pm, with usualy two to five options, cheaper and faster than the usual menu.
+
+### Health
+
+Please be considerate to other in-person attendees and do not take risks with respect to covid or other infections. In case of any doubts, please test yourself, ideally before the conference. If you feel the onset of a respiratory infection, please wear a mask and test yourself. Face masks as well as covid test kits can be purchased in any pharmacy in Prague 
+
+The two closest pharmacies to the venue are here:
+* [Břevnovská lékárna](https://goo.gl/maps/RvNhDoX6LveWvLYcA)
+* [BENU lékárna Bělohorská](https://goo.gl/maps/9fKrXZDnuYjzommS8)
+
+The closest hospital is the [Military University Hospital](https://goo.gl/maps/UohVaKyEnN9q1zBP6).
 
 ### Sightseeing and more
 

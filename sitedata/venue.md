@@ -25,17 +25,6 @@ Please, wear the badge to prove you are registered for the conference.
 
 The lunch will be provided as a bufet and will include various dietary options.
 
-### Restaurants
-
-As an alternative, here are several tips for lunch/dinner options around the conference venue:
-
-- [Restaurace Na Marjánce](https://goo.gl/maps/uUSe4f9GgRHB9RTF8) - Czech restaurant, 6 minutes' walk from the venue
-- [Restaurace Malovanka](https://goo.gl/maps/BBSn1n2pBppNFAJXA) - Czech restaurant, 6 minutes' walkfrom the venue
-- [U Zelené brány](https://goo.gl/maps/ApmcjimtGrzzGBeCA) - Czech restaurant, 3 minutes' walkfrom the venue
-- [Curry King - Břevnov](https://goo.gl/maps/VuQA8MtKVNGTntR18) - Indian restaurant, 7 minutes' walk from the venue
-
-Many restaurants in Prague offer daily lunch menus from about 11:30am till 2pm, with usualy two to five options, cheaper and faster than the usual menu.
-
 
 Travel
 ------
