@@ -72,7 +72,7 @@ class API {
    */
   static thumbnailPath(paper) {
     // return `https://iclr.github.io/iclr-images/small/${paper.UID}.jpg`;
-    return `static/images/papers/${paper.UID}.png`;
+    return `static/posters/thumbnails/${paper.UID}.png`;
   }
 
   /**

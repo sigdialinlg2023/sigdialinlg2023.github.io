@@ -58,28 +58,30 @@
                 </p>
                 {% endfor %}
 
-                {% if paper.slides != blank %}
+                {% if paper.slides is defined and paper.slides|length %}
                 <a href="{{paper.slides}}" target="_blank" class="card-link">
                     Slides
                 </a>
                 {% endif %}
-                {% if paper.poster != blank %}
+                {% if paper.poster is defined and paper.poster|length %}
                 <a href="{{paper.poster}}" target="_blank" class="card-link">
-                    Poster
+                    <p>Poster </p>
+                    <img src="static/posters/thumbnails/{{paper.UID}}.png" alt="{{paper.title}}">
                 </a>
                 {% endif %}
-                {% if paper.code != blank %}
+                {% if paper.code is defined and paper.code|length %}
                 <a href="{{paper.code}}" target="_blank" class="card-link">
                     Code
                 </a>
                 {% endif %}
-                {% if paper.data != blank %}
+                {% if paper.data is defined and paper.data|length %}
                 <a href="{{paper.data}}" target="_blank" class="card-link">
                     Data
                 </a>
                 {% endif %}<br />
-                {% if paper.full_video != blank %}
-                <a href="{{paper.full_video}}"><img src="static/images/{{paper.UID}}.jpg" alt="{{paper.title}}"></a>
+                {% if paper.full_video is defined and paper.full_video|length %}
+                <a href="{{paper.full_video}}"><img src="static/posters/thumbnails/{{paper.UID}}.png"
+                        alt="{{paper.title}}"></a>
                 {% endif %}
             </div>
         </div>
