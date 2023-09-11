@@ -166,7 +166,7 @@
     },
     {
         "UID": "keynotedupoux",
-        "title": "Keynote Dupoux",
+        "title": "Keynote Dupoux, Hung-yi Lee",
         "start": "2023-09-13T09:15:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -188,7 +188,7 @@
     },
     {
         "UID": "inlgoralsession1",
-        "title": "INLG Oral Session 1",
+        "title": "INLG Oral Session 1, Ching-Chi-Chen",
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -199,7 +199,7 @@
     },
     {
         "UID": "sigdialoralsession1",
-        "title": "Sigdial Oral Session 1: Analysis of discourse and dialogue",
+        "title": "Sigdial Oral Session 1, Gabriel Skantze: Analysis of discourse and dialogue",
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -221,7 +221,7 @@
     },
     {
         "UID": "inlgoralsession2",
-        "title": "INLG Oral Session 2",
+        "title": "INLG Oral Session 2, Gozde Gul Sahin",
         "start": "2023-09-13T13:30:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -232,7 +232,7 @@
     },
     {
         "UID": "sigdialpostersession1",
-        "title": "Sigdial Poster Session 1",
+        "title": "Sigdial Poster Session 1, David Schlangen",
         "start": "2023-09-13T13:30:00+02:00",
         "room": "Foyer",
         "category": "time",
@@ -254,7 +254,7 @@
     },
     {
         "UID": "sigdialoralsession2",
-        "title": "Sigdial Oral Session 2: LLM for dialogue",
+        "title": "Sigdial Oral Session 2, Dilek Hakkami Tur: LLM for dialogue",
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -265,7 +265,7 @@
     },
     {
         "UID": "inlgpostersession+flash",
-        "title": "INLG Poster session +flash",
+        "title": "INLG Poster session +flash, Ehud Reiter",
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Foyer",
         "category": "time",
@@ -309,7 +309,7 @@
     },
     {
         "UID": "keynotedieugenio",
-        "title": "Keynote di Eugenio",
+        "title": "Keynote di Eugenio, Svetalana Stoyanchev",
         "start": "2023-09-14T09:00:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -331,7 +331,7 @@
     },
     {
         "UID": "sigdialoralsession3",
-        "title": "Sigdial Oral Session 3: Dialogue modeling and evaluation",
+        "title": "Sigdial Oral Session 3, Ryuichiro Higashinaka: Dialogue modeling and evaluation",
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -342,7 +342,7 @@
     },
     {
         "UID": "inlgoralsession3",
-        "title": "INLG Oral Session 3",
+        "title": "INLG Oral Session 3, Tom Williams",
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -375,7 +375,7 @@
     },
     {
         "UID": "inlgoralsession4",
-        "title": "INLG Oral Session 4",
+        "title": "INLG Oral Session 4, Albert Gatt",
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -386,7 +386,7 @@
     },
     {
         "UID": "sigdialpostersession2",
-        "title": "Sigdial Poster Session 2",
+        "title": "Sigdial Poster Session 2, Kazunori Komatani",
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Foyer",
         "category": "time",
@@ -408,7 +408,7 @@
     },
     {
         "UID": "sigdialoralsession4",
-        "title": "Sigdial Oral Session 4: Language understanding and multimodality",
+        "title": "Sigdial Oral Session 4, Tatsuya Kawahara: Language understanding and multimodality",
         "start": "2023-09-14T16:10:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -419,7 +419,7 @@
     },
     {
         "UID": "inlggenchalpresentation",
-        "title": "INLG genChal presentation",
+        "title": "INLG genChal presentation, Simon Mille",
         "start": "2023-09-14T16:10:00+02:00",
         "room": "Sun II",
         "category": "time",
@@ -430,7 +430,7 @@
     },
     {
         "UID": "genchalpostersession+demos",
-        "title": "GenChal Poster Session + demos",
+        "title": "GenChal Poster Session + demos, Simon Mille",
         "start": "2023-09-14T17:35:00+02:00",
         "room": "Foyer",
         "category": "time",
@@ -463,7 +463,7 @@
     },
     {
         "UID": "keynotesimperl",
-        "title": "Keynote Simperl",
+        "title": "Keynote Simperl, Maria Keet",
         "start": "2023-09-15T10:00:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -485,7 +485,7 @@
     },
     {
         "UID": "sigdialoralsession5",
-        "title": "Sigdial Oral Session 5: Topics in open-domain dialogue",
+        "title": "Sigdial Oral Session 5, Mike White: Topics in open-domain dialogue",
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun I",
         "category": "time",
@@ -496,7 +496,7 @@
     },
     {
         "UID": "inlgoralsession5",
-        "title": "INLG Oral Session 5",
+        "title": "INLG Oral Session 5, Dimitra Gkatzia",
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun II",
         "category": "time",
