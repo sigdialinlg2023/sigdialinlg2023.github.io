@@ -21,11 +21,7 @@
 {% block content %}
 
 <!-- Title -->
-<div class="public-content notice">
-    You need to log in to access the paper page.
-</div>
-
-<div class="gated-content">
+<div class="public-content">
     <div class="pp-card m-3">
         <div class="card-header">
             <h2 class="card-title main-title text-center">
@@ -50,10 +46,12 @@
                 <!-- {{session}} - {{paper.time}}<br /> -->
                 <p>
                     {{session.title}}: ({{session.day}}, {{session.start_time.strftime("%H:%M CEST")}}, {{session.room}}
-                    {% if session.zoom is not none %}, <a href="{{session.zoom}}" target="_blank"
-                        class="card-link">Watch on Zoom</a> {% endif %}
-                    {% if session.discord is not none %}, <a href="{{session.discord}}" target="_blank"
-                        class="card-link discord-link">Chat on Discord </a> {% endif %}
+                      <span class="gated-content">
+                      {% if session.zoom is not none %}, <a href="{{session.zoom}}" target="_blank"
+                          class="card-link">Watch on Zoom</a> {% endif %}
+                      {% if session.discord is not none %}, <a href="{{session.discord}}" target="_blank"
+                          class="card-link discord-link">Chat on Discord </a>{% endif %}
+                      </span>
                     )
                 </p>
                 {% endfor %}
