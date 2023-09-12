@@ -271,7 +271,8 @@
     },
     {
         "UID": "inlgpostersession+flash",
-        "title": "INLG Poster session +flash, Ehud Reiter",
+        "title": "INLG Poster session +flash",
+        "chair": "Ehud Reiter",
         "start": "2023-09-13T15:40:00+02:00",
         "room": "Foyer",
         "category": "time",
