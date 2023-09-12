@@ -26,7 +26,7 @@ sessiongroup
         {# {% endif %} #}
         ({{session.start_time.strftime("%H:%M")}}-{{session.end_time.strftime("%H:%M CEST")}}, {{session.room}}<span class="gated-content">{% if session.zoom != None %}, <a href="{{session.zoom}}">Watch on Zoom</a>{% endif %}{% if session.discord != None %}, <a href="{{session.discord}}">Chat on Discord</a>{% endif %}</span>)
         {% if session.chair %}
-        <i>Session Chair: {{session.chair}}</i>
+        <i>Chair: {{session.chair}}</i>
         {% endif %}
         {% if session.full_video != blank %}
         {% if private %}
