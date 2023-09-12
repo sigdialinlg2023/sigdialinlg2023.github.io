@@ -189,7 +189,7 @@
     },
     {
         "UID": "inlgoralsession1",
-        "title": "INLG Oral Session 1",
+        "title": "INLG Oral Session 1: Trustworthiness of NLG systems",
         "chair": "Ching-Chi-Chen",
         "start": "2023-09-13T10:45:00+02:00",
         "room": "Sun II",
@@ -224,9 +224,9 @@
     },
     {
         "UID": "inlgoralsession2",
-        "title": "INLG Oral Session 2",
+        "title": "INLG Oral Session 2: NLG for low-resourced settings",
         "start": "2023-09-13T13:30:00+02:00",
-        "chair": "Gozde Gul Sahin", 
+        "chair": "Gozde Gul Sahin",
         "room": "Sun II",
         "category": "time",
         "discord": "https://discord.com/channels/###inlgoralsession2###",
@@ -352,7 +352,7 @@
     },
     {
         "UID": "inlgoralsession3",
-        "title": "INLG Oral Session 3",
+        "title": "INLG Oral Session 3: Leveraging Large Language Models for NLG",
         "chair": "Tom Williams",
         "start": "2023-09-14T10:30:00+02:00",
         "room": "Sun II",
@@ -386,7 +386,7 @@
     },
     {
         "UID": "inlgoralsession4",
-        "title": "INLG Oral Session 4",
+        "title": "INLG Oral Session 4: Evaluation and linguistic analysis of NLG systems",
         "chair": "Albert Gatt",
         "start": "2023-09-14T14:00:00+02:00",
         "room": "Sun II",
@@ -512,7 +512,7 @@
     },
     {
         "UID": "inlgoralsession5",
-        "title": "INLG Oral Session 5",
+        "title": "INLG Oral Session 5: NLG for real-world applications",
         "chair": "Dimitra Gkatzia",
         "start": "2023-09-15T11:30:00+02:00",
         "room": "Sun II",
