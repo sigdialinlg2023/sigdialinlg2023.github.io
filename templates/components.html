@@ -24,7 +24,9 @@ sessiongroup
         <a href="{{session.url}}#{{session.UID}}" id="{{session.UID}}">{{session.name}}</a>
         {# {% if private %} #}
         {# {% endif %} #}
-        ({{session.start_time.strftime("%H:%M")}}-{{session.end_time.strftime("%H:%M CEST")}}, {{session.room}}<span class="gated-content">{% if session.zoom != None %}, <a href="{{session.zoom}}">Watch on Zoom</a>{% endif %}{% if session.discord != None %}, <a href="{{session.discord}}">Chat on Discord</a>{% endif %}</span>)
+        ({{session.start_time.strftime("%H:%M")}}-{{session.end_time.strftime("%H:%M CEST")}}, {{session.room}}<span
+          class="gated-content">{% if session.zoom != None %}, <a href="{{session.zoom}}">Watch on Zoom</a>{% endif %}{%
+          if session.discord != None %}, <a href="{{session.discord}}">Chat on Discord</a>{% endif %}</span>)
         {% if session.chair %}
         <i>Chair: {{session.chair}}</i>
         {% endif %}
@@ -53,12 +55,12 @@ sessiongroup
             {% if paper.authors != blank %}
             <!-- a paper -->
             <li>
-              <a href="paper_{{paper.UID}}.html" class="gated-content">
+              <a href="paper_{{paper.UID}}.html">
                 {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
               </a>
-              <span class="public-content">
+              <!-- <span class="public-content">
                 {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %}[{{paper.notes}}] {% endif %}
-              </span>
+              </span> -->
               <br /><i>{{ paper.authors | join(", ") }}</i>
             </li>
             {% endif %}
