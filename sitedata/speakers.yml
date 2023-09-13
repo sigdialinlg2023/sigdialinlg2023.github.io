@@ -39,3 +39,8 @@ speakers:
     name: Ryan Lowe
     abstract: "In this talk I will present different perspectives on the alignment of chatbots like ChatGPT. I’ll review reinforcement learning from human feedback (RLHF), the core training technique behind InstructGPT and ChatGPT, including a brief history of how it was developed. I’ll discuss some of the pitfalls of RLHF, and what is being done today to address them. I’ll then speculate on some of the alignment challenges I expect we’ll face with this new generation of powerful personal assistants, how they could reshape society, and some things we’ll need to do to make sure these changes are good for humans."
     bio: "Ryan is a researcher at OpenAI on the Alignment team. His most recent work involved proving out RLHF on language models, starting with summarization, then moving to InstructGPT and most recently ChatGPT and GPT-4. Previously, he worked on multi-agent RL, emergent communication, and dialogue systems at McGill University."
+  - UID: PanelDiscussion
+    session: panel
+    title: "Panel Discussion: Social Impact of LLMs"
+    name: "Panelists: Malihe Alikhani, Maria Keet, Ryan Lowe, Ehud Reiter, Dilek Hakkani Tur"
+    institution: "Moderated by David Traum"

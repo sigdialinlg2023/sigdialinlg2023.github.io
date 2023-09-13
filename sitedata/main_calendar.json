@@ -302,7 +302,8 @@
         "discord": "https://discord.com/channels/###panel###",
         "zoom": "https://zoom.us/j/###Sun I###",
         "end": "2023-09-13T18:45:00+02:00",
-        "calendarId": "discussion"
+        "calendarId": "discussion",
+        "chair": "David Traum"
     },
     {
         "UID": "welcomereception",
