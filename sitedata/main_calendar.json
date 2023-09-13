@@ -364,15 +364,28 @@
         "calendarId": "inlgoral"
     },
     {
-        "UID": "businessmeeting",
-        "title": "Business meeting",
+        "UID": "businessmeetingsigdial",
+        "title": "SIGDIAL Business meeting",
         "start": "2023-09-14T12:10:00+02:00",
         "room": "Sun I",
         "category": "time",
         "discord": "https://discord.com/channels/###businessmeeting###",
         "zoom": "https://zoom.us/j/###Sun I###",
         "end": "2023-09-14T13:00:00+02:00",
-        "calendarId": "business"
+        "calendarId": "business",
+        "chair": "Dilek Hakkani-Tur"
+    },
+    {
+        "UID": "businessmeetingsiggen",
+        "title": "SIGGEN Business meeting",
+        "start": "2023-09-14T12:10:00+02:00",
+        "room": "Sun II",
+        "category": "time",
+        "discord": "https://discord.com/channels/###businessmeeting###",
+        "zoom": "https://zoom.us/j/###Sun II###",
+        "end": "2023-09-14T13:00:00+02:00",
+        "calendarId": "business",
+        "chair": "Dave Howcroft"
     },
     {
         "UID": "lunch4",
