@@ -2,6 +2,7 @@
 {% extends "base.html" %}
 
 {% block head %}
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
 
 {{ super() }}
 <meta name="citation_title" content="{{paper.title}}" />
@@ -99,4 +100,7 @@
 <!-- </div> -->
 {% endif %}
 
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
 {% endblock %}
