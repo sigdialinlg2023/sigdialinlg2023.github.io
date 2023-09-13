@@ -473,7 +473,8 @@
         "discord": "https://discord.com/channels/###virtualpostersession###",
         "zoom": null,
         "end": "2023-09-15T10:00:00+02:00",
-        "calendarId": "sigdialposter"
+        "calendarId": "sigdialposter",
+        "chair": "Kees van Deemter"
     },
     {
         "UID": "keynotesimperl",
