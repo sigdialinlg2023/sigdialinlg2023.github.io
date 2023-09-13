@@ -201,6 +201,12 @@ def speakers():
     data["speakers"] = site_data["speakers"]["speakers"]
     return render_template("speakers.html", **data)
 
+@app.route("/awards.html")
+def awards():
+    data = _data()
+    data["papers"] = site_data["papers"]
+    data["papers"].sort(key=lambda x: x["title"])
+    return render_template("awards.html", **data)
 
 @app.route("/calls.html")
 def calls():

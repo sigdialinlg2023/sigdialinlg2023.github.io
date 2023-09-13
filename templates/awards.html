@@ -1,0 +1,112 @@
+{% set active_page = "Organizers" %}
+{% extends "base.html" %}
+
+{% block top %}
+<style>
+  .back {
+    background: url("{{config.background_image}}") no-repeat center;
+    background-size: cover;
+  }
+
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+
+  table td,
+  table th {
+    padding: 2pt 0.5em;
+  }
+
+  table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 1em 0;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        {{config.tagline|safe}}
+      </h2>
+      <h2 class="p-5">
+        {{config.date|safe}}
+      </h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-sm">
+    <h1>Best paper awards – Nominated papers</h1>
+    <h3>SIGDIAL</h3>
+    <b>Long papers</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["sigdial19", "sigdial34"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Short papers</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["sigdial50", "sigdial97"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    <br>
+
+    <h3>INLG</h3>
+
+    <b>Long papers</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg12", "inlg24", "inlg47"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Evaluation</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg24", "inlg56", "inlg58"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Short papers</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg79", "inlg82"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}} {% if paper.notes != "" %} [{{paper.notes}}] {% endif %}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

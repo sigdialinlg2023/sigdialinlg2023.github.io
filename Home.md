@@ -10,6 +10,8 @@ This website is joint for both conferences, and includes the [program](calendar.
 
 ### News
 
+**Sep 13**: You can find the papers nominated for the Best Paper Award [here](awards.html).
+
 **Sep 11**: The paper pages are now available to public. You still need to log in to access Zoom and Discord links.
 
 **Sep 7**: The (temporary) links to the INLG2023 proceedings are now available! There are three volumes: the [main track](https://preview.aclanthology.org/inlg-23-ingestion/volumes/2023.inlg-1/), the [demo papers](https://preview.aclanthology.org/inlg-23-ingestion/volumes/2023.inlg-demos/), and the [generation challenge](https://preview.aclanthology.org/inlg-23-ingestion/volumes/2023.inlg-genchal/).
