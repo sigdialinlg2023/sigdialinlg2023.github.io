@@ -42,5 +42,5 @@ speakers:
   - UID: PanelDiscussion
     session: panel
     title: "Panel Discussion: Social Impact of LLMs"
-    name: "Panelists: Malihe Alikhani, Maria Keet, Ryan Lowe, Ehud Reiter, Dilek Hakkani Tur"
-    institution: "Moderated by David Traum"
+    name: "Panelists: Malihe Alikhani, Maria Keet, Ryan Lowe, Ehud Reiter"
+    institution: "moderated by David Traum"
