@@ -46,10 +46,7 @@ def normalize_posters(folder, paper_id):
         latest_file_index = mod_times.index(max(mod_times))
         # rename the file with the latest modification time to "paper_id.pdf"
         os.rename(f"{folder}/{files[latest_file_index]}", f"{folder}/{paper_id}.pdf")
-        # delete the other files
-        for i, f in enumerate(files):
-            if i != latest_file_index:
-                os.remove(f"{folder}/{f}")
+
         return
 
 
@@ -92,6 +89,12 @@ if __name__ == "__main__":
         # if os.path.exists(video_path):
         #     df_csv.loc[i, "full_video"] = f"static/videos/{subfolder}/{paper_id}.mp4"
         #     print(f"Found video for {paper_id}")
+
+    # delete all the files that are not named "\d+.pdf"
+    files = os.listdir(f"static/posters/{subfolder}/")
+    files_to_delete = [f for f in files if not re.search(r"\d+\.pdf", f)]
+    for f in files_to_delete:
+        os.remove(f"static/posters/{subfolder}/{f}")
 
 
 # Save the updated DataFrame to a new CSV file
