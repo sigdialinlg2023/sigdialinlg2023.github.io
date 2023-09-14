@@ -10,6 +10,10 @@ This website is joint for both conferences, and includes the [program](calendar.
 
 ### News
 
+**Sept 14**: Program for today is at [https://sigdialinlg2023.github.io/calendar.html#tab-Thursday](https://sigdialinlg2023.github.io/calendar.html#tab-Thursday).
+
+**Sept 14**: Ryan Lowe was so kind to answer all the questions posted on Discord. See the channel [https://discord.com/channels/1112733937828102206/1146437622122680340](https://discord.com/channels/1112733937828102206/1146437622122680340).<br/>If not on Discord already, join Discord using the invite link at [online presence page](https://sigdialinlg2023.github.io/onlinepresence.html). The email used for Evenbrite  is required for logging in.
+
 **Sep 13**: You can find the papers nominated for the Best Paper Award [here](awards.html).
 
 **Sep 11**: The paper pages are now available to public. You still need to log in to access Zoom and Discord links.
