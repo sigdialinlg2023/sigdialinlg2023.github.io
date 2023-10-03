@@ -42,7 +42,85 @@
 {% block content %}
 <div class="row">
   <div class="col-sm">
-    <h1>Best paper awards – Nominated papers</h1>
+    <h1>Best paper awards</h1>
+    <h3>SIGDIAL</h3>
+    <b>Best long paper</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["sigdial34"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Best short paper</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["sigdial50"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    <br>
+
+    <h3>INLG</h3>
+
+    <b>Best long paper</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg24"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Best evaluation paper</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg56"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Best short paper</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg82"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <b>Best demo paper</b>
+    {% for paper in papers %}
+    {% if paper.UID in ["inlg126"] %}
+    <li>
+      <a href="paper_{{paper.UID}}.html">
+        {{paper.short_time}} {{paper.title}}
+      </a>
+      <br /><i>{{ paper.authors | join(", ") }}</i>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <h1>Nominated papers</h1>
     <h3>SIGDIAL</h3>
     <b>Long papers</b>
     {% for paper in papers %}
