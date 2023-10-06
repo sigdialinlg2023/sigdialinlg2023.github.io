@@ -9,9 +9,10 @@ This website is joint for both conferences, and includes the [program](calendar.
 
 
 ### News
-Oct 6: The SIGDIAL 2023 proceedings are now available in the [ACL Anthology preview](https://preview.aclanthology.org/sigdial-23-ingestion/volumes/2023.sigdial-1/).
 
-Oct 5: The INLG 2023 proceedings are now available in the [ACL Anthology](https://aclanthology.org/venues/inlg/).
+**Oct 6**: The SIGDIAL 2023 proceedings are now available in the [ACL Anthology preview](https://preview.aclanthology.org/sigdial-23-ingestion/volumes/2023.sigdial-1/).
+
+**Oct 5**: The INLG 2023 proceedings are now available in the [ACL Anthology](https://aclanthology.org/venues/inlg/).
 
 **Oct 3**: The list of best paper awards is now [online](awards.html)!
 
