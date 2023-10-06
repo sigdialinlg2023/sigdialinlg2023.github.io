@@ -1,0 +1,334 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus</title>
+  
+<meta name="citation_title" content="Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus" />
+
+<meta name="citation_author" content="Kazunori Komatani" />
+
+<meta name="citation_author" content="Ryu Takeda" />
+
+<meta name="citation_author" content="Shogo Okada" />
+
+<meta name="citation_publication_date" content="September 2023" />
+<meta name="citation_conference_title" content="Visit Sigdial &amp; Inlg 2023" />
+<meta name="citation_inbook_title" content="Proceedings of SIGdial 2023 &amp; Proceedings of INLG 2023" />
+<meta name="citation_abstract" content="Estimating the subjective impressions of human users during a dialogue is necessary when constructing a dialogue system that can respond adaptively to their emotional states. However, such subjective impressions (e.g., how much the user enjoys the dialogue) are inherently ambiguous, and the annotation results provided by multiple annotators do not always agree because they depend on the subjectivity of the annotators. In this paper, we analyzed the annotation results using 13,226 exchanges from 155 participants in a multimodal dialogue corpus called Hazumi that we had constructed, where each exchange was annotated by five third-party annotators. We investigated the agreement between the subjective annotations given by the third-party annotators and the participants themselves, on both per-exchange annotations (i.e., participant&#39;s sentiments) and per-dialogue (-participant) annotations (i.e., questionnaires on rapport and personality traits). We also investigated the conditions under which the annotation results are reliable. Our findings demonstrate that the dispersion of third-party sentiment annotations correlates with agreeableness of the participants, one of the Big Five personality traits." />
+
+
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+
+<!-- Title -->
+<!-- <div class="public-content"> -->
+<div class="pp-card m-3">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center">
+            Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=Kazunori Komatani" class="text-muted"><i>Kazunori Komatani</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Ryu Takeda" class="text-muted"><i>Ryu Takeda</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Shogo Okada" class="text-muted"><i>Shogo Okada</i></a>
+            
+        </h3>
+        <div class="text-center p-3">
+            
+            <p>
+                <a class="card-link" target="_blank" href="static/papers/sigdial/56_Paper.pdf"> Paper </a>
+            </p>
+            
+
+            In Sessions:
+            
+            <!-- {&#39;UID&#39;: &#39;sigdialpostersession1&#39;, &#39;title&#39;: &#39;Sigdial Poster Session 1&#39;, &#39;chair&#39;: &#39;David Schlangen&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;, &#39;room&#39;: &#39;Foyer&#39;, &#39;category&#39;: &#39;time&#39;, &#39;discord&#39;: &#39;https://discord.com/channels/###sigdialpostersession1###&#39;, &#39;zoom&#39;: None, &#39;end&#39;: &#39;2023-09-13T15:10:00+02:00&#39;, &#39;calendarId&#39;: &#39;sigdialposter&#39;, &#39;contents&#39;: [{&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;74&#39;, &#39;UID&#39;: &#39;sigdial74&#39;, &#39;title&#39;: &#39;OpinionConv: Conversational Product Search With Grounded Opinions&#39;, &#39;authors&#39;: [&#39;Vahid Sadiri Javadi&#39;, &#39;Martin Potthast&#39;, &#39;Lucie Flek&#39;], &#39;order&#39;: &#39;11&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;When searching for products, the opinions of others play an important role in making informed decisions. Subjective experiences about a product can be a valuable source of information. This is also true in sales conversations, where a customer and a sales assistant exchange facts and opinions about products. However, training an AI for such conversations is complicated by the fact that language models do not possess authentic opinions for their lack of real-world experience. We address this problem by leveraging product reviews as a rich source of product opinions to ground conversational AI in true subjective narratives. With OpinionConv, we develop the first conversational AI for simulating sales conversations. To validate the generated conversations, we conduct several user studies showing that the generated opinions are perceived as realistic. Our assessors also confirm the importance of opinions as an informative basis for decision making.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/74_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;97&#39;, &#39;UID&#39;: &#39;sigdial97&#39;, &#39;title&#39;: &#39;Dial-M: A Masking-Based Framework for Dialogue Evaluation&#39;, &#39;authors&#39;: [&#39;Suvodip Dey&#39;, &#39;Maunendra Sankar Desarkar&#39;], &#39;order&#39;: &#39;10&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;In dialogue systems, automatically evaluating machine-generated responses is critical and challenging. Despite the tremendous progress in dialogue generation research, its evaluation heavily depends on human judgments. The standard word-overlapping based evaluation metrics are ineffective for dialogues. As a result, most of the recently proposed metrics are model-based and reference-free, which learn to score different aspects of a conversation. However, understanding each aspect requires a separate model, which makes them computationally expensive. To this end, we propose Dial-M, a Masking-based reference-free framework for Dialogue evaluation. The main idea is to mask the keywords of the current utterance and predict them, given the dialogue history and various conditions (like knowledge, persona, etc.), thereby making the evaluation framework simple and easily extensible for multiple datasets. Regardless of its simplicity, Dial-M achieves comparable performance to state-of-the-art metrics on several dialogue evaluation datasets. We also discuss the interpretability of our proposed metric along with error analysis.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/97_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;90&#39;, &#39;UID&#39;: &#39;sigdial90&#39;, &#39;title&#39;: &#39;From Chatter to Matter: Addressing Critical Steps of Emotion Recognition Learning in Task-Oriented Dialogue&#39;, &#39;authors&#39;: [&#39;Shutong Feng&#39;, &#39;Nurul Lubis&#39;, &#39;Benjamin Ruppik&#39;, &#39;Christian Geishauser&#39;, &#39;Michael Heck&#39;, &#39;Hsien-chin Lin&#39;, &#39;Carel van Niekerk&#39;, &#39;Renato Vukovic&#39;, &#39;Milica Gasic&#39;], &#39;order&#39;: &#39;13&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;Emotion recognition in conversations (ERC) is a crucial task for building human-like conversational agents. While substantial efforts have been devoted to ERC for chit-chat dialogues, the task-oriented counterpart is largely left unattended. Directly applying chit-chat ERC models to task-oriented dialogues (ToDs) results in suboptimal performance as these models overlook key features such as the correlation between emotions and task completion in ToDs. In this paper, we propose a framework that turns a chit-chat ERC model into a task-oriented one, addressing three critical aspects: data, features and objective. First, we devise two ways of augmenting rare emotions to improve ERC performance. Second, we use dialogue states as auxiliary features to incorporate key information from the goal of the user. Lastly, we leverage a multi-aspect emotion definition in ToDs to devise a multi-task learning objective and a novel emotion-distance weighted loss function. Our framework yields significant improvements for a range of chit-chat ERC models on EmoWOZ, a large-scale dataset for user emotions in ToDs. We further investigate the generalisability of the best resulting model to predict user satisfaction in different ToD datasets. A comparison with supervised baselines shows a strong zero-shot capability, highlighting the potential usage of our framework in wider scenarios.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/90_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;56&#39;, &#39;UID&#39;: &#39;sigdial56&#39;, &#39;title&#39;: &#39;Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus&#39;, &#39;authors&#39;: [&#39;Kazunori Komatani&#39;, &#39;Ryu Takeda&#39;, &#39;Shogo Okada&#39;], &#39;order&#39;: &#39;7&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#34;Estimating the subjective impressions of human users during a dialogue is necessary when constructing a dialogue system that can respond adaptively to their emotional states. However, such subjective impressions (e.g., how much the user enjoys the dialogue) are inherently ambiguous, and the annotation results provided by multiple annotators do not always agree because they depend on the subjectivity of the annotators. In this paper, we analyzed the annotation results using 13,226 exchanges from 155 participants in a multimodal dialogue corpus called Hazumi that we had constructed, where each exchange was annotated by five third-party annotators. We investigated the agreement between the subjective annotations given by the third-party annotators and the participants themselves, on both per-exchange annotations (i.e., participant&#39;s sentiments) and per-dialogue (-participant) annotations (i.e., questionnaires on rapport and personality traits). We also investigated the conditions under which the annotation results are reliable. Our findings demonstrate that the dispersion of third-party sentiment annotations correlates with agreeableness of the participants, one of the Big Five personality traits.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/56_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/SIGDIAL2023/56.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;67&#39;, &#39;UID&#39;: &#39;sigdial67&#39;, &#39;title&#39;: &#39;Frame-Oriented Summarization of Argumentative Discussions&#39;, &#39;authors&#39;: [&#39;Shahbaz Syed&#39;, &#39;Timon Ziegenbein&#39;, &#39;Philipp Heinisch&#39;, &#39;Henning Wachsmuth&#39;, &#39;Martin Potthast&#39;], &#39;order&#39;: &#39;9&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;Online discussions on controversial topics with many participants frequently include hundreds of arguments that cover different framings of the topic. But these arguments and frames are often spread across the various branches of the discussion tree structure. This makes it difficult for interested participants to follow the discussion in its entirety as well as to introduce new arguments. In this paper, we present a new rank-based approach to extractive summarization of online discussions focusing on argumentation frames that capture the different aspects of a discussion. Our approach includes three retrieval tasks to find arguments in a discussion that are  &lt;p&gt;(1) relevant to a frame of interest,  &lt;p&gt;(2) relevant to the topic under discussion, and  &lt;p&gt;(3) informative to the reader.   &lt;p&gt;Based on a joint ranking by these three criteria for a set of user-selected frames, our approach allows readers to quickly access an ongoing discussion. We evaluate our approach using a test set of 100~controversial Reddit ChangeMyView discussions, for which the relevance of a total of 1871 arguments was manually annotated.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/67_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;20&#39;, &#39;UID&#39;: &#39;sigdial20&#39;, &#39;title&#39;: &#39;Towards Multilingual Automatic Open-Domain Dialogue Evaluation&#39;, &#39;authors&#39;: [&#39;John Mendonca&#39;, &#39;Alon Lavie&#39;, &#39;Isabel Trancoso&#39;], &#39;order&#39;: &#39;2&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;The main limiting factor in the development of robust multilingual open-domain dialogue evaluation metrics is the lack of multilingual data and the limited availability of open-sourced multilingual dialogue systems. In this work, we propose a workaround for this lack of data by leveraging a strong multilingual pretrained encoder-based Language Model and augmenting existing English dialogue data using Machine Translation. We empirically show that the naive approach of finetuning a pretrained multilingual encoder model with translated data is insufficient to outperform the strong baseline of finetuning a multilingual model with only source data. Instead, the best approach consists in the careful curation of translated data using MT Quality Estimation metrics, excluding low quality translations that hinder its performance.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/20_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/SIGDIAL2023/20.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;40&#39;, &#39;UID&#39;: &#39;sigdial40&#39;, &#39;title&#39;: &#39;Dialog Action-Aware Transformer for Dialog Policy Learning&#39;, &#39;authors&#39;: [&#39;Huimin Wang&#39;, &#39;Wai Chung Kwan&#39;, &#39;Kam-Fai Wong&#39;], &#39;order&#39;: &#39;4&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#34;Recent works usually address Dialog policy learning DPL by training a reinforcement learning (RL) agent to determine the best dialog action.  However, existing works on deep RL require a large volume of agent-user interactions to achieve acceptable performance. In this paper, we propose to make full use of the plain text knowledge from the pre-trained language model to accelerate the RL agent&#39;s learning speed. Specifically, we design a dialog action-aware transformer encoder (DaTrans), which integrates a new fine-tuning procedure named masked last action task to encourage DaTrans to be dialog-aware and distill action-specific features. Then, DaTrans is further optimized in an RL setting with ongoing interactions and evolves through exploration in the dialog action space toward maximizing long-term accumulated rewards. The effectiveness and efficiency of the proposed model are demonstrated with both simulator evaluation and human evaluation.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/40_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;75&#39;, &#39;UID&#39;: &#39;sigdial75&#39;, &#39;title&#39;: &#39;The Wizard of Curiosities: Enriching Dialogues With Epistemic Fun-Facts&#39;, &#39;authors&#39;: [&#39;Frederico Vicente&#39;, &#39;Rafael Ferreira&#39;, &#39;David Semedo&#39;, &#39;Joao Magalhaes&#39;], &#39;order&#39;: &#39;12&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#34;Introducing curiosities in a conversation is a way to teach something new to the person in a pleasant and enjoyable way. Enriching dialogues with contextualized curiosities can improve the users&#39; perception of a dialog system and their overall user experience. In this paper, we introduce a set of curated curiosities, targeting dialogues in the cooking and DIY domains. In particular, we use real human-agent conversations collected in the context of the Amazon Alexa TaskBot challenge, a multimodal and multi-turn conversational setting. According to an A/B test with over 1000 conversations, curiosities not only increase user engagement, but provide an average relative rating improvement of 9.7%.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/75_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;35&#39;, &#39;UID&#39;: &#39;sigdial35&#39;, &#39;title&#39;: &#39;The Road to Quality Is Paved With Good Revisions: A Detailed Evaluation Methodology for Revision Policies in Incremental Sequence Labelling&#39;, &#39;authors&#39;: [&#39;Brielen Madureira&#39;, &#39;Patrick Kahardipraja&#39;, &#39;David Schlangen&#39;], &#39;order&#39;: &#39;3&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;Incremental dialogue model components produce a sequence of output prefixes based on incoming input. Mistakes can occur due to local ambiguities or to wrong hypotheses, making the ability to revise past outputs a desirable property that can be governed by a policy. In this work, we formalise and characterise edits and revisions in incremental sequence labelling and propose metrics to evaluate revision policies. We then apply our methodology to profile the incremental behaviour of three Transformer-based encoders in various tasks, paving the road for better revision policies.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/35_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;4&#39;, &#39;UID&#39;: &#39;sigdial4&#39;, &#39;title&#39;: &#39;The Effect of Conversation Type on Entrainment: Evidence From Laughter&#39;, &#39;authors&#39;: [&#39;Bogdan Ludusan&#39;, &#39;Petra Wagner&#39;], &#39;order&#39;: &#39;1&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#34;Entrainment is a phenomenon that occurs across several modalities and at different linguistic levels in conversation. Previous work has shown that its effects may be modulated by conversation extrinsic factors, such as the relation between the interlocutors or the speakers&#39; traits. The current study investigates the role of conversation type on laughter entrainment. Employing dyadic interaction materials in German, containing two conversation types (free dialogues and task-based interactions), we analyzed three measures of entrainment previously proposed in the literature. The results show that the entrainment effects depend on the type of conversation, with two of the investigated measures being affected by this factor. These findings represent further evidence towards the role of situational aspects as a mediating factor in conversation.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/4_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;50&#39;, &#39;UID&#39;: &#39;sigdial50&#39;, &#39;title&#39;: &#34;‘What Are You Referring To?&#39; Evaluating the Ability of Multi-Modal Dialogue Models to Process Clarificational Exchanges&#34;, &#39;authors&#39;: [&#39;Javier Chiyah-Garcia&#39;, &#39;Alessandro Suglia&#39;, &#39;Arash Eshghi&#39;, &#39;Helen Hastie&#39;], &#39;order&#39;: &#39;6&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;Referential ambiguities arise in dialogue when a referring expression does not uniquely identify the intended referent for the addressee. Addressees usually detect such ambiguities immediately and work with the speaker to repair it using meta-communicative, Clarificational Exchanges (CE): a Clarification Request (CR) and a response. Here, we argue that the ability to generate and respond to CRs imposes specific constraints on the architecture and objective functions of multi-modal, visually grounded dialogue models. We use the SIMMC 2.0 dataset to evaluate the ability of different state-of-the-art model architectures to process CEs, with a metric that probes the contextual updates that arise from them in the model. We find that language-based models are able to encode simple multi-modal semantic information and process some CEs, excelling with those related to the dialogue history, whilst multi-modal models can use additional learning objectives to obtain disentangled object representations, which become crucial to handle complex referential ambiguities across modalities overall.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/50_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;3&#39;, &#39;UID&#39;: &#39;sigdial3&#39;, &#39;title&#39;: &#39;PGTask: Introducing the Task of Profile Generation From Dialogues&#39;, &#39;authors&#39;: [&#39;Rui Ribeiro&#39;, &#39;Joao Paulo Carvalho&#39;, &#39;Luisa Coheur&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;Recent approaches have attempted to personalize dialogue systems by leveraging profile information into models. However, this knowledge is scarce and difficult to obtain, which makes the extraction/generation of profile information from dialogues a fundamental asset. To surpass this limitation, we introduce the Profile Generation Task (PGTask). We contribute with a new dataset for this problem, comprising profile sentences aligned with related utterances, extracted from a corpus of dialogues. Furthermore, using state-of-the-art methods, we provide a benchmark for profile generation on this novel dataset. Our experiments disclose the challenges of profile generation, and we hope that this introduces a new research direction.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/3_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/SIGDIAL2023/3.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;61&#39;, &#39;UID&#39;: &#39;sigdial61&#39;, &#39;title&#39;: &#34;Question Generation to Elicit Users&#39; Food Preferences by Considering the Semantic Content&#34;, &#39;authors&#39;: [&#39;Jie Zeng&#39;, &#39;Yukiko Nakano&#39;, &#39;Tatsuya Sakato&#39;], &#39;order&#39;: &#39;8&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#34;To obtain a better understanding of user preferences in providing tailored services, dialogue systems have to generate semi-structured interviews that require flexible dialogue control while following a topic guide to accomplish the purpose of the interview. Toward this goal, this study proposes a semantics-aware GPT-3 fine-tuning model that generates interviews to acquire users&#39; food preferences.  The model was trained using dialogue history and semantic representation constructed from the communicative function and semantic content of the utterance. Using two baseline models: zero-shot ChatGPT and fine-tuned GPT-3, we conducted a user study for subjective evaluations alongside automatic objective evaluations. In the user study, in impression rating, the outputs of the proposed model were superior to those of baseline models and comparable to real human interviews in terms of eliciting the interviewees&#39; food preferences.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/61_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;48&#39;, &#39;UID&#39;: &#39;sigdial48&#39;, &#39;title&#39;: &#39;Roll Up Your Sleeves: Working With a Collaborative and Engaging Task-Oriented Dialogue System&#39;, &#39;authors&#39;: [&#39;Lingbo Mo&#39;, &#39;Shijie Chen&#39;, &#39;Ziru Chen&#39;, &#39;Xiang Deng&#39;, &#39;Ashley Lewis&#39;, &#39;Sunit Singh&#39;, &#39;Samuel Stevens&#39;, &#39;Chang-You Tai&#39;, &#39;Zhen Wang&#39;, &#39;Xiang Yue&#39;, &#39;Tianshu Zhang&#39;, &#39;Yu Su&#39;, &#39;Huan Sun&#39;], &#39;order&#39;: &#39;5&#39;, &#39;session&#39;: &#39;sigdialpostersession1&#39;, &#39;abstract&#39;: &#39;We introduce TacoBot, a user-centered task-oriented digital assistant designed to guide users through complex real-world tasks with multiple steps. Covering a wide range of cooking and how-to tasks, we aim to deliver a collaborative and engaging dialogue experience. Equipped with language understanding, dialogue management, and response generation components supported by a robust search engine, TacoBot ensures efficient task assistance. To enhance the dialogue experience, we explore a series of data augmentation strategies using LLMs to train advanced neural models continuously. TacoBot builds upon our successful participation in the inaugural Alexa Prize TaskBot Challenge, where our team secured third place among ten competing teams. We offer TacoBot as an open-source framework that serves as a practical example for deploying task-oriented dialogue systems.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/48_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T13:30:00+02:00&#39;}], &#39;name&#39;: &#39;Sigdial Poster Session 1&#39;, &#39;start_time&#39;: datetime.datetime(2023, 9, 13, 13, 30, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;end_time&#39;: datetime.datetime(2023, 9, 13, 15, 10, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;location&#39;: &#39;#sigdialpostersession1&#39;, &#39;day&#39;: &#39;Wednesday&#39;} - <br /> -->
+            <p>
+                Sigdial Poster Session 1: (Wednesday, 13:30 CEST, Foyer
+                <span class="gated-content">
+                    
+                    , <a href="https://discord.com/channels/###sigdialpostersession1###" target="_blank"
+                        class="card-link discord-link">Chat on Discord </a>
+                </span>
+                )
+            </p>
+            
+
+            
+            
+            <a href="static/posters/SIGDIAL2023/56.pdf" target="_blank" class="card-link">
+                <p>Poster </p>
+                <img src="static/posters/thumbnails/sigdial56.png" alt="Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus">
+            </a>
+            
+            
+            <br />
+            
+        </div>
+    </div>
+</div>
+
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Estimating the subjective impressions of human users during a dialogue is necessary when constructing a dialogue system that can respond adaptively to their emotional states. However, such subjective impressions (e.g., how much the user enjoys the dialogue) are inherently ambiguous, and the annotation results provided by multiple annotators do not always agree because they depend on the subjectivity of the annotators. In this paper, we analyzed the annotation results using 13,226 exchanges from 155 participants in a multimodal dialogue corpus called Hazumi that we had constructed, where each exchange was annotated by five third-party annotators. We investigated the agreement between the subjective annotations given by the third-party annotators and the participants themselves, on both per-exchange annotations (i.e., participant&#39;s sentiments) and per-dialogue (-participant) annotations (i.e., questionnaires on rapport and personality traits). We also investigated the conditions under which the annotation results are reliable. Our findings demonstrate that the dispersion of third-party sentiment annotations correlates with agreeableness of the participants, one of the Big Five personality traits.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023</title>
+  
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+<style>
+  .back {
+    background: url("static/images/hradcany_cropped.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .notice {
+      font-weight: bold;
+      color: red;
+      padding: 1em 0;
+  }
+
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        Visit SIGdial & INLG 2023
+      </h2>
+      <h2 class="p-5">
+        11-15 September 2023 | Prague
+      </h2>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+<div class="row">
+  <div class="col-sm">
+
+    <div class="gated-content">
+    <h2>Online Tools for In-Person and Virtual Conference</h2>
+<h3>Chat on Discord</h3>
+<p><strong>Use the invite link <a href="https://discord.gg/zxquHwKy5">https://discord.gg/zxquHwKy5</a> to join the conference Discord.</strong></p>
+<ul>
+<li>Follow announcements in the <a href="https://discord.com/channels/###--general###">INTRO/general</a> channel.</li>
+<li>Meet other fellow researchers and introduce yourself in the <a href="https://discord.com/channels/1112733937828102206/1146806529492787220">INTRO/random-social</a></li>
+<li>Ask in the <a href="https://discord.com/channels/###--help-me###">INTRO/help-me</a> channel.</li>
+<li>Visit the dedicated workshops, keynotes, or oral sessions channels and start chatting with your fellow researchers.</li>
+<li><strong>Use Discord instead of the built-in Zoom chat to ask &amp; comment during the oral sessions.</strong> The Zoom chat will not be monitored.</li>
+<li><strong>If you are presenting a paper, please introduce yourself</strong> in the channel dedicated to the sessions containing your presentation, so others can easily contact you.</li>
+<li><strong>Discuss virtually presented posters</strong> on Friday September 15 at 9:00am CEST in one of the <a href="https://discord.com/channels/###virtualpostersession###">VIRTUAL POSTERs category <strong>voice</strong> channels</a>.</li>
+</ul>
+<h3>Watch on Zoom</h3>
+<p>During workshop days on Monday and Tuesday the following workshop will be streamed on Zoom:</p>
+<ul>
+<li><a href="https://zoom.us/j/###DSTC11###">DSTC11 Zoom meeting</a>.</li>
+<li><a href="https://zoom.us/j/###CS4OA###">CS4OA Zoom meeting</a>.</li>
+<li><a href="https://zoom.us/j/###ICARD###">ICARD Zoom meeting</a>.</li>
+<li><a href="https://zoom.us/j/###MMNLG###">MMNLG Zoom meeting</a>.</li>
+<li><a href="https://zoom.us/j/###TamingLLM###">TamingLLM Zoom meeting</a>.</li>
+</ul>
+<p>The following Zoom links will be used during the conference. Each link corresponds to a room at the venue in Prague.</p>
+<ul>
+<li><a href="https://zoom.us/j/###Sun I###">Zoom meeting will be used for main conference events in the <em>Sun I</em> room</a>.</li>
+<li><a href="https://zoom.us/j/###Sun II###">Zoom meeting will be used for main conference events in the <em>Sun II</em> room</a>.</li>
+</ul>
+<p>When you are logged in, you can always find the right Zoom link in the conference schedule.</p>
+<h3>Recommended Workflow</h3>
+<ol>
+<li>Go to <a href="/calendar.html">Program / Schedule (calendar)</a>.</li>
+<li>Click on one of the currently happening sessions in the <a href="/calendar.html">calendar</a>. The session opens in the day-by-day view.</li>
+<li>Open the corresponding sessions's Discord channel on e.g., <a href="https://sigdialinlg2023.github.io/calendar.html#tab-Wednesday">Keynote Dupoux on Wednesday</a>. Monitor organisational updates or ask questions.</li>
+<li>Open the Zoom session to watch the video feed.</li>
+<li>After the session, feel free to Return to the Discord channel to discuss the session with the presenter and your fellow participants.</li>
+</ol>
+<h3>Important Website Features</h3>
+<ul>
+<li>See the detailed schedule in the <a href="/calendar.html">calendar</a> under the <code>Program / Schedule</code> menu.</li>
+<li>See the list of <a href="/papers.html">all presented papers</a> under the <code>Program / Papers</code> menu. </li>
+<li>Access camera-ready PDFs of the <a href="/papers.html">papers</a>, as well as corresponding Zoom &amp; Discord links at each paper's detail page (login required). </li>
+<li>Links to <a href="/workshops.html">workshops</a> are under the <code>Program / Workshops</code> menu as well as in the schedule.</li>
+</ul>
+<hr />
+<p>If you have any questions regarding Zoom or Discord, please contact <a href="https://ufal.mff.cuni.cz/ondrej-platek">Ondrej Platek</a>.</p>
+    </div>
+
+
+    <div class="public-content">
+    <h3>Please Register &amp; Login to Unlock the Online Presence</h3>
+<p><strong>You first need to <a href="registration.html">register</a> for the conference</strong> in order to access the online features of SIGDIAL &amp; INLG 2023. Online registration is free for non-presenters.</p>
+<p><strong>After your register, please use the <code>Log in</code> button</strong> on the top right of any page on this website. On mobile devices, <code>Log in</code> is the last category in the main menu.
+Logging-in is required for access to Discord, Zoom, or to download camera ready papers in pdf format.</p>
+<p>To log in, please <strong>use the same e-mail you used for conference registration on Eventbrite</strong>. When you open the log-in screen for the first time, simply click <code>Sign up</code> and choose a password. Only emails registered on Eventbrite will be allowed to proceed. You then need to confirm your account by clicking a link sent to you by email.</p>
+<h4>Known Problems</h4>
+<ul>
+<li><strong><code>Prevent Cross-Site Tracking</code> needs to be turned-off:</strong> The <a href="https://auth0.com/">Auth0 authentication service</a>, which is used for logins, needs to use cross-site tracking since it allows logging to this website, but it handles the authentication under its own <a href="https://auth0.com/">auth0.com</a> domain.</li>
+</ul>
+<p>If you have questions regarding authentication for this website, please contact <a href="https://ufal.mff.cuni.cz/ondrej-platek">Ondrej Platek</a>.</p>
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

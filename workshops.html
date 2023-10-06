@@ -1,0 +1,464 @@
+
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Workshops</title>
+  
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+  
+<style>
+  .back {
+    background: url("static/images/hradcany_cropped.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+  .speakers h2 {
+    margin: 1em 0;
+  }
+  .speakers h4 {
+    font-family: "Lato", sans-serif;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        Visit SIGdial & INLG 2023
+      </h2>
+      <h2 class="p-5">
+        11-15 September 2023 | Prague
+      </h2>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  <div id="day">
+    <!-- Workshops -->
+<!--    <div class="border-top my-3"></div>
+<div class="row p-4" id="faq">
+  <div class="col-12 bd-content">
+    <h2 class="text-center">Workshops</h2>
+  </div>
+</div> -->
+    
+    <div class="speakers">
+      <h2>11 &amp; 12 September</h2>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://sites.google.com/view/yrrsds2023">YRRSDS:
+            The 19th Young Researchers&#39; Roundtable on Spoken Dialogue Systems</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Vojtěch Hudeček, Patrícia Schmidtová, Tanvi Dinkar, Weronika Sieińska, Javier Chiyah-García<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#117;&#100;&#101;&#99;&#101;&#107;&#64;&#117;&#102;&#97;&#108;&#46;&#109;&#102;&#102;&#46;&#99;&#117;&#110;&#105;&#46;&#99;&#122;">&#104;&#117;&#100;&#101;&#99;&#101;&#107;&#64;&#117;&#102;&#97;&#108;&#46;&#109;&#102;&#102;&#46;&#99;&#117;&#110;&#105;&#46;&#99;&#122;</a></i>
+      </div>
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>YRRSDS 2023 is an open forum for spoken dialog researchers to discuss their work and research interests. This is the 19th edition of the annual roundtable that provides a networking platform for young researchers in the field. It serves as a playground for stimulating new ideas, sharing tools, and discussing current issues in the Spoken Dialog Systems research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    
+    <div class="speakers">
+      <h2>11 September</h2>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://sites.google.com/view/cs4oa/">CS4OA:
+            The 1st Workshop on Counter Speech for Online Abuse</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Gavin Abercombie, Yi-Ling Chnug, Helena Bonaldi, Marco Guerini<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#71;&#46;&#65;&#98;&#101;&#114;&#99;&#114;&#111;&#109;&#98;&#105;&#101;&#64;&#104;&#119;&#46;&#97;&#99;&#46;&#117;&#107;">&#71;&#46;&#65;&#98;&#101;&#114;&#99;&#114;&#111;&#109;&#98;&#105;&#101;&#64;&#104;&#119;&#46;&#97;&#99;&#46;&#117;&#107;</a></i>
+      </div>
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>A workshop for creating, investigating and improving tools for producing and evaluating counter speech.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://dstc11.dstc.community/">DSTC11:
+            The 11th Dialog System Technology Challenge</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Michel Galley, Yun-Nung (Vivian) Chen, Raghav Gupta, Zhang Chen, Paul Crook, Seungwhan (Shane) Moon, Chulaka Gunasekara, Satwik Kottur, Sarik Ghazarian, Behnam Hedayatnia<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#103;&#97;&#108;&#108;&#101;&#121;&#64;&#109;&#105;&#99;&#114;&#111;&#115;&#111;&#102;&#116;&#46;&#99;&#111;&#109;">&#109;&#103;&#97;&#108;&#108;&#101;&#121;&#64;&#109;&#105;&#99;&#114;&#111;&#115;&#111;&#102;&#116;&#46;&#99;&#111;&#109;</a></i>
+      </div>
+      <div id="collapse2-2" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>In this eleventh challenge, the call for task proposals has resulted into the following 5 different tracks split across two sessions: (1) Ambiguous Candidate Identification and Coreference Resolution for Immersive Multimodal Conversations, (2) Intent Induction from Conversations for Task-Oriented Dialogue, (3) Speech-Aware Dialog Systems Technology Challenge, (4) Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems and (5) Task-oriented Conversational Modeling with Subjective Knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="http://practicald2t.github.io/">PracticalD2T:
+            1st Workshop on Practical LLM-assisted Data-to-Text Generation</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Zdeněk Kasner, Ondřej Plátek, Ondřej Dušek, Dimitra Gkatzia, Simon Mille<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#107;&#97;&#115;&#110;&#101;&#114;&#64;&#117;&#102;&#97;&#108;&#46;&#109;&#102;&#102;&#46;&#99;&#117;&#110;&#105;&#46;&#99;&#122;">&#107;&#97;&#115;&#110;&#101;&#114;&#64;&#117;&#102;&#97;&#108;&#46;&#109;&#102;&#102;&#46;&#99;&#117;&#110;&#105;&#46;&#99;&#122;</a></i>
+      </div>
+      <div id="collapse3-3" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Playing with large language models can be fun. But what if you really need them? Bring your own laptop, programming skills, and open mind. In a team of 3-5 people, you will have 6 hours to build a system for data-to-text generation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    
+    <div class="speakers">
+      <h2>12 September</h2>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://ctrlnlg.github.io/">TamingLLM:
+            Taming Large Language Models: Controllability in the era of Interactive Assistants</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Robert Xiangru Tang, Devamanyu Hazarika, Di Jin, CHao-Wei Huang, Sherry Tongshuang Wu<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#120;&#105;&#97;&#110;&#103;&#114;&#117;&#46;&#116;&#97;&#110;&#103;&#64;&#121;&#97;&#108;&#101;&#46;&#101;&#100;&#117;">&#120;&#105;&#97;&#110;&#103;&#114;&#117;&#46;&#116;&#97;&#110;&#103;&#64;&#121;&#97;&#108;&#101;&#46;&#101;&#100;&#117;</a></i>
+      </div>
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>The goal of our workshop is to provide a common ground for experts working on different models and tasks related to controllable text generation. The interplay between research on controlled-generation and instruction-based learning paradigms sits at the heart of our discussions. Here, they can share task-agnostic solutions, engage in evaluations, and discuss task-specific challenges. By encouraging communication, collaboration, and research amongst attendees, the workshop intends to foster insightful debates about the recent progress of the NLG community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://synalp.gitlabpages.inria.fr/mmnlg2023/">MMNLG:
+            Workshop on Multimodal, Multilingual Natural Language Generation and Multilingual WebNLG Challenge</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Albert Gatt, Anya Belz, Claudia Borg, Liam Cripwell, Aykut Erdem, Erkut Erdem, Claire Gardent, John Judge, William Soto-Martinez<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#46;&#103;&#97;&#116;&#116;&#64;&#117;&#117;&#46;&#110;&#108;">&#97;&#46;&#103;&#97;&#116;&#116;&#64;&#117;&#117;&#46;&#110;&#108;</a></i>
+      </div>
+      <div id="collapse2-2" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>This event aims to bring together researchers working on text generation from multimodal input data. The workshop also emphasises multilinguality as an ongoing, open challenge for text generation methods, especially for languages which are relatively under-resourced.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home">ICARD:
+            Connecting multiple disciplines to AI techniques in interaction-centric autism research and diagnosis</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Tahyia Chowdhury, Malihe Alikhani, Julia Parish-Morris, Emily Prud&#39;hommeaux, Veronica Romero<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#99;&#114;&#111;&#109;&#101;&#114;&#111;&#64;&#99;&#111;&#108;&#98;&#121;&#46;&#101;&#100;&#117;">&#118;&#99;&#114;&#111;&#109;&#101;&#114;&#111;&#64;&#99;&#111;&#108;&#98;&#121;&#46;&#101;&#100;&#117;</a></i>
+      </div>
+      <div id="collapse3-3" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>In this workshop, we invite researchers and practitioners both in academia and industry with backgrounds across different disciplines including psychology, artificial intelligence, natural language processing, and autism research for a discussion on how to connect these disciplines to different AI techniques for autism research and diagnosis focused on interaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="accordionExample">
+    <div class="card m-1">
+      <div class="card-header">
+        <h4><a href="https://icsresearch.ucd.ie/sigDial23/web/index.html">Designing divergent agent tasks for SDS data collection</a></h4>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+        
+        <i>Organizers: Paola Peña, Philip R. Doyle, Yunhan Wu, Oliver Lemon, Benjamin R. Cowan<br>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#97;&#111;&#108;&#97;&#46;&#112;&#101;&#110;&#97;&#64;&#117;&#99;&#100;&#99;&#111;&#110;&#110;&#101;&#99;&#116;&#46;&#105;&#101;">&#112;&#97;&#111;&#108;&#97;&#46;&#112;&#101;&#110;&#97;&#64;&#117;&#99;&#100;&#99;&#111;&#110;&#110;&#101;&#99;&#116;&#46;&#105;&#101;</a></i>
+      </div>
+      <div id="collapse4-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p><strong>THIS WORKSHOP WAS CANCELLED.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023</title>
+  
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+  
+<style>
+  .back {
+    background: url("static/images/hradcany_cropped.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+
+  table td,
+  table th {
+    padding: 2pt 0.5em;
+  }
+
+  table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 1em 0;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        Visit SIGdial & INLG 2023
+      </h2>
+      <h2 class="p-5">
+        11-15 September 2023 | Prague
+      </h2>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+<div class="row">
+  <div class="col-sm">
+    <h2>Registration</h2>
+<p><strong>Registration proceeds through Eventbrite <a href="https://www.eventbrite.com/e/678564603997">under this link</a>.</strong>
+Note that the registration form includes a questionnaire for participants, most of which appears <em>after</em> you buy the tickets.
+Please do not forget to fill in the ID of the paper you are presenting.</p>
+<p>Your registration confirmation includes a link for booking accommodation at the <a href="venue.html">venue hotel</a> with special rates (available until 18 August).</p>
+<p>After you complete the registration payment, you can request an <a href="invoice.html">invoice here</a>. Note that the payment must be done by card on Eventbrite, we are only able to generate invoices after the payment has been made and cannot accept direct bank transfers.</p>
+<p>In case of any problems with the registration, please check the <a href="help.html">FAQ</a> or contact <a href="https://ufal.mff.cuni.cz/ondrej-dusek">Ondrej Dusek</a>.</p>
+<h2>Fees</h2>
+<p>The registration fees includes lunch &amp; coffee breaks, welcome reception on Sep 13 and conference dinner on Sep 14. 
+Prices are paid in USD due to the Eventbrite payment processing.
+Prices shown here include the Eventbrite payment processing fees, you can see the price breakdown on Eventbrite.
+The registration costs for paper presenters are the same, regardless of in-person/online attendance.</p>
+<p><strong>Online attendance without a presentation</strong> will be <strong>free</strong>. You still need to register to access the online system.</p>
+<h4>Early (before August 18th -- extended!)</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Cost incl. fees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regular – main conference</td>
+<td>$567.39</td>
+</tr>
+<tr>
+<td>Regular – conference + workshops</td>
+<td>$626.08</td>
+</tr>
+<tr>
+<td>Regular – workshops only</td>
+<td>$145.90</td>
+</tr>
+<tr>
+<td>Student – main conference</td>
+<td>$337.97</td>
+</tr>
+<tr>
+<td>Student – conference + workshops</td>
+<td>$401.99</td>
+</tr>
+<tr>
+<td>Student – workshops only</td>
+<td>$71.20</td>
+</tr>
+</tbody>
+</table>
+<h4>Late (after August 18th)</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Cost incl. fees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regular – main conference</td>
+<td>$850.16</td>
+</tr>
+<tr>
+<td>Regular – conference + workshops</td>
+<td>$962.21</td>
+</tr>
+<tr>
+<td>Regular – workshops only</td>
+<td>$225.93</td>
+</tr>
+<tr>
+<td>Student – main conference</td>
+<td>$455.35</td>
+</tr>
+<tr>
+<td>Student – conference + workshops</td>
+<td>$514.04</td>
+</tr>
+<tr>
+<td>Student – workshops only</td>
+<td>$113.88</td>
+</tr>
+</tbody>
+</table>
+<h4>Additional</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Cost incl. fees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+1 Banquet ticket (for Sep 14)</td>
+<td>$65.87</td>
+</tr>
+</tbody>
+</table>
+<h3>Visa</h3>
+<p>In case you need an invitation letter for your visa application, please email <a href="https://ufal.mff.cuni.cz/ondrej-dusek">Ondrej Dusek</a>.</p>
+<p>To speed up the process, please include the following in your request (all in accordance with what it says on your passport):</p>
+<ul>
+<li>Your full name</li>
+<li>Your pronouns</li>
+<li>Your academic title, if any</li>
+<li>Your passport number</li>
+<li>Your date and place (city/municipality/province) of birth</li>
+<li>Your affiliation</li>
+<li>The title of your accepted paper</li>
+<li>Which Czech Embassy or Consulate General you're addressing </li>
+</ul>
+<p>You can see the <a href="https://www.mzv.cz/jnp/en/diplomatic_missions/czech_missions_abroad/index.html">list of Czech embassies and consulates</a> here. Note that <em>Honorary</em> Consulates do not process visas. In addition to embassies and consulates general, you can also apply for a visa in one of the <a href="https://www.mzv.cz/jnp/en/information_for_aliens/short_stay_visa/outsourcing/index.html">visa centers</a>. Your application will then get passed on to the nearest embassy.</p>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models</title>
+  
+<meta name="citation_title" content="Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models" />
+
+<meta name="citation_author" content="Judith Sieker" />
+
+<meta name="citation_author" content="Oliver Bott" />
+
+<meta name="citation_author" content="Torgrim Solstad" />
+
+<meta name="citation_author" content="Sina Zarrieß" />
+
+<meta name="citation_publication_date" content="September 2023" />
+<meta name="citation_conference_title" content="Visit Sigdial &amp; Inlg 2023" />
+<meta name="citation_inbook_title" content="Proceedings of SIGdial 2023 &amp; Proceedings of INLG 2023" />
+<meta name="citation_abstract" content="Recent studies have used human continuations of Implicit Causality (IC) prompts collected in linguistic experiments to evaluate discourse understanding in large language models (LLMs), focusing on the well-known IC coreference bias in the LLMs&#39; predictions of the next word following the prompt. In this study, we investigate how continuations of IC prompts can be used to evaluate the text generation capabilities of LLMs in a linguistically controlled setting. We conduct an experiment using two open-source GPT-based models, employing human evaluation to assess different aspects of continuation quality. Our findings show that LLMs struggle in particular with generating coherent continuations in this rather simple setting, indicating a lack of discourse knowledge beyond the well-known IC bias. Our results also suggest that a bias congruent continuation does not necessarily equate to a higher continuation quality. Furthermore, our study draws upon insights from the Uniform Information Density hypothesis, testing different prompt modifications and decoding procedures and showing that sampling-based methods are particularly sensitive to the information density of the prompts." />
+
+
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+
+<!-- Title -->
+<!-- <div class="public-content"> -->
+<div class="pp-card m-3">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center">
+            Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=Judith Sieker" class="text-muted"><i>Judith Sieker</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Oliver Bott" class="text-muted"><i>Oliver Bott</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Torgrim Solstad" class="text-muted"><i>Torgrim Solstad</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Sina Zarrieß" class="text-muted"><i>Sina Zarrieß</i></a>
+            
+        </h3>
+        <div class="text-center p-3">
+            
+            <p>
+                <a class="card-link" target="_blank" href="static/papers/inlg/83_Paper.pdf"> Paper </a>
+            </p>
+            
+
+            In Sessions:
+            
+            <!-- {&#39;UID&#39;: &#39;inlgoralsession4&#39;, &#39;title&#39;: &#39;INLG Oral Session 4: Evaluation and linguistic analysis of NLG systems&#39;, &#39;chair&#39;: &#39;Albert Gatt&#39;, &#39;start&#39;: &#39;2023-09-14T14:00:00+02:00&#39;, &#39;room&#39;: &#39;Sun II&#39;, &#39;category&#39;: &#39;time&#39;, &#39;discord&#39;: &#39;https://discord.com/channels/###inlgoralsession4###&#39;, &#39;zoom&#39;: &#39;https://zoom.us/j/###Sun II###&#39;, &#39;end&#39;: &#39;2023-09-14T15:40:00+02:00&#39;, &#39;calendarId&#39;: &#39;inlgoral&#39;, &#39;contents&#39;: [{&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;30&#39;, &#39;UID&#39;: &#39;inlg30&#39;, &#39;title&#39;: &#39;Models of Reference Production: How Do They Withstand the Test of Time?&#39;, &#39;authors&#39;: [&#39;Fahime Same&#39;, &#39;Guanyi Chen&#39;, &#39;Kees van Deemter&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession4&#39;, &#39;abstract&#39;: &#34;In recent years, many NLP studies have focused solely on performance improvement. In this work, we focus on the linguistic and scientific aspects of NLP. We use the task of generating referring expressions in context (REG-in-context) as a case study and start our analysis from GREC, a comprehensive set of shared tasks in English that addressed this topic over a decade ago. We ask what the performance of models would be if we assessed them (1) on more realistic datasets, and (2) using more advanced methods. We test the models using different evaluation metrics and feature selection experiments. We conclude that GREC can no longer be regarded as offering a reliable assessment of models&#39; ability to mimic human reference production, because the results are highly impacted by the choice of corpus and evaluation metrics. Our results also suggest that pre-trained language models are less dependent on the choice of corpus than classic Machine Learning models, and therefore make more robust class predictions.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/30_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/30.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-14T14:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;57&#39;, &#39;UID&#39;: &#39;inlg57&#39;, &#39;title&#39;: &#39;This Is Not Correct! Negation-Aware Evaluation of Language Generation Systems&#39;, &#39;authors&#39;: [&#39;Miriam Anschütz&#39;, &#39;Diego Miguel Lozano&#39;, &#39;Georg Groh&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession4&#39;, &#39;abstract&#39;: &#34;Large language models underestimate the impact of negations on how much they change the meaning of a sentence. Therefore, learned evaluation metrics based on these models are insensitive to negations. In this paper, we propose NegBLEURT, a negation-aware version of the BLEURT evaluation metric. For that, we designed a rule-based sentence negation tool and used it to create the CANNOT negation evaluation dataset. Based on this dataset, we fine-tuned a sentence transformer and an evaluation metric to improve their negation sensitivity. Evaluating these models on existing benchmarks shows that our fine-tuned models outperform existing metrics on the negated sentences by far while preserving their base models&#39; performances on other perturbations.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/57_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/57.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-14T14:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;83&#39;, &#39;UID&#39;: &#39;inlg83&#39;, &#39;title&#39;: &#39;Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models&#39;, &#39;authors&#39;: [&#39;Judith Sieker&#39;, &#39;Oliver Bott&#39;, &#39;Torgrim Solstad&#39;, &#39;Sina Zarrieß&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession4&#39;, &#39;abstract&#39;: &#34;Recent studies have used human continuations of Implicit Causality (IC) prompts collected in linguistic experiments to evaluate discourse understanding in large language models (LLMs), focusing on the well-known IC coreference bias in the LLMs&#39; predictions of the next word following the prompt. In this study, we investigate how continuations of IC prompts can be used to evaluate the text generation capabilities of LLMs in a linguistically controlled setting. We conduct an experiment using two open-source GPT-based models, employing human evaluation to assess different aspects of continuation quality. Our findings show that LLMs struggle in particular with generating coherent continuations in this rather simple setting, indicating a lack of discourse knowledge beyond the well-known IC bias. Our results also suggest that a bias congruent continuation does not necessarily equate to a higher continuation quality. Furthermore, our study draws upon insights from the Uniform Information Density hypothesis, testing different prompt modifications and decoding procedures and showing that sampling-based methods are particularly sensitive to the information density of the prompts.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/83_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/83.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-14T14:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;115&#39;, &#39;UID&#39;: &#39;inlg115&#39;, &#39;title&#39;: &#39;Exploring the Naturalness of Cognitive Status-Informed Referring Form Selection Models&#39;, &#39;authors&#39;: [&#39;Gabriel Del Castillo&#39;, &#39;Grace Clark&#39;, &#39;Zhao Han&#39;, &#39;Tom Williams&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession4&#39;, &#39;abstract&#39;: &#39;Language-capable robots must be able to efficiently and naturally communicate about objects in the environment. A key part of communication is Referring Form Selection (RFS): the process of selecting a form like it, that, or the N to use when referring to an object. Recent cognitive status-informed computational RFS models have been evaluated in terms of goodness-of-fit to human data. But it is as yet unclear whether these models actually select referring forms that are any more natural than baseline alternatives, regardless of goodness-of-fit. Through a human subject study designed to assess this question, we show that even though cognitive status-informed referring selection models achieve good fit to human data, they do not (yet) produce concrete benefits in terms of naturality. On the other hand, our results show that human utterances also had high variability in perceived naturality, demonstrating the challenges of evaluating RFS naturality.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/115_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/115.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-14T14:00:00+02:00&#39;}], &#39;name&#39;: &#39;INLG Oral Session 4: Evaluation and linguistic analysis of NLG systems&#39;, &#39;start_time&#39;: datetime.datetime(2023, 9, 14, 14, 0, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;end_time&#39;: datetime.datetime(2023, 9, 14, 15, 40, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;location&#39;: &#39;#inlgoralsession4&#39;, &#39;day&#39;: &#39;Thursday&#39;} - <br /> -->
+            <p>
+                INLG Oral Session 4: Evaluation and linguistic analysis of NLG systems: (Thursday, 14:00 CEST, Sun II
+                <span class="gated-content">
+                    , <a href="https://zoom.us/j/###Sun II###" target="_blank"
+                        class="card-link">Watch on Zoom</a> 
+                    , <a href="https://discord.com/channels/###inlgoralsession4###" target="_blank"
+                        class="card-link discord-link">Chat on Discord </a>
+                </span>
+                )
+            </p>
+            
+
+            
+            
+            <a href="static/posters/INLG2023/83.pdf" target="_blank" class="card-link">
+                <p>Poster </p>
+                <img src="static/posters/thumbnails/inlg83.png" alt="Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models">
+            </a>
+            
+            
+            <br />
+            
+        </div>
+    </div>
+</div>
+
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Recent studies have used human continuations of Implicit Causality (IC) prompts collected in linguistic experiments to evaluate discourse understanding in large language models (LLMs), focusing on the well-known IC coreference bias in the LLMs&#39; predictions of the next word following the prompt. In this study, we investigate how continuations of IC prompts can be used to evaluate the text generation capabilities of LLMs in a linguistically controlled setting. We conduct an experiment using two open-source GPT-based models, employing human evaluation to assess different aspects of continuation quality. Our findings show that LLMs struggle in particular with generating coherent continuations in this rather simple setting, indicating a lack of discourse knowledge beyond the well-known IC bias. Our results also suggest that a bias congruent continuation does not necessarily equate to a higher continuation quality. Furthermore, our study draws upon insights from the Uniform Information Density hypothesis, testing different prompt modifications and decoding procedures and showing that sampling-based methods are particularly sensitive to the information density of the prompts.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

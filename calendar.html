@@ -1,0 +1,3923 @@
+
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Schedule</title>
+  
+<script src="https://cdn.jsdelivr.net/npm/ical.js@1.4.0/build/ical.min.js"
+  integrity="sha256-iFbWWsVYU6rIgbq5wJc4mp8zvV3SkqupxgH/7a9PanY=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/min/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.31/builds/moment-timezone-with-data-10-year-range.min.js"
+  integrity="sha256-Dx3P9LwbB/WuS+7Xv37Y+qcPS/14AwFH653Pw80AOhY=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.5.2/dist/tui-code-snippet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tui-dom@3.0.0/dist/tui-dom.min.js"
+  integrity="sha256-Ha3QUAK/d/Z2BMN/hDoBjwP0Q0f5uS9MploTRSLqrLI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.js"></script>
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+<script src="static/js/modules/lazyLoad.js"></script>
+<script src="static/js/modules/urlParams.js"></script>
+<script type="text/javascript" src="static/js/views/calendar.js"></script>  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>  
+<style>
+  .notice {
+    font-weight: bold;
+    color: red;
+    padding: 1em 0;
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+      
+
+<div class="notice">
+  <span class="public-content">Please log in to view the Zoom and Discord sessions' links and to access the individual
+    paper pages.</span>
+</div>
+
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a class="nav-link active text-muted " data-toggle="tab" href="#tab-calendar" role="tab"
+      aria-controls="nav-home" aria-selected="true">Calendar
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link  text-muted " data-toggle="tab" href="#tab-Monday" role="tab"
+      aria-controls="nav-home" aria-selected="true">Monday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link  text-muted " data-toggle="tab" href="#tab-Tuesday" role="tab"
+      aria-controls="nav-home" aria-selected="true">Tuesday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link  text-muted " data-toggle="tab" href="#tab-Wednesday" role="tab"
+      aria-controls="nav-home" aria-selected="true">Wednesday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link  text-muted " data-toggle="tab" href="#tab-Thursday" role="tab"
+      aria-controls="nav-home" aria-selected="true">Thursday
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link  text-muted " data-toggle="tab" href="#tab-Friday" role="tab"
+      aria-controls="nav-home" aria-selected="true">Friday
+    </a>
+  </li>
+  
+</ul>
+
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  <!-- Calender tab -->
+
+  <div class="tab-pane active" id="tab-calendar" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div class="form-group col">
+      <label for="tzOptions">Timezone:</label>
+      <select id="tzOptions" class="selectpicker" data-live-search="true">
+      </select>
+    </div>
+
+    <!-- full cal for browser-->
+    <div id="calendar" class="d-none d-sm-block"></div>
+
+    <!-- small cal for smart phones-->
+    <div id="calendar_small" class="d-sm-none"></div>
+  </div>
+
+  <!-- Day Tab -->
+
+  <div class="btn-group-sm btn-group-toggle " data-toggle="buttons" id="conference-toggle">
+    <label class="btn btn-light active">
+      <input type="radio" name="conference-options" id="btn-allsessions" autocomplete="off" checked>All
+    </label>
+    <label class="btn btn-light">
+      <input type="radio" name="conference-options" id="btn-sigdialsessions" autocomplete="off"> SIGDIAL
+    </label>
+    <label class="btn btn-light">
+      <input type="radio" name="conference-options" id="btn-inlgsessions" autocomplete="off"> INLG
+    </label>
+  </div>
+  <!-- the button group should be centered on the page -->
+  <style>
+    #conference-toggle {
+      margin: auto;
+      display: block;
+      text-align: center;
+      background-color: rgb(248, 248, 248);
+    }
+  </style>
+
+  <script>
+    // callback: if SIGDIAL button gets pressed, hide INLG sessions and vice versa
+    $("input[name='conference-options']").change(function () {
+      if ($("#btn-sigdialsessions").is(":checked")) {
+        $("[id^=sigdial]").show();
+        $("[id^=inlg]").hide();
+      } else if ($("#btn-inlgsessions").is(":checked")) {
+        $("[id^=sigdial]").hide();
+        $("[id^=inlg]").show();
+      } else {
+        $("[id^=sigdial]").show();
+        $("[id^=inlg]").show();
+      }
+    });
+  </script>
+
+  
+  <div class="tab-pane fade" id="tab-Monday" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div id="day_Monday">
+      
+
+
+<div class="row">
+  <div class="col-12" id="dstc11">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#dstc11" id="dstc11">DSTC11</a>
+        
+        
+        (09:00-18:40 CEST, Jupiter (1st floor)<span
+          class="gated-content">, <a href="https://zoom.us/j/###DSTC11###">Watch on Zoom</a>, <a href="https://discord.com/channels/###dstc11###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://dstc11.dstc.community/">The 11th Dialog System Technology Challenge</a><br /><i>Organizers: Michel Galley, Yun-Nung (Vivian) Chen, Raghav Gupta, Zhang Chen, Paul Crook, Seungwhan (Shane) Moon, Chulaka Gunasekara, Satwik Kottur, Sarik Ghazarian, Behnam Hedayatnia</i>
+              <br />In this eleventh challenge, the call for task proposals has resulted into the following 5 different tracks split across two sessions: (1) Ambiguous Candidate Identification and Coreference Resolution for Immersive Multimodal Conversations, (2) Intent Induction from Conversations for Task-Oriented Dialogue, (3) Speech-Aware Dialog Systems Technology Challenge, (4) Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems and (5) Task-oriented Conversational Modeling with Subjective Knowledge.<br /><a href="https://dstc11.dstc.community/workshop/workshop-program">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="cs4oa">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#cs4oa" id="cs4oa">CS4OA</a>
+        
+        
+        (09:00-16:40 CEST, Uranus (1st floor -- updated!)<span
+          class="gated-content">, <a href="https://zoom.us/j/###CS4OA###">Watch on Zoom</a>, <a href="https://discord.com/channels/###cs4oa###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse2-2" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://sites.google.com/view/cs4oa/">The 1st Workshop on Counter Speech for Online Abuse</a><br /><i>Organizers: Gavin Abercombie, Yi-Ling Chnug, Helena Bonaldi, Marco Guerini</i>
+              <br />A workshop for creating, investigating and improving tools for producing and evaluating counter speech.<br /><a href="https://sites.google.com/view/cs4oa/schedule">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="practicald2t">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#practicald2t" id="practicald2t">PracticalD2T</a>
+        
+        
+        (09:00-18:00 CEST, Neptune (ground floor -- updated!)<span
+          class="gated-content">, <a href="https://discord.com/channels/###practicald2t###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse3-3" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="http://practicald2t.github.io/">1st Workshop on Practical LLM-assisted Data-to-Text Generation</a><br /><i>Organizers: Zdeněk Kasner, Ondřej Plátek, Ondřej Dušek, Dimitra Gkatzia, Simon Mille</i>
+              <br />Playing with large language models can be fun. But what if you really need them? Bring your own laptop, programming skills, and open mind. In a team of 3-5 people, you will have 6 hours to build a system for data-to-text generation.<br /><a href="https://practicald2t.github.io/#schedule">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="yrrsds1">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#yrrsds1" id="yrrsds1">YRRSDS 1</a>
+        
+        
+        (09:30-16:15 CEST, Observatory (9th floor)<span
+          class="gated-content">, <a href="https://discord.com/channels/###yrrsds1###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse4-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://sites.google.com/view/yrrsds2023">The 19th Young Researchers&#39; Roundtable on Spoken Dialogue Systems</a><br /><i>Organizers: Vojtěch Hudeček, Patrícia Schmidtová, Tanvi Dinkar, Weronika Sieińska, Javier Chiyah-García</i>
+              <br />YRRSDS 2023 is an open forum for spoken dialog researchers to discuss their work and research interests. This is the 19th edition of the annual roundtable that provides a networking platform for young researchers in the field. It serves as a playground for stimulating new ideas, sharing tools, and discussing current issues in the Spoken Dialog Systems research.<br /><a href="https://sites.google.com/view/yrrsds2023/program">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak1">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak1" id="coffeebreak1">Coffee break</a>
+        
+        
+        (10:00-11:00 CEST, 1st floor<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="lunch1">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#lunch1" id="lunch1">Lunch</a>
+        
+        
+        (12:30-13:30 CEST, Restaurant (1st floor)<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak2">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak2" id="coffeebreak2">Coffee break</a>
+        
+        
+        (15:00-16:00 CEST, 1st floor<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div class="tab-pane fade" id="tab-Tuesday" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div id="day_Tuesday">
+      
+
+
+<div class="row">
+  <div class="col-12" id="mmnlg">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#mmnlg" id="mmnlg">MMNLG</a>
+        
+        
+        (09:00-17:30 CEST, Neptune (ground floor -- updated!)<span
+          class="gated-content">, <a href="https://zoom.us/j/###MMNLG###">Watch on Zoom</a>, <a href="https://discord.com/channels/###mmnlg###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://synalp.gitlabpages.inria.fr/mmnlg2023/">Workshop on Multimodal, Multilingual Natural Language Generation and Multilingual WebNLG Challenge</a><br /><i>Organizers: Albert Gatt, Anya Belz, Claudia Borg, Liam Cripwell, Aykut Erdem, Erkut Erdem, Claire Gardent, John Judge, William Soto-Martinez</i>
+              <br />This event aims to bring together researchers working on text generation from multimodal input data. The workshop also emphasises multilinguality as an ongoing, open challenge for text generation methods, especially for languages which are relatively under-resourced.<br /><a href="https://synalp.gitlabpages.inria.fr/mmnlg2023/schedule/">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="icard">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#icard" id="icard">ICARD</a>
+        
+        
+        (09:00-13:00 CEST, Uranus (1st floor)<span
+          class="gated-content">, <a href="https://zoom.us/j/###ICARD###">Watch on Zoom</a>, <a href="https://discord.com/channels/###icard###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse2-2" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home">Connecting multiple disciplines to AI techniques in interaction-centric autism research and diagnosis</a><br /><i>Organizers: Tahyia Chowdhury, Malihe Alikhani, Julia Parish-Morris, Emily Prud&#39;hommeaux, Veronica Romero</i>
+              <br />In this workshop, we invite researchers and practitioners both in academia and industry with backgrounds across different disciplines including psychology, artificial intelligence, natural language processing, and autism research for a discussion on how to connect these disciplines to different AI techniques for autism research and diagnosis focused on interaction.<br /><a href="https://sites.google.com/colby.edu/sigdial23-ws-autism-research/home">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="tamingllm">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#tamingllm" id="tamingllm">TamingLLM</a>
+        
+        
+        (09:30-18:00 CEST, Jupiter (1st floor -- updated!)<span
+          class="gated-content">, <a href="https://zoom.us/j/###TamingLLM###">Watch on Zoom</a>, <a href="https://discord.com/channels/###tamingllm###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse3-3" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://ctrlnlg.github.io/">Taming Large Language Models: Controllability in the era of Interactive Assistants</a><br /><i>Organizers: Robert Xiangru Tang, Devamanyu Hazarika, Di Jin, CHao-Wei Huang, Sherry Tongshuang Wu</i>
+              <br />The goal of our workshop is to provide a common ground for experts working on different models and tasks related to controllable text generation. The interplay between research on controlled-generation and instruction-based learning paradigms sits at the heart of our discussions. Here, they can share task-agnostic solutions, engage in evaluations, and discuss task-specific challenges. By encouraging communication, collaboration, and research amongst attendees, the workshop intends to foster insightful debates about the recent progress of the NLG community.<br /><a href="https://ctrlnlg.github.io/#schedule">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="yrrsds2">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#yrrsds2" id="yrrsds2">YRRSDS 2</a>
+        
+        
+        (09:30-15:00 CEST, Observatory (9th floor)<span
+          class="gated-content">, <a href="https://discord.com/channels/###yrrsds2###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse4-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            
+            <!-- a workshop -->
+            <li><a href="https://sites.google.com/view/yrrsds2023">The 19th Young Researchers&#39; Roundtable on Spoken Dialogue Systems</a><br /><i>Organizers: Vojtěch Hudeček, Patrícia Schmidtová, Tanvi Dinkar, Weronika Sieińska, Javier Chiyah-García</i>
+              <br />YRRSDS 2023 is an open forum for spoken dialog researchers to discuss their work and research interests. This is the 19th edition of the annual roundtable that provides a networking platform for young researchers in the field. It serves as a playground for stimulating new ideas, sharing tools, and discussing current issues in the Spoken Dialog Systems research.<br /><a href="https://sites.google.com/view/yrrsds2023/program">🔗 Workshop schedule</a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak3">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak3" id="coffeebreak3">Coffee break</a>
+        
+        
+        (10:30-11:30 CEST, 1st floor<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="lunch2">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#lunch2" id="lunch2">Lunch</a>
+        
+        
+        (12:30-13:30 CEST, Restaurant (1st floor)<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak4">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak4" id="coffeebreak4">Coffee break</a>
+        
+        
+        (15:00-16:00 CEST, 1st floor<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div class="tab-pane fade" id="tab-Wednesday" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div id="day_Wednesday">
+      
+
+
+<div class="row">
+  <div class="col-12" id="opening">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#opening" id="opening">Opening</a>
+        
+        
+        (09:00-09:15 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###opening###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="keynotedupoux">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#keynotedupoux" id="keynotedupoux">Keynote Dupoux</a>
+        
+        
+        (09:15-10:15 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###keynotedupoux###">Chat on Discord</a></span>)
+        
+        <i>Chair: Hung-yi Lee</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse2-2" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            <!-- a keynote talk -->
+            <li><a
+                href="speakers.html#EmmanuelDupoux">Textless NLP: towards language processing from raw audio</a><br /><i>Emmanuel Dupoux</i><br />The oral (or gestural) modality is the most natural channel for human language interactions. Yet, language technology (Natural Language Processing, NLP) is primarily based on the written modality, and requires massive amounts of textual resources for the training of useful language models. As a result, even fundamentally speech-first applications like speech-to-speech translation or spoken assistants like Alexa, or Siri, are constructed in a Frankenstein way, with text as an intermediate representation between the signal and language models. Besides this being inefficient, This has two unfortunate consequences: first, only a small fraction of the world&#39;s languages that have massive textual repositories can be addressed by current technology. Second, even for text-rich languages, the oral form mismatches the written form at a variety of levels, including vocabulary and expressions. The oral medium also contains typically unwritten linguistic features like rhythm and intonation (prosody) and rich paralinguistic information (non verbal vocalizations like laughter, cries, clicks, etc, nuances carried through changes in voice qualities) which are therefore inaccessible to language models. But is this a necessity? Could we build language applications directly from the audio stream without using any text? In this talk, we review recent breakthroughs in representation learning and self-supervised techniques which have made it possible to learn latent linguistic units directly from audio which unlock the learning of generative language models without the use of any text. We show that these models can capture heretofore unaddressed nuances of the oral language including in a dialogue context, opening up the possibility of speech-to-speech textless NLP applications. We outline existing technical challenges to achieve this goal, including challenges to build expressive oral language datasets at scale.
+            </li>
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak5">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak5" id="coffeebreak5">Coffee break</a>
+        
+        
+        (10:15-10:45 CEST, Foyer<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlgoralsession1">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlgoralsession1" id="inlgoralsession1">INLG Oral Session 1: Trustworthiness of NLG systems</a>
+        
+        
+        (10:45-12:30 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###inlgoralsession1###">Chat on Discord</a></span>)
+        
+        <i>Chair: Ching-Chi-Chen</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse4-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg12.html">
+                 Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Daphne Ippolito, Florian Tramer, Milad Nasr, Chiyuan Zhang, Matthew Jagielski, Katherine Lee, Christopher Choquette Choo, Nicholas Carlini</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg34.html">
+                 Generating Faithful Text From a Knowledge Graph With Noisy Reference Text 
+              </a>
+              <!-- <span class="public-content">
+                 Generating Faithful Text From a Knowledge Graph With Noisy Reference Text 
+              </span> -->
+              <br /><i>Tahsina Hashem, Weiqing Wang, Derry Tanti Wijaya, Mohammed Eunus Ali, Yuan-Fang Li</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg58.html">
+                 Guidance in Radiology Report Summarization: An Empirical Evaluation and Error Analysis  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Guidance in Radiology Report Summarization: An Empirical Evaluation and Error Analysis [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Jan Trienes, Paul Youssef, Jörg Schlötterer, Christin Seifert</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg97.html">
+                 Enhancing Factualness and Controllability of Data-to-Text Generation via Data Views and Constraints 
+              </a>
+              <!-- <span class="public-content">
+                 Enhancing Factualness and Controllability of Data-to-Text Generation via Data Views and Constraints 
+              </span> -->
+              <br /><i>Craig Thomson, Clement Rebuffel, Ehud Reiter, Laure Soulier, Somayajulu Sripada, patrick Gallinari</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialoralsession1">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialoralsession1" id="sigdialoralsession1">Sigdial Oral Session 1: Analysis of discourse and dialogue</a>
+        
+        
+        (10:45-12:30 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###sigdialoralsession1###">Chat on Discord</a></span>)
+        
+        <i>Chair: Gabriel Skantze</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse5-5" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial86.html">
+                 Sources of Noise in Dialogue and How to Deal With Them  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 Sources of Noise in Dialogue and How to Deal With Them [REMOTE] 
+              </span> -->
+              <br /><i>Derek Chen, Zhou Yu</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial14.html">
+                 Investigating Explicitation of Discourse Connectives in Translation Using Automatic Annotations 
+              </a>
+              <!-- <span class="public-content">
+                 Investigating Explicitation of Discourse Connectives in Translation Using Automatic Annotations 
+              </span> -->
+              <br /><i>Frances Yung, Merel Scholman, Ekaterina Lapshinova-Koltunski, Christina Pollkläsener, Vera Demberg</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial43.html">
+                 What&#39;s Hard in English RST Parsing? Predictive Models for Error Analysis 
+              </a>
+              <!-- <span class="public-content">
+                 What&#39;s Hard in English RST Parsing? Predictive Models for Error Analysis 
+              </span> -->
+              <br /><i>Yang Janet Liu, Tatsuya Aoyama, Amir Zeldes</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial80.html">
+                 Grounded Complex Task Segmentation for Conversational Assistants 
+              </a>
+              <!-- <span class="public-content">
+                 Grounded Complex Task Segmentation for Conversational Assistants 
+              </span> -->
+              <br /><i>Rafael Ferreira, David Semedo, Joao Magalhaes</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial91.html">
+                 A Statistical Approach for Quantifying Group Difference in Topic Distributions Using Clinical Discourse Samples 
+              </a>
+              <!-- <span class="public-content">
+                 A Statistical Approach for Quantifying Group Difference in Topic Distributions Using Clinical Discourse Samples 
+              </span> -->
+              <br /><i>Grace Lawley, Peter A. Heeman, Jill K. Dolata, Eric Fombonne, Steven Bedrick</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="lunch3">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#lunch3" id="lunch3">Lunch</a>
+        
+        
+        (12:30-13:30 CEST, Restaurant (1st floor)<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlgoralsession2">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlgoralsession2" id="inlgoralsession2">INLG Oral Session 2: NLG for low-resourced settings</a>
+        
+        
+        (13:30-15:10 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###inlgoralsession2###">Chat on Discord</a></span>)
+        
+        <i>Chair: Gozde Gul Sahin</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse7-7" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg9.html">
+                 Guided Beam Search to Improve Generalization in Low-Resource Data-to-Text Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Guided Beam Search to Improve Generalization in Low-Resource Data-to-Text Generation 
+              </span> -->
+              <br /><i>Nicolas Garneau, Luc Lamontagne</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg10.html">
+                 XF2T: Cross-Lingual Fact-to-Text Generation for Low-Resource Languages 
+              </a>
+              <!-- <span class="public-content">
+                 XF2T: Cross-Lingual Fact-to-Text Generation for Low-Resource Languages 
+              </span> -->
+              <br /><i>Shivprasad Sagare, Tushar Abhishek, Bhavyajeet Singh, Anubhav Sharma, Manish Gupta, Vasudeva Varma</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg44.html">
+                 Entropy-Based Sampling for Abstractive Multi-Document Summarization in Low-Resource Settings 
+              </a>
+              <!-- <span class="public-content">
+                 Entropy-Based Sampling for Abstractive Multi-Document Summarization in Low-Resource Settings 
+              </span> -->
+              <br /><i>Laura Mascarell, Ribin Chalumattu, Julien Heitmann</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg80.html">
+                 Leveraging Low-Resource Parallel Data for Text Style Transfer 
+              </a>
+              <!-- <span class="public-content">
+                 Leveraging Low-Resource Parallel Data for Text Style Transfer 
+              </span> -->
+              <br /><i>Sourabrata Mukherjee, Ondrej Dušek</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialpostersession1">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialpostersession1" id="sigdialpostersession1">Sigdial Poster Session 1</a>
+        
+        
+        (13:30-15:10 CEST, Foyer<span
+          class="gated-content">, <a href="https://discord.com/channels/###sigdialpostersession1###">Chat on Discord</a></span>)
+        
+        <i>Chair: David Schlangen</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse8-8" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial74.html">
+                 OpinionConv: Conversational Product Search With Grounded Opinions 
+              </a>
+              <!-- <span class="public-content">
+                 OpinionConv: Conversational Product Search With Grounded Opinions 
+              </span> -->
+              <br /><i>Vahid Sadiri Javadi, Martin Potthast, Lucie Flek</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial97.html">
+                 Dial-M: A Masking-Based Framework for Dialogue Evaluation  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Dial-M: A Masking-Based Framework for Dialogue Evaluation [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Suvodip Dey, Maunendra Sankar Desarkar</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial90.html">
+                 From Chatter to Matter: Addressing Critical Steps of Emotion Recognition Learning in Task-Oriented Dialogue 
+              </a>
+              <!-- <span class="public-content">
+                 From Chatter to Matter: Addressing Critical Steps of Emotion Recognition Learning in Task-Oriented Dialogue 
+              </span> -->
+              <br /><i>Shutong Feng, Nurul Lubis, Benjamin Ruppik, Christian Geishauser, Michael Heck, Hsien-chin Lin, Carel van Niekerk, Renato Vukovic, Milica Gasic</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial56.html">
+                 Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus 
+              </a>
+              <!-- <span class="public-content">
+                 Analyzing Differences in Subjective Annotations by Participants and Third-Party Annotators in Multimodal Dialogue Corpus 
+              </span> -->
+              <br /><i>Kazunori Komatani, Ryu Takeda, Shogo Okada</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial67.html">
+                 Frame-Oriented Summarization of Argumentative Discussions 
+              </a>
+              <!-- <span class="public-content">
+                 Frame-Oriented Summarization of Argumentative Discussions 
+              </span> -->
+              <br /><i>Shahbaz Syed, Timon Ziegenbein, Philipp Heinisch, Henning Wachsmuth, Martin Potthast</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial20.html">
+                 Towards Multilingual Automatic Open-Domain Dialogue Evaluation 
+              </a>
+              <!-- <span class="public-content">
+                 Towards Multilingual Automatic Open-Domain Dialogue Evaluation 
+              </span> -->
+              <br /><i>John Mendonca, Alon Lavie, Isabel Trancoso</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial40.html">
+                 Dialog Action-Aware Transformer for Dialog Policy Learning 
+              </a>
+              <!-- <span class="public-content">
+                 Dialog Action-Aware Transformer for Dialog Policy Learning 
+              </span> -->
+              <br /><i>Huimin Wang, Wai Chung Kwan, Kam-Fai Wong</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial75.html">
+                 The Wizard of Curiosities: Enriching Dialogues With Epistemic Fun-Facts 
+              </a>
+              <!-- <span class="public-content">
+                 The Wizard of Curiosities: Enriching Dialogues With Epistemic Fun-Facts 
+              </span> -->
+              <br /><i>Frederico Vicente, Rafael Ferreira, David Semedo, Joao Magalhaes</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial35.html">
+                 The Road to Quality Is Paved With Good Revisions: A Detailed Evaluation Methodology for Revision Policies in Incremental Sequence Labelling 
+              </a>
+              <!-- <span class="public-content">
+                 The Road to Quality Is Paved With Good Revisions: A Detailed Evaluation Methodology for Revision Policies in Incremental Sequence Labelling 
+              </span> -->
+              <br /><i>Brielen Madureira, Patrick Kahardipraja, David Schlangen</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial4.html">
+                 The Effect of Conversation Type on Entrainment: Evidence From Laughter 
+              </a>
+              <!-- <span class="public-content">
+                 The Effect of Conversation Type on Entrainment: Evidence From Laughter 
+              </span> -->
+              <br /><i>Bogdan Ludusan, Petra Wagner</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial50.html">
+                 ‘What Are You Referring To?&#39; Evaluating the Ability of Multi-Modal Dialogue Models to Process Clarificational Exchanges  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 ‘What Are You Referring To?&#39; Evaluating the Ability of Multi-Modal Dialogue Models to Process Clarificational Exchanges [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Javier Chiyah-Garcia, Alessandro Suglia, Arash Eshghi, Helen Hastie</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial3.html">
+                 PGTask: Introducing the Task of Profile Generation From Dialogues 
+              </a>
+              <!-- <span class="public-content">
+                 PGTask: Introducing the Task of Profile Generation From Dialogues 
+              </span> -->
+              <br /><i>Rui Ribeiro, Joao Paulo Carvalho, Luisa Coheur</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial61.html">
+                 Question Generation to Elicit Users&#39; Food Preferences by Considering the Semantic Content 
+              </a>
+              <!-- <span class="public-content">
+                 Question Generation to Elicit Users&#39; Food Preferences by Considering the Semantic Content 
+              </span> -->
+              <br /><i>Jie Zeng, Yukiko Nakano, Tatsuya Sakato</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial48.html">
+                 Roll Up Your Sleeves: Working With a Collaborative and Engaging Task-Oriented Dialogue System 
+              </a>
+              <!-- <span class="public-content">
+                 Roll Up Your Sleeves: Working With a Collaborative and Engaging Task-Oriented Dialogue System 
+              </span> -->
+              <br /><i>Lingbo Mo, Shijie Chen, Ziru Chen, Xiang Deng, Ashley Lewis, Sunit Singh, Samuel Stevens, Chang-You Tai, Zhen Wang, Xiang Yue, Tianshu Zhang, Yu Su, Huan Sun</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak6">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak6" id="coffeebreak6">Coffee break</a>
+        
+        
+        (15:10-15:40 CEST, Foyer<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialoralsession2">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialoralsession2" id="sigdialoralsession2">Sigdial Oral Session 2: LLM for dialogue</a>
+        
+        
+        (15:40-17:00 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###sigdialoralsession2###">Chat on Discord</a></span>)
+        
+        <i>Chair: Dilek Hakkani-Tur</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse10-10" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial106.html">
+                 Leveraging Large Language Models for Automated Dialogue Analysis  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 Leveraging Large Language Models for Automated Dialogue Analysis [REMOTE] 
+              </span> -->
+              <br /><i>Sarah E. Finch, Ellie S. Paek, Jinho D. Choi</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial25.html">
+                 Are Large Language Models All You Need for Task-Oriented Dialogue? 
+              </a>
+              <!-- <span class="public-content">
+                 Are Large Language Models All You Need for Task-Oriented Dialogue? 
+              </span> -->
+              <br /><i>Vojtěch Hudeček, Ondrej Dušek</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial109.html">
+                 Multi-Party Goal Tracking With LLMs: Comparing Pre-Training, Fine-Tuning, and Prompt Engineering 
+              </a>
+              <!-- <span class="public-content">
+                 Multi-Party Goal Tracking With LLMs: Comparing Pre-Training, Fine-Tuning, and Prompt Engineering 
+              </span> -->
+              <br /><i>Angus Addlesee, Weronika Sieińska, Nancie Gunson, Daniel Hernandez Garcia, Christian Dondrup, Oliver Lemon</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial156.html">
+                 ChatGPT vs. Crowdsourcing vs. Experts: Annotating Open-Domain Conversations With Speech Functions 
+              </a>
+              <!-- <span class="public-content">
+                 ChatGPT vs. Crowdsourcing vs. Experts: Annotating Open-Domain Conversations With Speech Functions 
+              </span> -->
+              <br /><i>Lidiia Ostyakova, Veronika Smilga, Kseniia Petukhova, Maria Molchanova, Daniel Kornev</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlgpostersession+flash">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlgpostersession+flash" id="inlgpostersession+flash">INLG Poster session +flash</a>
+        
+        
+        (15:40-17:00 CEST, Foyer<span
+          class="gated-content">, <a href="https://discord.com/channels/###inlgpostersession+flash###">Chat on Discord</a></span>)
+        
+        <i>Chair: Ehud Reiter</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse11-11" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg8.html">
+                 System-Initiated Transitions From Chit-Chat to Task-Oriented Dialogues With Transition Info Extractor and Transition Sentence Generator 
+              </a>
+              <!-- <span class="public-content">
+                 System-Initiated Transitions From Chit-Chat to Task-Oriented Dialogues With Transition Info Extractor and Transition Sentence Generator 
+              </span> -->
+              <br /><i>Ye Liu, Stefan Ultes, Wolfgang Minker, Wolfgang Maier</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg13.html">
+                 HL Dataset: Visually-Grounded Description of Scenes, Actions and Rationales 
+              </a>
+              <!-- <span class="public-content">
+                 HL Dataset: Visually-Grounded Description of Scenes, Actions and Rationales 
+              </span> -->
+              <br /><i>Michele Cafagna, Kees van Deemter, Albert Gatt</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg28.html">
+                 Trustworthiness of Children Stories Generated by Large Language Models 
+              </a>
+              <!-- <span class="public-content">
+                 Trustworthiness of Children Stories Generated by Large Language Models 
+              </span> -->
+              <br /><i>Prabin Bhandari, Hannah Brennan</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg50.html">
+                 On Text Style Transfer via Style-Aware Masked Language Models 
+              </a>
+              <!-- <span class="public-content">
+                 On Text Style Transfer via Style-Aware Masked Language Models 
+              </span> -->
+              <br /><i>Sharan Narasimhan, Pooja H, Suvodip Dey, Maunendra Sankar Desarkar</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg121.html">
+                 Affective Natural Language Generation of Event Descriptions Through Fine-Grained Appraisal Conditions 
+              </a>
+              <!-- <span class="public-content">
+                 Affective Natural Language Generation of Event Descriptions Through Fine-Grained Appraisal Conditions 
+              </span> -->
+              <br /><i>Yarik Menchaca Resendiz, Roman Klinger</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg3.html">
+                 Reverse-Engineering Decoding Strategies Given Blackbox Access to a Language Generation System 
+              </a>
+              <!-- <span class="public-content">
+                 Reverse-Engineering Decoding Strategies Given Blackbox Access to a Language Generation System 
+              </span> -->
+              <br /><i>Daphne Ippolito, Nicholas Carlini, Katherine Lee, Milad Nasr, Yun William Yu</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg14.html">
+                 Controlling Keywords and Their Positions in Text Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Controlling Keywords and Their Positions in Text Generation 
+              </span> -->
+              <br /><i>Yuichi Sasazawa, Terufumi Morishita, Hiroaki Ozaki, Osamu Imaichi, Yasuhiro Sogawa</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg26.html">
+                 Tackling Hallucinations in Neural Chart Summarization 
+              </a>
+              <!-- <span class="public-content">
+                 Tackling Hallucinations in Neural Chart Summarization 
+              </span> -->
+              <br /><i>Saad Obaid ul Islam, Iza Škrjanec, Ondrej Dušek, Vera Demberg</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg41.html">
+                 Learning Disentangled Meaning and Style Representations for Positive Text Reframing 
+              </a>
+              <!-- <span class="public-content">
+                 Learning Disentangled Meaning and Style Representations for Positive Text Reframing 
+              </span> -->
+              <br /><i>Xu Sheng, Fumiyo Fukumoto, Jiyi Li, Go Kentaro, Yoshimi Suzuki</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg59.html">
+                 Generating Clickbait Spoilers With an Ensemble of Large Language Models 
+              </a>
+              <!-- <span class="public-content">
+                 Generating Clickbait Spoilers With an Ensemble of Large Language Models 
+              </span> -->
+              <br /><i>Mateusz Woźny, Mateusz Lango</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg79.html">
+                 Reducing Named Entity Hallucination Risk to Ensure Faithful Summary Generation  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Reducing Named Entity Hallucination Risk to Ensure Faithful Summary Generation [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Eunice Akani, Benoit Favre, Frederic Bechet, Romain GEMIGNANI</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg82.html">
+                 Building a Dual Dataset of Text- And Image-Grounded Conversations and Summarisation in Gàidhlig (Scottish Gaelic)  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Building a Dual Dataset of Text- And Image-Grounded Conversations and Summarisation in Gàidhlig (Scottish Gaelic) [Best Paper Nominee] 
+              </span> -->
+              <br /><i>David M. Howcroft, William Lamb, Anna Groundwater, Dimitra Gkatzia</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg94.html">
+                 Generating Multiple Questions From Presentation Transcripts: A Pilot Study on Earnings Conference Calls 
+              </a>
+              <!-- <span class="public-content">
+                 Generating Multiple Questions From Presentation Transcripts: A Pilot Study on Earnings Conference Calls 
+              </span> -->
+              <br /><i>Yining Juan, Chung-Chi Chen, Hen-Hsen Huang, Hsin-Hsi Chen</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg100.html">
+                 Mod-D2t: A Multi-Layer Dataset for Modular Data-to-Text Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Mod-D2t: A Multi-Layer Dataset for Modular Data-to-Text Generation 
+              </span> -->
+              <br /><i>Simon Mille, Francois Lareau, Anya Belz, Stamatia Dasiopoulou</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="keynotelowe">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#keynotelowe" id="keynotelowe">Keynote Lowe</a>
+        
+        
+        (17:10-18:10 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###keynotelowe###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse12-12" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            <!-- a keynote talk -->
+            <li><a
+                href="speakers.html#RyanLowe">Aligning ChatGPT: past, present, and future</a><br /><i>Ryan Lowe</i><br />In this talk I will present different perspectives on the alignment of chatbots like ChatGPT. I’ll review reinforcement learning from human feedback (RLHF), the core training technique behind InstructGPT and ChatGPT, including a brief history of how it was developed. I’ll discuss some of the pitfalls of RLHF, and what is being done today to address them. I’ll then speculate on some of the alignment challenges I expect we’ll face with this new generation of powerful personal assistants, how they could reshape society, and some things we’ll need to do to make sure these changes are good for humans.
+            </li>
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="panel">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#panel" id="panel">Panel</a>
+        
+        
+        (18:10-18:45 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###panel###">Chat on Discord</a></span>)
+        
+        <i>Chair: David Traum</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse13-13" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            <!-- a keynote talk -->
+            <li><a
+                href="speakers.html#PanelDiscussion">Panel Discussion: Social Impact of LLMs</a><br /><i>Panelists: Malihe Alikhani, Maria Keet, Ryan Lowe, Ehud Reiter</i><br />
+            </li>
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="welcomereception">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#welcomereception" id="welcomereception">Welcome reception</a>
+        
+        
+        (19:00-20:00 CEST, Foyer<span
+          class="gated-content">, <a href="https://discord.com/channels/###welcomereception###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div class="tab-pane fade" id="tab-Thursday" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div id="day_Thursday">
+      
+
+
+<div class="row">
+  <div class="col-12" id="keynotedieugenio">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#keynotedieugenio" id="keynotedieugenio">Keynote di Eugenio</a>
+        
+        
+        (09:00-10:00 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###keynotedieugenio###">Chat on Discord</a></span>)
+        
+        <i>Chair: Svetalana Stoyanchev</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            <!-- a keynote talk -->
+            <li><a
+                href="speakers.html#BarbaraDiEugenio">Engaging the Patient in Healthcare: Summarization and Interaction</a><br /><i>Barbara Di Eugenio</i><br />Effective and compassionate communication with patients is becoming central to healthcare. I will discuss the results of and lessons learned from three ongoing projects in this space. The first, MyPHA, aims to provide patients with a clear and understandable summary of their hospital stay, which is informed by doctors’ and nurses’ perspectives, and by the strengths and concerns of the patients themselves. The second, SMART-SMS, models health coaching interactions via text exchanges that encourage patients to adopt specific and realistic physical activity goals. The third, HFChat, envisions an always-on-call conversational assistant for heart failure patients, that they can ask for information about lifestyle issues such as food and exercise. All our work is characterized by: large interdisciplinary groups of investigators who bring different perspectives to the research; grounding computational models in ecologically valid data, which is small by its own nature; the need for culturally valid interventions, since our UI Health system predominantly serves underprivileged, minority populations; and the challenges that arise when dealing with the healthcare enterprise.
+            </li>
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak7">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak7" id="coffeebreak7">Coffee break</a>
+        
+        
+        (10:00-10:30 CEST, Foyer<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialoralsession3">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialoralsession3" id="sigdialoralsession3">Sigdial Oral Session 3: Dialogue modeling and evaluation</a>
+        
+        
+        (10:30-12:10 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###sigdialoralsession3###">Chat on Discord</a></span>)
+        
+        <i>Chair: Frederic Bechet</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse3-3" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial79.html">
+                 DiactTOD: Learning Generalizable Latent Dialogue Acts for Controllable Task-Oriented Dialogue Systems  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 DiactTOD: Learning Generalizable Latent Dialogue Acts for Controllable Task-Oriented Dialogue Systems [REMOTE] 
+              </span> -->
+              <br /><i>Qingyang Wu, James Gung, Raphael Shu, Yi Zhang</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial15.html">
+                 Approximating Online Human Evaluation of Social Chatbots With Prompting 
+              </a>
+              <!-- <span class="public-content">
+                 Approximating Online Human Evaluation of Social Chatbots With Prompting 
+              </span> -->
+              <br /><i>Ekaterina Svikhnushina, Pearl Pu</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial12.html">
+                 Dialogue Response Generation Using Completion of Omitted Predicate Arguments Based on Zero Anaphora Resolution  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 Dialogue Response Generation Using Completion of Omitted Predicate Arguments Based on Zero Anaphora Resolution [REMOTE] 
+              </span> -->
+              <br /><i>Ayaka Ueyama, Yoshinobu Kano</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial129.html">
+                 Syndicom: Improving Conversational Commonsense With Error-Injection and Natural Language Feedback 
+              </a>
+              <!-- <span class="public-content">
+                 Syndicom: Improving Conversational Commonsense With Error-Injection and Natural Language Feedback 
+              </span> -->
+              <br /><i>Christopher Richardson, Larry Heck</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial163.html">
+                 &#34;What Do Others Think?&#34;: Task-Oriented Conversational Modeling With Subjective Knowledge 
+              </a>
+              <!-- <span class="public-content">
+                 &#34;What Do Others Think?&#34;: Task-Oriented Conversational Modeling With Subjective Knowledge 
+              </span> -->
+              <br /><i>Chao Zhao, Spandana Gella, Seokhwan Kim, Di Jin, Devamanyu Hazarika, Alexandros Papangelis, Behnam Hedayatnia, Mahdi Namazifar, Yang Liu, Dilek Hakkani-Tur</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlgoralsession3">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlgoralsession3" id="inlgoralsession3">INLG Oral Session 3: Leveraging Large Language Models for NLG</a>
+        
+        
+        (10:30-12:10 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###inlgoralsession3###">Chat on Discord</a></span>)
+        
+        <i>Chair: Tom Williams</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse4-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg15.html">
+                 Fine-Tuning GPT-3 for Synthetic Danish News Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Fine-Tuning GPT-3 for Synthetic Danish News Generation 
+              </span> -->
+              <br /><i>Mina Almasi, Anton Schiønning</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg56.html">
+                 ChatGPT&#39;s Information Seeking Strategy: Insights From the 20-Questions Game  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 ChatGPT&#39;s Information Seeking Strategy: Insights From the 20-Questions Game [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Leonardo Bertolazzi, Davide Mazzaccara, Filippo Merlo, Raffaella Bernardi</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg99.html">
+                 Memories for Virtual AI Characters 
+              </a>
+              <!-- <span class="public-content">
+                 Memories for Virtual AI Characters 
+              </span> -->
+              <br /><i>Fabian Landwehr, Erika Varis Doggett, Romann M. Weber</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg107.html">
+                 Metric-Based in-Context Learning: A Case Study in Text Simplification 
+              </a>
+              <!-- <span class="public-content">
+                 Metric-Based in-Context Learning: A Case Study in Text Simplification 
+              </span> -->
+              <br /><i>Subhadra Vadlamannati, Gözde Şahin</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="businessmeetingsigdial">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#businessmeetingsigdial" id="businessmeetingsigdial">SIGDIAL Business meeting</a>
+        
+        
+        (12:10-13:00 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###businessmeeting###">Chat on Discord</a></span>)
+        
+        <i>Chair: Dilek Hakkani-Tur</i>
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="businessmeetingsiggen">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#businessmeetingsiggen" id="businessmeetingsiggen">SIGGEN Business meeting</a>
+        
+        
+        (12:10-13:00 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###businessmeeting###">Chat on Discord</a></span>)
+        
+        <i>Chair: Dave Howcroft</i>
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="lunch4">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#lunch4" id="lunch4">Lunch</a>
+        
+        
+        (13:00-14:00 CEST, Restaurant (1st floor)<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlgoralsession4">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlgoralsession4" id="inlgoralsession4">INLG Oral Session 4: Evaluation and linguistic analysis of NLG systems</a>
+        
+        
+        (14:00-15:40 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###inlgoralsession4###">Chat on Discord</a></span>)
+        
+        <i>Chair: Albert Gatt</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse8-8" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg30.html">
+                 Models of Reference Production: How Do They Withstand the Test of Time? 
+              </a>
+              <!-- <span class="public-content">
+                 Models of Reference Production: How Do They Withstand the Test of Time? 
+              </span> -->
+              <br /><i>Fahime Same, Guanyi Chen, Kees van Deemter</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg57.html">
+                 This Is Not Correct! Negation-Aware Evaluation of Language Generation Systems 
+              </a>
+              <!-- <span class="public-content">
+                 This Is Not Correct! Negation-Aware Evaluation of Language Generation Systems 
+              </span> -->
+              <br /><i>Miriam Anschütz, Diego Miguel Lozano, Georg Groh</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg83.html">
+                 Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models 
+              </a>
+              <!-- <span class="public-content">
+                 Beyond the Bias: Unveiling the Quality of Implicit Causality Prompt Continuations in Language Models 
+              </span> -->
+              <br /><i>Judith Sieker, Oliver Bott, Torgrim Solstad, Sina Zarrieß</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg115.html">
+                 Exploring the Naturalness of Cognitive Status-Informed Referring Form Selection Models 
+              </a>
+              <!-- <span class="public-content">
+                 Exploring the Naturalness of Cognitive Status-Informed Referring Form Selection Models 
+              </span> -->
+              <br /><i>Gabriel Del Castillo, Grace Clark, Zhao Han, Tom Williams</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialpostersession2">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialpostersession2" id="sigdialpostersession2">Sigdial Poster Session 2</a>
+        
+        
+        (14:00-15:40 CEST, Foyer<span
+          class="gated-content">, <a href="https://discord.com/channels/###sigdialpostersession2###">Chat on Discord</a></span>)
+        
+        <i>Chair: Kazunori Komatani</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse9-9" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial104.html">
+                 UD_Japanese-CEJC: Dependency Relation Annotation on Corpus of Everyday Japanese Conversation 
+              </a>
+              <!-- <span class="public-content">
+                 UD_Japanese-CEJC: Dependency Relation Annotation on Corpus of Everyday Japanese Conversation 
+              </span> -->
+              <br /><i>Mai Omura, Hiroshi Matsuda, Masayuki Asahara, Aya Wakasa</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial154.html">
+                 Unravelling Indirect Answers to Wh-Questions: Corpus Construction, Analysis, and Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Unravelling Indirect Answers to Wh-Questions: Corpus Construction, Analysis, and Generation 
+              </span> -->
+              <br /><i>Zulipiye Yusupujiang, Jonathan Ginzburg</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial153.html">
+                 A New Dataset for Causality Identification in Argumentative Texts 
+              </a>
+              <!-- <span class="public-content">
+                 A New Dataset for Causality Identification in Argumentative Texts 
+              </span> -->
+              <br /><i>Khalid Al Khatib, Michael Völske, Anh Le, Shahbaz Syed, Martin Potthast, Benno Stein</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial125.html">
+                 Controllable Generation of Dialogue Acts for Dialogue Systems via Few-Shot Response Generation and Ranking 
+              </a>
+              <!-- <span class="public-content">
+                 Controllable Generation of Dialogue Acts for Dialogue Systems via Few-Shot Response Generation and Ranking 
+              </span> -->
+              <br /><i>Angela Ramirez, Kartik Agarwal, Juraj Juraska, Utkarsh Garg, Marilyn Walker</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial117.html">
+                 Reference Resolution and New Entities in Exploratory Data Visualization: From Controlled to Unconstrained Interactions With a Conversational Assistant 
+              </a>
+              <!-- <span class="public-content">
+                 Reference Resolution and New Entities in Exploratory Data Visualization: From Controlled to Unconstrained Interactions With a Conversational Assistant 
+              </span> -->
+              <br /><i>Abari Bhattacharya, Abhinav Kumar, Barbara Di Eugenio, Roderick Tabalba, Jillian Aurisano, Veronica Grosso, Andrew Johnson, Jason Leigh, Moira Zellner</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial148.html">
+                 CONVERSER: Few-Shot Conversational Dense Retrieval With Synthetic Data Generation 
+              </a>
+              <!-- <span class="public-content">
+                 CONVERSER: Few-Shot Conversational Dense Retrieval With Synthetic Data Generation 
+              </span> -->
+              <br /><i>Chao-Wei Huang, Chen-Yu Hsu, Tsu-Yuan Hsu, Chen-An Li, Yun-Nung Chen</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial123.html">
+                 Speaker Role Identification in Call Center Dialogues: Leveraging Opening Sentences and Large Language Models 
+              </a>
+              <!-- <span class="public-content">
+                 Speaker Role Identification in Call Center Dialogues: Leveraging Opening Sentences and Large Language Models 
+              </span> -->
+              <br /><i>Minh-Quoc Nghiem, Nichola Roberts, Dmitry Sityaev</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial146.html">
+                 Synthesising Personality With Neural Speech Synthesis 
+              </a>
+              <!-- <span class="public-content">
+                 Synthesising Personality With Neural Speech Synthesis 
+              </span> -->
+              <br /><i>Shilin Gao, Matthew P. Aylett, David A. Braude, Catherine Lai</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial121.html">
+                 Prompting, Retrieval, Training: An Exploration of Different Approaches for Task-Oriented Dialogue Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Prompting, Retrieval, Training: An Exploration of Different Approaches for Task-Oriented Dialogue Generation 
+              </span> -->
+              <br /><i>Gonçalo Raposo, Luisa Coheur, Bruno Martins</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial132.html">
+                 Bootstrapping a Conversational Guide for Colonoscopy Prep 
+              </a>
+              <!-- <span class="public-content">
+                 Bootstrapping a Conversational Guide for Colonoscopy Prep 
+              </span> -->
+              <br /><i>Pulkit Arya, Madeleine Bloomquist, SUBHANKAR CHAKRABORTY, Andrew Perrault, William Schuler, Eric Fosler-Lussier, Michael White</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial155.html">
+                 Applying Item Response Theory to Task-Oriented Dialogue Systems for Accurately Determining User&#39;s Task Success Ability 
+              </a>
+              <!-- <span class="public-content">
+                 Applying Item Response Theory to Task-Oriented Dialogue Systems for Accurately Determining User&#39;s Task Success Ability 
+              </span> -->
+              <br /><i>Ryu Hirai, Ao Guo, Ryuichiro Higashinaka</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial70.html">
+                 An Open-Domain Avatar Chatbot by Exploiting a Large Language Model 
+              </a>
+              <!-- <span class="public-content">
+                 An Open-Domain Avatar Chatbot by Exploiting a Large Language Model 
+              </span> -->
+              <br /><i>Takato Yamazaki, Tomoya Mizumoto, Katsumasa Yoshikawa, Masaya Ohagi, Toshiki Kawamoto, Toshinori Sato</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdialD&amp;D1.html">
+                 Studying Alignment in a Collaborative Learning Activity via Automatic Methods: The Link Between What We Say and Do 
+              </a>
+              <!-- <span class="public-content">
+                 Studying Alignment in a Collaborative Learning Activity via Automatic Methods: The Link Between What We Say and Do 
+              </span> -->
+              <br /><i>Utku Norman, Tanvi Dinkar, Barbara Bruno, Chloé Clavel</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdialD&amp;D2.html">
+                 The Effect of Domain Knowledge on Discourse Relation Inferences: Relation Marking and Interpretation Strategies 
+              </a>
+              <!-- <span class="public-content">
+                 The Effect of Domain Knowledge on Discourse Relation Inferences: Relation Marking and Interpretation Strategies 
+              </span> -->
+              <br /><i>Marian Marchal, Saarland University, Merel C.J. Scholman, Vera Demberg</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdialD&amp;D3.html">
+                 Bullshit, Pragmatic Deception, and Natural Language Processing 
+              </a>
+              <!-- <span class="public-content">
+                 Bullshit, Pragmatic Deception, and Natural Language Processing 
+              </span> -->
+              <br /><i>Oliver Deck</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak8">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak8" id="coffeebreak8">Coffee break</a>
+        
+        
+        (15:40-16:10 CEST, Foyer<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialoralsession4">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialoralsession4" id="sigdialoralsession4">Sigdial Oral Session 4: Language understanding and multimodality</a>
+        
+        
+        (16:10-17:50 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###sigdialoralsession4###">Chat on Discord</a></span>)
+        
+        <i>Chair: Tatsuya Kawahara</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse11-11" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial49.html">
+                 Learning Multimodal Cues of Children&#39;s Uncertainty  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 Learning Multimodal Cues of Children&#39;s Uncertainty [REMOTE] 
+              </span> -->
+              <br /><i>Qi Cheng, Mert Inan, Rahma Mbarki, Theresa Choi, Yiming Sun, Kimele Persaud, Jenny Wang, Malihe Alikhani</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial34.html">
+                 Grounding Description-Driven Dialogue State Trackers With Knowledge-Seeking Turns  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Grounding Description-Driven Dialogue State Trackers With Knowledge-Seeking Turns [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Alexandru Coca, Bo-Hsiang Tseng, Jinghong Chen, Weizhe Lin, Weixuan Zhang, Tisha Anders, Bill Byrne</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial122.html">
+                 Resolving References in Visually-Grounded Dialogue via Text Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Resolving References in Visually-Grounded Dialogue via Text Generation 
+              </span> -->
+              <br /><i>Bram Willemsen, Livia Qian, Gabriel Skantze</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial5.html">
+                 Slot Induction via Pre-Trained Language Model Probing and Multi-Level Contrastive Learning  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 Slot Induction via Pre-Trained Language Model Probing and Multi-Level Contrastive Learning [REMOTE] 
+              </span> -->
+              <br /><i>Hoang Nguyen, Chenwei Zhang, Ye Liu, Philip Yu</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial19.html">
+                 The Timing Bottleneck: Why Timing and Overlap Are Mission-Critical for Conversational User Interfaces, Speech Recognition and Dialogue Systems  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 The Timing Bottleneck: Why Timing and Overlap Are Mission-Critical for Conversational User Interfaces, Speech Recognition and Dialogue Systems [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Andreas Liesenfeld, Alianda Lopez, Mark Dingemanse</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlggenchalpresentation">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlggenchalpresentation" id="inlggenchalpresentation">INLG genChal presentation, Simon Mille</a>
+        
+        
+        (16:10-17:35 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###inlggenchalpresentation###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse12-12" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg130.html">
+                 A Report on FCG GenChal 2022: Shared Task on Feedback Comment Generation for Language Learners 
+              </a>
+              <!-- <span class="public-content">
+                 A Report on FCG GenChal 2022: Shared Task on Feedback Comment Generation for Language Learners 
+              </span> -->
+              <br /><i>Ryo Nagata, Masato Hagiwara, Kazuaki Hanawa and Masato Mita</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg136.html">
+                 AIWolfDial 2023: Summary of Natural Language Division of 5th International AIWolf Contest 
+              </a>
+              <!-- <span class="public-content">
+                 AIWolfDial 2023: Summary of Natural Language Division of 5th International AIWolf Contest 
+              </span> -->
+              <br /><i>Yoshinobu Kano, Neo Watanabe, Kaito Kagaminuma, Claus Aranha, Jaewon Lee, Benedek Hauer, Hisaichi Shibata, Soichiro Miki, Yuta Nakamura and Takuya Okubo</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg142.html">
+                 Overview of the Second Shared Task on Automatic Minuting (AutoMin) at INLG 2023 
+              </a>
+              <!-- <span class="public-content">
+                 Overview of the Second Shared Task on Automatic Minuting (AutoMin) at INLG 2023 
+              </span> -->
+              <br /><i>Tirthankar Ghosal, Ondřej Bojar, Marie Hledíková, Tom Kocmi and Anna Nedoluzhko</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg116.html">
+                 LOWRECORP: The Low-Resource NLG Corpus Building Challenge 
+              </a>
+              <!-- <span class="public-content">
+                 LOWRECORP: The Low-Resource NLG Corpus Building Challenge 
+              </span> -->
+              <br /><i>Khyathi Raghavi Chandu, David M. Howcroft, Dimitra Gkatzia, Yi-ling Chung, Yufang Hou, Chris Chinenye Emezue, Pawan Rajpoot and Tosin Adewumi</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg117.html">
+                 Long Story Generation Challenge 
+              </a>
+              <!-- <span class="public-content">
+                 Long Story Generation Challenge 
+              </span> -->
+              <br /><i>Nikolay Mikhaylovskiy</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg119.html">
+                 Visually Grounded Story Generation Challenge 
+              </a>
+              <!-- <span class="public-content">
+                 Visually Grounded Story Generation Challenge 
+              </span> -->
+              <br /><i>Xudong Hong, Khushboo Mehra, Asad Sayeed and Vera Demberg</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg120.html">
+                 The VDG Challenge: Response Generation and Evaluation in Collaborative Visual Dialogue 
+              </a>
+              <!-- <span class="public-content">
+                 The VDG Challenge: Response Generation and Evaluation in Collaborative Visual Dialogue 
+              </span> -->
+              <br /><i>Nikolai Ilinykh and Simon Dobnik</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="genchalpostersession+demos">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#genchalpostersession+demos" id="genchalpostersession+demos">GenChal Poster Session + demos, Simon Mille</a>
+        
+        
+        (17:35-18:30 CEST, Foyer<span
+          class="gated-content">, <a href="https://discord.com/channels/###genchalpostersession+demos###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+      <div id="collapse13-13" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg124.html">
+                 Enunlg: A Python Library for Reproducible Neural Data-to-Text Experimentation 
+              </a>
+              <!-- <span class="public-content">
+                 Enunlg: A Python Library for Reproducible Neural Data-to-Text Experimentation 
+              </span> -->
+              <br /><i>David M. Howcroft, Dimitra Gkatzia</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg125.html">
+                 VisuaLLM: Easy Web-Based Visualization for Neural Language Generation 
+              </a>
+              <!-- <span class="public-content">
+                 VisuaLLM: Easy Web-Based Visualization for Neural Language Generation 
+              </span> -->
+              <br /><i>František Trebuňa, Ondřej Dušek</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg126.html">
+                 Audio Commentary System for Real-Time Racing Game Play 
+              </a>
+              <!-- <span class="public-content">
+                 Audio Commentary System for Real-Time Racing Game Play 
+              </span> -->
+              <br /><i>Tatsuya Ishigaki, Goran Topić, Yumi Hamazono, Ichiro Kobayashi, Yusuke Miyao, Hiroya Takamura</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg132.html">
+                 Retrieval, Masking, and Generation: Feedback Comment Generation Using Masked Comment Examples 
+              </a>
+              <!-- <span class="public-content">
+                 Retrieval, Masking, and Generation: Feedback Comment Generation Using Masked Comment Examples 
+              </span> -->
+              <br /><i>Mana Ihori, Hiroshi Sato, Tomohiro Tanaka and Ryo Masumura</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg138.html">
+                 Team Synapse @ AutoMin 2023: Leveraging BART-Based Models for Automatic Meeting Minuting 
+              </a>
+              <!-- <span class="public-content">
+                 Team Synapse @ AutoMin 2023: Leveraging BART-Based Models for Automatic Meeting Minuting 
+              </span> -->
+              <br /><i>Kristýna Klesnilová and Michelle Elizabeth</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg139.html">
+                 Team Iterate @ AutoMin 2023 - Experiments With Iterative Minuting 
+              </a>
+              <!-- <span class="public-content">
+                 Team Iterate @ AutoMin 2023 - Experiments With Iterative Minuting 
+              </span> -->
+              <br /><i>František Kmječ and Ondřej Bojar</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg140.html">
+                 Darbarer@AutoMin2023: Transcription Simplification for Concise Minute Generation From Multi-Party Conversations 
+              </a>
+              <!-- <span class="public-content">
+                 Darbarer@AutoMin2023: Transcription Simplification for Concise Minute Generation From Multi-Party Conversations 
+              </span> -->
+              <br /><i>Ismaël Rousseau, Loïc Fosse, Youness Dkhissi, Geraldine Damnati and Gwénolé Lecorvé</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="conferencedinner">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#conferencedinner" id="conferencedinner">Conference dinner</a>
+        
+        
+        (19:00-22:00 CEST, Klášterní Pivovar Strahov<span
+          class="gated-content">, <a href="https://discord.com/channels/###conferencedinner###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  <div class="tab-pane fade" id="tab-Friday" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div id="day_Friday">
+      
+
+
+<div class="row">
+  <div class="col-12" id="virtualpostersession">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#virtualpostersession" id="virtualpostersession">Virtual Poster Session</a>
+        
+        
+        (09:00-10:00 CEST, Sun I<span
+          class="gated-content">, <a href="https://discord.com/channels/###virtualpostersession###">Chat on Discord</a></span>)
+        
+        <i>Chair: Kees van Deemter</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse1-1" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg123.html">
+                 Overview of MiReportor: Generating Reports for Multimodal Medical Images 
+              </a>
+              <!-- <span class="public-content">
+                 Overview of MiReportor: Generating Reports for Multimodal Medical Images 
+              </span> -->
+              <br /><i>Xuwen Wang, Hetong Ma, Zhen Guo, Jiao Li</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg25.html">
+                 Validating Predictive Models of Evaluative Language for Controllable Data2Text Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Validating Predictive Models of Evaluative Language for Controllable Data2Text Generation 
+              </span> -->
+              <br /><i>Maurice Langner, Ralf Klabunde</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg27.html">
+                 The Next Chapter: A Study of Large Language Models in Storytelling 
+              </a>
+              <!-- <span class="public-content">
+                 The Next Chapter: A Study of Large Language Models in Storytelling 
+              </span> -->
+              <br /><i>Zhuohan Xie, Trevor Cohn, Jey Han Lau</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial54.html">
+                 Enhancing Task Bot Engagement With Synthesized Open-Domain Dialog 
+              </a>
+              <!-- <span class="public-content">
+                 Enhancing Task Bot Engagement With Synthesized Open-Domain Dialog 
+              </span> -->
+              <br /><i>Miaoran Li, Baolin Peng, Michel Galley, Jianfeng Gao, Zhu (Drew) Zhang</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial46.html">
+                 Transformer-Based Multi-Party Conversation Generation Using Dialogue Discourse Acts Planning 
+              </a>
+              <!-- <span class="public-content">
+                 Transformer-Based Multi-Party Conversation Generation Using Dialogue Discourse Acts Planning 
+              </span> -->
+              <br /><i>Alexander Chernyavskiy, Dmitry Ilvovsky</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial128.html">
+                 Incorporating Annotators&#39; Uncertainty to Discourse Relations Representations 
+              </a>
+              <!-- <span class="public-content">
+                 Incorporating Annotators&#39; Uncertainty to Discourse Relations Representations 
+              </span> -->
+              <br /><i>S. Magalí López Cortez, Cassandra L. Jacobs</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial30.html">
+                 Investigating the Representation of Open Domain Dialogue Context for Transformer Models 
+              </a>
+              <!-- <span class="public-content">
+                 Investigating the Representation of Open Domain Dialogue Context for Transformer Models 
+              </span> -->
+              <br /><i>Vishakh Padmakumar, Behnam Hedayatnia, Di Jin, Patrick Lange, Seokhwan Kim, Nanyun Peng, Yang Liu, Dilek Hakkani-Tur</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial42.html">
+                 C3: Compositional Counterfactual Constrastive Learning for Video-Grounded Dialogues 
+              </a>
+              <!-- <span class="public-content">
+                 C3: Compositional Counterfactual Constrastive Learning for Video-Grounded Dialogues 
+              </span> -->
+              <br /><i>Hung Le, Nancy Chen, Steven C.H. Hoi</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial59.html">
+                 No That&#39;s Not What I Meant: Handling Third Position Repair in Conversational Question Answering 
+              </a>
+              <!-- <span class="public-content">
+                 No That&#39;s Not What I Meant: Handling Third Position Repair in Conversational Question Answering 
+              </span> -->
+              <br /><i>Vevake Balaraman, Arash Eshghi, Ioannis Konstas, Ioannis Papaioannou</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial138.html">
+                 Improve Zero-Shot Performance on Unseen Dialog Domains With Retrieval-Augmented Task-Oriented Systems 
+              </a>
+              <!-- <span class="public-content">
+                 Improve Zero-Shot Performance on Unseen Dialog Domains With Retrieval-Augmented Task-Oriented Systems 
+              </span> -->
+              <br /><i>Jianguo Zhang, Stephen Roller, Kun Qian, Zhiwei Liu, Rui Meng, Shelby Heinecke, Huan Wang, silvio savarese, Caiming Xiong</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial147.html">
+                 When to Generate Hedge in Peer Tutoring Interaction? 
+              </a>
+              <!-- <span class="public-content">
+                 When to Generate Hedge in Peer Tutoring Interaction? 
+              </span> -->
+              <br /><i>Alafate Abulimiti, Chloé Clavel, Justine Cassell</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial45.html">
+                 PaperPersiChat: Scientific Paper Discussion Chatbot Using Transformers and Discourse Flow Management 
+              </a>
+              <!-- <span class="public-content">
+                 PaperPersiChat: Scientific Paper Discussion Chatbot Using Transformers and Discourse Flow Management 
+              </span> -->
+              <br /><i>Alexander Chernyavskiy, Max Bregeda, Maria Nikiforova</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial103.html">
+                 FurChat: An Embodied Conversational Agent Using LLMs, Combining Open and Closed-Domain Dialogue With Facial Expressions 
+              </a>
+              <!-- <span class="public-content">
+                 FurChat: An Embodied Conversational Agent Using LLMs, Combining Open and Closed-Domain Dialogue With Facial Expressions 
+              </span> -->
+              <br /><i>Neeraj Cherakara, Finny Varghese, Sheena Shabana, Nivan Nelson, Abhiram Karukayil, Rohith Kulothungan, Mohammed Afil Farhan, Birthe Nesset, Meriam Moujahid, Tanvi Dinkar, Verena Rieser, Oliver Lemon</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg133.html">
+                 TMU Feedback Comment Generation System Using Pretrained Sequence-to-Sequence Language Models 
+              </a>
+              <!-- <span class="public-content">
+                 TMU Feedback Comment Generation System Using Pretrained Sequence-to-Sequence Language Models 
+              </span> -->
+              <br /><i>Naoya Ueda and Mamoru Komachi</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg137.html">
+                 Team Zoom @ AutoMin 2023: Utilizing Topic Segmentation and LLM Data Augmentation for Long-Form Meeting Summarization 
+              </a>
+              <!-- <span class="public-content">
+                 Team Zoom @ AutoMin 2023: Utilizing Topic Segmentation and LLM Data Augmentation for Long-Form Meeting Summarization 
+              </span> -->
+              <br /><i>Felix Schneider and Marco Turchi</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg141.html">
+                 Team NTR @ AutoMin 2023: Dolly LLM Improves Minuting Performance, Semantic Segmentation Doesn’t 
+              </a>
+              <!-- <span class="public-content">
+                 Team NTR @ AutoMin 2023: Dolly LLM Improves Minuting Performance, Semantic Segmentation Doesn’t 
+              </span> -->
+              <br /><i>Eugene Borisov and Nikolay Mikhaylovskiy</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="keynotesimperl">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#keynotesimperl" id="keynotesimperl">Keynote Simperl</a>
+        
+        
+        (10:00-11:00 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###keynotesimperl###">Chat on Discord</a></span>)
+        
+        <i>Chair: Maria Keet</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse2-2" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            <!-- a keynote talk -->
+            <li><a
+                href="speakers.html#ElenaSimperl">Knowledge graph use cases in natural language generation</a><br /><i>Elena Simperl</i><br />Natural language generation (NLG) makes knowledge graphs (KGs) more accessible. I will present two applications of NLG in this space: in the first one, verbalisations of KG triples feed into downstream KG applications, allowing users with diverse levels of digital literacy to share their knowledge, and contribute to the KG. In the second one, having text representations of KG triples helps us verify the content of a KG against external sources towards more trustworthy KGs. I will present human-in-the-loop solutions to these applications that leverage a range of machine learning techniques to scale to the large, multilingual knowledge graphs modern applications use.
+            </li>
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak9">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak9" id="coffeebreak9">Coffee break</a>
+        
+        
+        (11:00-11:30 CEST, Foyer<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sigdialoralsession5">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sigdialoralsession5" id="sigdialoralsession5">Sigdial Oral Session 5: Topics in open-domain dialogue</a>
+        
+        
+        (11:30-13:10 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###sigdialoralsession5###">Chat on Discord</a></span>)
+        
+        <i>Chair: Mike White</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse4-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial29.html">
+                 Towards Breaking the Self-Imposed Filter Bubble in Argumentative Dialogues  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 Towards Breaking the Self-Imposed Filter Bubble in Argumentative Dialogues [REMOTE] 
+              </span> -->
+              <br /><i>Annalena Aicher, Daniel Kornmueller, Yuki Matsuda, Stefan Ultes, Wolfgang Minker, Keiichi Yasumoto</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial81.html">
+                 The Open-Domain Paradox for Chatbots: Common Ground as the Basis for Human-Like Dialogue 
+              </a>
+              <!-- <span class="public-content">
+                 The Open-Domain Paradox for Chatbots: Common Ground as the Basis for Human-Like Dialogue 
+              </span> -->
+              <br /><i>Gabriel Skantze, A. Seza Doğruöz</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial130.html">
+                 MERCY: Multiple Response Ranking Concurrently in Realistic Open-Domain Conversational Systems  [REMOTE] 
+              </a>
+              <!-- <span class="public-content">
+                 MERCY: Multiple Response Ranking Concurrently in Realistic Open-Domain Conversational Systems [REMOTE] 
+              </span> -->
+              <br /><i>Sarik Ghazarian, Behnam Hedayatnia, Di Jin, Sijia Liu, Nanyun Peng, Yang Liu, Dilek Hakkani-Tur</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial27.html">
+                 Empathetic Response Generation for Distress Support 
+              </a>
+              <!-- <span class="public-content">
+                 Empathetic Response Generation for Distress Support 
+              </span> -->
+              <br /><i>Anuradha Welivita, Chun-Hung Yeh, Pearl Pu</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_sigdial73.html">
+                 Reasoning Before Responding: Integrating Commonsense-Based Causality Explanation for Empathetic Response Generation 
+              </a>
+              <!-- <span class="public-content">
+                 Reasoning Before Responding: Integrating Commonsense-Based Causality Explanation for Empathetic Response Generation 
+              </span> -->
+              <br /><i>Yahui Fu, Koji Inoue, Chenhui Chu, Tatsuya Kawahara</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="inlgoralsession5">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#inlgoralsession5" id="inlgoralsession5">INLG Oral Session 5: NLG for real-world applications</a>
+        
+        
+        (11:30-13:10 CEST, Sun II<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun II###">Watch on Zoom</a>, <a href="https://discord.com/channels/###inlgoralsession5###">Chat on Discord</a></span>)
+        
+        <i>Chair: Dimitra Gkatzia</i>
+        
+        
+      </div>
+
+      
+      <div id="collapse5-5" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          
+          <ul>
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg16.html">
+                 GAN-LM: Generative Adversarial Network Using Language Models for Downstream Applications 
+              </a>
+              <!-- <span class="public-content">
+                 GAN-LM: Generative Adversarial Network Using Language Models for Downstream Applications 
+              </span> -->
+              <br /><i>Dae Yon Hwang, Yaroslav Nechaev, Cyprien de Lichy, Renxian Zhang</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg24.html">
+                 Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Chieh-Yang Huang, Ting-Yao Hsu, Ryan Rossi, Ani Nenkova, Sungchul Kim, Gromit Yeuk-Yin Chan, Eunyee Koh, C Lee Giles, Ting-Hao Huang</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg47.html">
+                 Claim Optimization in Computational Argumentation  [Best Paper Nominee] 
+              </a>
+              <!-- <span class="public-content">
+                 Claim Optimization in Computational Argumentation [Best Paper Nominee] 
+              </span> -->
+              <br /><i>Gabriella Skitalinskaya, Maximilian Spliethöver, Henning Wachsmuth</i>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <!-- a paper -->
+            <li>
+              <a href="paper_inlg71.html">
+                 A Zero-Shot Approach for Multi-User Task-Oriented Dialog Generation 
+              </a>
+              <!-- <span class="public-content">
+                 A Zero-Shot Approach for Multi-User Task-Oriented Dialog Generation 
+              </span> -->
+              <br /><i>Shiv Surya, Yohan Jo, Arijit Biswas, Alexandros Potamianos</i>
+            </li>
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="lunch5">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#lunch5" id="lunch5">Lunch</a>
+        
+        
+        (13:10-14:10 CEST, Restaurant (1st floor)<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="sponsors">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#sponsors" id="sponsors">Sponsors</a>
+        
+        
+        (14:10-14:40 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###sponsors###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="closing">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#closing" id="closing">Closing</a>
+        
+        
+        (14:40-15:00 CEST, Sun I<span
+          class="gated-content">, <a href="https://zoom.us/j/###Sun I###">Watch on Zoom</a>, <a href="https://discord.com/channels/###closing###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="birds-of-feather">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#birds-of-feather" id="birds-of-feather">Birds-of-Feather</a>
+        
+        
+        (15:00-15:30 CEST, Sun I<span
+          class="gated-content">, <a href="https://discord.com/channels/###birds-of-feather###">Chat on Discord</a></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12" id="coffeebreak10">
+    <div class="card m-2">
+      <div class="card-header">
+        <!-- notice the anchor link and link to itself-->
+        <a href="#coffeebreak10" id="coffeebreak10">Coffee break</a>
+        
+        
+        (15:00-15:30 CEST, Foyer<span
+          class="gated-content"></span>)
+        
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+
+  <script type="text/javascript">
+    window.addEventListener("load", () => {
+      const tabPanes = $(".tab-pane");
+      // Create calendars:
+      make_cal(false).then(({ render }) => {
+        // render cal with all tabs visible
+        tabPanes.css("display", "block");
+        render();
+        tabPanes.css("display", "");
+
+        // re-render cal on resize
+        $(window).on(
+          "resize",
+          _.debounce(() => {
+            tabPanes.css("display", "block");
+            render();
+            tabPanes.css("display", "");
+          }, 500)
+        );
+      });
+      // ----
+      // lazyLoader();
+      updateLinks();
+    }, "false");
+    // window.addEventListener("load", updateLinks(), "false" );
+  </script>
+</div>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy</title>
+  
+<meta name="citation_title" content="Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy" />
+
+<meta name="citation_author" content="Daphne Ippolito" />
+
+<meta name="citation_author" content="Florian Tramer" />
+
+<meta name="citation_author" content="Milad Nasr" />
+
+<meta name="citation_author" content="Chiyuan Zhang" />
+
+<meta name="citation_author" content="Matthew Jagielski" />
+
+<meta name="citation_author" content="Katherine Lee" />
+
+<meta name="citation_author" content="Christopher Choquette Choo" />
+
+<meta name="citation_author" content="Nicholas Carlini" />
+
+<meta name="citation_publication_date" content="September 2023" />
+<meta name="citation_conference_title" content="Visit Sigdial &amp; Inlg 2023" />
+<meta name="citation_inbook_title" content="Proceedings of SIGdial 2023 &amp; Proceedings of INLG 2023" />
+<meta name="citation_abstract" content="Studying data memorization in neural language models helps us understand the risks (e.g., to privacy or copyright) associated with models regurgitating training data and aids in the development of countermeasures. Many prior works---and some recently deployed defenses---focus on ``verbatim memorization&#39;&#39;, defined as a model generation that exactly matches a substring from the training set. We argue that verbatim memorization definitions are too restrictive and fail to capture more subtle forms of memorization. Specifically, we design and implement an efficient defense that _perfectly_ prevents all verbatim memorization.  And yet, we demonstrate that this ``perfect&#39;&#39; filter does not prevent the leakage of training data. Indeed, it is easily circumvented by plausible and minimally modified ``style-transfer&#39;&#39; prompts---and in some cases even the non-modified original prompts---to extract memorized information. We conclude by discussing potential alternative definitions and why defining memorization is a difficult yet crucial open question for neural language models." />
+
+
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+
+<!-- Title -->
+<!-- <div class="public-content"> -->
+<div class="pp-card m-3">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center">
+            Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=Daphne Ippolito" class="text-muted"><i>Daphne Ippolito</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Florian Tramer" class="text-muted"><i>Florian Tramer</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Milad Nasr" class="text-muted"><i>Milad Nasr</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Chiyuan Zhang" class="text-muted"><i>Chiyuan Zhang</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Matthew Jagielski" class="text-muted"><i>Matthew Jagielski</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Katherine Lee" class="text-muted"><i>Katherine Lee</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Christopher Choquette Choo" class="text-muted"><i>Christopher Choquette Choo</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Nicholas Carlini" class="text-muted"><i>Nicholas Carlini</i></a>
+            
+        </h3>
+        <div class="text-center p-3">
+            
+            <p>
+                <a class="card-link" target="_blank" href="static/papers/inlg/12_Paper.pdf"> Paper </a>
+            </p>
+            
+
+            In Sessions:
+            
+            <!-- {&#39;UID&#39;: &#39;inlgoralsession1&#39;, &#39;title&#39;: &#39;INLG Oral Session 1: Trustworthiness of NLG systems&#39;, &#39;chair&#39;: &#39;Ching-Chi-Chen&#39;, &#39;start&#39;: &#39;2023-09-13T10:45:00+02:00&#39;, &#39;room&#39;: &#39;Sun II&#39;, &#39;category&#39;: &#39;time&#39;, &#39;discord&#39;: &#39;https://discord.com/channels/###inlgoralsession1###&#39;, &#39;zoom&#39;: &#39;https://zoom.us/j/###Sun II###&#39;, &#39;end&#39;: &#39;2023-09-13T12:30:00+02:00&#39;, &#39;calendarId&#39;: &#39;inlgoral&#39;, &#39;contents&#39;: [{&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;12&#39;, &#39;UID&#39;: &#39;inlg12&#39;, &#39;title&#39;: &#39;Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy&#39;, &#39;authors&#39;: [&#39;Daphne Ippolito&#39;, &#39;Florian Tramer&#39;, &#39;Milad Nasr&#39;, &#39;Chiyuan Zhang&#39;, &#39;Matthew Jagielski&#39;, &#39;Katherine Lee&#39;, &#39;Christopher Choquette Choo&#39;, &#39;Nicholas Carlini&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession1&#39;, &#39;abstract&#39;: &#34;Studying data memorization in neural language models helps us understand the risks (e.g., to privacy or copyright) associated with models regurgitating training data and aids in the development of countermeasures. Many prior works---and some recently deployed defenses---focus on ``verbatim memorization&#39;&#39;, defined as a model generation that exactly matches a substring from the training set. We argue that verbatim memorization definitions are too restrictive and fail to capture more subtle forms of memorization. Specifically, we design and implement an efficient defense that _perfectly_ prevents all verbatim memorization.  And yet, we demonstrate that this ``perfect&#39;&#39; filter does not prevent the leakage of training data. Indeed, it is easily circumvented by plausible and minimally modified ``style-transfer&#39;&#39; prompts---and in some cases even the non-modified original prompts---to extract memorized information. We conclude by discussing potential alternative definitions and why defining memorization is a difficult yet crucial open question for neural language models.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/12_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/12.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T10:45:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;34&#39;, &#39;UID&#39;: &#39;inlg34&#39;, &#39;title&#39;: &#39;Generating Faithful Text From a Knowledge Graph With Noisy Reference Text&#39;, &#39;authors&#39;: [&#39;Tahsina Hashem&#39;, &#39;Weiqing Wang&#39;, &#39;Derry Tanti Wijaya&#39;, &#39;Mohammed Eunus Ali&#39;, &#39;Yuan-Fang Li&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession1&#39;, &#39;abstract&#39;: &#34;Knowledge Graph (KG)-to-Text generation aims at generating fluent natural-language text that accurately represents the information of a given knowledge graph. While significant progress has been made in this task by exploiting the power of pre-trained language models (PLMs) with appropriate graph structure-aware modules, existing models still fall short of generating faithful text, especially when the ground-truth natural-language text contains additional information that is not present in the graph. In this paper, we develop a KG-to-text generation model that can generate faithful natural-language text from a given graph, in the presence of noisy reference text. Our framework incorporates two core ideas: Firstly, we utilize contrastive learning to enhance the model&#39;s ability to differentiate between faithful and hallucinated information in the text, thereby encouraging the decoder to generate text that aligns with the input graph. Secondly, we empower the decoder to control the level of hallucination in the generated text by employing a controllable text generation technique. We evaluate our model&#39;s performance through the standard quantitative metrics as well as a ChatGPT-based quantitative and qualitative analysis. Our evaluation demonstrates the superior performance of our model over state-of-the-art KG-to-text models on faithfulness.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/34_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/34.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T10:45:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;58&#39;, &#39;UID&#39;: &#39;inlg58&#39;, &#39;title&#39;: &#39;Guidance in Radiology Report Summarization: An Empirical Evaluation and Error Analysis&#39;, &#39;authors&#39;: [&#39;Jan Trienes&#39;, &#39;Paul Youssef&#39;, &#39;Jörg Schlötterer&#39;, &#39;Christin Seifert&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession1&#39;, &#39;abstract&#39;: &#39;Automatically summarizing radiology reports into a concise impression can reduce the manual burden of clinicians and improve the consistency of reporting. Previous work aimed to enhance content selection and factuality through guided abstractive summarization. However, two key issues persist. First, current methods heavily rely on domain-specific resources to extract the guidance signal, limiting their transferability to domains and languages where those resources are unavailable. Second, while automatic metrics like ROUGE show progress, we lack a good understanding of the errors and failure modes in this task. To bridge these gaps, we first propose a domain-agnostic guidance signal in form of variable-length extractive summaries. Our empirical results on two English benchmarks demonstrate that this guidance signal improves upon unguided summarization while being competitive with domain-specific methods. Additionally, we run an expert evaluation of four systems according to a taxonomy of 11 fine-grained errors. We find that the most pressing differences between automatic summaries and those of radiologists relate to content selection including omissions (up to 52%) and additions (up to 57%). We hypothesize that latent reporting factors and corpus-level inconsistencies may limit models to reliably learn content selection from the available data, presenting promising directions for future work.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/58_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/58.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T10:45:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;97&#39;, &#39;UID&#39;: &#39;inlg97&#39;, &#39;title&#39;: &#39;Enhancing Factualness and Controllability of Data-to-Text Generation via Data Views and Constraints&#39;, &#39;authors&#39;: [&#39;Craig Thomson&#39;, &#39;Clement Rebuffel&#39;, &#39;Ehud Reiter&#39;, &#39;Laure Soulier&#39;, &#39;Somayajulu Sripada&#39;, &#39;patrick Gallinari&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession1&#39;, &#39;abstract&#39;: &#39;Neural data-to-text systems lack the control and factual accuracy required to generate useful and insightful summaries of multidimensional data. We propose a solution in the form of data views, where each view describes an entity and its attributes along specific dimensions. A sequence of views can then be used as a high-level schema for document planning, with the neural model handling the complexities of micro-planning and surface realization. We show that our view-based system retains factual accuracy while offering high-level control of output that can be tailored based on user preference or other norms within the domain.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/97_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/97.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T10:45:00+02:00&#39;}], &#39;name&#39;: &#39;INLG Oral Session 1: Trustworthiness of NLG systems&#39;, &#39;start_time&#39;: datetime.datetime(2023, 9, 13, 10, 45, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;end_time&#39;: datetime.datetime(2023, 9, 13, 12, 30, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;location&#39;: &#39;#inlgoralsession1&#39;, &#39;day&#39;: &#39;Wednesday&#39;} - <br /> -->
+            <p>
+                INLG Oral Session 1: Trustworthiness of NLG systems: (Wednesday, 10:45 CEST, Sun II
+                <span class="gated-content">
+                    , <a href="https://zoom.us/j/###Sun II###" target="_blank"
+                        class="card-link">Watch on Zoom</a> 
+                    , <a href="https://discord.com/channels/###inlgoralsession1###" target="_blank"
+                        class="card-link discord-link">Chat on Discord </a>
+                </span>
+                )
+            </p>
+            
+
+            
+            
+            <a href="static/posters/INLG2023/12.pdf" target="_blank" class="card-link">
+                <p>Poster </p>
+                <img src="static/posters/thumbnails/inlg12.png" alt="Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy">
+            </a>
+            
+            
+            <br />
+            
+        </div>
+    </div>
+</div>
+
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Studying data memorization in neural language models helps us understand the risks (e.g., to privacy or copyright) associated with models regurgitating training data and aids in the development of countermeasures. Many prior works---and some recently deployed defenses---focus on ``verbatim memorization&#39;&#39;, defined as a model generation that exactly matches a substring from the training set. We argue that verbatim memorization definitions are too restrictive and fail to capture more subtle forms of memorization. Specifically, we design and implement an efficient defense that _perfectly_ prevents all verbatim memorization.  And yet, we demonstrate that this ``perfect&#39;&#39; filter does not prevent the leakage of training data. Indeed, it is easily circumvented by plausible and minimally modified ``style-transfer&#39;&#39; prompts---and in some cases even the non-modified original prompts---to extract memorized information. We conclude by discussing potential alternative definitions and why defining memorization is a difficult yet crucial open question for neural language models.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Building a Dual Dataset of Text- And Image-Grounded Conversations and Summarisation in Gàidhlig (Scottish Gaelic)</title>
+  
+<meta name="citation_title" content="Building a Dual Dataset of Text- And Image-Grounded Conversations and Summarisation in Gàidhlig (Scottish Gaelic)" />
+
+<meta name="citation_author" content="David M. Howcroft" />
+
+<meta name="citation_author" content="William Lamb" />
+
+<meta name="citation_author" content="Anna Groundwater" />
+
+<meta name="citation_author" content="Dimitra Gkatzia" />
+
+<meta name="citation_publication_date" content="September 2023" />
+<meta name="citation_conference_title" content="Visit Sigdial &amp; Inlg 2023" />
+<meta name="citation_inbook_title" content="Proceedings of SIGdial 2023 &amp; Proceedings of INLG 2023" />
+<meta name="citation_abstract" content="Gàidhlig (Scottish Gaelic; gd) is spoken by about 57k people in Scotland, but remains an under-resourced language with respect to natural language processing in general and natural language generation (NLG) in particular. To address this gap, we developed the first datasets for Scottish Gaelic NLG, collecting both conversational and summarisation data in a single setting. Our task setup involves dialogues between a pair of speakers discussing museum exhibits, grounding the conversation in images and texts. Then, both interlocutors summarise the dialogue resulting in a secondary dialogue summarisation dataset. This paper presents the dialogue and summarisation corpora, as well as the software used for data collection. The corpus consists of 43 conversations (13.7k words) and 61 summaries (2.0k words), and will be released along with the data collection interface." />
+
+
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+
+<!-- Title -->
+<!-- <div class="public-content"> -->
+<div class="pp-card m-3">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center">
+            Building a Dual Dataset of Text- And Image-Grounded Conversations and Summarisation in Gàidhlig (Scottish Gaelic)
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=David M. Howcroft" class="text-muted"><i>David M. Howcroft</i></a>,
+            
+            <a href="papers.html?filter=authors&search=William Lamb" class="text-muted"><i>William Lamb</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Anna Groundwater" class="text-muted"><i>Anna Groundwater</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Dimitra Gkatzia" class="text-muted"><i>Dimitra Gkatzia</i></a>
+            
+        </h3>
+        <div class="text-center p-3">
+            
+            <p>
+                <a class="card-link" target="_blank" href="static/papers/inlg/82_Paper.pdf"> Paper </a>
+            </p>
+            
+
+            In Sessions:
+            
+            <!-- {&#39;UID&#39;: &#39;inlgpostersession+flash&#39;, &#39;title&#39;: &#39;INLG Poster session +flash&#39;, &#39;chair&#39;: &#39;Ehud Reiter&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;, &#39;room&#39;: &#39;Foyer&#39;, &#39;category&#39;: &#39;time&#39;, &#39;discord&#39;: &#39;https://discord.com/channels/###inlgpostersession+flash###&#39;, &#39;zoom&#39;: None, &#39;end&#39;: &#39;2023-09-13T17:00:00+02:00&#39;, &#39;calendarId&#39;: &#39;inlgposter&#39;, &#39;contents&#39;: [{&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;8&#39;, &#39;UID&#39;: &#39;inlg8&#39;, &#39;title&#39;: &#39;System-Initiated Transitions From Chit-Chat to Task-Oriented Dialogues With Transition Info Extractor and Transition Sentence Generator&#39;, &#39;authors&#39;: [&#39;Ye Liu&#39;, &#39;Stefan Ultes&#39;, &#39;Wolfgang Minker&#39;, &#39;Wolfgang Maier&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#34;In this work, we study dialogue scenarios that start from chit-chat but eventually switch to task-related services, and investigate how a unified dialogue model, which can engage in both chit-chat and task-oriented dialogues, takes the initiative during the dialogue mode transition from chit-chat to task-oriented in a coherent and cooperative manner. We firstly build a \\emph{transition info extractor} (TIE) that keeps track of the preceding chit-chat interaction and detects the potential user intention to switch to a task-oriented service. Meanwhile, in the unified model, a \\emph{transition sentence generator} (TSG) is extended through efficient Adapter tuning and transition prompt learning. When the TIE successfully finds task-related information from the preceding chit-chat, such as a transition domain (``train&#39;&#39; in Figure \\ref{fig: system-initiated transition from chit-chat to task-oriented.}), then the TSG is activated automatically in the unified model to initiate this transition by generating a transition sentence under the guidance of transition information extracted by TIE. The experimental results show promising performance regarding the proactive transitions. We achieve an additional large improvement on TIE model by utilizing Conditional Random Fields (CRF). The TSG can flexibly generate transition sentences while maintaining the unified capabilities of normal chit-chat and task-oriented response generation.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/8_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/8.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;13&#39;, &#39;UID&#39;: &#39;inlg13&#39;, &#39;title&#39;: &#39;HL Dataset: Visually-Grounded Description of Scenes, Actions and Rationales&#39;, &#39;authors&#39;: [&#39;Michele Cafagna&#39;, &#39;Kees van Deemter&#39;, &#39;Albert Gatt&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Current captioning datasets focus on object-centric captions, describing the visible objects in the image, often ending up stating the obvious (for humans), e.g. &#34;people eating food in a park&#34;. Although these datasets are useful to evaluate the ability of Vision &amp; Language models to recognize and describe visual content, they do not support controlled experiments involving model testing or fine-tuning, with more high-level captions, which humans find easy and natural to produce. For example, people often describe images based on the type of scene they depict (&#34;people at a holiday resort&#34;) and the actions they perform (&#34;people having a picnic&#34;). Such concepts are based on personal experience and contribute to forming common sense assumptions. We present the High-Level Dataset, a dataset extending 14997 images from the COCO dataset, aligned with a new set of 134,973 human-annotated (high-level) captions collected along three axes: scenes, actions and rationales. We further extend this dataset with confidence scores collected from an independent set of readers, as well as a set of narrative captions generated synthetically, by combining each of the three axes. We describe this dataset and analyse it extensively. We also present baseline results for the High-Level Captioning task.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/13_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/13.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;28&#39;, &#39;UID&#39;: &#39;inlg28&#39;, &#39;title&#39;: &#39;Trustworthiness of Children Stories Generated by Large Language Models&#39;, &#39;authors&#39;: [&#39;Prabin Bhandari&#39;, &#39;Hannah Brennan&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#34;Large Language Models (LLMs) have shown a tremendous capacity for generating literary text. However, their effectiveness in generating children&#39;s stories has yet to be thoroughly examined. In this study, we evaluate the trustworthiness of children&#39;s stories generated by LLMs using various measures, and we compare and contrast our results with both old and new children&#39;s stories to better assess their significance. Our findings suggest that LLMs still struggle to generate children&#39;s stories at the level of quality and nuance found in actual stories.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/28_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/28.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;50&#39;, &#39;UID&#39;: &#39;inlg50&#39;, &#39;title&#39;: &#39;On Text Style Transfer via Style-Aware Masked Language Models&#39;, &#39;authors&#39;: [&#39;Sharan Narasimhan&#39;, &#39;Pooja H&#39;, &#39;Suvodip Dey&#39;, &#39;Maunendra Sankar Desarkar&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Text Style Transfer (TST) is performable through approaches such as latent space disentanglement, cycle-consistency losses, prototype editing etc. The prototype editing approach, which is known to be quite successful in TST, involves two key phases a) Masking of source style-associated tokens and b) Reconstruction of this source-style masked sentence conditioned with the target style. We follow a similar transduction method, in which we transpose the more difficult direct source to target TST task to a simpler Style-Masked Language Model (SMLM) Task, wherein, similar to BERT \\cite{bert}, the goal of our model is now to reconstruct the source sentence from its style-masked version. We arrive at the SMLM mechanism naturally by formulating prototype editing/ transduction methods in a probabilistic framework, where TST resolves into estimating a hypothetical parallel dataset from a partially observed parallel dataset, wherein each domain is assumed to have a common latent style-masked prior. To generate this style-masked prior, we use &#34;Explainable Attention&#34; as our choice of attribution for a more precise style-masking step and also introduce a cost-effective and accurate &#34;Attribution-Surplus&#34; method of determining the position of masks from any arbitrary attribution model in O(1) time. We empirically show that this non-generational approach well suites the &#34;content preserving&#34; criteria for a task like TST, even for a complex style like Discourse Manipulation. Our model, the Style MLM, outperforms strong TST baselines and is on par with state-of-the-art TST models, which use complex architectures and orders of more parameters.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/50_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/50.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;121&#39;, &#39;UID&#39;: &#39;inlg121&#39;, &#39;title&#39;: &#39;Affective Natural Language Generation of Event Descriptions Through Fine-Grained Appraisal Conditions&#39;, &#39;authors&#39;: [&#39;Yarik Menchaca Resendiz&#39;, &#39;Roman Klinger&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Models for affective text generation have shown a remarkable progress, but they commonly rely only on basic emotion theories or valance/arousal values as conditions. This is appropriate when the goal is to create explicit emotion statements (&#34;The kid is happy.\&#39;\&#39;). Emotions are, however, commonly communicated implicitly. For instance, the emotional interpretation of an event (&#34;Their dog died.\&#39;\&#39;) does often not require an explicit emotion statement. In psychology, appraisal theories explain the link between a cognitive evaluation of an event and the potentially developed emotion. They put the assessment of the situation on the spot, for instance regarding the own control or the responsibility for what happens. We hypothesize and subsequently show that including appraisal variables as conditions in a generation framework comes with two advantages. (1) The generation model is informed in greater detail about what makes a specific emotion and what properties it has. This leads to text generation that better fulfills the condition. (2) The variables of appraisal allow a user to perform a more fine-grained control of the generated text, by stating properties of a situation instead of only providing the emotion category.  Our Bart and T5-based experiments with 7 emotions (Anger, Disgust, Fear, Guilt, Joy, Sadness, Shame), and 7 appraisals (Attention, Responsibility, Control, Circumstance, Pleasantness, Effort, Certainty) show that (1) adding appraisals during training improves the accurateness of the generated texts by 10 pp in F1. Further, (2) the texts with appraisal variables are longer and contain more details. This exemplifies the greater control for users.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/121_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/121.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;3&#39;, &#39;UID&#39;: &#39;inlg3&#39;, &#39;title&#39;: &#39;Reverse-Engineering Decoding Strategies Given Blackbox Access to a Language Generation System&#39;, &#39;authors&#39;: [&#39;Daphne Ippolito&#39;, &#39;Nicholas Carlini&#39;, &#39;Katherine Lee&#39;, &#39;Milad Nasr&#39;, &#39;Yun William Yu&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#34;Neural language models are increasingly deployed into APIs and websites that allow a user to pass in a prompt and receive generated text. Many of these systems do not reveal generation parameters. In this paper, we present methods to reverse-engineer the decoding method used to generate text (i.e., top-_k_ or nucleus sampling). Our ability to discover which decoding strategy was used has implications for detecting generated text. Additionally, the process of discovering the decoding strategy can reveal biases caused by selecting decoding settings which severely truncate a model&#39;s predicted distributions. We perform our attack on several families of open-source language models, as well as on production systems (e.g., ChatGPT).&#34;, &#39;paper&#39;: &#39;static/papers/inlg/3_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/3.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;14&#39;, &#39;UID&#39;: &#39;inlg14&#39;, &#39;title&#39;: &#39;Controlling Keywords and Their Positions in Text Generation&#39;, &#39;authors&#39;: [&#39;Yuichi Sasazawa&#39;, &#39;Terufumi Morishita&#39;, &#39;Hiroaki Ozaki&#39;, &#39;Osamu Imaichi&#39;, &#39;Yasuhiro Sogawa&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#34;One of the challenges in text generation is to control text generation as intended by the user. Previous studies proposed specifying the keywords that should be included in the generated text. However, this approach is insufficient to generate text that reflect the user&#39;s intent. For example, placing an important keyword at the beginning of the text would help attract the reader&#39;s attention; however, existing methods do not enable such flexible control. In this paper, we tackle a novel task of controlling not only keywords but also the position of each keyword in the text generation. To this end, we propose a task-independent method that uses special tokens to control the relative position of keywords. Experimental results on summarization and story generation tasks show that the proposed method can control keywords and their positions. The experimental results also demonstrate that controlling the keyword positions can generate summary texts that are closer to the user&#39;s intent than baseline.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/14_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/14.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;26&#39;, &#39;UID&#39;: &#39;inlg26&#39;, &#39;title&#39;: &#39;Tackling Hallucinations in Neural Chart Summarization&#39;, &#39;authors&#39;: [&#39;Saad Obaid ul Islam&#39;, &#39;Iza Škrjanec&#39;, &#39;Ondrej Dušek&#39;, &#39;Vera Demberg&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Hallucinations in text generation occur when the system produces text that is not grounded in the input. In this work, we tackle the problem of hallucinations in neural chart summarization. Our analysis shows that the target side of chart summarization training datasets often contains additional information, leading to hallucinations.  We propose a natural language inference (NLI) based method to preprocess the training data and show through human evaluation that our method significantly reduces hallucinations. We also found that shortening long-distance dependencies in the input sequence and adding chart-related information like title and legends improves the overall performance.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/26_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/26.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;41&#39;, &#39;UID&#39;: &#39;inlg41&#39;, &#39;title&#39;: &#39;Learning Disentangled Meaning and Style Representations for Positive Text Reframing&#39;, &#39;authors&#39;: [&#39;Xu Sheng&#39;, &#39;Fumiyo Fukumoto&#39;, &#39;Jiyi Li&#39;, &#39;Go Kentaro&#39;, &#39;Yoshimi Suzuki&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;The positive text reframing (PTR) task which generates a text giving a positive perspective with preserving the sense of the input text, has attracted considerable attention as one of the NLP applications. Due to the significant representation capability of the pre-trained language model (PLM), a beneficial baseline can be easily obtained by just fine-tuning the PLM. However, how to interpret a diversity of contexts to give a positive perspective is still an open problem. Especially, it is more serious when the size of the training data is limited. In this paper, we present a PTR framework, that learns representations where the meaning and style of text are structurally disentangled. The method utilizes pseudo-positive reframing datasets which are generated with two augmentation strategies. A simple but effective multi-task learning-based model is learned to fuse the generation capabilities from these datasets. Experimental results on Positive Psychology Frames (PPF) dataset, show that our approach outperforms the baselines, BART by five and T5 by six evaluation metrics. Our source codes and data are available online.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/41_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/41.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;59&#39;, &#39;UID&#39;: &#39;inlg59&#39;, &#39;title&#39;: &#39;Generating Clickbait Spoilers With an Ensemble of Large Language Models&#39;, &#39;authors&#39;: [&#39;Mateusz Woźny&#39;, &#39;Mateusz Lango&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Clickbait posts are a widespread problem in the webspace. The generation of spoilers, i.e. short texts that neutralize clickbait by providing information that makes it uninteresting, is one of the proposed solutions to the problem. Current state-of-the-art methods are based on passage retrieval or question answering approaches and are limited to generating spoilers only in the form of a phrase or a passage. In this work, we propose an ensemble of fine-tuned large language models for clickbait spoiler generation. Our approach is not limited to phrase or passage spoilers, but is also able to generate multipart spoilers that refer to several non-consecutive parts of text. Experimental evaluation demonstrates that the proposed ensemble model outperforms the baselines in terms of BLEU, METEOR and BERTScore metrics.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/59_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;79&#39;, &#39;UID&#39;: &#39;inlg79&#39;, &#39;title&#39;: &#39;Reducing Named Entity Hallucination Risk to Ensure Faithful Summary Generation&#39;, &#39;authors&#39;: [&#39;Eunice Akani&#39;, &#39;Benoit Favre&#39;, &#39;Frederic Bechet&#39;, &#39;Romain GEMIGNANI&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;The faithfulness of abstractive text summarization at the named entities level is the focus of this study. We propose to add a new criterion to the summary selection method based on the &#34;risk&#34; of generating entities that do not belong to the source document. This method is based on the assumption that Out-Of-Document entities are more likely to be hallucinations. This assumption was verified by a manual annotation of the entities occurring in a set of generated summaries on the CNN/DM corpus. This study showed that only 29% of the entities outside the source document were inferrable by the annotators, leading to 71% of hallucinations among OOD entities. We test our selection method on the CNN/DM corpus and show that it significantly reduces the hallucination risk on named entities while maintaining competitive results with respect to automatic evaluation metrics like ROUGE.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/79_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/79.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;82&#39;, &#39;UID&#39;: &#39;inlg82&#39;, &#39;title&#39;: &#39;Building a Dual Dataset of Text- And Image-Grounded Conversations and Summarisation in Gàidhlig (Scottish Gaelic)&#39;, &#39;authors&#39;: [&#39;David M. Howcroft&#39;, &#39;William Lamb&#39;, &#39;Anna Groundwater&#39;, &#39;Dimitra Gkatzia&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Gàidhlig (Scottish Gaelic; gd) is spoken by about 57k people in Scotland, but remains an under-resourced language with respect to natural language processing in general and natural language generation (NLG) in particular. To address this gap, we developed the first datasets for Scottish Gaelic NLG, collecting both conversational and summarisation data in a single setting. Our task setup involves dialogues between a pair of speakers discussing museum exhibits, grounding the conversation in images and texts. Then, both interlocutors summarise the dialogue resulting in a secondary dialogue summarisation dataset. This paper presents the dialogue and summarisation corpora, as well as the software used for data collection. The corpus consists of 43 conversations (13.7k words) and 61 summaries (2.0k words), and will be released along with the data collection interface.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/82_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;94&#39;, &#39;UID&#39;: &#39;inlg94&#39;, &#39;title&#39;: &#39;Generating Multiple Questions From Presentation Transcripts: A Pilot Study on Earnings Conference Calls&#39;, &#39;authors&#39;: [&#39;Yining Juan&#39;, &#39;Chung-Chi Chen&#39;, &#39;Hen-Hsen Huang&#39;, &#39;Hsin-Hsi Chen&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#34;In various scenarios, such as conference oral presentations, company managers&#39; talks, and politicians&#39; speeches, individuals often contemplate the potential questions that may arise from their presentations. This common practice prompts the research question addressed in this study: to what extent can models generate multiple questions based on a given presentation transcript? To investigate this, we conduct pilot explorations using earnings conference call transcripts, which serve as regular meetings between professional investors and company managers. We experiment with different task settings and methods and evaluate the results from various perspectives. Our findings highlight that incorporating key points retrieval techniques enhances the accuracy and diversity of the generated questions.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/94_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;100&#39;, &#39;UID&#39;: &#39;inlg100&#39;, &#39;title&#39;: &#39;Mod-D2t: A Multi-Layer Dataset for Modular Data-to-Text Generation&#39;, &#39;authors&#39;: [&#39;Simon Mille&#39;, &#39;Francois Lareau&#39;, &#39;Anya Belz&#39;, &#39;Stamatia Dasiopoulou&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgpostersession+flash&#39;, &#39;abstract&#39;: &#39;Rule-based text generators lack the coverage and fluency of their neural counterparts, but have two big advantages over them: (i) they are entirely controllable and do not hallucinate; and (ii) they can fully explain how an output was generated from an input. In this paper we leverage these two advantages to create large and reliable synthetic datasets with multiple human-intelligible intermediate representations. We present the Modular Data-to-Text (Mod-D2T) Dataset which incorporates ten intermediate-level representations between input triple sets and output text; the mappings from one level to the next can broadly be interpreted as the traditional modular tasks of an NLG pipeline. We describe the Mod-D2T dataset, evaluate its quality via manual validation and discuss its applications and limitations. Data, code and documentation are available at https://github.com/mille-s/Mod-D2T.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/100_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/100.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-13T15:40:00+02:00&#39;}], &#39;name&#39;: &#39;INLG Poster session +flash&#39;, &#39;start_time&#39;: datetime.datetime(2023, 9, 13, 15, 40, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;end_time&#39;: datetime.datetime(2023, 9, 13, 17, 0, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;location&#39;: &#39;#inlgpostersession+flash&#39;, &#39;day&#39;: &#39;Wednesday&#39;} - <br /> -->
+            <p>
+                INLG Poster session +flash: (Wednesday, 15:40 CEST, Foyer
+                <span class="gated-content">
+                    
+                    , <a href="https://discord.com/channels/###inlgpostersession+flash###" target="_blank"
+                        class="card-link discord-link">Chat on Discord </a>
+                </span>
+                )
+            </p>
+            
+
+            
+            
+            
+            <br />
+            
+        </div>
+    </div>
+</div>
+
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Gàidhlig (Scottish Gaelic; gd) is spoken by about 57k people in Scotland, but remains an under-resourced language with respect to natural language processing in general and natural language generation (NLG) in particular. To address this gap, we developed the first datasets for Scottish Gaelic NLG, collecting both conversational and summarisation data in a single setting. Our task setup involves dialogues between a pair of speakers discussing museum exhibits, grounding the conversation in images and texts. Then, both interlocutors summarise the dialogue resulting in a secondary dialogue summarisation dataset. This paper presents the dialogue and summarisation corpora, as well as the software used for data collection. The corpus consists of 43 conversations (13.7k words) and 61 summaries (2.0k words), and will be released along with the data collection interface.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

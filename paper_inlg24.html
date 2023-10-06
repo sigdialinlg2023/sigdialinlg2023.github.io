@@ -1,0 +1,359 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization</title>
+  
+<meta name="citation_title" content="Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization" />
+
+<meta name="citation_author" content="Chieh-Yang Huang" />
+
+<meta name="citation_author" content="Ting-Yao Hsu" />
+
+<meta name="citation_author" content="Ryan Rossi" />
+
+<meta name="citation_author" content="Ani Nenkova" />
+
+<meta name="citation_author" content="Sungchul Kim" />
+
+<meta name="citation_author" content="Gromit Yeuk-Yin Chan" />
+
+<meta name="citation_author" content="Eunyee Koh" />
+
+<meta name="citation_author" content="C Lee Giles" />
+
+<meta name="citation_author" content="Ting-Hao Huang" />
+
+<meta name="citation_publication_date" content="September 2023" />
+<meta name="citation_conference_title" content="Visit Sigdial &amp; Inlg 2023" />
+<meta name="citation_inbook_title" content="Proceedings of SIGdial 2023 &amp; Proceedings of INLG 2023" />
+<meta name="citation_abstract" content="Good figure captions help paper readers understand complex scientific figures. Unfortunately, even published papers often have poorly written captions. Automatic caption generation could aid paper writers by providing good starting captions that can be refined for better quality. Prior work often treated figure caption generation as a vision-to-language task. In this paper, we show that it can be more effectively tackled as a text summarization task in scientific documents. We fine-tuned PEGASUS, a pre-trained abstractive summarization model, to specifically summarize figure-referencing paragraphs (e.g., &#34;Figure 3 shows...&#34;) into figure captions. Experiments on large-scale arXiv figures show that our method outperforms prior vision methods in both automatic and human evaluations. We further conducted an in-depth investigation focused on two key challenges: (i) the common presence of low-quality author-written captions and (ii) the lack of clear standards for good captions. Our code and data are available at: https://github.com/Crowd-AI-Lab/Generating-Figure-Captions-as-a-Text-Summarization-Task." />
+
+
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+
+<!-- Title -->
+<!-- <div class="public-content"> -->
+<div class="pp-card m-3">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center">
+            Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=Chieh-Yang Huang" class="text-muted"><i>Chieh-Yang Huang</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Ting-Yao Hsu" class="text-muted"><i>Ting-Yao Hsu</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Ryan Rossi" class="text-muted"><i>Ryan Rossi</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Ani Nenkova" class="text-muted"><i>Ani Nenkova</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Sungchul Kim" class="text-muted"><i>Sungchul Kim</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Gromit Yeuk-Yin Chan" class="text-muted"><i>Gromit Yeuk-Yin Chan</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Eunyee Koh" class="text-muted"><i>Eunyee Koh</i></a>,
+            
+            <a href="papers.html?filter=authors&search=C Lee Giles" class="text-muted"><i>C Lee Giles</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Ting-Hao Huang" class="text-muted"><i>Ting-Hao Huang</i></a>
+            
+        </h3>
+        <div class="text-center p-3">
+            
+            <p>
+                <a class="card-link" target="_blank" href="static/papers/inlg/24_Paper.pdf"> Paper </a>
+            </p>
+            
+
+            In Sessions:
+            
+            <!-- {&#39;UID&#39;: &#39;inlgoralsession5&#39;, &#39;title&#39;: &#39;INLG Oral Session 5: NLG for real-world applications&#39;, &#39;chair&#39;: &#39;Dimitra Gkatzia&#39;, &#39;start&#39;: &#39;2023-09-15T11:30:00+02:00&#39;, &#39;room&#39;: &#39;Sun II&#39;, &#39;category&#39;: &#39;time&#39;, &#39;discord&#39;: &#39;https://discord.com/channels/###inlgoralsession5###&#39;, &#39;zoom&#39;: &#39;https://zoom.us/j/###Sun II###&#39;, &#39;end&#39;: &#39;2023-09-15T13:10:00+02:00&#39;, &#39;calendarId&#39;: &#39;inlgoral&#39;, &#39;contents&#39;: [{&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;16&#39;, &#39;UID&#39;: &#39;inlg16&#39;, &#39;title&#39;: &#39;GAN-LM: Generative Adversarial Network Using Language Models for Downstream Applications&#39;, &#39;authors&#39;: [&#39;Dae Yon Hwang&#39;, &#39;Yaroslav Nechaev&#39;, &#39;Cyprien de Lichy&#39;, &#39;Renxian Zhang&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession5&#39;, &#39;abstract&#39;: &#39;In this work, we investigate Data Augmentation methods to improve the performance of state-of-the-art models for four different downstream tasks. Specifically, we propose Generative Adversarial Network using Language Models (GAN-LM) approach that combines a deep generative model with a pre-trained language model to produce diverse augmentations. We compare the GAN-LM to various conventional methods in non-contextual- and contextual-levels on four public datasets: ZESHEL for zero-shot entity linking, TREC for question classification, STS-B for sentence pairs semantic textual similarity (STS), and mSTS for multilingual sentence pairs STS. Additionally, we subsample these datasets to study the impact of such augmentations in low-resource settings where limited amounts of training data is available. Compared to the state-of-the-art methods in downstream tasks, we mostly achieve the best performance using GAN-LM approach. Finally, we investigate the way of combining the GAN-LM with other augmentation methods to complement our proposed approach. The developed code for reproducibility is included in the supplementary material.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/16_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/16.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T11:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;24&#39;, &#39;UID&#39;: &#39;inlg24&#39;, &#39;title&#39;: &#39;Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization&#39;, &#39;authors&#39;: [&#39;Chieh-Yang Huang&#39;, &#39;Ting-Yao Hsu&#39;, &#39;Ryan Rossi&#39;, &#39;Ani Nenkova&#39;, &#39;Sungchul Kim&#39;, &#39;Gromit Yeuk-Yin Chan&#39;, &#39;Eunyee Koh&#39;, &#39;C Lee Giles&#39;, &#39;Ting-Hao Huang&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession5&#39;, &#39;abstract&#39;: &#39;Good figure captions help paper readers understand complex scientific figures. Unfortunately, even published papers often have poorly written captions. Automatic caption generation could aid paper writers by providing good starting captions that can be refined for better quality. Prior work often treated figure caption generation as a vision-to-language task. In this paper, we show that it can be more effectively tackled as a text summarization task in scientific documents. We fine-tuned PEGASUS, a pre-trained abstractive summarization model, to specifically summarize figure-referencing paragraphs (e.g., &#34;Figure 3 shows...&#34;) into figure captions. Experiments on large-scale arXiv figures show that our method outperforms prior vision methods in both automatic and human evaluations. We further conducted an in-depth investigation focused on two key challenges: (i) the common presence of low-quality author-written captions and (ii) the lack of clear standards for good captions. Our code and data are available at: https://github.com/Crowd-AI-Lab/Generating-Figure-Captions-as-a-Text-Summarization-Task.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/24_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/24.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T11:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;47&#39;, &#39;UID&#39;: &#39;inlg47&#39;, &#39;title&#39;: &#39;Claim Optimization in Computational Argumentation&#39;, &#39;authors&#39;: [&#39;Gabriella Skitalinskaya&#39;, &#39;Maximilian Spliethöver&#39;, &#39;Henning Wachsmuth&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession5&#39;, &#39;abstract&#39;: &#39;An optimal delivery of arguments is key to persuasion in any debate, both for humans and for AI systems. This requires the use of clear and fluent claims relevant to the given debate. Prior work has studied the automatic assessment of argument quality extensively. Yet, no approach actually improves the quality so far. To fill this gap, this paper proposes the task of claim optimization: to rewrite argumentative claims in order to optimize their delivery. As multiple types of optimization are possible, we approach this task by first generating a diverse set of candidate claims using a large language model, such as BART, taking into account contextual information. Then, the best candidate is selected using various quality metrics. In automatic and human evaluation on an English-language corpus, our quality-based candidate selection outperforms several baselines, improving 60% of all claims (worsening 16% only). Follow-up analyses reveal that, beyond copy editing, our approach often specifies claims with details, whereas it adds less evidence than humans do. Moreover, its capabilities generalize well to other domains, such as instructional texts.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/47_Paper.pdf&#39;, &#39;notes&#39;: &#39;Best Paper Nominee&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/47.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T11:30:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;71&#39;, &#39;UID&#39;: &#39;inlg71&#39;, &#39;title&#39;: &#39;A Zero-Shot Approach for Multi-User Task-Oriented Dialog Generation&#39;, &#39;authors&#39;: [&#39;Shiv Surya&#39;, &#39;Yohan Jo&#39;, &#39;Arijit Biswas&#39;, &#39;Alexandros Potamianos&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;inlgoralsession5&#39;, &#39;abstract&#39;: &#39;Prior art investigating task-oriented dialog and automatic generation of such dialogs have focused on single-user dialogs between a single user and an agent. However, there is limited study on adapting such AI agents to multi-user conversations (involving multiple users and an agent). Multi-user conversations are richer than single-user conversations containing social banter and collaborative decision making. The most significant challenge impeding such studies is the lack of suitable multi-user task-oriented dialogs with annotations of user belief states and system actions. One potential solution is multi-user dialog generation from single-user data. Many single-user dialogs datasets already contain dialog state information (intents, slots), thus making them suitable candidates. In this work, we propose a novel approach for expanding single-user task-oriented dialogs (e.g. MultiWOZ) to multi-user dialogs in a zero-shot setting.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/71_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T11:30:00+02:00&#39;}], &#39;name&#39;: &#39;INLG Oral Session 5: NLG for real-world applications&#39;, &#39;start_time&#39;: datetime.datetime(2023, 9, 15, 11, 30, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;end_time&#39;: datetime.datetime(2023, 9, 15, 13, 10, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;location&#39;: &#39;#inlgoralsession5&#39;, &#39;day&#39;: &#39;Friday&#39;} - <br /> -->
+            <p>
+                INLG Oral Session 5: NLG for real-world applications: (Friday, 11:30 CEST, Sun II
+                <span class="gated-content">
+                    , <a href="https://zoom.us/j/###Sun II###" target="_blank"
+                        class="card-link">Watch on Zoom</a> 
+                    , <a href="https://discord.com/channels/###inlgoralsession5###" target="_blank"
+                        class="card-link discord-link">Chat on Discord </a>
+                </span>
+                )
+            </p>
+            
+
+            
+            
+            <a href="static/posters/INLG2023/24.pdf" target="_blank" class="card-link">
+                <p>Poster </p>
+                <img src="static/posters/thumbnails/inlg24.png" alt="Summaries as Captions: Generating Figure Captions for Scientific Documents With Automated Text Summarization">
+            </a>
+            
+            
+            <br />
+            
+        </div>
+    </div>
+</div>
+
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Good figure captions help paper readers understand complex scientific figures. Unfortunately, even published papers often have poorly written captions. Automatic caption generation could aid paper writers by providing good starting captions that can be refined for better quality. Prior work often treated figure caption generation as a vision-to-language task. In this paper, we show that it can be more effectively tackled as a text summarization task in scientific documents. We fine-tuned PEGASUS, a pre-trained abstractive summarization model, to specifically summarize figure-referencing paragraphs (e.g., &#34;Figure 3 shows...&#34;) into figure captions. Experiments on large-scale arXiv figures show that our method outperforms prior vision methods in both automatic and human evaluations. We further conducted an in-depth investigation focused on two key challenges: (i) the common presence of low-quality author-written captions and (ii) the lack of clear standards for good captions. Our code and data are available at: https://github.com/Crowd-AI-Lab/Generating-Figure-Captions-as-a-Text-Summarization-Task.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

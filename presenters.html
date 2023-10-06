@@ -1,0 +1,375 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023</title>
+  
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+  
+<style>
+  .back {
+    background: url("static/images/hradcany_cropped.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+
+  .notice {
+      font-weight: bold;
+      color: red;
+      padding: 1em 0;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        Visit SIGdial & INLG 2023
+      </h2>
+      <h2 class="p-5">
+        11-15 September 2023 | Prague
+      </h2>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+<div class="row">
+  <div class="col-sm">
+    <div class="public-content">
+        <div class="notice">Please <a href="onlinepresence.html">log in</a> to access presenter information.</div>        
+    </div>
+    <div class="gated-content">
+    <h2>Instructions for Presenters</h2>
+<h3>Oral presentations</h3>
+<p>The length of oral presentations is:</p>
+<ul>
+<li><strong>SIGDIAL</strong>: 20 minutes (15 minutes talk and 5 minutes questions)</li>
+<li><strong>INLG</strong>: 25 minutes (15 + 10)</li>
+<li>
+<p><strong>INLG GenChal</strong>: 10 minutes for short papers, 15 minutes for long papers (including questions)</p>
+</li>
+<li>
+<p><strong>In-person presenters:</strong> Please contact your session chair 10 minutes before the start of your session in the conference hall. Preferably use the computer in the hall for presentation. Slides you uploaded to the cloud directory (see below) will be available there, or you can upload your slides onto it via a USB drive if needed. If you need to present from your own laptop, please try out connecting the laptop before the session.</p>
+</li>
+<li>
+<p><strong>Virtual presenters:</strong>  Remote oral presentations are going to be live over Zoom and will follow the same format as in-person presentations. If you’re presenting online, connect to your Zoom session 10 minutes before your whole session starts (not just before your talk!), so that we know you’re online and everything works, and we can allow you to present and share your screen. Please stay online throughout the session.</p>
+</li>
+</ul>
+<p>Comments &amp; questions will come from the audience in the room, but can also be posted on Discord -- please check discord and react to comments not answered during your presentation.</p>
+<h3>Poster presentations</h3>
+<p>The <strong>poster size</strong> is A0 vertical.</p>
+<p>The virtual demo/poster presenters will have a <strong>Discord voice channel</strong>. Each paper  will have its own channel for video-chatting with other attendees where the presenters can share their screen. The presenters can choose to prepare a poster, slides, or show their demo system.</p>
+<p>In-person poster presenters are also <strong>invited to participate in the virtual poster session</strong> for the remote attendees.</p>
+<p>Instructions for the virtual posters and remote presenters will be added shortly. If you have questions on remote presentations, please contact <a href="https://ufal.mff.cuni.cz/ondrej-platek">Ondrej Platek</a>.</p>
+<h3>Discord: Paper comments &amp; Virtual Posters</h3>
+<ul>
+<li>
+<p><a href="https://discord.gg/zxquHwKy5">Please register on Discord</a>.</p>
+</li>
+<li>
+<p><strong>Oral presenters (both virtual and in-person) &amp; in-person poster presenters:</strong> Please go to your paper’s Discord session's channel and introduce yourself as the author of your paper. </p>
+<ul>
+<li>
+<p>Discord questions can be used during the oral sessions, but questions from in-person audience take priority.</p>
+</li>
+<li>
+<p>You can pose &amp; answer questions at any time -- if a question is not resolved during the oral session, it can be discussed on Discord later.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Virtual poster presenters</strong> for the Friday morning:</p>
+<ul>
+<li>
+<p>Please make sure that you can join the Discord Voice channel for your paper and your audio setup is working on Discord.</p>
+</li>
+<li>
+<p>Open the chat channel associated with the voice channel and introduce yourself.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>In-person poster presenters:</strong> We invite all in-person SIGdial and INLG posters presenters to also present their posters online in the virtual poster session, in addition to their in-person presentations on Wednesday or Thursday. <strong>If you want to present your poster virtually as well as in person, please let Ondrej Platek know in advance</strong> (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#112;&#108;&#97;&#116;&#101;&#107;&#64;&#117;&#102;&#97;&#108;&#46;&#109;&#102;&#102;&#46;&#99;&#117;&#110;&#105;&#46;&#99;&#122;">&#111;&#112;&#108;&#97;&#116;&#101;&#107;&#64;&#117;&#102;&#97;&#108;&#46;&#109;&#102;&#102;&#46;&#99;&#117;&#110;&#105;&#46;&#99;&#122;</a>, <code>@oplatk</code> on Discord), so that we can setup a dedicated Voice channel on Discord.</p>
+</li>
+</ul>
+<h3>Slides, posters &amp; backup video upload</h3>
+<p>Please upload your poster/slides under the following links, so that they can be shown on the conference website alongside your paper: </p>
+<ul>
+<li>
+<p>SIGDIAL: <a href="https://owncloud.cesnet.cz/index.php/s/aIUU3dUOGfErbZk">https://owncloud.cesnet.cz/index.php/s/aIUU3dUOGfErbZk</a></p>
+<ul>
+<li>password: SIGDIAL2023</li>
+</ul>
+</li>
+<li>
+<p>INLG: <a href="https://owncloud.cesnet.cz/index.php/s/zKRxKeBvHpwXktL">https://owncloud.cesnet.cz/index.php/s/zKRxKeBvHpwXktL</a></p>
+<ul>
+<li>password: INLG2023</li>
+</ul>
+</li>
+</ul>
+<p><strong>Please use <code>&lt;paper-id&gt;.pdf</code> as the file format</strong> (where <paper-id> is your Softconf submission ID). We won’t be able to process other naming conventions and other formats than PDF for the website. Please upload the files <strong>by Thursday 7 September AoE</strong> to make sure they get on the website before the conference.</p>
+<ul>
+<li><strong>In-person oral presenters:</strong> If you’re presenting on-site, you can also upload a PowerPoint version of your slides to use during your presentation (<code>&lt;paper-id&gt;.pptx</code>), it will be uploaded to the computers in the conference halls.</li>
+<li><strong>Virtual oral presenters:</strong> You can upload a backup 15-minutes video for your presentation (<code>&lt;paper-id&gt;.mp4</code>). This will only be used in case of connection problems -- a live presentation is a priority for us.</li>
+</ul>
+<h3>Testing out your setup</h3>
+<p>We invite virtual presenters to test our their setup on Tuesday September 5 at 1PM CEST (Zoom) and 1:30PM CEST (Discord). </p>
+<ul>
+<li>
+<p><strong>Virtual oral presenters:</strong> If you want to check your setup or resolve any questions, please connect to <a href="https://cesnet.zoom.us/j/91621331403?pwd=ZDdmU2xKMGFMc1lpOVNkdlkvNFlRUT09">this Zoom session</a>. 
+Ondrej Platek will be there on Sep 5 at 1PM CEST.</p>
+</li>
+<li>
+<p><strong>Virtual poster presenters:</strong> If you want to try out the Discord poster presentation or resolve any questions, please <a href="https://discord.com/channels/1112733937828102206/1146936529722277908">go to the "poster shared" channel</a>.<br />
+Introduce yourself and if you need to ask question please tag <code>@oplatk</code> <a href="https://discord.com/channels/1112733937828102206/1146404262994260018">in the "help-me" channel</a>
+Ondrej Platek will be there on Sep 5 at 1:30PM CEST.</p>
+</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>

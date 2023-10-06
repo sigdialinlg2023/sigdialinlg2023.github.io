@@ -1,0 +1,325 @@
+
+
+<!-- venue -->
+<!-- Venue na webu sigdialu participating -->
+<!-- nahradit fotku a zmergovat logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<script type="text/javascript" src="static/js/views/zoom_links.js"></script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+    integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script> -->
+
+
+  <!-- Library libs_ext -->
+  <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+  <!--    Internal Libs -->
+  <script src="static/js/data/api.js"></script>
+
+  
+  <script>
+    var auth0_domain = "ufal-cuni.eu.auth0.com";
+    var auth0_client_id = "R6G028fWc6YPC89JqBds3RaPO4SgZPkO";
+  </script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+  </script>
+  <script src="static/js/modules/auth0protect.js"></script>
+  
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <!-- External Fonts (no google for china) -->
+  <link href="static/css/Lato.css" rel="stylesheet" />
+  <!-- <link href="static/css/Exo.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="static/css/Cuprum.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+  <link rel="stylesheet" href="static/css/fa_solid.css" />
+  <link rel="stylesheet" href="static/css/lazy_load.css" />
+  <link rel="stylesheet" href="static/css/typeahead.css" />
+
+  <title>Program SIGdial &amp; INLG 2023: Incorporating Annotators&#39; Uncertainty to Discourse Relations Representations</title>
+  
+<meta name="citation_title" content="Incorporating Annotators&#39; Uncertainty to Discourse Relations Representations" />
+
+<meta name="citation_author" content="S. Magalí López Cortez" />
+
+<meta name="citation_author" content="Cassandra L. Jacobs" />
+
+<meta name="citation_publication_date" content="September 2023" />
+<meta name="citation_conference_title" content="Visit Sigdial &amp; Inlg 2023" />
+<meta name="citation_inbook_title" content="Proceedings of SIGdial 2023 &amp; Proceedings of INLG 2023" />
+<meta name="citation_abstract" content="Annotation of discourse relations is a known difficult task, especially for non-expert annotators. In this paper, we investigate novice annotators&#39; uncertainty on the annotation of discourse relations on spoken conversational data. We find that dialogue context (single turn, pair of turns within speaker, and pair of turns across speakers) is a significant predictor of  confidence scores. We compute distributed representations of discourse relations from co-occurrence statistics that incorporate information about confidence scores and dialogue context. We perform a hierarchical clustering analysis using these representations and show that weighting discourse relation representations with information about confidence and dialogue context coherently models our annotators&#39; uncertainty about discourse relation labels." />
+
+
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <!-- TODO TBD program -->
+  
+  
+  
+  
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="static/images/program.png" height="auto"
+          width="170px" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">News</a>
+          </li>
+
+          
+            
+            
+
+          
+            
+            
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For participants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="venue.html">Venue</a>
+              <a class="dropdown-item" href="onlinepresence.html">Online Presence</a>
+              <a class="dropdown-item" href="local.html">Local information</a>
+              <a class="dropdown-item" href="presenters.html">For presenters</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Program
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calendar.html">Schedule</a>
+              <a class="dropdown-item" href="speakers.html">Keynotes</a>
+              <!--                    <a class="dropdown-item" href="panels.html">Panel</a>-->
+              <!--                    <a class="dropdown-item" href="accepted_papers.html">Accepted Papers</a>-->
+              <a class="dropdown-item" href="papers.html">Papers</a>
+              <a class="dropdown-item" href="awards.html">Awards</a>
+              <a class="dropdown-item" href="workshops.html">Workshops</a>
+              <!--                    <a class="dropdown-item" href="tutorials.html">Tutorials</a>-->
+              <!--                    <a class="dropdown-item" href="hackathons.html">Hackathon</a>-->
+              <!--                    <a class="dropdown-item" href="genchal.html">GenChal</a>-->
+            </div>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="help.html">FAQ</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="organizers.html">Organizers</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+
+          <!-- <li class="nav-item "> -->
+          <!--     <a class="nav-link" href="workshops.html">Workshops</a> -->
+          <!-- </li> -->
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://2023.sigdial.org/">SIGdial</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="https://inlg2023.github.io/">INLG</a>
+          </li>
+        </ul>
+
+        <button id="btn-login" class="btn-info btn-sm btn-login" onclick="login()">Log in</button>
+        <button id="btn-logout" class="btn-danger btn-sm btn-login" onclick="logout()">Log out</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <!-- User Overrides -->
+   
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+       
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="error-message" class="error-message"></div>
+      
+
+<!-- Title -->
+<!-- <div class="public-content"> -->
+<div class="pp-card m-3">
+    <div class="card-header">
+        <h2 class="card-title main-title text-center">
+            Incorporating Annotators&#39; Uncertainty to Discourse Relations Representations
+        </h2>
+        <h3 class="card-subtitle mb-2 text-muted text-center">
+            
+            <a href="papers.html?filter=authors&search=S. Magalí López Cortez" class="text-muted"><i>S. Magalí López Cortez</i></a>,
+            
+            <a href="papers.html?filter=authors&search=Cassandra L. Jacobs" class="text-muted"><i>Cassandra L. Jacobs</i></a>
+            
+        </h3>
+        <div class="text-center p-3">
+            
+            <p>
+                <a class="card-link" target="_blank" href="static/papers/sigdial/128_Paper.pdf"> Paper </a>
+            </p>
+            
+
+            In Sessions:
+            
+            <!-- {&#39;UID&#39;: &#39;virtualpostersession&#39;, &#39;title&#39;: &#39;Virtual Poster Session&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;, &#39;room&#39;: &#39;Sun I&#39;, &#39;category&#39;: &#39;time&#39;, &#39;discord&#39;: &#39;https://discord.com/channels/###virtualpostersession###&#39;, &#39;zoom&#39;: None, &#39;end&#39;: &#39;2023-09-15T10:00:00+02:00&#39;, &#39;calendarId&#39;: &#39;sigdialposter&#39;, &#39;chair&#39;: &#39;Kees van Deemter&#39;, &#39;contents&#39;: [{&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;123&#39;, &#39;UID&#39;: &#39;inlg123&#39;, &#39;title&#39;: &#39;Overview of MiReportor: Generating Reports for Multimodal Medical Images&#39;, &#39;authors&#39;: [&#39;Xuwen Wang&#39;, &#39;Hetong Ma&#39;, &#39;Zhen Guo&#39;, &#39;Jiao Li&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;This demo paper presents a brief introduction of MiReportor, a computer-aided medical imaging report generator, which leverages a unified framework of medical image understanding and generation to predict readable descriptions for medical images, and assists radiologists in imaging reports writing.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/123_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/123.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;25&#39;, &#39;UID&#39;: &#39;inlg25&#39;, &#39;title&#39;: &#39;Validating Predictive Models of Evaluative Language for Controllable Data2Text Generation&#39;, &#39;authors&#39;: [&#39;Maurice Langner&#39;, &#39;Ralf Klabunde&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#34;In data2text generation, tabular data is transformed into a text that expresses information from that source domain. While some text types, such as instructions, demand objective and neutral language without any expressive and evaluative content, many other text types are expected to provide expressions for these kinds of subjective meanings.  In controllable, pipelined neural NLG separate learning models, notably regression models, can be used to predict whether some feature deviates sufficiently strongly from an expected value, so that evaluative language would be appropriate for verbalizing this finding. In this paper, we present an empirical study on the comprehension of evaluative adverbs and adjectival modifiers in car reviews, a text type that is characterized by a mixture of factual information with evaluations expressing positive or negative surprise. We show to what extend regression-based decision boundaries for producing evaluative content in controllable data2text NLG match the reader&#39;s expectations that are raised by those evaluative markers. Finally we show that regression values in combination with standard deviation of the technical input data constitute reasonable Boolean thresholds for both positive and negative surprise, which provide the basis for the development of more complex models that also include the scalar base of adverbs and modifiers.&#34;, &#39;paper&#39;: &#39;static/papers/inlg/25_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/25.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;27&#39;, &#39;UID&#39;: &#39;inlg27&#39;, &#39;title&#39;: &#39;The Next Chapter: A Study of Large Language Models in Storytelling&#39;, &#39;authors&#39;: [&#39;Zhuohan Xie&#39;, &#39;Trevor Cohn&#39;, &#39;Jey Han Lau&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;To enhance the quality of generated stories, recent story generation models have been investigating the utilization of higher-level attributes like plots or commonsense knowledge. The application of prompt-based learning with large language models (LLMs), exemplified by GPT-3, has exhibited remarkable performance in diverse natural language processing (NLP) tasks. This paper conducts a comprehensive investigation, utilizing both automatic and human evaluation, to compare the story generation capacity of LLMs with recent models across three  datasets with variations in style, register, and length of stories. The results demonstrate that LLMs generate stories of significantly higher quality compared to other story generation models. Moreover, they exhibit a level of performance that competes with human authors, albeit with the preliminary observation that they tend to replicate real stories in situations involving world knowledge, resembling a form of plagiarism.&#39;, &#39;paper&#39;: &#39;static/papers/inlg/27_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/INLG2023/27.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;54&#39;, &#39;UID&#39;: &#39;sigdial54&#39;, &#39;title&#39;: &#39;Enhancing Task Bot Engagement With Synthesized Open-Domain Dialog&#39;, &#39;authors&#39;: [&#39;Miaoran Li&#39;, &#39;Baolin Peng&#39;, &#39;Michel Galley&#39;, &#39;Jianfeng Gao&#39;, &#39;Zhu (Drew) Zhang&#39;], &#39;order&#39;: &#39;1&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;The construction of dialog systems for various types of conversations, such as task-oriented dialog (TOD) and open-domain dialog (ODD), has been an active area of research. In order to more closely mimic human-like conversations that often involve the fusion of different dialog modes, it is important to develop systems that can effectively handle both TOD and ODD and access different knowledge sources. In this work, we present a new automatic framework to enrich TODs with synthesized ODDs. We also introduce the PivotBot model, which is capable of handling both TOD and ODD modes and can access different knowledge sources to generate informative responses. Evaluation results indicate the superior ability of the proposed model to switch smoothly between TOD and ODD tasks.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/54_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/SIGDIAL2023/54.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;46&#39;, &#39;UID&#39;: &#39;sigdial46&#39;, &#39;title&#39;: &#39;Transformer-Based Multi-Party Conversation Generation Using Dialogue Discourse Acts Planning&#39;, &#39;authors&#39;: [&#39;Alexander Chernyavskiy&#39;, &#39;Dmitry Ilvovsky&#39;], &#39;order&#39;: &#39;7&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;Recent transformer-based approaches to multi-party conversation generation may produce syntactically coherent but discursively inconsistent dialogues in some cases. To address this issue, we propose an approach to integrate a dialogue act planning stage into the end-to-end transformer-based generation pipeline. This approach consists of a transformer fine-tuning procedure based on linearized dialogue representations that include special discourse tokens. The obtained results demonstrate that incorporating discourse tokens into training sequences is sufficient to significantly improve dialogue consistency and overall generation quality. The suggested approach performs well, including for automatically annotated data. Apart from that, it is observed that increasing the weight of the discourse planning task in the loss function accelerates learning convergence.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/46_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/SIGDIAL2023/46.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;128&#39;, &#39;UID&#39;: &#39;sigdial128&#39;, &#39;title&#39;: &#34;Incorporating Annotators&#39; Uncertainty to Discourse Relations Representations&#34;, &#39;authors&#39;: [&#39;S. Magalí López Cortez&#39;, &#39;Cassandra L. Jacobs&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#34;Annotation of discourse relations is a known difficult task, especially for non-expert annotators. In this paper, we investigate novice annotators&#39; uncertainty on the annotation of discourse relations on spoken conversational data. We find that dialogue context (single turn, pair of turns within speaker, and pair of turns across speakers) is a significant predictor of  confidence scores. We compute distributed representations of discourse relations from co-occurrence statistics that incorporate information about confidence scores and dialogue context. We perform a hierarchical clustering analysis using these representations and show that weighting discourse relation representations with information about confidence and dialogue context coherently models our annotators&#39; uncertainty about discourse relation labels.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/128_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;30&#39;, &#39;UID&#39;: &#39;sigdial30&#39;, &#39;title&#39;: &#39;Investigating the Representation of Open Domain Dialogue Context for Transformer Models&#39;, &#39;authors&#39;: [&#39;Vishakh Padmakumar&#39;, &#39;Behnam Hedayatnia&#39;, &#39;Di Jin&#39;, &#39;Patrick Lange&#39;, &#39;Seokhwan Kim&#39;, &#39;Nanyun Peng&#39;, &#39;Yang Liu&#39;, &#39;Dilek Hakkani-Tur&#39;], &#39;order&#39;: &#39;4&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;The bulk of work adapting transformer models to open-domain dialogue represents dialogue context as the concatenated set of turns in natural language. However, it is unclear if this is the best approach. In this work, we investigate this question by means of an empirical controlled experiment varying the dialogue context format from text-only formats (all recent utterances, summaries, selected utterances) as well as variants that are more structurally different (triples, AMR). We compare these formats based on fine-tuned model performance on two downstream tasks---knowledge selection and response generation. We find that simply concatenating the utterances works as a strong baseline in most cases, but is outperformed in longer contexts by a hybrid approach of combining a summary of the context with recent utterances.  Through empirical analysis, our work highlights the need to examine the format of context representation and offers recommendations on adapting general-purpose language models to dialogue tasks.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/30_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;42&#39;, &#39;UID&#39;: &#39;sigdial42&#39;, &#39;title&#39;: &#39;C3: Compositional Counterfactual Constrastive Learning for Video-Grounded Dialogues&#39;, &#39;authors&#39;: [&#39;Hung Le&#39;, &#39;Nancy Chen&#39;, &#39;Steven C.H. Hoi&#39;], &#39;order&#39;: &#39;5&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;Video-grounded dialogue systems aim to integrate video understanding and dialogue understanding to generate responses that are relevant to both the dialogue and video context. Most existing approaches employ deep learning models and have achieved remarkable performance, given the relatively small datasets available. However, the results are partially accomplished by exploiting biases in the datasets rather than developing multimodal reasoning, resulting in limited generalization. In this paper, we propose a novel approach of Compositional Counterfactual Contrastive Learning (C3) to develop contrastive training between factual and counterfactual samples in video-grounded dialogues. Specifically, we design factual/counterfactual samples based on the temporal steps in videos and tokens in dialogues and propose contrastive loss functions that exploit object-level or action-level variance. Different from prior approaches, we focus on contrastive hidden state representations among compositional output tokens to optimize the representation space in a generation setting. We achieved promising performance gains on the Audio-Visual Scene-Aware Dialogues (AVSD) benchmark and showed the benefits of our approach in grounding video and dialogue context.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/42_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;59&#39;, &#39;UID&#39;: &#39;sigdial59&#39;, &#39;title&#39;: &#34;No That&#39;s Not What I Meant: Handling Third Position Repair in Conversational Question Answering&#34;, &#39;authors&#39;: [&#39;Vevake Balaraman&#39;, &#39;Arash Eshghi&#39;, &#39;Ioannis Konstas&#39;, &#39;Ioannis Papaioannou&#39;], &#39;order&#39;: &#39;8&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#34;The ability to handle miscommunication is crucial to robust and faithful conversational AI. People usually deal with miscommunication immediately as they detect it, using highly systematic interactional mechanisms called repair. One important type of repair is Third Position Repair (TPR) whereby a speaker is initially misunderstood but then corrects the misunderstanding as it becomes apparent after the addressee&#39;s erroneous response. Here, we collect and publicly release REPAIR-QA, the first large dataset of TPRs in a conversational question answering (QA) setting. The data is comprised of the TPR turns, corresponding dialogue contexts, and candidate repairs of the original turn for execution of TPRs. We demonstrate the usefulness of the data by training and evaluating strong baseline models for executing TPRs. For stand-alone TPR execution, we perform both automatic and human evaluations on a fine-tuned T5 model, as well as OpenAI&#39;s GPT-3 LLMs. Additionally, we extrinsically evaluate the LLMs&#39; TPR processing capabilities in the downstream conversational QA task. The results indicate poor out-of-the-box performance on TPR&#39;s by the GPT-3 models, which then significantly improves when exposed to REPAIR-QA.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/59_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;138&#39;, &#39;UID&#39;: &#39;sigdial138&#39;, &#39;title&#39;: &#39;Improve Zero-Shot Performance on Unseen Dialog Domains With Retrieval-Augmented Task-Oriented Systems&#39;, &#39;authors&#39;: [&#39;Jianguo Zhang&#39;, &#39;Stephen Roller&#39;, &#39;Kun Qian&#39;, &#39;Zhiwei Liu&#39;, &#39;Rui Meng&#39;, &#39;Shelby Heinecke&#39;, &#39;Huan Wang&#39;, &#39;silvio savarese&#39;, &#39;Caiming Xiong&#39;], &#39;order&#39;: &#39;2&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;End-to-end task-oriented dialogue (TOD) systems have achieved promising performance by leveraging sophisticated natural language understanding and natural language generation capabilities of pre-trained models. This work enables the TOD systems with more flexibility through a simple cache. The cache provides the flexibility to dynamically update the TOD systems and handle both existing and unseen dialogue scenarios.  Towards this end, we first fine-tune a retrieval module to effectively retrieve the most relevant information entries from the cache. We then train end-to-end TOD models that can refer to and ground on both dialogue history and retrieved information during TOD generation. The introduced cache is straightforward to construct, and the backbone models of TOD systems are compatible with existing pre-trained generative models. Extensive experiments demonstrate the superior performance of our framework, with a notable improvement in non-empty joint goal accuracy by 6.7% compared to strong baselines.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/138_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;147&#39;, &#39;UID&#39;: &#39;sigdial147&#39;, &#39;title&#39;: &#39;When to Generate Hedge in Peer Tutoring Interaction?&#39;, &#39;authors&#39;: [&#39;Alafate Abulimiti&#39;, &#39;Chloé Clavel&#39;, &#39;Justine Cassell&#39;], &#39;order&#39;: &#39;3&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#34;This paper explores the application of machine learning techniques to predict where hedging occurs in peer-tutoring interactions. The study uses a naturalistic face-to-face dataset annotated for natural language turns, conversational strategies, tutoring strategies, and nonverbal behaviors. These elements are processed into a vector representation of the previous turns, which serves as input to several machine learning models, including MLP and LSTM. The results show that embedding layers, capturing the semantic information of the previous turns, significantly improves the model&#39;s performance. Additionally, the study provides insights into the importance of various features, such as interpersonal rapport and nonverbal behaviors, in predicting hedges by using Shapley values for feature explanation. We discover that the eye gaze of both the tutor and the tutee has a significant impact on hedge prediction. We further validate this observation through a follow-up ablation study.&#34;, &#39;paper&#39;: &#39;static/papers/sigdial/147_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;45&#39;, &#39;UID&#39;: &#39;sigdial45&#39;, &#39;title&#39;: &#39;PaperPersiChat: Scientific Paper Discussion Chatbot Using Transformers and Discourse Flow Management&#39;, &#39;authors&#39;: [&#39;Alexander Chernyavskiy&#39;, &#39;Max Bregeda&#39;, &#39;Maria Nikiforova&#39;], &#39;order&#39;: &#39;6&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;The rate of scientific publications is increasing exponentially, necessitating a significant investment of time in order to read and comprehend the most important articles. While ancillary services exist to facilitate this process, they are typically closed-model and paid services or have limited capabilities. In this paper, we present &amp;#92;emph{PaperPersiChat}, an open chatbot-system designed for the discussion of scientific papers. This system supports summarization and question-answering modes within a single end-to-end chatbot pipeline, which is guided by discourse analysis. To expedite the development of similar systems, we also release the gathered dataset, which has no publicly available analogues.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/45_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;static/posters/SIGDIAL2023/45.pdf&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;sigdial&#39;, &#39;original_id&#39;: &#39;103&#39;, &#39;UID&#39;: &#39;sigdial103&#39;, &#39;title&#39;: &#39;FurChat: An Embodied Conversational Agent Using LLMs, Combining Open and Closed-Domain Dialogue With Facial Expressions&#39;, &#39;authors&#39;: [&#39;Neeraj Cherakara&#39;, &#39;Finny Varghese&#39;, &#39;Sheena Shabana&#39;, &#39;Nivan Nelson&#39;, &#39;Abhiram Karukayil&#39;, &#39;Rohith Kulothungan&#39;, &#39;Mohammed Afil Farhan&#39;, &#39;Birthe Nesset&#39;, &#39;Meriam Moujahid&#39;, &#39;Tanvi Dinkar&#39;, &#39;Verena Rieser&#39;, &#39;Oliver Lemon&#39;], &#39;order&#39;: &#39;9&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;We demonstrate an embodied conversational agent that can function as a receptionist and generate a mixture of  open and closed-domain dialogue along with facial expressions, by  using a large language model (LLM) to develop an engaging conversation. We deployed the system onto a Furhat robot, which is highly expressive and capable of using both verbal and nonverbal cues during interaction. The system was designed specifically for the National Robotarium to interact with visitors through natural conversations, providing them with information about the facilities, research, news, upcoming events, etc. The system utilises the state-of-the-art GPT-3.5 model to generate such information along with domain-general conversations and facial expressions based on prompt engineering.&#39;, &#39;paper&#39;: &#39;static/papers/sigdial/103_Paper.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;133&#39;, &#39;UID&#39;: &#39;inlg133&#39;, &#39;title&#39;: &#39;TMU Feedback Comment Generation System Using Pretrained Sequence-to-Sequence Language Models&#39;, &#39;authors&#39;: [&#39;Naoya Ueda and Mamoru Komachi&#39;], &#39;order&#39;: &#39;0&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;&#39;, &#39;paper&#39;: &#39;static/papers/genchal/133.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;137&#39;, &#39;UID&#39;: &#39;inlg137&#39;, &#39;title&#39;: &#39;Team Zoom @ AutoMin 2023: Utilizing Topic Segmentation and LLM Data Augmentation for Long-Form Meeting Summarization&#39;, &#39;authors&#39;: [&#39;Felix Schneider and Marco Turchi&#39;], &#39;order&#39;: &#39;1&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;&#39;, &#39;paper&#39;: &#39;static/papers/genchal/137.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}, {&#39;conference&#39;: &#39;inlg&#39;, &#39;original_id&#39;: &#39;141&#39;, &#39;UID&#39;: &#39;inlg141&#39;, &#39;title&#39;: &#39;Team NTR @ AutoMin 2023: Dolly LLM Improves Minuting Performance, Semantic Segmentation Doesn’t&#39;, &#39;authors&#39;: [&#39;Eugene Borisov and Nikolay Mikhaylovskiy&#39;], &#39;order&#39;: &#39;2&#39;, &#39;session&#39;: &#39;virtualpostersession&#39;, &#39;abstract&#39;: &#39;&#39;, &#39;paper&#39;: &#39;static/papers/genchal/141.pdf&#39;, &#39;notes&#39;: &#39;&#39;, &#39;poster&#39;: &#39;&#39;, &#39;full_video&#39;: &#39;&#39;, &#39;start&#39;: &#39;2023-09-15T09:00:00+02:00&#39;}], &#39;name&#39;: &#39;Virtual Poster Session&#39;, &#39;start_time&#39;: datetime.datetime(2023, 9, 15, 9, 0, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;end_time&#39;: datetime.datetime(2023, 9, 15, 10, 0, tzinfo=datetime.timezone(datetime.timedelta(seconds=7200))), &#39;location&#39;: &#39;#virtualpostersession&#39;, &#39;day&#39;: &#39;Friday&#39;} - <br /> -->
+            <p>
+                Virtual Poster Session: (Friday, 09:00 CEST, Sun I
+                <span class="gated-content">
+                    
+                    , <a href="https://discord.com/channels/###virtualpostersession###" target="_blank"
+                        class="card-link discord-link">Chat on Discord </a>
+                </span>
+                )
+            </p>
+            
+
+            
+            
+            
+            <br />
+            
+        </div>
+    </div>
+</div>
+
+<div id="details" class="pp-card m-3">
+    <div class="card-body">
+        <div class="card-text">
+            <div id="abstractExample">
+                <span class="font-weight-bold">Abstract:</span>
+                Annotation of discourse relations is a known difficult task, especially for non-expert annotators. In this paper, we investigate novice annotators&#39; uncertainty on the annotation of discourse relations on spoken conversational data. We find that dialogue context (single turn, pair of turns within speaker, and pair of turns across speakers) is a significant predictor of  confidence scores. We compute distributed representations of discourse relations from co-occurrence statistics that incorporate information about confidence scores and dialogue context. We perform a hierarchical clustering analysis using these representations and show that weighting discourse relation representations with information about confidence and dialogue context coherently models our annotators&#39; uncertainty about discourse relation labels.
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<script type="text/javascript">
+    window.addEventListener("load", updateLinks(), "false" );
+</script>
+
+    </div>
+  </div>
+  
+  
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+      <div class="gated-content" style="display: none;">
+        <p class="float-left">
+          Logged in as <b><span id="ipt-user-email"></span></b>.</p>
+      </div>
+      <p class="float-right"><a href="#">Back to Top</a></p>
+      <p class="text-center">© 2023 SIGDIAL-INLG 2023 Organizers</p>
+    </div>
+  </footer>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+    });
+  </script>
+  <!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+  
+</body>
+
+</html>
